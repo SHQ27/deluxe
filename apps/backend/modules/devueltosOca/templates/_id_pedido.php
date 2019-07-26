@@ -1,0 +1,1 @@
+<a href="/backend/pedidos/<?php echo $devuelto_oca->getIdPedido(); ?>/ListView"><?php echo $devuelto_oca->getIdPedido(); ?></a>

@@ -1,0 +1,1 @@
+<?php echo $devolucion->getTipoCredito() == 'DELUXE' ? 'Bonificación' : 'Mercado Pago'; ?>

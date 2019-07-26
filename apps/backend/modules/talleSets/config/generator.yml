@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           talleSet
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          talle_set
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_marca: { label: Marca }
+      list:
+          title: Probador de Talles
+          display: [denominacion, marca]
+      filter:  ~
+      form:
+          display:
+            "Información descriptiva": [denominacion, id_marca]
+            "Asignación de talles y zonas": [_asignacion]
+      edit:
+          title: Edicion del Set de Talles "%%denominacion%%"
+      new:
+          title: Nuevo Set de Talles

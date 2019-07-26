@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           bannerPrincipal
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          banner_principal
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    
+    config:
+      actions: ~
+      fields:
+          id_banner_principal:  { label: Banner }
+          imagen_list:         { label: Imagen }
+          mostrar_descripcion: { label: Mostrar banda inferior en home }
+          color: { label: Color del reloj }
+      list:    
+          title: Banners Principales
+          display: [id_banner_principal, _imagen_list, denominacion, activo]
+          sort: [id_banner_principal, asc]
+          batch_actions:
+            activar:  { label: Activar Selecionados }
+            desactivar:  { label: Desactivar Selecionados }
+      filter:
+          display: [denominacion, fecha_desde, fecha_hasta, activo]
+      form:
+          display:
+            "Datos del Banner": [denominacion, url, fecha_desde, fecha_hasta, mostrar_descripcion, color, activo, off]
+            "Banner": [_imagenGrande, _administrar_imagenes, _imagenChica]
+      edit:
+          title: Edición de Banner Principal
+      new:
+          title: Nuevo Banner Principal

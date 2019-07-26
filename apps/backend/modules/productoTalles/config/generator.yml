@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           productoTalle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_talle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_familia_talle: { label: Familia }
+      list:
+          title: Talles
+          display: [id_producto_talle, denominacion, _familia]
+      filter:
+          display: [denominacion, id_familia_talle]
+      form:    ~
+      edit:
+          title: Edicion de Talle "%%denominacion%%"
+      new:
+          title: Nuevo Talle

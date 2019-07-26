@@ -1,0 +1,32 @@
+all: 
+  follow_me:
+    twitter_url: http://twitter.com/#!/Deluxebuys
+    facebook_url: http://www.facebook.com/pages/Deluxebuys/182338358315
+    youtube_url: http://www.youtube.com
+    blog_url: http://deluxebuys.tumblr.com
+    pinterest_url: http://pinterest.com/deluxebuys/
+
+  rpp_productos_categoria: 12
+  rpp_productos_lista_tag: 12
+  rpp_productos_oferta: 12
+  rpp_outlet: 12
+    
+  contacto_from_email: clientes@deluxebuys.com
+  contacto_to_email: support@deluxebuys.zendesk.com
+    
+  fromDoppler:
+    APIKey: E3A9197CEE95297D446A6A660F99BB17
+    SubscribersListID_h: 231406
+    SubscribersListID_m: 231298
+    
+  carrito:
+    minutosExpiracion: 30
+    
+prod:
+<?php include( dirname(__FILE__) .  "/../../../config/common_prod.yml"); ?> 
+
+dev:
+<?php include( dirname(__FILE__) .  "/../../../config/common_dev.yml"); ?>
+    
+stage:
+<?php include( dirname(__FILE__) .  "/../../../config/common_stage.yml"); ?>

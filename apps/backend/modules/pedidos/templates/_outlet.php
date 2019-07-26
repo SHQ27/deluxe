@@ -1,0 +1,1 @@
+<?php echo ( $pedido->tieneOutlet() ) ? 'Si' : 'No'; ?>

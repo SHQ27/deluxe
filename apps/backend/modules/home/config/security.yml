@@ -1,0 +1,6 @@
+all:
+  is_secure: true
+  credentials: [[gestion_orden_home]]
+  
+notificacion:
+  is_secure: false

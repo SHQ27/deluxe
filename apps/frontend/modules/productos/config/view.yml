@@ -1,0 +1,15 @@
+listadoSuccess:  
+  javascripts:    [lib/jquery.infinite-scroll.js, contador.js, filtro.js, productoListaCategoria.js, waitList.js]
+
+detalleSuccess:
+  stylesheets:    [multizoom.css]
+  javascripts:    [lib/jquery.cycle.min.js, lib/jquery.jcarousel.min.js, lib/multizoom.js, helpers/productoDetalleHelper.js, productoDetalle.js]
+  
+listaTagSuccess:
+  javascripts:    [lib/jquery.infinite-scroll.js, productoListaTag.js, filtro.js, waitList.js]
+  
+listaStickerSuccess:
+  javascripts:    [lib/jquery.infinite-scroll.js, productoListaSticker.js, filtro.js, waitList.js]
+    
+outletSuccess:  
+  javascripts:    [lib/jquery.infinite-scroll.js, contador.js, outlet.js, filtro.js]

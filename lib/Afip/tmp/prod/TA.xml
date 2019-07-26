@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loginTicketResponse version="1">
+    <header>
+        <source>CN=wsaa, O=AFIP, C=AR, SERIALNUMBER=CUIT 33693450239</source>
+        <destination>C=ar, ST=buenos aires, L=caba, O=deluxe, OU=deluxe, SERIALNUMBER=CUIT 30711635242, CN=deluxe, EMAILADDRESS=info@deluxebuys.com</destination>
+        <uniqueId>3189183538</uniqueId>
+        <generationTime>2016-09-30T11:15:04.356-03:00</generationTime>
+        <expirationTime>2016-09-30T23:15:04.356-03:00</expirationTime>
+    </header>
+    <credentials>
+        <token>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgdW5pcXVlX2lkPSIyODc2ODU4NDQ5IiBzcmM9IkNOPXdzYWEsIE89QUZJUCwgQz1BUiwgU0VSSUFMTlVNQkVSPUNVSVQgMzM2OTM0NTAyMzkiIGdlbl90aW1lPSIxNDc1MjQ0ODQ0IiBleHBfdGltZT0iMTQ3NTI4ODEwNCIgZHN0PSJDTj13c2ZlLCBPPUFGSVAsIEM9QVIiLz4KICAgIDxvcGVyYXRpb24gdmFsdWU9ImdyYW50ZWQiIHR5cGU9ImxvZ2luIj4KICAgICAgICA8bG9naW4gdWlkPSJDPWFyLCBTVD1idWVub3MgYWlyZXMsIEw9Y2FiYSwgTz1kZWx1eGUsIE9VPWRlbHV4ZSwgU0VSSUFMTlVNQkVSPUNVSVQgMzA3MTE2MzUyNDIsIENOPWRlbHV4ZSwgRU1BSUxBRERSRVNTPWluZm9AZGVsdXhlYnV5cy5jb20iIHNlcnZpY2U9IndzZmUiIHJlZ21ldGhvZD0iMjIiIGVudGl0eT0iMzM2OTM0NTAyMzkiIGF1dGhtZXRob2Q9ImNtcyI+CiAgICAgICAgICAgIDxyZWxhdGlvbnM+CiAgICAgICAgICAgICAgICA8cmVsYXRpb24gcmVsdHlwZT0iNCIga2V5PSIzMDcxMTYzNTI0MiIvPgogICAgICAgICAgICA8L3JlbGF0aW9ucz4KICAgICAgICA8L2xvZ2luPgogICAgPC9vcGVyYXRpb24+Cjwvc3NvPgoK</token>
+        <sign>lKMIPuq2/SMVfjE3U9dVW9A3LB5/qP8nOLp4v1kzmHqzikRrzHrQQdqKC1WAC7AajSz6mvFJzdtH4h7cCfPTIXSXOvu/v4H1NJ1xBaHJ92fyHxV4IIRbSNEDwPzaLjX4bbXWNUa5V+gYuLxnXZqHts9SJ++cQhrhvpmok74za/s=</sign>
+    </credentials>
+</loginTicketResponse>
+

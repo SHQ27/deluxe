@@ -1,0 +1,1335 @@
+@import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+@font-face {
+    font-family: "gotham-rounded-book";
+    src: url("../../../images/eshop/5/fonts/gotham-rounded-book.eot") format("eot"),
+         url("../../../images/eshop/5/fonts/gotham-rounded-book.woff") format("woff"),
+         url("../../../images/eshop/5/fonts/gotham-rounded-book.ttf") format("truetype"),
+         url("../../../images/eshop/5/fonts/gotham-rounded-book.svg") format("svg");
+}
+
+
+@font-face {
+    font-family: "gotham-rounded-medium";
+    src: url("../../../images/eshop/5/fonts/gotham-rounded-medium.eot") format("eot"),
+         url("../../../images/eshop/5/fonts/gotham-rounded-medium.woff") format("woff"),
+         url("../../../images/eshop/5/fonts/gotham-rounded-medium.ttf") format("truetype"),
+         url("../../../images/eshop/5/fonts/gotham-rounded-medium.svg") format("svg");
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Lato', Arial;
+}
+
+nav {
+    margin: 14px 0 20px 0;
+}
+
+.ui-widget-overlay {
+    opacity: 0.65;
+}
+
+.divisor_v {
+    border-left: 1px solid #EAEAEA;
+    background-color: none;
+}
+
+.flex-control-paging li a {
+    background-image: url(../../../images/eshop/5/nav_button.png);
+}
+
+.flex-direction-nav .flex-prev,
+.flex-direction-nav .flex-next {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.flex-direction-nav .flex-prev {
+    background-image: url(../../../images/eshop/5/slider_left.png);
+}
+.flex-direction-nav .flex-next { 
+    background-image: url(../../../images/eshop/5/slider_right.png);
+}
+.flex-direction-nav .flex-prev:hover { 
+    background-image: url(../../../images/eshop/5/slider_left_h.png);
+}
+.flex-direction-nav .flex-next:hover { 
+    background-image: url(../../../images/eshop/5/slider_right_h.png);
+}
+
+.btOscuro {
+    background-color: #000;
+    font-size: 13px !important;
+}
+
+.btOscuro:hover {
+    background-color: #bc2832;
+}
+
+.customSelect {
+   border: 1px solid #C8C8C8;
+}
+
+.radio {
+    background: #f1f1f1;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #666666;
+}
+
+.titulo
+{
+    color: #444;
+}
+
+.scrollToTop {
+    width: 70px;
+    height: 70px;   
+    background: url(../../../images/eshop/5/gototop.png);
+}
+
+.rojo {
+    color: red;
+}
+
+.color-link {
+    color: #000;
+}
+
+.color-link:hover {
+    text-decoration: underline;
+}
+
+#toolbar_up {
+    font-size: 11px;
+}
+
+#toolbar_up.OS {
+    font-family: 'gotham-rounded-book';
+}
+
+#btMiCuenta {
+    color: #000 !important;
+}
+
+#home-modal .logo
+{
+    background-image: url(../../../images/eshop/5/logo.png);
+    width: 291px;
+    height: 40px;
+    margin: 45px auto 21px auto;
+}
+
+#home-modal
+{
+    height: 550px;
+    background-image: url(../../../images/eshop/5/home_modal.jpg);
+}
+
+#home-modal .linea {
+    display: none;
+}
+
+.seccion {
+    background: #ffffff;
+}
+
+#destacados, #banner {
+    margin-top: 10px;
+    padding-bottom: 35px;
+}
+
+#destacados, #banner, #mi_cuenta {
+    background: #ffffff;
+}
+
+
+#logoCont {
+    background: #fff;
+    padding: 7px 0;
+}
+
+#info {
+    background: #f8f8f8;
+}
+
+.seccion .linea {
+    height: 2px;   
+}
+
+#devoluciones2 {
+    background-image: url(../../../images/eshop/5/devolucion_2.png);
+}
+
+#cambios2 {
+    background-image: url(../../../images/eshop/5/cambio_2.png);
+}
+
+#envios2 {
+    background-image: url(../../../images/eshop/5/envio_2.png);
+}
+
+.btComprar,
+#m_btRegistrar,
+.buttonAnterior,
+.buttonDevolver,
+.buttonSiguiente,
+.desactivarCuenta,
+#mi_cuenta form input[type="submit"],
+form#contactoForm input[type="submit"],
+form#addProductoForm input[type="submit"],
+#soy_miembro form[action="/login"] input[type="submit"],
+#soy_nuevo form input[type="submit"] {
+    background: none;
+    border-radius: 3px;
+    border: 2px solid #000; 
+}
+
+.btComprar:hover,
+#m_btRegistrar:hover,
+.buttonAnterior:hover,
+.buttonDevolver:hover,
+.buttonSiguiente:hover,
+.desactivarCuenta:hover,
+#mi_cuenta form input[type="submit"]:hover,
+form#contactoForm input[type="submit"]:hover,
+form#addProductoForm input[type="submit"]:hover,
+#soy_miembro form[action="/login"] input[type="submit"]:hover,
+#soy_nuevo form input[type="submit"]:hover {
+    background: #000;
+    color:#fff;
+}
+
+/*CAPA DE FONDO DE FANCYBOX PARA MODAL*/
+.ui-widget-content {
+    background: #fff;
+}
+
+/*===================================================================================*/
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.OS
+{
+    font-family: Arial;
+}
+
+.OS-9
+{
+    font-family: Arial;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.OS-11, .dd-select, #producto .dd-option
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.OS-12
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.OS-13
+{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.OS-14
+{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.OS-18
+{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.MS
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.MS-9
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.MS-13
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+.MS-15
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.MS-18
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.MS-23
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.MS-24
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.MS-32
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.MS-39
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 39px;
+    font-weight: 400;
+}
+
+.MS-72
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.MS-78
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 78px;
+    font-weight: 400;
+}
+
+
+.color1 { color: #303030; }
+.color2 { color: #333; }
+.color3, #producto .dd-select { color: #444; }
+.color4 { color: #555; }
+.color5 { color: #797979; }
+.color6 { color: #b9b9bd; }
+.color7 { color: #111; }
+.color8 { }
+.color9 { color: #999; }
+.color10 { color: #878787; }
+.color11 { color: #858585; }
+.color12 { color: #000; }
+.color13 {  }
+
+.hcolor1:hover { color: #303030; }
+.hcolor2:hover { color: #333; }
+.hcolor3:hover, #producto .dd-select { color: #444; }
+.hcolor4:hover { color: #666666; }
+.hcolor5:hover { color: #797979; }
+.hcolor6:hover { color: #b9b9bd; }
+.hcolor7:hover { color: #fff; }
+.hcolor8:hover { color: #666; }
+.hcolor9:hover { color: #999; }
+.hcolor10:hover { color: #878787; }
+.hcolor11:hover { color: #858585; }
+.hcolor12:hover { color: #ff5b6d; }
+.hcolor13:hover { color: #ccc; }
+
+/*===================================================================================*/
+/*  HEADER                                                                           */ 
+/*===================================================================================*/
+
+.header {
+    position: relative;
+    height: 182px;
+}
+
+.main-header {
+    width: 1000px;
+    margin: 25px auto 0 auto;
+}
+
+#toolbar_up {
+    background-color: #f4f3f2;
+    color: #000;
+}
+
+
+#toolbar_up  .derecha,
+.barraFlotante .derecha {
+    font-size: 11px;
+}
+
+#toolbar_up .items .signin,
+#toolbar_up .items #btMiCuenta,
+.barraFlotante .items .signin,
+.barraFlotante .items #btMiCuenta {
+    padding-right: 10px;
+}
+
+#toolbar_up .items.derecha,
+.barraFlotante .items.derecha {
+    font-family: 'gotham-rounded-book';
+}
+
+#toolbar_up .items.derecha .bold,
+#toolbar_up .items.derecha .semiBold,
+.barraFlotante .items.derecha .bold,
+.barraFlotante .items.derecha .semiBold {
+    font-weight: 600 !important;
+    font-size: 11px;
+    color: #111;
+}
+
+#toolbar_up .item span,
+.barraFlotante .item span {
+    background-color: transparent;
+    color: #111;
+    line-height: 12px;
+    font-weight: bold;
+}
+
+#toolbar_up .item:hover span,
+.barraFlotante .item:hover span {
+    background-color: transparent;
+}
+
+#toolbar_up  .items .lIzq,
+.barraFlotante  .items .lIzq {
+    border-left: 1px solid #000;
+}
+
+#toolbar_up  .items .signin,
+.barraFlotante  .items .signin,
+#toolbar_up  .items .login,
+.barraFlotante  .items .login {
+    border-left: 0;
+}
+
+
+
+#toolbar_up  .items .registrarse,
+.barraFlotante  .items .registrarse {
+    color: #fff;
+}
+
+#toolbar_up .items .item,
+.barraFlotante .items .item {
+    line-height: 12px;
+}
+
+#d-micuenta .link a {
+    font-size: 11px;
+}
+
+#toolbar_up .items .item:hover,
+.barraFlotante .items .item:hover {
+    color: #000;
+}
+
+#toolbar_up .items .item.login,
+#toolbar_up .items .item.signin,
+.barraFlotante .items .item.login,
+.barraFlotante .items .item.signin {
+    color: #111;
+}
+
+
+.barraFlotante .items .login {
+    border-left: solid #000 1px !important;
+}
+
+#toolbar_up .items .item.signin,
+.barraFlotante .items .item.signin {
+    font-weight: bold !important;
+    color: #222;
+}
+
+
+.logo a {
+    background-image: url(../../../images/eshop/5/logo.png);
+    width: 291px;
+    height: 40px;
+}
+
+.nav .shadow {
+    display: none;
+}
+
+.desplegable {
+    left: -192px;
+}
+
+.desplegable .titulo
+{
+    color: #000;
+    font-size: 15px;
+}
+
+#onlineBag ul li .nombre a
+{
+    color: #666;
+}
+
+#onlineBag ul li .price {
+    color: #000;
+}
+
+#onlineBag .total
+{
+    color: #000;
+}
+
+#onlineBag .d_btVerCarro
+{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+#onlineBag .d_btVerCarro:hover
+{
+    color: #fff;
+}
+
+#btMiCarro {
+    color: #000 !important;
+}
+
+
+/*===================================================================================*/
+/*  MENU                                                                             */ 
+/*===================================================================================*/
+
+.barraFlotante .menu {
+    float: right;
+}
+
+
+#nav .menu a,
+#nav .menu span,
+.barraFlotante .menu a,
+.barraFlotante .menu span {
+    font-family: 'gotham-rounded-book';
+    font-size: 15px;
+    font-weight: bold;
+    color: #111;
+    border-bottom: 2px solid transparent;
+}
+
+#nav .menu .current a,
+#nav .menu a:hover,
+#nav .menu .menu .current span,
+#nav .menu span:hover,
+.barraFlotante .current a,
+.barraFlotante .menu a:hover,
+.barraFlotante .menu .current span,
+.barraFlotante .menu span:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+
+#nav .menu li {
+    margin: 10px 50px;
+}
+
+.barraFlotante .menu li {
+    margin: 6px 19px;
+    border: 0;
+}
+
+
+#nav .menu li .submenu li a,
+.barraFlotante .menu li .submenu li a {
+    border: 0;
+    color: #444;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a:hover {
+    font-weight: bold;
+}
+
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+#nav .menu li .submenu,
+.barraFlotante li .submenu {
+    padding: 24px 0 0 0;
+}
+
+#nav .menu .prendas:before,
+.barraFlotante .prendas:before {
+    content: "E SHOP";
+}
+
+/*===================================================================================*/
+/*  BARRA FLOTANTE                                                                   */ 
+/*===================================================================================*/
+
+.barraFlotante {
+    height: 23px;
+}
+
+.barraFlotante .logo {
+    float: left;
+    background: url(../../../images/eshop/5/logo_chico.png) no-repeat center center;
+    width: 167px;
+    height: 24px;
+    margin-right: 40px;
+}
+
+.barraFlotante a,
+.barraFlotante span {
+    font-family: 'gotham-rounded-book';
+    font-size: 10.55px;111}
+
+.barraFlotante .menu a,
+.barraFlotante .menu  span {
+    font-size: 14px;
+}
+
+.barraFlotante #logged a {
+    font-family: 'Lato', Arial5;111}
+
+.barraFlotante .desplegable {
+    left: -193px;
+}
+
+.barraFlotante .derecha {
+    top: 4px;
+}
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */ 
+/*===================================================================================*/
+
+#notes #devoluciones {
+    background-image: url(../../../images/eshop/5/devolucion.png);
+}
+
+#cambio {
+    background-image: url(../../../images/eshop/5/cambio.png);
+}
+
+#envios {
+    background-image: url(../../../images/eshop/5/envio.png);
+}
+
+#notes .item .titulo {
+    color: #000;
+}
+
+#notes .item .texto {
+    font-size: 12px;
+}
+
+#network {
+    background: #f8f8f8;
+}
+
+#network {
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+#network .item .titulo {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#info .social p {
+    color: #000;
+}
+
+#info .titulo {
+    color: #424242;
+}
+
+#info .datos .lista .items .item a,
+#info .datos .lista .items .item, #info .texto {
+    color: #666;
+    font-size: 12px;
+}
+
+#info .datos .lista .items .item:hover {
+    color: #000;
+}
+
+#footer {
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+}
+
+#facebook { background-image: url(../../../images/eshop/5/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/5/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/5/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/5/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/5/snapchat.png); }
+#facebook:hover { background-image: url(../../../images/eshop/5/facebook_h.png); }
+#twitter:hover { background-image: url(../../../images/eshop/5/twitter_h.png); }
+#instagram:hover { background-image: url(../../../images/eshop/5/instagram_h.png); }
+#youtube:hover { background-image: url(../../../images/eshop/5/youtube_h.png); }
+#snapchat:hover { background-image: url(../../../images/eshop/5/snapchat_h.png); }
+
+#info .boton {
+    background-color: #1C1C1C;
+    background-image: url(../../../images/eshop/5/bt_arrow.png);
+    border-left: solid 1px #000;
+}
+
+#info .boton:hover {
+    background-color: #000;
+}
+
+#footer .powered {
+    background-image: url(../../../images/eshop/5/powered.png);
+}
+
+/*===================================================================================*/
+/*  HOME                                                                             */ 
+/*===================================================================================*/
+
+
+#texto .titulo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active,
+.seccion.bannerCampaign .flex-control-nav li a.flex-active {
+    background-position: 1px -13px
+}
+
+.seccion.TEXTO .titulo {
+    font-family: "Lato",sans-serif;
+    font-size: 24px
+}
+
+#destacados .titulo {
+    font-family: 'gotham-rounded-medium' !important;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+#destacados .items {
+    margin-bottom: 35px;
+}
+
+#destacados .items .item span {
+    display: none;
+}
+
+#destacados .items .item span b {
+    font-size: 15px;
+    margin-top: 185px;
+    font-weight: bold;
+}
+
+.flexslider .slides>li .producto {
+    border-bottom: 2px solid #ccc;
+}
+
+.flexslider .slides>li .producto span {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    padding: 12px 20px;
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.flexslider .slides>li .precio {
+    margin: 0;
+    color: #3A3A3A;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.flexslider .slides>li .precioViejo {
+    right: 100%;
+    bottom: 4px;
+    color: #D5D5D5;
+    position: absolute;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.flexslider .slides>li .nombre,.flexslider .slides>li .codigo {
+    font-family: 'Lato', sans-serif;
+}
+
+.flex-control-nav.flex-control-paging{
+    display: none;
+}
+
+
+.flexslider .slides>li .nombre {display: none}
+.flexslider .slides>li .precio {display: none}
+.flexslider .slides>li .precioViejo {display: none;}
+.flexslider .slides > li .producto{
+    border-bottom: none;
+}
+
+.flexslider .slides > li:hover .producto img.principal {
+    display: none;
+}
+
+.flexslider .slides > li:hover .producto img.hover {
+    display: block;
+}
+
+
+/*===================================================================================*/
+/*  MODAL HOME                                                                       */ 
+/*===================================================================================*/
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+    background: none !important;
+    border: 1px solid #A1A1A1;
+}
+
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#productos .pantalla {
+    margin: 10px 0 60px 0;
+}
+
+#productos .muestra .resultados .resultado .descuento {
+    background-color: #000;
+}
+
+#productos .acordion .titulo:before {
+    margin-top: 2px;
+    background-image: url(../../../images/eshop/5/accordion_open.png);
+}
+
+#productos .acordion .titulo.closed:before {
+    background-image: url(../../../images/eshop/5/accordion_closed.png);
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 1px solid #ccc;
+}
+
+#productos .filtro .actual .item
+{
+    line-height: 12px;
+}
+
+#productos .muestra .resultados .resultado .producto {
+    border-bottom: 0;
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 0;
+}
+
+#productos .muestra .resultados .resultado .precio {
+    color: #3A3A3A;
+    background: none;
+    padding: 6px 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#productos .muestra .resultados .resultado .precio .precioViejo {
+    color: #666666;
+    font-weight: normal;
+}
+
+#productos .dd-pointer {
+    background-image: url(../../../images/eshop/5/accordion_closed.png);
+}
+
+#productos #orden .dd-options {
+    top: 26px;
+    padding: 15px 7px 15px 0;
+}
+
+#productos .item {
+    font-size: 11px;
+}
+
+#productos .resultados .resultado .nombre {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+#productos .acordion .contenido .elemento {
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #888;
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#probadorOnline .campo input
+{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#producto .contFotos .thumb:hover,#producto .contFotos .thumb.selected {
+    border-bottom: 1px solid #fff;
+}
+
+#producto .contFotos #foto_grande span {
+    background-color: #000;
+}
+
+#probadorOnline .ui-icon-triangle-1-n {
+    background-image: url(../../../images/eshop/5/accordion_open.png) !important;
+}
+
+#probadorOnline .ui-icon-triangle-1-s {
+    background-image: url(../../../images/eshop/5/accordion_closed.png) !important;
+}
+
+
+#producto .precio {
+    font-family: Arial;
+    color: rgb(57, 51, 51);
+}
+
+#producto  .infoGeneral{
+    opacity: 0.6;
+}
+
+#producto  .infoGeneral .color4{
+    color: #555;
+}
+
+#producto  .infoGeneral .descripcion{
+    color: #333;
+}
+
+#producto .subtitulo {
+    font-weight: bold;
+}
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */ 
+/*===================================================================================*/
+
+
+#tiendas .titulo {
+    font-weight: bold;
+}
+
+#tiendas .menu a
+{
+    color: #333;
+    border-bottom: 2px solid #f5f4f2;
+}
+
+#tiendas .current a,
+#tiendas .menu a:hover
+{
+    border-bottom: 2px solid #666666;
+}
+
+#tiendas .item .nombre
+{
+    color: #1b1b1b;
+}
+
+#tiendas .item .direccion,
+#tiendas .item .telefono
+{
+    color: #878787;
+    font-size: 11px;
+}
+
+#tiendas .menu a
+{
+    padding-bottom: 4px;
+}
+
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+.btComprar:hover {
+    background: #000 !important;
+    color: #fff;
+}
+
+#checkout_carrito .paso span.color7 {
+    color: #b9b9bd;
+}
+
+#checkout_carrito .paso.color8 span.color7 {
+    color: #000;
+}
+
+#checkout_carrito .paso.color8 {
+    color: #000 !important;
+}
+
+#checkout_carrito .paso div {
+
+}
+
+#checkout_carrito .paso span {
+    font-size: 28px;
+    line-height: 39px;
+    background-image: url(../../../images/eshop/5/poligono_con_hover.png);
+    width: 70px;
+    height: 55px;
+}
+
+#checkout_carrito .renglon .btLink span {
+    background-image: url(../../../images/eshop/5/btArrows.png);
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: red;
+}
+
+
+#checkout_carrito .items .item .nombre {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#checkout_carrito .datos-adicionales .renglon input {
+    border: 1px solid #c8c8c8 !important;
+    height: 19px;
+}
+
+#checkout_carrito .opciones {
+    background: #fff;
+}
+
+#checkout_carrito .items .item .columna .unitario {
+    color: #939393;
+    font-weight: bold;
+}
+
+#checkout_carrito .items .item .columna .subtotal {
+    font-weight: bold;
+}
+
+#checkout_carrito .items .item .cantidad {
+    margin-top: 0;
+}
+
+#checkout_carrito .btEliminar.eliminar {
+    font-size: 12px;
+    background: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: 2px solid #000;
+}
+
+#checkout_carrito .barra .header {
+    color: #000;
+    font-weight: bolder;
+}
+
+#checkout_carrito .renglones .renglon span {
+    color: #000;
+    font-weight: bolder;
+} 
+
+#checkout_carrito .renglones .renglon .detalle {
+    font-weight: bolder;
+}
+
+#checkout_carrito .renglones .renglon .detalle span {
+    color: #666666;
+    font-weight: normal;
+}
+
+#checkout_carrito .renglones .renglon a {
+    color: #888;
+}
+
+
+
+#checkout_carrito .renglones .renglon #goToPaso2 {
+    color: #000;
+}
+
+#checkout_carrito .renglones .renglon.alto,
+#checkout_carrito .renglones .checkoutSubTotal {
+    border-bottom: 1px solid #DBDBDB;
+    border-style: dotted;
+}
+
+/*===================================================================================*/
+/*  INGRESO / REGISTRO                                                               */
+/*===================================================================================*/
+
+#ingresar input[type=text], #ingresar input[type=password] {
+    background: none !important;
+    border: 1px solid #666666;
+}
+
+#ingresar .dd-select {
+    border: 1px solid #c8c8c8 !important;
+}
+
+#ingresar .dd-options {
+    border: 1px solid #c8c8c8 !important;
+}
+
+#olvidastePass input[type=text]
+{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#soy_nuevo .rincon {
+    border-top: 14px solid #666666;
+    border-right: 14px solid #666666;
+    border-left: 14px solid #fbfbfb;
+    border-bottom: 14px solid #fbfbfb;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#devoluciones .step
+{
+    background-image: url(../../../images/eshop/5/poligono_con_hover_chico.png);
+    width: 58px;
+    height: 45px;
+    font-size: 24px;
+    line-height: 33px;
+    color: #b9b9bd;
+}
+
+#devoluciones .step.selected
+{
+    color: #111
+}
+
+
+#mi_cuenta .linea {
+    display: none;
+}
+
+#mi_cuenta #datosPersonales .campo input, #mi_cuenta #datosPersonales .campo2 input
+{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#devoluciones .campo textarea
+{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#mi_cuenta #devoluciones .dd-select {
+    border: solid 2px #cdcdcd !important;
+}
+
+#mi_cuenta #devoluciones .dd-options
+{
+    border: solid 2px #cdcdcd !important;
+}
+
+
+#devoluciones input[type=text],
+#devoluciones input[type=password]
+{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#consultaEnvio input[type=text]
+{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#mi_cuenta .panel {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#mi_cuenta .panel .items .item.selected
+{
+    color: #666666;
+    font-weight: bold;
+}
+
+#mi_cuenta .panel .items {    
+    padding: 10px 30px;
+}
+
+/*===================================================================================*/
+/*  CONSULTAS                                                                        */ 
+/*===================================================================================*/
+
+#consultas .titulo
+{
+    font-size: 26px;
+}
+
+#consultas .preguntas
+{
+    color: #666666;
+}
+
+#consultas .faqCategoria .num
+{
+    background-image: url(../../../images/eshop/5/poligono_color.png);
+    color: #fff;
+    font-weight: bold;
+    width: 28px;
+    height: 22px;
+}
+
+#consultas .titleFaqCategoria:hover 
+{
+    color: #000;
+}
+
+#contacto .texto {
+    font-size: 12px; 
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea
+{
+    border: 1px solid #C8C8C8;
+}
+
+#contacto form  input[type=file]::before {
+    border: 1px solid #C8C8C8;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: #000;
+}
+
+#contacto form input[type=file]::before {
+    margin-top: 0px;
+}
+
+#contacto form  .dd-select {
+    border: solid 2px #cdcdcd !important;
+}
+
+#contacto form  .dd-options
+{
+    border: solid 2px #cdcdcd !important;
+}
+
+#contacto form .campo {
+    font-weight: bold !important;
+    color: #000 !important;
+}
+
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito .items  .dd-select {
+    border: 1px solid #c8c8c8 !important;
+}
+
+#checkout_carrito .items  .dd-options {
+    border: 1px solid #c8c8c8 !important;
+}
+
+#checkout_carrito .form  .dd-select {
+    border: 1px solid #c8c8c8 !important;
+}
+
+#checkout_carrito .form  .dd-options {
+    border: 1px solid #c8c8c8 !important;
+}
+
+#checkout_carrito .form  input[type=text],#checkout_carrito .form  input[type=password] {
+    border: 1px solid #c8c8c8 !important;
+}
+
+#checkout_carrito .titulo {
+    font-weight: bold;
+    color: #000;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#terminos .menu li {
+    margin: 10px 15px;
+    font-weight: bold;
+}
+
+#terminos .texto {
+    font-size: 12px;
+}
+
+#terminos .subtitulo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+#terminos .detalle {
+    font-size: 12px;
+}
+
+#acerca .titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+}

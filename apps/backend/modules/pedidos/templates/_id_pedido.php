@@ -1,0 +1,1 @@
+<a href="/backend/pedidos/<?php echo $pedido->getIdPedido(); ?>/ListView"><?php echo $pedido->getIdPedido(); ?></a>

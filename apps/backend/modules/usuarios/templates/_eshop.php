@@ -1,0 +1,1 @@
+<?php echo ( $usuario->getEshop() ) ? $usuario->getEshop() : 'Deluxe Buys'; ?>

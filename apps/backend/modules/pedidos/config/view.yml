@@ -1,0 +1,15 @@
+indexSuccess:
+  javascripts:    [pedidosList.js]
+
+ListViewSuccess:
+  javascripts:    [easyTooltip.js, detallePedido.js]
+  
+prepararEnvioSuccess:
+  javascripts:    [prepararEnvio.js]
+  
+
+recepcionMercaderiaEshopSuccess:
+  javascripts:    [recepcionMercaderiaEshop.js]
+
+ordenCompraSuccess:
+  javascripts:    [ordenCompra.js]

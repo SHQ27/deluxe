@@ -1,0 +1,1847 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic,700,700italic);
+
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+body {
+    font-size: 13px;
+    font-family: 'Open Sans', Arial;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.ui-widget-overlay {
+    opacity: 0.65;
+}
+
+.divisor_v {
+    border-left: 1px solid #dadada;
+    background-color: none;
+}
+
+.flex-control-paging li a {
+	background-image: url(../../../images/eshop/9/nav_button.png);
+}
+
+.flex-direction-nav .flex-prev { 
+    background-image: url(../../../images/eshop/9/slider_left.png);
+}
+.flex-direction-nav .flex-next { 
+    background-image: url(../../../images/eshop/9/slider_right.png);
+}
+.flex-direction-nav .flex-prev:hover { 
+    background-image: url(../../../images/eshop/9/slider_left_h.png);
+}
+.flex-direction-nav .flex-next:hover { 
+    background-image: url(../../../images/eshop/9/slider_right_h.png);
+}
+
+.btOscuro {
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    font-weight: bold !important;
+    text-transform: none;
+}
+
+.btOscuro:hover {
+    background-color: #222;
+}
+
+.customSelect {
+   border: 1px solid #000;
+}
+
+.radio {
+    background: #f1f1f1;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #000;
+}
+
+.titulo
+{
+    color: #444;
+}
+
+.scrollToTop {
+	width: 70px;
+	height: 70px;	
+    background: url(../../../images/eshop/9/gototop.png);
+}
+
+.rojo {
+    color: red;
+}
+
+.color-link {
+    color: #000;
+}
+
+.color-link:hover {
+    text-decoration: underline;
+}
+
+#toolbar_up {
+    font-size: 11px;
+}
+
+#btMiCuenta {
+    color: #000 !important;
+}
+
+#home-modal .logo
+{
+    background-image: url(../../../images/eshop/9/logo.png);
+    width: 98px;
+    height: 89px;
+    margin: 45px auto 21px auto;
+}
+
+#home-modal
+{
+    height: 550px;
+	background-image: url(../../../images/eshop/9/home_modal.jpg);
+}
+
+#home-modal .campo {
+    font-weight: bold;
+    color: #555;
+}
+
+#home-modal .linea {
+    display: none;
+}
+
+.suscripcion .ui-dialog-titlebar .ui-dialog-titlebar-close {
+    background: none;
+    left : 15px !important;
+}
+
+.suscripcion .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon {
+    background-image: url(../../../images/eshop/9/close_modal_suscription.png) !important;
+}
+
+.nav .shadow {
+    background: #f8f8f8;
+    border-top: solid #eaeaea 1px;
+    border-bottom: solid #eaeaea 1px;
+    height: 0px;
+    display: none;
+}
+
+.seccion {
+    background: #ffffff;
+}
+
+#destacados, #banner {
+    margin-top: 10px;
+    padding-bottom: 35px;
+}
+
+#destacados, #banner, #mi_cuenta {
+    background: #ffffff;
+}
+
+
+#logoCont {
+    background: #fff;
+}
+
+.seccion .linea {
+	height: 2px;   
+}
+
+#devoluciones2 {
+    background-image: url(../../../images/eshop/9/devolucion_2.png);
+}
+
+#cambios2 {
+    background-image: url(../../../images/eshop/9/cambio_2.png);
+}
+
+#envios2 {
+    background-image: url(../../../images/eshop/9/envio_2.png);
+}
+
+.btComprar,
+#m_btRegistrar,
+.buttonAnterior,
+.buttonDevolver,
+.buttonSiguiente,
+.desactivarCuenta,
+#mi_cuenta form input[type="submit"],
+form#contactoForm input[type="submit"],
+form#addProductoForm input[type="submit"],
+#soy_miembro form[action="/login"] input[type="submit"],
+#soy_nuevo form input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    font-weight: bold !important;
+    text-transform: none;
+}
+
+.btComprar:hover,
+#m_btRegistrar:hover,
+.buttonAnterior:hover,
+.buttonDevolver:hover,
+.buttonSiguiente:hover,
+.desactivarCuenta:hover,
+#mi_cuenta form input[type="submit"]:hover,
+form#contactoForm input[type="submit"]:hover,
+form#addProductoForm input[type="submit"]:hover,
+#soy_miembro form[action="/login"] input[type="submit"]:hover,
+#soy_nuevo form input[type="submit"]:hover {
+	background: #111;
+}
+
+/*CAPA DE FONDO DE FANCYBOX PARA MODAL*/
+.ui-widget-content {
+    background: #fff;
+}
+
+/*===================================================================================*/
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.OS
+{
+	font-family: 'Open Sans', Arial;
+}
+
+.OS-9
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.OS-11, .dd-select, #producto .dd-option
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.OS-12
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.OS-13
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.OS-14
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.OS-18
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS
+{
+	font-family: 'Open Sans', Arial;
+	font-weight: 400;
+}
+
+.MS-9
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.MS-13
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 12px;
+}
+
+.MS-15
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.MS-18
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS-23
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.MS-24
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.MS-32
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 28px;
+	font-weight: 400;
+    line-height: 40px;
+}
+
+.MS-39
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 39px;
+	font-weight: 400;
+}
+
+.MS-72
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 72px;
+	font-weight: 400;
+}
+
+.MS-78
+{
+	font-family: 'Open Sans', Arial;
+	font-size: 78px;
+	font-weight: 400;
+}
+
+
+.color1 { color: #303030; }
+.color2 { color: #000; }
+.color3, #producto .dd-select { color: #444; }
+.color4 { color: #000; }
+.color5 { color: #111; }
+.color6 { color: #b9b9bd; }
+.color7 { color: #111; }
+.color8 { }
+.color9 { color: #999; }
+.color10 { color: #878787; }
+.color11 { color: #858585; }
+.color12 { color: #000; }
+.color13 {  }
+
+.hcolor1:hover { color: #303030; }
+.hcolor2:hover { color: #333; }
+.hcolor3:hover, #producto .dd-select { color: #444; }
+.hcolor4:hover { color: #666666; }
+.hcolor5:hover { color: #797979; }
+.hcolor6:hover { color: #b9b9bd; }
+.hcolor7:hover { color: #fff; }
+.hcolor8:hover { color: #666; }
+.hcolor9:hover { color: #999; }
+.hcolor10:hover { color: #878787; }
+.hcolor11:hover { color: #858585; }
+.hcolor12:hover { color: #ff5b6d; }
+.hcolor13:hover { color: #ccc; }
+
+
+/*===================================================================================*/
+/*  HEADER                                                                           */ 
+/*===================================================================================*/
+
+.header {
+    position: relative;
+    width: 1000px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+#toolbar_up {
+    background-color: none;
+    color: #000;
+}
+
+
+#toolbar_up  .derecha,
+.barraFlotante .derecha {
+    font-size: 11px;
+}
+
+#toolbar_up .items .signin,
+#toolbar_up .items #btMiCuenta,
+.barraFlotante .items .signin,
+.barraFlotante .items #btMiCuenta {
+    padding-right: 10px;
+}
+
+#toolbar_up .items.derecha,
+.barraFlotante .items.derecha {
+    font-family: 'Open Sans', Arial;
+}
+
+#toolbar_up .items.derecha .bold,
+#toolbar_up .items.derecha .semiBold,
+.barraFlotante .items.derecha .bold,
+.barraFlotante .items.derecha .semiBold {
+    font-weight: 500 !important;
+}
+
+#toolbar_up .item span,
+.barraFlotante .item span {
+    background-color: transparent;
+    color: #000;
+    line-height: 12px;
+    font-weight: bold;
+}
+
+#toolbar_up .item:hover span,
+.barraFlotante .item:hover span {
+    background-color: transparent;
+}
+
+#toolbar_up  .items .lIzq,
+.barraFlotante  .items .lIzq {
+    border-left: 1px solid #000;
+}
+
+#toolbar_up  .items .registrarse,
+.barraFlotante  .items .registrarse {
+    color: #fff;
+}
+
+#toolbar_up .items .item,
+.barraFlotante .items .item {
+    line-height: 12px;
+}
+
+#d-micuenta .link a {
+    font-size: 11px;
+}
+
+#toolbar_up .items .item:hover,
+.barraFlotante .items .item:hover {
+    color: #000;
+}
+
+#toolbar_up .items .item.login,
+#toolbar_up .items .item.signin,
+.barraFlotante .items .item.login,
+.barraFlotante .items .item.signin {
+    color: #000;
+}
+
+#toolbar_up .items .item.signin,
+.barraFlotante .items .item.signin {
+    font-weight: bold !important;
+}
+
+#logoCont {
+    float: left;
+    padding: 0;
+    margin: 22px 17px 0 17px;
+}
+
+.logo a {
+    background-image: url(../../../images/eshop/9/logo.png);
+    width: 98px;
+    height: 89px;
+}
+
+#nav {
+    width: 850px;
+    float: right;
+    margin: 82px 0 0 0;
+}
+
+#nav .container {
+    width: 850px;
+}
+
+.barraFlotante .menu .accesorios,
+#nav .container .accesorios {
+    color: #bc0b14 !important;
+}
+
+.nav .shadow {
+    display: none;
+}
+
+.desplegable {
+    left: -192px;
+}
+
+.desplegable .titulo
+{
+    font-weight: bold;
+	color: #000;
+	font-size: 15px;
+}
+
+#onlineBag ul li {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+#onlineBag ul li .nombre a
+{
+	color: #666;
+}
+
+#onlineBag ul li .price {
+    color: #000;
+}
+
+#onlineBag .total
+{
+    font-weight: bold;
+	color: #000;
+}
+
+#onlineBag .d_btVerCarro
+{
+    background-color: #222;
+	color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#onlineBag .d_btVerCarro:hover
+{
+	background-color: #000;
+}
+
+#btMiCarro {
+    color: #000 !important;
+}
+
+
+/*===================================================================================*/
+/*  MENU                                                                             */ 
+/*===================================================================================*/
+
+#nav .menu,
+.barraFlotante .menu {
+    float: right;
+}
+
+
+#nav .menu a,
+#nav .menu span,
+.barraFlotante .menu a,
+.barraFlotante .menu span {
+    font-family: 'Open Sans', Arial;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: #252525;
+    border-bottom: 2px solid transparent;
+}
+
+#nav .menu .current a,
+#nav .menu a:hover,
+#nav .menu .menu .current span,
+#nav .menu span:hover,
+.barraFlotante .current a,
+.barraFlotante .menu a:hover,
+.barraFlotante .menu .current span,
+.barraFlotante .menu span:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+#nav .menu .current a,
+#nav .menu a:hover,
+#nav .menu .menu .current span,
+#nav .menu span:hover,
+.barraFlotante .current a,
+.barraFlotante .menu a:hover,
+.barraFlotante .menu .current span,
+.barraFlotante .menu span:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+#nav .menu span:hover,
+.barraFlotante .menu span:hover {
+    border-bottom: 2px solid #bc0b14 !important;
+}
+
+
+#nav .menu li {
+    margin: 10px 22px;
+}
+
+.barraFlotante .menu li {
+    margin: 10px 13px;
+}
+
+
+#nav .menu li .submenu li a,
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a,
+.barraFlotante .menu li .submenu li a:hover {
+    border: 0;
+    color: #444;
+    font-size: 12px;
+}
+
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a:hover {
+    color: #000;
+}
+
+#nav .menu li .submenu,
+.barraFlotante li .submenu {
+    padding: 24px 0 0 0;
+}
+
+#nav .menu .prendas:before,
+.barraFlotante .prendas:before {
+    content: "E SHOP";
+}
+
+#nav .menu .accesorios:before,
+.barraFlotante .accesorios:before {
+    content: "SALE";
+}
+
+/*===================================================================================*/
+/*  BARRA FLOTANTE                                                                   */ 
+/*===================================================================================*/
+
+.barraFlotante .logo {
+    float: left;
+    background: url(../../../images/eshop/9/logo_chico.png) no-repeat center center;
+    width: 25px;
+    height: 30px;
+    margin-right: 40px;
+}
+
+.barraFlotante a,
+.barraFlotante span {
+    font-family: 'Open Sans', Arial;
+    font-size: 10.5px;
+}
+
+.barraFlotante .menu a,
+.barraFlotante .menu  span {
+    font-size: 12.5px;
+}
+
+.barraFlotante #logged a {
+    font-family: 'Open Sans', Arial;
+}
+
+.barraFlotante .desplegable {
+    left: -193px;
+}
+
+.barraFlotante .derecha {
+    top: 8px;
+}
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */ 
+/*===================================================================================*/
+
+#notes #devoluciones {
+    background-image: url(../../../images/eshop/9/devolucion.png);
+}
+
+#cambio {
+    background-image: url(../../../images/eshop/9/cambio.png);
+}
+
+#envios {
+    background-image: url(../../../images/eshop/9/envio.png);
+}
+
+#notes .item .titulo {
+    color: #000;
+}
+
+#notes .item .texto {
+    font-size: 12px;
+}
+
+#network {
+    margin: 0 auto;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#network .item .titulo {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+#info.social p {
+    color: #222;
+    font-family: 'Open Sans';
+    font-size: 13px;
+}
+
+#info {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#info .titulo {
+    color: #222;
+    font-size: 11px;
+}
+
+#info .datos {
+    float: right;
+}
+
+#info .divisor_v {
+    float: right;
+}
+
+#info .datos .lista .items .item a,
+#info .datos .lista .items .item, #info .texto {
+    color: #000;
+    font-size: 11px;
+}
+
+#info .datos .lista .items .item:hover {
+    color: #000;
+}
+
+#info input {
+    border: 1px solid #000;
+}
+
+#footer {
+    padding: 30px 0 25px 0;
+    background-color: #000;
+}
+
+#footer .color9 {
+    color: #fff;
+}
+
+#facebook { background-image: url(../../../images/eshop/9/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/9/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/9/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/9/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/9/snapchat.png); }
+
+#info .boton {
+    width: 17px;
+    height: 15px;
+    background-color: #000;
+    background-image: url(../../../images/eshop/9/bt_arrow.png);
+    border-left: solid 1px #000;
+    padding: 11px;
+}
+
+#info .boton:hover {
+    background-color: #333;
+}
+
+#footer .powered {
+    background-image: url(../../../images/eshop/9/powered.png);
+}
+
+
+/*===================================================================================*/
+/*  HOME                                                                             */ 
+/*===================================================================================*/
+
+
+#texto .titulo {
+	font-size: 22px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active,
+.seccion.bannerCampaign .flex-control-nav li a.flex-active {
+    background-position: 1px -13px
+}
+
+.seccion.TEXTO .titulo,
+#destacados .titulo {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+#destacados .flex-control-paging li a {
+    background-image: url(../../../images/eshop/9/nav_button_destacados.png);
+}
+
+#destacados .titulo {
+    margin: 20px 0;
+}
+
+#destacados .items {
+    margin-bottom: 35px;
+}
+
+#destacados .items .item span {
+	display: none;
+}
+
+#destacados .items .item span b {
+	font-size: 15px;
+	margin-top: 185px;
+    font-weight: bold;
+}
+
+.flexslider .slides>li .producto {
+	border-bottom: none;
+}
+
+.flexslider .slides>li .producto span {
+    font-family: 'Open Sans', Arial;
+    font-weight: normal;
+    padding: 12px 20px;
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.flexslider .slides>li:hover .producto:before {
+    background-image: url(../../../images/eshop/9/hover_product.png);
+    background-position: center;
+    border-bottom: solid #000 1px;
+    background-color: rgba(0,0,0,0.1);
+    bottom: 0;
+}
+
+
+.flexslider .slides>li .precio {
+    float: left;
+    color: #111;
+    background: none;
+    padding: 6px 10px 6px 0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.flexslider .slides>li .precioViejo {
+	right: 100%;
+	bottom: 4px;
+	color: #D5D5D5;
+	position: absolute;
+	font-weight: normal;
+	text-decoration: line-through;
+}
+
+.flexslider .slides>li .nombre {
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.flexslider .slides>li .nombre:after {
+    content: "    ";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #000;
+    left: 0;
+    top: 29px;
+
+}
+
+
+
+
+.seccion.BPRFS .flex-direction-nav .flex-prev,
+.seccion.BPRFS .flex-direction-nav .flex-prev:hover,
+.seccion.bannerCampaign .flex-direction-nav .flex-prev,
+.seccion.bannerCampaign .flex-direction-nav .flex-prev:hover,
+.seccion.BPRNO .flex-direction-nav .flex-prev,
+.seccion.BPRNO .flex-direction-nav .flex-prev:hover { 
+    background-image: url(../../../images/eshop/main_slider_left_black.png);
+}
+
+
+.seccion.BPRFS .flex-direction-nav .flex-next,
+.seccion.BPRFS .flex-direction-nav .flex-next:hover,
+.seccion.BPRNO .flex-direction-nav .flex-next,
+.seccion.BPRNO .flex-direction-nav .flex-next:hover,
+.seccion.bannerCampaign .flex-direction-nav .flex-next,
+.seccion.bannerCampaign .flex-direction-nav .flex-next:hover { 
+    background-image: url(../../../images/eshop/main_slider_right_black.png);
+}
+
+
+.seccion.bannerCampaign {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*===================================================================================*/
+/*  MODAL HOME                                                                       */ 
+/*===================================================================================*/
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+	background: none !important;
+    border: 1px solid #A1A1A1;
+}
+
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#productos .mCSB_scrollTools {
+    opacity: 1;
+}
+
+#productos .mCSB_scrollTools:hover {
+    opacity: 0.75;
+}
+
+#productos .filtro .colores,
+#productos .filtro .titulo-colores
+{
+    display: none;
+}
+
+
+#productos .muestra .resultados .resultado:hover .producto:before {
+    background-image: url(../../../images/eshop/9/hover_product.png);
+    background-position: center;
+    border-bottom: solid #000 1px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#productos .pantalla {
+    margin: 10px 0 60px 0;
+}
+
+
+#productos .titulo br{
+    display: none;
+}
+
+#productos .titulo {
+    font-size: 13px; 
+    color: #000;
+    font-family: Arial;
+}
+
+#productos .barra {
+    border: 0;
+    border-bottom: solid #000 1px;
+}
+
+#productos .barra .derecha #orden {
+    border-left: solid #000 1px;   
+}
+
+#productos #btLimpiar {
+    font-size: 11px;
+}
+
+#productos .dd-selected {
+    font-weight: normal;
+}
+
+#productos .muestra .resultados .resultado .descuento {
+    background-color: #000;
+}
+
+#productos .acordion .titulo:before {
+    margin-top: 2px;
+    background-image: url(../../../images/eshop/9/accordion_open.png);
+}
+
+#productos .acordion .titulo.closed:before {
+    background-image: url(../../../images/eshop/9/accordion_closed.png);
+}
+
+#productos .acordion h2 {
+    font-weight: bold;
+    color: #111;
+}
+
+#productos .acordion .contenido .elemento.selected {
+    color: #333;
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 1px solid #ccc;
+}
+
+#productos .filtro .actual {
+    padding-bottom: 5px;
+}
+
+#productos .filtro .actual .item
+{
+    line-height: 12px;
+}
+
+#productos .muestra .resultados .resultado .producto {
+    border-bottom: 0;
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 0;
+}
+
+#productos .muestra .resultados .resultado .precio {
+    float: left;
+    color: #111;
+    background: none;
+    padding: 6px 10px 6px 0;
+    font-weight: bold;
+    margin: 0;
+}
+
+#productos .muestra .resultados .resultado .precio .precioViejo {
+    color: #666666;
+    font-weight: normal;
+    left: 100%;
+    margin-left: 20px;
+}
+
+#productos .dd-pointer {
+    background-image: url(../../../images/eshop/9/accordion_closed.png);
+}
+
+#productos #orden .dd-options {
+    top: 26px;
+    padding: 15px 7px 15px 0;
+    border-color: #111 !important;
+}
+
+#productos #orden .dd-options .dd-option-text {
+    color: #000;
+}
+
+#productos .item {
+    font-size: 11px;
+}
+
+#productos .resultados .resultado .nombre {
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#productos .resultados .resultado .nombre:after {
+    content: "    ";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #000;
+    left: 0;
+    top: 29px;
+
+}
+
+#productos .linea {
+}
+
+#productos .acordion .contenido .elemento {
+    margin-bottom: 9px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #333;
+}
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+    background-color: #000;
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#probadorOnline .campo input
+{
+    background-color: #f4f3f2;
+}
+
+#producto .customSelect {
+    background: #f4f3f2;
+    border: 0;
+}
+
+#producto .nombre {
+    color: #000;
+    font-weight: bold;
+    width: 235px;
+    margin-bottom: 40px;
+}
+
+#producto .barra {
+    border-bottom: solid #000 1px;
+}
+
+#producto .barra .derecha a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+#producto .btProbar {
+    background-image: url(../../../images/eshop/9/probador.png);
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 30px;
+    color: transparent;
+}
+
+#probadorOnline .campo input
+{
+    border: 1px solid #000 !important;
+}
+
+#probadorOnline .btOscuro {
+    color: #fff;
+}
+
+#producto .contFotos .thumb:hover,#producto .contFotos .thumb.selected {
+    border-bottom: 1px solid #000;
+}
+
+#producto .contFotos #foto_grande span {
+    background-color: #000;
+}
+
+#probadorOnline .ui-icon-triangle-1-n {
+    background-image: url(../../../images/eshop/9/accordion_open.png) !important;
+}
+
+#probadorOnline .ui-icon-triangle-1-s {
+    background-image: url(../../../images/eshop/9/accordion_closed.png) !important;
+}
+
+
+#producto .precio {
+    font-family: 'Gotham-Book', Arial;
+    color: 000;
+    font-weight: bold;
+}
+
+#producto .precioViejo {
+     font-weight: bold;
+     border-left: solid #333 1px;
+     color: #BBB;   
+}
+
+#producto  .infoGeneral .item {
+    background: none !important;
+    padding: 30px 0 20px 0;
+}
+
+#producto  .infoGeneral .color4{
+    color: #111;
+    font-weight: bold;
+    font-size: 11px;
+    border-bottom: solid #000 1px;
+    padding-bottom: 10px;
+}
+
+#producto  .infoGeneral .descripcion{
+    color: #333;
+}
+
+#producto .infoGeneral .cambios::before{
+    content: "Hasta 30 días a través del eShop. El primer cambio no tiene costo";
+}
+
+#producto .subtitulo {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border-bottom: solid #111 1px;
+}
+
+#producto .btOscuro {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#producto .selectGroup .color,
+#producto .selectGroup .cantidad{
+    margin-left: 40px;
+}
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */ 
+/*===================================================================================*/
+
+#tiendas .titulo {
+    font-size: 27px;
+    text-transform: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#tiendas .barra
+{
+    margin-bottom: 0px;
+}
+
+
+#tiendas .menu a
+{
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #f5f4f2;
+}
+
+#tiendas .current a,
+#tiendas .menu a:hover
+{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+#tiendas .item .nombre
+{
+    font-weight: bold;
+    color: #111;
+}
+
+#tiendas .item .direccion,
+#tiendas .item .telefono
+{
+    color: #555;
+    font-size: 11px;
+}
+
+#tiendas .menu a
+{
+    padding-bottom: 4px;
+}
+
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+.btComprar {
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+    padding: 12px 30px;
+}
+
+.btComprar:hover {
+	background: #333 !important;
+}
+
+#checkout_carrito .color1,
+#checkout_carrito .color2 {
+    color: #555;
+}
+
+#checkout_carrito .paso span.color7 {
+    color: #000;
+}
+
+#checkout_carrito .paso.color8 span.color7 {
+    color: #fff;
+}
+
+#checkout_carrito .paso.color8 {
+    color: #000 !important;
+}
+
+#checkout_carrito .paso {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    text-transform: none;
+}
+
+#checkout_carrito .paso div {
+    color: #000;
+}
+    
+
+#checkout_carrito .paso span {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 51px;
+    background-image: url(../../../images/eshop/6/poligono_con_hover.png);
+    background-position: 0px -9px;
+    width: 69px;
+    height: 48px;
+    margin: 15px 0;
+    padding: 0;
+}
+
+#checkout_carrito .paso.color8 span {
+    background-position: 0px -80px;
+}
+
+
+#checkout_carrito .renglon .btLink span {
+    background-image: url(../../../images/eshop/9/btArrows.png);
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: red;
+}
+
+
+#checkout_carrito .items .item .nombre {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+
+#checkout_carrito .datos-adicionales .renglon input {
+    border: 1px solid #000 !important;
+    height: 19px;
+}
+
+#checkout_carrito .opciones {
+    background: #fff;
+}
+
+#checkout_carrito .items .item .columna .unitario {
+	color: #939393;
+	font-weight: bold;
+    font-size: 15px;
+}
+
+#checkout_carrito .items .item .columna .subtotal {
+	font-weight: bold;
+    font-size: 15px;
+}
+
+#checkout_carrito .items .item .cantidad {
+	margin-top: 0;
+}
+
+#checkout_carrito .btEliminar.eliminar {
+	font-size: 12px;
+    color: #fff;
+	background-color: #000;
+	padding: 12px 20px;
+}
+
+#checkout_carrito .barra .header {
+	color: #111;
+	font-weight: bolder;
+}
+
+#checkout_carrito .renglones .renglon span {
+	color: #111;
+	font-weight: bolder;
+} 
+
+#checkout_carrito .renglones .renglon .detalle {
+	font-weight: bolder;
+}
+
+#checkout_carrito .renglones .renglon .detalle span {
+	color: #333;
+	font-weight: normal;
+}
+
+#checkout_carrito .renglones .renglon a {
+	color: #000;
+}
+
+
+#checkout_carrito .renglones .renglon #goToPaso2,
+#checkout_carrito .renglones .renglon #goToPaso3 {
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 30px;
+}
+
+#checkout_carrito .renglones .renglon #goToPaso2:hover,
+#checkout_carrito .renglones .renglon #goToPaso3:hover {
+    background-color: #333;
+}
+
+#checkout_carrito .renglones .renglon #goToPaso2 span,
+#checkout_carrito .renglones .renglon #goToPaso3 span {
+    display: none;
+}
+#checkout_carrito .renglones .renglon.alto,
+#checkout_carrito .renglones .checkoutSubTotal {
+    border-bottom: 1px solid #DBDBDB;
+    border-style: dotted;
+}
+
+/*===================================================================================*/
+/*  INGRESO / REGISTRO                                                               */
+/*===================================================================================*/
+
+#ingresar .titulo {
+    color: #000;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#ingresar .MS-13 {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#ingresar input[type=text], #ingresar input[type=password] {
+    background: none !important;
+    border: 1px solid #000;
+    font-style: italic;
+}
+
+#ingresar label {
+    color: #222;
+}
+
+#ingresar .dd-select {
+    border: 1px solid #888 !important;
+}
+
+#ingresar .dd-options {
+    border: 1px solid #888 !important;
+}
+
+#olvidastePass input[type=text]
+{
+    border: 1px solid #888 !important;
+}
+
+#olvidastePass .btOscuro {
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    font-weight: bold !important;
+    text-transform: none;
+}
+
+#olvidastePass .btOscuro:hover {
+    background-color: #222;
+}
+    
+#soy_nuevo {
+    border: solid #000 1px;
+}
+
+#soy_nuevo .rincon {
+    display: none;
+}
+
+#ingresar #soy_nuevo .divisorH,
+#ingresar #soy_miembro .divisorH {
+    background-color: #000;
+}
+
+#ingresar .terminos {
+    font-style: italic;
+}
+
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#mi_cuenta .titulo
+{
+    font-size: 23px;
+    text-transform: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#devoluciones .step
+{
+    background-image: url("../../../images/eshop/9/poligono_con_hover_chico.png");
+    background-position: 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 113px;
+    width: 69px;
+    height: 45px;
+    line-height: 43px;
+    color: #000;
+}
+
+#devoluciones .step.selected
+{
+    background-position: 0px -71px;
+    color: #fff;
+}
+
+#devoluciones .MS-18 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#mi_cuenta .linea {
+    display: none;
+}
+
+#mi_cuenta #datosPersonales .campo input, #mi_cuenta #datosPersonales .campo2 input
+{
+    border: 1px solid #000000 !important;
+}
+
+#mi_cuenta #datosPersonales .sinCargar {
+    color: #555;
+}
+
+#mi_cuenta #datosPersonales .sinCargar a {
+    border-left: 1px solid #000;
+    color: #000;
+}
+
+#devoluciones .campo textarea
+{
+    border: 1px solid #000000 !important;
+}
+
+#mi_cuenta #devoluciones .dd-select {
+    border: 1px solid #000000 !important;
+}
+
+#mi_cuenta #devoluciones .dd-options
+{
+    border: 1px solid #000000 !important;
+}
+
+#mi_cuenta .customSelect {
+    border: 1px solid #000000;
+    background: none;
+}
+
+
+#devoluciones input[type=text],
+#devoluciones input[type=password]
+{
+    border: 1px solid #000000;
+}
+
+#consultaEnvio input[type=text]
+{
+    border: 1px solid #000000;
+}
+
+#verPedidos .MS-13,
+#mi_cuenta .MS-13 {
+    font-size: 13px;
+    color: #444;
+    font-weight: bold;
+}
+
+#verPedidos .MS-13.verde,
+#mi_cuenta .MS-13.verde {
+    color: green;
+}
+
+#verPedidos .MS-13.rojo,
+#mi_cuenta .MS-13.rojo {
+    color: red;
+}
+
+#mi_cuenta .panel {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+
+#mi_cuenta .panel .items .item {
+    font-size: 13px;
+    color: #666666;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+#mi_cuenta .panel .items .item.selected,
+#mi_cuenta .panel .items .item:hover
+{
+    color: #000;
+}
+
+#mi_cuenta .panel .items {    
+    padding: 10px 30px;
+}
+
+
+#desactivarCuenta .btOscuro {
+    padding-bottom: 12px;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido a {
+    color: #000;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido a:hover {
+    text-decoration: underline;
+}
+
+#verPedidos .titulo
+{
+    font-size: 22px;
+}
+
+#verPedidos .MS-18 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#verPedidos .items .item .datos .color1,
+#verPedidos .items .item .datos .color2 {
+    color: #111;
+}
+
+
+#verPedidos .btOscuro.color7,
+#mi_cuenta .btOscuro.color7 {
+    color: #fff;
+}
+
+#respuesta_consultaEnvio .color4 {
+    color: #444;
+}
+
+/*===================================================================================*/
+/*  CONSULTAS                                                                        */ 
+/*===================================================================================*/
+
+#consultas .titulo
+{
+	font-size: 23px;
+    text-transform: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#consultas .faqCategoria .header {
+    height: auto;
+    color: #000;
+    font-weight: bold;
+}
+
+#consultas .faqCategoria {
+    border-bottom: 1px solid #000;
+}
+
+#consultas .preguntas
+{
+	color: #666666;
+}
+
+#consultas .pregunta span {
+    color: #222;
+}
+
+#consultas .respuesta a {
+    color: #000;
+    font-weight: bold;
+}
+
+#consultas .faqCategoria .num
+{
+	background-image: url(../../../images/eshop/9/poligono_color.png);
+    color: #fff;
+    font-weight: bold;
+	width: 28px;
+	height: 22px;
+}
+
+#consultas .titleFaqCategoria:hover 
+{
+	color: #000;
+}
+
+#contacto .texto {
+    font-size: 12px; 
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea
+{
+	border: 1px solid #000;
+}
+
+#contacto form  input[type=file]::before {
+	border: 1px solid #000;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: #000;
+}
+
+#contacto form input[type=file]::before {
+    margin-top: 0px;
+}
+
+#contacto form  .dd-select {
+	border: solid 2px #cdcdcd !important;
+}
+
+#contacto form  .dd-options
+{
+	border: solid 2px #cdcdcd !important;
+}
+
+#contacto form .campo {
+    font-weight: bold !important;
+    color: #000 !important;
+}
+
+#contacto .adjuntos {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#contacto .adjuntos .MS-13 {
+    font-weight: bold;
+}
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito .items  .dd-select {
+    border: 1px solid #000 !important;
+}
+
+#checkout_carrito .items  .dd-options {
+    border: 1px solid #000 !important;
+}
+
+#checkout_carrito .form  .dd-select {
+    border: 1px solid #000 !important;
+}
+
+#checkout_carrito .form  .dd-options {
+    border: 1px solid #000 !important;
+}
+
+#checkout_carrito .form  input[type=text],#checkout_carrito .form  input[type=password] {
+    border: 1px solid #000 !important;
+}
+
+#checkout_carrito .titulo {
+    font-weight: bold;
+    color: #000;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#estatica .titulo {
+    font-size: 23px;
+    text-transform: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#terminos .color5,
+#terminos .color4 {
+    color: #333;
+}
+
+#terminos .texto {
+    font-size: 11px;
+}
+
+#terminos .titulo {
+    font-size: 23px;
+    text-transform: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#terminos .subtitulo {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#terminos .menu a,
+#terminos .menu span
+{
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+#terminos .menu li:hover a
+{
+    color: #000;
+    border-bottom: solid #000 2px; 
+}
+
+#terminos .detalle {
+    font-size: 11px;
+}
+
+#terminos .subtitulo {
+    border-top: 1px solid #000;
+}
+
+#acerca .banner {
+    margin-bottom: 40px;
+}
+
+#acerca .titulo {
+    margin: 0 0 50px 0;
+    font-size: 38px;
+    color: #000;
+    font-weight: bold;
+}
+
+#acerca .texto {
+    font-size: 12px;
+}
+
+#acerca .italic {
+    font-size: 13px;
+    font-weight: bold;
+}

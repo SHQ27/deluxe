@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           zona
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          zona
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+          title: Zonas
+          display: [id_zona, denominacion]
+          
+          object_actions:
+            go_to_costos:  { label: Gestión de Costos }
+            _edit:      ~
+            _delete:    ~
+            
+      filter:
+          class: false
+      form:    ~
+      edit:
+          title: Edicion de Zona "%%denominacion%%"
+      new:
+          title: Nueva Zona

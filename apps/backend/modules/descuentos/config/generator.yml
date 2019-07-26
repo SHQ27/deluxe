@@ -1,0 +1,50 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           descuento
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          descuento
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+
+    config:
+      actions: ~
+      fields:
+        id_tipo_descuento:  { label: Tipo Descuento }
+        vigencia_desde: { date_format: dd/MM/yy }
+        vigencia_hasta: { date_format: dd/MM/yy }
+        id_eshop: { label: eShop }
+        eshop: { label: eShop }
+        tipo_restriccion_marca: { label: Forma de Restricción }
+        tipo_restriccion_campana: { label: Forma de Restricción }
+        tipo_restriccion_categoria: { label: Forma de Restricción }
+        tipo_restriccion_familia_color: { label: Forma de Restricción }
+        tipo_restriccion_tag: { label: Forma de Restricción }
+        tipo_restriccion_producto: { label: Forma de Restricción }
+      list:    
+          title: Descuentos
+          display: [id_descuento, codigo, tipo_descuento, eshop, valor, vigencia_desde, vigencia_hasta, total, utilizados]
+          max_per_page: 150
+      filter:
+        display: [codigo, id_tipo_descuento, vigencia_desde, vigencia_hasta, id_eshop]
+      form:
+          display:
+            "Datos del descuento": [id_eshop, codigo, id_tipo_descuento, _compra_minima, valor, vigencia_desde, vigencia_hasta, total, es_interno, recibe_premio]
+            "Restriccion por marca": [tipo_restriccion_marca, marca]
+            "Restriccion por campaña": [tipo_restriccion_campana, campana]
+            "Restriccion por categorias": [tipo_restriccion_categoria, categoria]
+            "Restriccion por familia de color": [tipo_restriccion_familia_color, familia_color]
+            "Restriccion por tag": [tipo_restriccion_tag, tag]
+            "Restriccion del monto total del pedido (Si no hay restriccion dejar vacio el campo)": [monto_minimo, monto_maximo]
+            "Restriccion para outlet": [solo_outlet]
+            "Restriccion de Productos": [tipo_restriccion_producto, _asignacion]
+            "Resumen de uso del descuento": [_uso]
+      edit:
+          title: Editando Descuento
+      new:
+          title: Nuevo Descuento

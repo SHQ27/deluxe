@@ -1,0 +1,2 @@
+all:
+  javascripts:    [../helpers/miCuentaHelper.js, miCuenta.js]

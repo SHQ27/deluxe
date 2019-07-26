@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           productoCategoria
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_categoria
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_producto_categoria: { label: id }
+          id_producto_genero: { label: Género }
+          producto_genero: { label: Género }
+      list:
+          title: Categorias
+          display: [id_producto_categoria, producto_genero, denominacion]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Edicion de Categoria "%%denominacion%%"
+      new:
+          title: Nueva Categoria

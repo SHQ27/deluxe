@@ -1,0 +1,5 @@
+banner_swf:
+  path: /banner
+  deleteable: false
+  width: 292
+  height: 580

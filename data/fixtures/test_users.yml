@@ -1,0 +1,61 @@
+usuario:
+  usuario_1:
+    id_usuario: 100
+    nombre: Testname
+    apellido: Testlastname
+    sexo: h
+    email: test@pragmore.com
+    password: 123456
+    telefono: 444-4444
+    celular: ''
+    pais: pais_AR
+    fecha_nacimiento: '1980-10-28'
+    activo: true
+    fecha_confirmacion: ''
+    fecha_baja: ''
+    fecha_alta: '2011-08-15 00:54:42'
+  usuario_2:
+    id_usuario: 200
+    nombre: Jane
+    apellido: Doe
+    sexo: m
+    email: jane.doe@gmail.com
+    password: 123456
+    telefono: ''
+    celular: ''
+    pais: pais_AR
+    fecha_nacimiento: '1980-10-28'
+    activo: true
+    fecha_confirmacion: ''
+    fecha_baja: ''
+    fecha_alta: '2011-08-15 00:54:42'
+  
+invitacion:  
+  invitacion_1:
+    id_usuario: 100
+    email_invitado: jane.doe@gmail.com
+    hash: abcd1234
+    fue_enviada: ''
+    id_usuario_invitado: 200
+  invitacion_2:
+    id_usuario: 100
+    email_invitado: jhondoe@hotmail.com
+    hash: abcdefg1234
+    fue_enviada: ''
+    
+
+bonificacion:
+  bonificacion_1:
+    id_bonificacion: 1
+    id_usuario: 100
+    id_tipo_descuento: MFIJO
+    id_tipo_bonificacion: INVIT
+    vencimiento: '2011-11-15'
+    valor: 5 
+  bonificacion_2:
+    id_bonificacion: 2
+    id_usuario: 100
+    id_tipo_descuento: MFIJO
+    id_tipo_bonificacion: INVIT
+    vencimiento: '2011-11-10'
+    valor: 5

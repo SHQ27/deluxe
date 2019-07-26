@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           devolucion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          devolucion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    config:
+      actions: ~
+      fields:
+        fecha: { label: Fecha, date_format: yyyy-MM-dd HH:mm }
+        fecha_cierre: { label: Fecha de Proc., date_format: yyyy-MM-dd HH:mm }
+        id_devolucion: { label: Id }
+        id_bonificacion: { label: Id Bonif. }
+        monto_devolver: { label: Monto a Devolver }
+        id_eshop: { label: eShop }
+        eshop: { label: eShop }
+      list:    
+          title: Devoluciones
+          display: [id_devolucion, fecha, eshop, _usuario, _tipo_envio, _tipo_credito, _estado, _id_bonificacion, _monto_devolver, codigo_envio, fecha_cierre]
+          batch_actions:
+            marcaRecibido:  { label: Marcar como recibido }
+      filter:
+          display: [buscador, marca, id_pedido, fecha, estado, id_bonificacion, motivo, id_eshop]
+      form:
+          display: [id_devolucion, tipo_envio, tipo_credito, fecha, id_usuario]
+      edit:
+          title: Editando Devolucion Nº %%_id%%
+      new: ~

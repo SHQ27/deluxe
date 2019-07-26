@@ -1,0 +1,5 @@
+editSuccess:
+  javascripts:    [formEshopLookbook.js]
+
+newSuccess:
+  javascripts:    [formEshopLookbook.js]

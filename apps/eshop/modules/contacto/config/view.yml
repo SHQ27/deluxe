@@ -1,0 +1,2 @@
+indexSuccess:
+  javascripts:    [SelectDependiente.js, ../helpers/contactoHelper.js, contacto.js] 

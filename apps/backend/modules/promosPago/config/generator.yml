@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           promoPago
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          promo_pago
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_forma_pago: { label: Forma de Pago }
+          vigencia_desde: { label: Vigencia Desde, date_format: dd/MM/yyyy HH:mm }
+          vigencia_hasta: { label: Vigencia Hasta, date_format: dd/MM/yyyy HH:mm }
+          id_eshop: { label: eShop }
+      list:
+          title: Promociones de Pago
+          display: [denominacion, forma_pago, vigencia_desde, vigencia_hasta, eshop, activo]
+      filter:
+          display: [denominacion, id_forma_pago, id_eshop, activo]
+      form:
+          display:
+            "Datos de la Promocion de Pago": [id_promo_pago,, denominacion, id_eshop, id_forma_pago, vigencia_desde, vigencia_hasta, tarjeta, descuento_tipo, descuento_porcentaje, definicion_cuotas, dias_de_semana, identificador, activo]
+            "Imagen": [_imagen]
+      edit:
+          title: Edicion de Promocion de Pago "%%denominacion%%"
+      new:
+          title: Nueva Promocion de Pago

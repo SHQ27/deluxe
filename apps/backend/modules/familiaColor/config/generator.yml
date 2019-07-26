@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           familiaColor
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          familia_color
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+          title: Familia de Colores
+          display: [id_familia_color, denominacion]
+      filter:  ~
+      form:
+          display:
+            "Datos": [id_familia_color, denominacion]
+            "Imagen": [_imagen]
+      edit:
+          title: Edicion de Familia de Colores "%%denominacion%%"
+      new:
+          title: Nueva Familia de Colores

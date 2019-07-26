@@ -1,0 +1,8 @@
+detailsSuccess:
+  javascripts:    [lib/jquery.infinite-scroll.js, contador.js, ofertaDetalle.js, filtro.js, waitList.js]
+
+
+default:
+  metas:
+    title: "Zapatos, Ropa y Accesorios - Tienda de Moda Online - Ofertas Tiempo Limitado"
+    description: "DeluxeBuys te brinda ofertas por tiempo limitado en moda y tendencia con descuentos de hasta el 70%. Miles de vestidos, remeras, camisas, carteras, zapatos, accesorios y diseño para la mujer y el hombre. Descubrí lo último de ropa en internet"

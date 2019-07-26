@@ -1,0 +1,14 @@
+paso1:
+  is_secure: false
+  
+addProduct:
+  is_secure: false
+    
+update:
+  is_secure: false
+  
+removeProducto:
+  is_secure: false
+    
+all:
+  is_secure: true

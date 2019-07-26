@@ -1,0 +1,1 @@
+<?php echo waitingListTable::getInstance()->listByIdProductoItem( $producto_item->getIdProductoItem() ); ?>

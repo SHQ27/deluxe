@@ -1,0 +1,1 @@
+<?php echo productoTable::getInstance()->getVentasTotales($producto); ?>

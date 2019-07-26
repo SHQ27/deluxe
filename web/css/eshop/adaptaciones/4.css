@@ -1,0 +1,966 @@
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+body {
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.linea {
+    background-image: url(../../../images/eshop/4/pattern.png);
+    height: 10px;
+}
+
+.linea .triangulos {}
+
+.divisor_v {
+    border-left: 1px solid #e3e3e3;
+    background-color: none;
+}
+
+.flex-control-paging li a {
+	background-image: url(../../../images/eshop/4/nav_button.png);
+}
+
+.flex-direction-nav .flex-prev { 
+	background-image: url(../../../images/eshop/4/slider_left.png);
+}
+.flex-direction-nav .flex-next { 
+	background-image: url(../../../images/eshop/4/slider_right.png);
+}
+.flex-direction-nav .flex-prev:hover { 
+	background-image: url(../../../images/eshop/4/slider_left_h.png);
+}
+.flex-direction-nav .flex-next:hover { 
+	background-image: url(../../../images/eshop/4/slider_right_h.png);
+}
+
+.btOscuro {
+    background-color: #333;
+}
+
+.btOscuro:hover {
+    background-color: #444;
+}
+
+.customSelect {
+    border: solid #878787 1px;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #d0a06d;
+}
+
+.titulo
+{
+    color: #000;
+}
+
+.scrollToTop {
+    background: url(../../../images/eshop/4/gototop.png);
+}
+
+.rojo {
+    color: red;
+}
+
+.color-link {
+    color: #000;
+    font-weight: bold;
+}
+
+.color-link:hover {
+    text-decoration: underline;
+}
+
+#toolbar_up {
+    font-size: 12px;
+}
+
+
+.ui-dialog.suscripcion {
+    background: #666;
+}
+
+.ui-widget-content.suscripcion {
+    border: 1px solid #333;
+}
+
+#home-modal .logo
+{
+	background-image: url(../../../images/eshop/4/logo_white.png);
+    width: 226px;
+    height: 24px;
+    margin: 20px auto 25px auto;
+}
+
+
+#home-modal .campo {
+    font-weight: bold;
+    color: #000;
+}
+
+#home-modal .linea {
+    opacity: 0.4;
+}
+
+
+#home-modal
+{
+    height: 500px;
+	background-image: url(../../../images/eshop/4/home_modal.jpg);
+    background-color: #000;
+}
+
+#devoluciones2 {
+    background-image: url(../../../images/eshop/4/devolucion_2.png);
+}
+
+#cambios2 {
+    background-image: url(../../../images/eshop/4/cambio_2.png);
+}
+
+#envios2 {
+    background-image: url(../../../images/eshop/4/envio_2.png);
+}
+
+/*===================================================================================*/
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.OS
+{
+	font-family: Arial;
+}
+
+.OS-9
+{
+	font-family: Arial;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.OS-11, .dd-select, #producto .dd-option
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 400;
+	color: #666;
+}
+
+.OS-12
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.OS-13
+{
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.OS-14
+{
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.OS-18
+{
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS
+{
+	font-family: Arial;
+	font-weight: 400;
+}
+
+.MS-9
+{
+	font-family: Arial;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.MS-13
+{
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.MS-15
+{
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.MS-18
+{
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS-23
+{
+	font-family: Arial;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+.MS-24
+{
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.MS-32
+{
+	font-family: Arial;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.MS-39
+{
+	font-family: Arial;
+	font-size: 39px;
+	font-weight: 400;
+}
+
+.MS-72
+{
+	font-family: Arial;
+	font-size: 72px;
+	font-weight: 400;
+}
+
+.MS-78
+{
+	font-family: Arial;
+	font-size: 78px;
+	font-weight: 400;
+}
+
+
+.color1 { color: #333; }
+.color2 { color: #333; }
+.color3, #producto .dd-select { color: #444; }
+.color4 { color: #222; }
+.color5 { color: #333; }
+.color6 { color: #111; }
+.color7 { color: #fff; }
+.color8 { color: #d0a06d; }
+.color9 { color: #999; }
+.color10 { color: #878787; }
+.color11 { color: #858585; }
+.color12 { color: #000; }
+.color13 { color: #ccc; }
+
+.hcolor1:hover { color: #303030; }
+.hcolor2:hover { color: #333; }
+.hcolor3:hover, #producto .dd-select { color: #444; }
+.hcolor4:hover { color: #666666; }
+.hcolor5:hover { color: #797979; }
+.hcolor6:hover { color: #b9b9bd; }
+.hcolor7:hover { color: #fff; }
+.hcolor8:hover { color: #d0a06d; }
+.hcolor9:hover { color: #999; }
+.hcolor10:hover { color: #878787; }
+.hcolor11:hover { color: #858585; }
+.hcolor12:hover { color: #ff5b6d; }
+.hcolor13:hover { color: #ccc; }
+
+
+/*===================================================================================*/
+/*  HEADER                                                                           */ 
+/*===================================================================================*/
+
+
+#toolbar_up {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#toolbar_up .item span {
+    background-color: #000;
+    color: #fff;
+    line-height: 12px;
+}
+
+#toolbar_up  .items .lIzq {
+    border-left: 1px solid #eaeaea;
+}
+
+#toolbar_up  .items .registrarse {
+    color: #fff;
+}
+
+#toolbar_up .items .item {
+    line-height: 12px;
+}
+
+#toolbar_up .items .item.semiBold {
+    font-weight: normal !important;
+}
+
+#toolbar_up .items .item {
+    
+}
+
+
+#toolbar_up .items .item:hover {
+    color: #000;
+}
+
+.logo a {
+    background-image: url(../../../images/eshop/4/logo.png);
+    width: 226px;
+    height: 24px;
+}
+
+#nav .menu a,
+#nav .menu span
+{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    color: #111;
+    border-bottom: none;
+    background: none no-repeat center 0;
+    padding-top: 7px;
+    padding-bottom: 0px;
+}
+
+#nav .menu .current a, #nav .menu a:hover,
+#nav .menu .current span, #nav .menu span:hover
+{
+    color: #d0a06d;
+    background: url(../../../images/eshop/4/nav_hover.png) no-repeat center 0;
+}    
+
+#nav .menu li .submenu li a,
+#nav .menu li .submenu li a:hover {
+    background: none;
+    font-size: 12px;
+}
+
+.desplegable .titulo
+{
+    font-weight: bold;
+	color: #000;
+}
+
+#onlineBag ul li .nombre a
+{
+	color: #666;
+}
+
+#onlineBag ul li .price {
+    color: #d0a06d;
+}
+
+#onlineBag .total
+{
+	color: #d0a06d;
+}
+
+#onlineBag .d_btVerCarro
+{
+    font-weight: bold;
+    background-color: #000;
+	color: #fff;
+}
+
+#onlineBag .d_btVerCarro:hover
+{
+	background-color: #d0a06d;
+}
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */ 
+/*===================================================================================*/
+
+#notes #devoluciones {
+    background-image: url(../../../images/eshop/4/devolucion.png);
+}
+
+#cambio {
+    background-image: url(../../../images/eshop/4/cambio.png);
+}
+
+#envios {
+    background-image: url(../../../images/eshop/4/envio.png);
+}
+
+#notes .item .titulo {
+    color: #000;
+}
+
+#notes .item .texto {
+    font-size: 12px;
+}
+
+#network {
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+#network .item .titulo {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#info .social p {
+    color: #000;
+}
+
+#info .titulo {
+    color: #000;
+}
+
+#info .datos .lista .items .item a,
+#info .datos .lista .items .item, #info .texto {
+    color: #929292;
+    font-size: 12px;
+}
+
+#info .datos .lista .items .item:hover {
+    color: #222;
+}
+
+#info #newsletterModule input {
+    border: 1px solid #898989;
+}
+
+#footer {
+    border-top: 1px solid #e3e3e3;
+}
+
+#facebook { background-image: url(../../../images/eshop/4/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/4/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/4/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/4/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/4/snapchat.png); }
+#facebook:hover { background-image: url(../../../images/eshop/4/facebook_h.png); }
+#twitter:hover { background-image: url(../../../images/eshop/4/twitter_h.png); }
+#instagram:hover { background-image: url(../../../images/eshop/4/instagram_h.png); }
+#youtube:hover { background-image: url(../../../images/eshop/4/youtube_h.png); }
+#snapchat:hover { background-image: url(../../../images/eshop/4/snapchat_h.png); }
+
+#info .boton {
+    background-color: #000;
+    background-image: url(../../../images/eshop/4/bt_arrow.png);
+    border-left: solid 1px #000;
+}
+
+#footer .fiscal {
+    background-image: url(../../../images/eshop/4/fiscal.jpg);
+}
+
+#footer .powered {
+    background-image: url(../../../images/eshop/4/powered.png);
+}
+
+/*===================================================================================*/
+/*  HOME                                                                             */ 
+/*===================================================================================*/
+
+
+#texto .titulo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active,
+.seccion.bannerCampaign .flex-control-nav li a.flex-active {
+    background-position: 0px -13px
+}
+
+.seccion.TEXTO .titulo {
+    font-family: Arial;
+    font-size: 24px;
+}
+
+#destacados .items .item span {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#destacados .items .item span b {
+    font-weight: bold;
+}
+
+
+.flexslider .slides>li .producto span {
+    font-family: Arial;
+    font-weight: normal;
+    padding: 12px 20px;
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.flexslider .slides>li:hover .producto:before {
+    background-image: url(../../../images/eshop/4/hover_product.png);
+    bottom: 0;
+}
+
+.flexslider .slides>li:hover .producto:after {
+    content: "";
+    background-image: url(../../../images/eshop/4/red_up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 99;
+}
+
+.flexslider .slides>li .precio {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.flexslider .slides>li .precioViejo {
+    color: #595959;
+}
+
+.flexslider .slides>li .nombre,.flexslider .slides>li .codigo {
+    font-weight: bold;
+}
+
+
+/*===================================================================================*/
+/*  MODAL HOME                                                                       */ 
+/*===================================================================================*/
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+	border: solid #878787 1px;
+}
+
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#productos .titleTag:before {
+    content: "";
+}
+
+#productos .titleTag:after {
+    content: "";
+}
+
+#productos .muestra .resultados .resultado:hover .producto:before {
+    background-image: url(../../../images/eshop/4/hover_product.png);
+    background-position: center;
+}
+
+#productos .muestra .resultados .resultado .descuento {
+    background-color: #000;
+}
+
+#productos .muestra .resultados .resultado .nombre {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#productos .acordion .titulo:before {
+    margin-top: 2px;
+    background-image: url(../../../images/eshop/4/accordion_open.png);
+}
+
+#productos .acordion .titulo.closed:before {
+    background-image: url(../../../images/eshop/4/accordion_closed.png);
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 1px solid #ccc;
+}
+
+#productos .filtro .actual .item
+{
+    line-height: 12px;
+}
+
+#productos .dd-pointer {
+    background-image: url(../../../images/eshop/4/accordion_closed.png);
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#probadorOnline .campo input
+{
+	background-color: #f4f3f2;
+}
+
+#producto .customSelect {
+    background: #f4f3f2;
+    border: 0;
+}
+
+
+#producto .barra .derecha {
+    text-transform: uppercase;
+}
+
+#producto .nombre {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#producto .contFotos .thumb:hover,#producto .contFotos .thumb.selected {
+    border-bottom: 1px solid #fff;
+}
+
+#producto .contFotos #foto_grande span {
+    background-color: #000;
+}
+
+
+#producto .subtitulo {
+    font-weight: bold;
+}
+
+#producto .infoGeneral .MS-13 {
+    font-weight: bold;
+    color: #111;
+}
+
+#probadorOnline .ui-icon-triangle-1-n {
+    background-image: url(../../../images/eshop/4/accordion_open.png) !important;
+}
+
+#probadorOnline .ui-icon-triangle-1-s {
+    background-image: url(../../../images/eshop/4/accordion_closed.png) !important;
+}
+
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */ 
+/*===================================================================================*/
+
+#tiendas .titulo
+{
+    color: #666666;
+}
+
+#tiendas .menu a
+{
+    color: #333;
+    border-bottom: 2px solid #f5f4f2;
+}
+
+#tiendas .current a,
+#tiendas .menu a:hover
+{
+    color: #333;
+    border-bottom: 2px solid #555;
+}
+
+#tiendas .item .nombre
+{
+    color: #000;
+    font-size: 14px;
+}
+
+#tiendas .item .direccion,
+#tiendas .item .telefono
+{7
+    color: #878787;
+    font-size: 12px;
+}
+
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+#checkout_carrito .titulo {
+    font-weight: bold;
+    font-size: 27px;
+}
+
+#checkout_carrito .paso span {
+
+    background-image: url(../../../images/eshop/4/poligono_con_hover.png);
+    width: 70px;
+    height: 55px;
+}
+
+#checkout_carrito .header {
+    font-weight: bold;
+}
+
+#checkout_carrito .paso {
+    font-weight: bold;
+}
+
+#checkout_carrito.paso1 .customSelect{
+    background: #f4f3f2;
+    border: 0;
+    font-weight: bold;
+}
+
+
+#checkout_carrito .items .item .nombre,
+#checkout_carrito .items .item .unitario,
+#checkout_carrito .items .item .subtotal,
+#checkout_carrito .total{
+    font-weight: bold;
+}
+
+#checkout_carrito .renglon .btLink span {
+    background-image: url(../../../images/eshop/4/btArrows.png);
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: red;
+}
+
+#checkout_carrito .btComprar {
+    background-color: #000;
+}
+
+#checkout_carrito .datos-adicionales .renglon input {
+    border: solid #878787 1px;
+    height: 19px;
+}
+
+/*===================================================================================*/
+/*  INGRESO / REGISTRO                                                               */
+/*===================================================================================*/
+
+#ingresar input[type=text],#ingresar input[type=password] {
+    border: solid #878787 1px;
+}
+
+#ingresar .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#ingresar .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#olvidastePass input[type=text]
+{
+    border: solid #878787 1px;
+}
+
+#soy_nuevo .rincon {
+    border-top: 14px solid #000;
+    border-right: 14px solid #000;
+    border-left: 14px solid #fbfbfb;
+    border-bottom: 14px solid #fbfbfb;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#devoluciones  .step
+{
+	background-image: url(../../../images/eshop/4/poligono_con_hover_chico.png);
+	width: 58px;
+	height: 45px;
+	font-weight: bold;
+}
+
+#mi_cuenta #datosPersonales .campo input, #mi_cuenta #datosPersonales .campo2 input
+{
+	border: solid #878787 1px;
+}
+
+#devoluciones .campo textarea
+{
+	border: solid #878787 1px;
+}
+
+#mi_cuenta #devoluciones .dd-select {
+	border: solid 2px #cdcdcd !important;
+}
+
+#mi_cuenta #devoluciones .dd-options
+{
+	border: solid 2px #cdcdcd !important;
+}
+
+
+#devoluciones input[type=text],
+#devoluciones input[type=password]
+{
+	border: solid #878787 1px;
+}
+
+#consultaEnvio input[type=text]
+{
+	border: solid #878787 1px;
+}
+
+#mi_cuenta .panel .items .item.selected
+{
+	color: #d0a06d;
+}
+
+#mi_cuenta .panel .items {
+    background: #f9f9f9;
+}
+
+
+#mi_cuenta .campo,
+#mi_cuenta .campo div,
+#mi_cuenta #datosPersonales .campo2,
+#mi_cuenta #datosPersonales .provincia {
+    font-weight: bold;
+}
+
+#mi_cuenta #datosPersonales .customSelect .select {
+    font-weight: normal;
+}
+
+#mi_cuenta .subtitulo {
+    font-weight: bold;
+}
+
+#mi_cuenta .subtotal {
+    font-weight: bold;
+}
+
+
+#devoluciones #devoluciones_historial .c {
+    font-weight: bold;
+}
+
+/*===================================================================================*/
+/*  CONSULTAS                                                                        */ 
+/*===================================================================================*/
+
+#consultas .titulo
+{
+	color: #000;
+	font-size: 26px;
+}
+
+#consultas .preguntas
+{
+	color: #666666;
+}
+
+#consultas .faqCategoria .num
+{
+	background-image: url(../../../images/eshop/4/poligono_color.png);
+	width: 28px;
+	height: 22px;
+}
+
+#consultas .faqCategoria .header {
+    font-weight: bold;
+}
+
+#consultas .titleFaqCategoria:hover 
+{
+	color: #000;
+}
+
+#contacto .texto {
+    font-size: 12px; 
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea
+{
+	border: solid #878787 1px;
+}
+
+#contacto form  input[type=file]::before {
+	border: solid #878787 1px;
+}
+
+#contacto form  .dd-select {
+	border: solid 2px #cdcdcd !important;
+}
+
+#contacto form  .dd-options
+{
+	border: solid 2px #cdcdcd !important;
+}
+
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito .items  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .items  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  input[type=text],#checkout_carrito .form  input[type=password] {
+    border: solid #878787 1px;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#terminos .menu li {
+    margin: 10px 15px;
+    font-weight: bold;
+}
+
+#terminos .texto {
+    font-size: 12px;
+}
+
+#terminos .color4 {
+    color: #666;
+}
+
+#terminos .subtitulo {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+#terminos .detalle {
+    font-size: 12px;
+}
+
+#acerca .banner .grid {
+    background: url(../../../images/eshop/4/trama_banners.png) repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}

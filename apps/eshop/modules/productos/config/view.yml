@@ -1,0 +1,8 @@
+listadoSuccess:  
+  javascripts:    [lib/jquery.infinite-scroll.js, productoListados.js, filtro.js]
+  
+listaTagSuccess:  
+  javascripts:    [lib/jquery.infinite-scroll.js, productoListados.js, filtro.js]
+
+detalleSuccess:
+  javascripts:    [../helpers/productoDetalleHelper.js, productoDetalle.js]

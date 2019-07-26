@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ncredito
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ncredito
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+      fields:  ~
+      list:
+        title: Notas de Crédito
+        display: [comprobante, cae, cae_vencimiento, resultado, importe, entorno]
+        max_per_page: 30
+        actions: {}
+        batch_actions: {}
+        object_actions: {}
+        sort:   [id_ncredito, desc]
+      filter:
+        display: [id_pedido, entorno, comprobante, fecha_emision]
+      form:    ~

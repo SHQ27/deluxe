@@ -1,0 +1,1 @@
+<?php echo $producto_item->getProducto()->getMarca(); ?>

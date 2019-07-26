@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           bonificacion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          bonificacion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_usuario:  { label: Usuario }
+          fecha_alta: { label: Fecha Alta, date_format: dd/MM/yyyy HH:mm }
+          id_tipo_descuento:  { label: Tipo Descuento }
+          id_tipo_bonificacion:  { label: Tipo Bonificacion }
+      list:    
+          title: Bonificaciones
+          display: [id_bonificacion, usuario, tipo_descuento, fecha_alta, valor, fue_utilizada, _vencida]
+          table_method: retrieveBackendList
+      filter:
+        display: [email_usuario, id_tipo_descuento, id_tipo_bonificacion, valor, fue_utilizada, vencimiento, es_interna, fecha_alta]
+      edit:
+          title: Editando Bonificación
+          display:          
+            "Datos de la Bonificación": [email_usuario, id_tipo_descuento, id_tipo_bonificacion, valor, vencimiento, observaciones]
+      new:
+          title: Nueva Bonificación
+          display:          
+            "Datos de la Bonificación": [email_usuario, id_tipo_descuento, id_tipo_bonificacion, valor, vencimiento, observaciones]

@@ -1,0 +1,18 @@
+
+/*===================================================================================*/
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.regular { font-weight: 400; }
+.italic { font-style: italic; }
+.bold, #productos .dd-select { font-weight: 700; }
+
+.lh15 { line-height: 15px; }
+.lh16, .dd-select, #producto .dd-option { line-height: 16px; }
+.lh18 { line-height: 18px; }
+.lh19 { line-height: 19px; }
+.lh21 { line-height: 21px; }
+
+.alignR { text-align: right; }
+.alignC { text-align: center; }
+.floatR { float: right; }

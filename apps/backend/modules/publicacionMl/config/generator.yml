@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           publicacionMl
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          publicacion_ml
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          item_id: { label: Id en ML }
+          fecha_inicio: { label: Fecha Inicio, date_format: dd/MM/yyyy HH:mm }
+          fecha_fin: { label: Fecha Baja, date_format: dd/MM/yyyy HH:mm }
+          id_producto_genero: { label: Género }
+          id_producto_categoria: { label: Categoria }
+          id_marca: { label: Marca }
+          status_ml: { label: Status en ML }          
+      list:
+          title: Publicaciones en Mercado Libre
+          display: [_id_producto, _imagen, _denominacion, fecha_inicio, fecha_fin, _vigente, item_id, status_ml]
+          batch_actions:
+            cerrar:  { label: Cerrar Publicaciones }
+            eliminar:  { label: Eliminar Articulos en ML }
+      filter:
+        display: [codigo, denominacion, id_producto_genero, id_producto_categoria, id_marca, vigente, status_ml, intervencionManual]
+      form: ~
+      edit: ~
+      new: ~

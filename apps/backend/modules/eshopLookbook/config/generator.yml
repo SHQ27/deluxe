@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           eshopLookbook
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          eshop_lookbook
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_eshop_lookbook:  { label: Id }
+          url:  { label: URL }          
+      list:    
+          title: Lookbooks del eShop
+          display: [id_eshop_lookbook, _imagen, denominacion, activo]
+          batch_actions:
+            activar:  { label: Activar Selecionados }
+            desactivar:  { label: Desactivar Selecionados }
+      filter:
+        display: [denominacion, activo]
+      form:
+          display: 
+            "Datos del Lookbok": [denominacion, texto,  activo]
+            "Productos Asociados": [_asignacion]
+            "Imagen del Lookbok": [_imagen_form]
+      edit:
+          title: Edición de Lookbook del eShop
+      new:
+          title: Nuevo imagen de Lookbook del eShop

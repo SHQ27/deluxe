@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           productoItem
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          control_stock
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+      fields:
+          no_pagados: { label: No Pag. }
+          pagados: { label: Pag. }
+          entregados: { label: Ent. }
+          stock: { label: STK }
+          stock_limite: { label: STK Lim. }
+      list:
+          display: [_imagen, _marca, _diversidad, _codigo, _denominacion, _costo, _talle, _color, _no_pagados, _pagados, _entregados, _stock_limite, _waitlist, _stock]
+          title: Control de Stock
+          max_per_page: 50
+          batch_actions:
+            descargarReposicion:  { label: Planilla de Reposición - Descargar }
+            descargarControlStockActual:  { label: Planilla de Control de Stock Actual - Descargar }
+      filter: ~
+      form: ~
+      edit: ~
+      new: ~

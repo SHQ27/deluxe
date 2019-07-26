@@ -1,0 +1,78 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           producto
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+      fields:
+          id_producto: { label: Id }
+          id_producto_categoria: { label: Categoria }
+          id_producto_genero: { label: Genero }
+          producto_categoria: { label: Categoria }
+          id_marca: { label: Marca }
+          id_talle_set:  { label: Set de Talles }
+          sticker:  { label: Sticker }
+          stock_permanente:  { label: Stock en <br/>Perm. }
+          stock_campana:  { label: Stock en <br/>Campaña }
+          stock_outlet:  { label: Stock en<br/>Outlet }
+          id_producto_sticker:  { label: Sticker }
+          tiene_categoria_ml:  { label: Tiene Categoria de ML }
+          esta_publicado_ml:  { label: Está Publicado en ML }
+          id_eshop: { label: eShop }
+      list:
+          title: Productos
+          display: [_imagen, id_producto, producto_categoria, denominacion, precio_deluxe, costo, _markup, _ventas_totales, marca, _origen, stock_permanente_calculado, stock_campana_calculado, stock_outlet_calculado, stock_refuerzo_calculado, activo, _talle_set]
+          max_per_page: 20          
+          object_actions:
+            _edit:      ~
+            _delete:    ~
+          batch_actions:
+            activar:  { label: Activar Selecionados }
+            desactivar:  { label: Desactivar Selecionados }
+            esOutlet:  { label: Pasar a Outlet }
+            noEsOutlet:  { label: Quitar de Outlet }
+            destacarHomeEshop:  { label: Destacar - Home eShop }
+            destacarArriba:  { label: Destacar - Ubicar arriba }
+            destacarMedio:  { label: Destacar - Ubicar al medio }
+            destacarAbajo:  { label: Destacar - Ubicar abajo }
+            quitarDestacado:  { label: Quitar destacado }
+            changeStock:  { label: Stock - Editar }
+            changePrice:  { label: Precios - Editar }
+            mostrarPrecioLista:  { label: Precio de Lista - Mostrar }
+            ocultarPrecioLista:  { label: Precio de Lista - Ocultar }
+            seleccionSetTalle: { label: Set de Talle - Editar }
+            seleccionSticker: { label: Sticker - Editar }
+            seleccionEshop: { label: eShop - editar }      
+            descargarArchivosImportacion2p2:  { label: Descargar Archivos para el paso 2 de la importacion en 2 pasos }
+            setCategoriaML: { label: Set Categoria de Mercado Libre }
+            publicarML: { label: Publicar en Mercado Libre } 
+      filter:
+          display: [codigo, denominacion, id_marca, id_producto_genero, campana, id_producto_categoria, es_outlet, activo, stock, tags, tiene_categoria_ml, esta_publicado_ml, id_eshop]
+      form:
+          display:
+            "Información descriptiva del producto": [denominacion, descripcion, info_adicional, id_producto_categoria, id_marca, _id_eshop, tags, id_producto_sticker, destacar, _es_outlet, id_talle_set, activo]
+            "Información cuantitativa del producto": [precio_lista, mostrar_precio_lista, precio_normal, precio_outlet, costo, peso]
+            "Imagenes": [imagenes, _administrar_imagenes]
+            "Stock disponible para cada talle y color": [_stock]
+            "Observaciones Internas": [observacion]
+            "Asignado a las Campañas": [_asignadosCampana]
+            "Historial de Asignaciones": [_log]
+      edit:
+          title: Edicion de Producto "%%denominacion%%"
+      new:
+          title: Nuevo Producto
+          display:
+            "Información descriptiva del producto": [denominacion, descripcion, info_adicional, id_marca, id_producto_categoria, _id_eshop, tags, id_producto_sticker, destacar, _es_outlet, id_talle_set, activo]
+            "Información cuantitativa del producto": [precio_lista, mostrar_precio_lista, precio_normal, precio_outlet, costo, peso]
+            "Imagenes": [imagenes, _administrar_imagenes]
+            "Stock disponible para cada talle y color": [stock]
+            "Observaciones Internas": [observacion]

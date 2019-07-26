@@ -1,0 +1,11 @@
+generarNotaCredito:
+  is_secure: true
+  credentials: [[facturacion_generar_nota_de_credito]]
+  
+consultar:
+  is_secure: true
+  credentials: [[facturacion_consulta_de_comprobantes_afip]]
+
+descargarFactura:
+  is_secure: true
+  credentials: [[gestion_pedidos]]

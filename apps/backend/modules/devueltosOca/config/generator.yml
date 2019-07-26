@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           devueltoOca
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          devuelto_oca
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        fecha: { label: Fecha Devolución, date_format: yyyy-MM-dd HH:mm }
+        monto: { label: $ Monto }
+        id_eshop: { label: eShop }
+        eshop: { label: eShop }
+      list:    
+        title: Devueltos por Oca
+        display: [id_devuelto_oca, _eshop, fecha, _id_pedido, _datos_cliente, _monto, _fecha_retiro]
+        object_actions:
+          fueRetirado:  { label: Marcar como Retirado }
+          reenviarMail: { label: Reenviar Mail }
+        batch_actions:
+          fueRetirado:  { label: Marcar como Retirado }
+          reenviarMail: { label: Reenviar Mail }
+      filter: ~
+      form: ~
+      edit: ~
+      new: ~

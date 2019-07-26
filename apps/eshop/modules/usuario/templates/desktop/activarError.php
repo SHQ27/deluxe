@@ -1,0 +1,1 @@
+Se produjo un error al activar tu usuario.

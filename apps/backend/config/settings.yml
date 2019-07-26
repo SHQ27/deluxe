@@ -1,0 +1,50 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+prod:
+  .settings:
+    no_script_name:         true
+    logging_enabled:        false
+
+dev:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_DEPRECATED)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         true
+    etag:                   false
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  false
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+
+all:
+  .settings:
+    i18n:                   true
+    default_culture:        es_AR
+    charset:                utf-8
+    # Form security secret (CSRF protection)
+    csrf_secret:            85491b0222bea8c8c40b9dfd1251713e4c97d61d
+
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+    # Enable the database manager
+    use_database:           true
+    
+    enabled_modules: [default, sfAdminDash, sfGuardAuth, sfGuardUser, sfGuardGroup, sfGuardPermission]
+    
+    standard_helpers:       [Partial, I18N, Date, Text, Fecha]
+    
+    rich_text_fck_js_dir: js/fckeditor
+    
+  .actions:
+    login_module: sfGuardAuth
+    login_action: signin
+    secure_module:  sfGuardAuth
+    secure_action:  secure

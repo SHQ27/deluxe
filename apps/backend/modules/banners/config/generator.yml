@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           banner
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          banner
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_banner:  { label: Banner }
+          ventana_nueva:  { label: Abrir en Ventana Nueva }
+          
+      list:    
+          title: Banners Secundarios
+          display: [id_banner, imagen, url, activo ]
+          sort: [id_banner, asc]
+          batch_actions:
+            activar:  { label: Activar Selecionados }
+            desactivar:  { label: Desactivar Selecionados }
+      filter:
+          display: [url, activo]
+      form:
+          display:
+            "Datos del Banner": [url, activo, orden, ventana_nueva]
+            "Banner": [_imagen]
+      edit:
+          title: Edición de Banner Secundario
+      new:
+          title: Nuevo Banner Secundario

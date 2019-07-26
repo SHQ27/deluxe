@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           cuota
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          cuota
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+               id_banco: { label: Banco }
+               id_tarjeta: { label: Tarjeta }
+               multiplicador: { label: Interés }
+      list:
+          title: Definición de Cuotas
+          display: [id_cuota, banco, tarjeta, cuotas, _interes]
+      filter:
+          display: [id_banco, id_tarjeta, cuotas]
+      form:    ~
+      edit:
+          title: Edicion de cuota
+      new:
+          title: Nueva definición de Cuota

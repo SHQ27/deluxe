@@ -1,0 +1,56 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           campana
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          campana
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_campana:  { label: Campaña }
+          id_comercial:  { label: Comercial }
+          fecha_inicio: { label: Fch. Inicio, date_format: dd/MM/yy }
+          fecha_fin: { label: Fch. Fin, date_format: dd/MM/yy }
+          estimacion_envio_fecha: { label: Fecha }
+          estimacion_envio_horas: { label: Horas }          
+          estimacion_envio_observacion: { label: Observación }
+          email_orden_compra: { label: Emails para Orden de Compra }
+          telefono_orden_compra: { label: Teléfono para Orden de Compra }
+          enviar_aviso_orden_compra: { label: Enviar Aviso de Orden de Compra }
+          mostrar_descripcion: { label: Mostrar banda inferior en home }
+          mostrar_banner_hover: { label: Mostrar hover en banner de home }          
+          color: { label: Color del reloj }
+          activo: { label: Activa }
+      list:    
+          title: Campañas
+          display: [id_campana, denominacion, marcas, fecha_inicio, fecha_fin, activo]
+          sort: [fecha_fin, desc]
+          max_per_page: 10
+          batch_actions:
+            tieneEnvioGratis:  { label: Tiene Envio gratis }
+            noTieneEnvioGratis:  { label: No Tiene Envio gratis }
+      filter:
+          display: [id_campana, marca, fecha_inicio, fecha_fin, activo, estado, despachada, pagada]
+
+      form:
+          display:
+            "Datos de la Campaña": [orden, _denominacionForm, descripcion, texto_promocion, marcas, fecha_inicio, fecha_fin, activo, slug]
+            "Opciones de Personalización": [mostrar_filtros, mostrar_banner, mostrar_banner_hover, mostrar_descripcion, color, mostrar_reloj, permitir_pago_offline, _data, tiene_envio_gratis, resetear_al_finalizar]
+            "Imágenes de la Campaña": [, _banner_principal, _administrar_imagenes,_banner, _header]
+            "Informacion sobre el comercial de la marca": [id_comercial, comision_comercial, apertura_marca, email_orden_compra, telefono_orden_compra, enviar_aviso_orden_compra]            
+            "Estimación de envio": [ _estimacion, estimacion_envio_fecha, estimacion_envio_horas]
+            "Inconvenientes de envio": [ estimacion_envio_observacion]
+            "Informacion para reportes": [objetivo_facturacion, total_stock]
+            "Usuarios para Reporte de Ventas": [_usuarios]
+            
+      edit:
+          title: Editando Campaña
+      new:
+          title: Nueva Campaña

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+.preload{ -moz-opacity:0.8;	opacity: 0.8; filter: alpha(opacity = 80); border: 1px solid #BDDDEA; background-color: white; padding: 8px; text-align:center;	background-image: url(../images/loading.gif); background-repeat: no-repeat;	background-position: 0px 0px; 	width:150px;* width:150px;	height:43px; *height:55px;	z-index:10;	position:absolute; top:3px; left:3px; color: #000000; font-size: 12px; font-family: Tahoma; text-decoration: none;}
+.jqZoomWindow{ border: 2px solid #BDDDEA; background-color: #ffffff; margin-left:48px; margin-top:70px;}
+
+
+
+

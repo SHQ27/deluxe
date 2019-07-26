@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           faq
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          faq
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+      fields:
+          id_faq: { label: Id }
+          id_faq_categoria: { label: Categoria }
+          faq_categoria: { label: Categoria }
+          es_como_comprar: { label: Usar en link "Como Comprar" }
+      list:
+          title: FAQs
+          display: [id_faq, faq_categoria, pregunta]
+          max_per_page: 15
+      filter:
+          class: false
+      form:
+          display:
+            "Datos": [id_faq_categoria, pregunta, texto, es_como_comprar]
+            "Imagen": [_imagen]
+      edit:
+          title: Editar FAQ "%%pregunta%%" 
+      new:
+          title: Nuevar FAQ

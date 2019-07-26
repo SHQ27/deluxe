@@ -1,0 +1,2 @@
+all:
+  javascripts:    [SelectDependiente.min.js]

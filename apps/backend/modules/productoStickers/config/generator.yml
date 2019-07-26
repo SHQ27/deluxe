@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           productoSticker
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          producto_sticker
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+          title: Stickers
+          display: [id_producto_sticker, _imagen, denominacion]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Edicion de Sticker "%%denominacion%%"
+      new:
+          title: Nuevo Sticker

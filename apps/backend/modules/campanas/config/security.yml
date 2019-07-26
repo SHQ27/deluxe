@@ -1,0 +1,21 @@
+default:
+  is_secure: true
+  credentials: [[prod_y_campanas_campanas]]
+  
+descargarOrdenCompra:
+  is_secure: false
+  
+ingresarFechaEntrega:
+  is_secure: false
+  
+logistica:
+  is_secure: true
+  credentials: [[gestion_logistica_campanas]]
+  
+recordatorio:
+  is_secure: true
+  credentials: [[gestion_logistica_campanas]]
+  
+comentarios:
+  is_secure: true
+  credentials: [[gestion_logistica_campanas]]

@@ -1,0 +1,7 @@
+ventaOnlineSuccess:
+  javascripts:    [easyTooltip.js, ventaOnline.js]
+  
+comercialesSuccess:
+  javascripts:    [https://www.google.com/jsapi, reporteComerciales.js]
+  
+  

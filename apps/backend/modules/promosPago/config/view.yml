@@ -1,0 +1,5 @@
+newSuccess:
+  javascripts:    [formPromoPago.js]
+
+editSuccess:
+  javascripts:    [formPromoPago.js]

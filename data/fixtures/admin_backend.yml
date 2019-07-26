@@ -1,0 +1,85 @@
+sfGuardUser:
+  User_admin:
+    first_name:     Administrador
+    last_name:      Administrador
+    email_address:  admin@deluxebuys.com
+    username:       admin
+    password:       admin
+    is_super_admin: true
+    Groups:         [Administradores]
+
+  User_analista:
+    first_name:     Analista
+    last_name:      Analista
+    email_address:  analista@deluxebuys.com
+    username:       analista
+    password:       analista
+    is_super_admin: false
+    Groups:         [Analistas]
+
+  User_vendedor:
+    first_name:     Vendedor
+    last_name:      Vendedor
+    email_address:  vendedor@deluxebuys.com
+    username:       vendedor
+    password:       vendedor
+    is_super_admin: false
+    Groups:         [Vendedores]
+
+  User_cargador:
+    first_name:     Cargador
+    last_name:      Cargador
+    email_address:  cargador@deluxebuys.com
+    username:       cargador
+    password:       cargador
+    is_super_admin: false
+    Groups:         [Cargadores]
+
+  User_creador:
+    first_name:     Creador
+    last_name:      Creador
+    email_address:  creador@deluxebuys.com
+    username:       creador
+    password:       creador
+    is_super_admin: false
+    Groups:         [Creadores]
+
+sfGuardGroup:
+  Administradores:
+    name:           Administradores
+    description:    Grupo de Administradores
+    Permissions:    [Permission_total]
+  Analistas:
+    name:           Analistas
+    description:    Grupo de Analistas
+    Permissions:    [Permission_analista]
+  Vendedores:
+    name:           Vendedores
+    description:    Grupo de Vendedores
+    Permissions:    [Permission_vendedor]
+  Cargadores:
+    name:           Cargadores
+    description:    Grupo de Cargadores
+    Permissions:    [Permission_cargador]
+  Creadores:
+    name:           Creadores
+    description:    Grupo de Creadores
+    Permissions:    [Permission_creador]
+
+sfGuardPermission:
+  Permission_total:
+    name:           Total
+    description:    Acceso a todo el panel
+  Permission_analista:
+    name:           Analista
+    description:    Acceso a Ventas, Usuarios y Reportes
+  Permission_vendedor:
+    name:           Vendedor
+    description:    Acceso sólo a Ventas y Usuarios
+  Permission_cargador:
+    name:           Cargador
+    description:    Acceso a Productos, Categorías, Campañas
+  Permission_creador:
+    name:           Creador
+    description:    Acceso a Blog, Banners
+

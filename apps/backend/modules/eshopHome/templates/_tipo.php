@@ -1,0 +1,1 @@
+<?php echo $eshop_home->getTipoDenominacion(); ?>

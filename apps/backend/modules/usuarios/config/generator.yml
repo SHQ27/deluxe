@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           usuario
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          usuario
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_eshop: { label: eShop }
+        eshop: { label: eShop }
+      list:
+          title: Listado de Usuarios de Front-end
+          display: [id_usuario, nombre, apellido, email, telefono, _eshop, activo]
+          object_actions:
+              _edit:  { label: Editar }
+              view:  { label: Ver }
+              _delete:  { label: Eliminar }
+      filter: ~
+      form:
+          display:
+            "Datos del Usuario": [nombre, apellido, _documento, email, telefono, celular, fecha_nacimiento, sexo, activo, fecha_alta, fecha_confirmacion, _password, dias_devolucion]
+      edit:
+          title: Edición de Usuario de Front-end "%%email%%"
+      new: false

@@ -1,0 +1,334 @@
+all:
+  
+  id_permiso_reporte_venta_online: 50
+
+  default_culture: es
+  
+  cuit_deluxe: 30-71163524-2
+  
+  sf_admin_dash:
+    web_dir:                      /backend
+    image_dir:                    /backend/images/icons/
+    default_image:                config.png
+    resize_mode:                  thumbnail
+    site:                         Deluxe Buys
+    include_path:                 true
+    include_jquery_no_conflict:   false
+    logout:                       true
+    login_route:                  @sf_guard_signin
+    logout_route:                 @sf_guard_signout
+    
+    categories:
+
+          Backend:
+            credentials: [[Total]]
+            items:
+              Usuarios:
+                credentials: [[Total]]
+                url:    @sf_guard_user
+                image:  user34.png
+              Grupos:
+                credentials: [[Total]]
+                url:    @sf_guard_group
+                image:  social103.png
+                
+                
+          Usuarios:
+            credentials: [[usuarios_usuarios_de_frontend, usuarios_newsletter_listado, usuarios_newsletter_descargar]]
+            items:
+              Usuarios de Frontend:
+                credentials: [[usuarios_usuarios_de_frontend]]
+                url:    usuario
+                image:  user25.png
+              Newsletter (Listado):
+                credentials: [[usuarios_newsletter_listado]]
+                url:    newsletter
+                image:  email6.png
+              Newsletter (Descargar):
+                credentials: [[usuarios_newsletter_descargar]]
+                url:    newsletter_download
+                image:  download87.png
+            
+          Prod. y Campañas:
+            credentials: [[prod_y_campanas_productos, prod_y_campanas_campanas, prod_y_campanas_categorias, prod_y_campanas_marcas, prod_y_campanas_talles, prod_y_campanas_talles, prod_y_campanas_familia_colores, prod_y_campanas_colores, prod_y_campanas_tags, prod_y_campanas_rubros, prod_y_campanas_importar_productos, prod_y_campanas_producto_edicion_stock_precio_csv, prod_y_campanas_waitlist, prod_y_campanas_gestionar_cupones, prod_y_campanas_stickers, prod_y_campanas_publicacion_ml]]
+            items:
+              Productos:
+                credentials: [[prod_y_campanas_productos]]
+                url:    producto
+                image:  portrait6.png
+              Campañas:
+                credentials: [[prod_y_campanas_campanas]]
+                url:    campana
+                image:  sale13.png 
+              Outlet:
+                credentials: [[prod_y_campanas_outlet]]
+                url:    outlet
+                image:  sale14.png
+              Categorias:
+                credentials: [[prod_y_campanas_categorias]]
+                url:    producto_categoria
+                image:  tag39.png
+              Marcas:
+                credentials: [[prod_y_campanas_marcas]]
+                url:    marca
+                image:  tag39.png
+              Familia de Talles:
+                credentials: [[prod_y_campanas_familia_talles]]
+                url:    familia_talle
+                image:  tag39.png                
+              Talles:
+                credentials: [[prod_y_campanas_talles]]
+                url:    producto_talle
+                image:  tag39.png
+              Familia de Colores:
+                credentials: [[prod_y_campanas_familia_colores]]
+                url:    familia_color
+                image:  tag39.png   
+              Colores:
+                credentials: [[prod_y_campanas_colores]]
+                url:    producto_color
+                image:  tag39.png
+              Stickers:
+                credentials: [[prod_y_campanas_stickers]]
+                url:    producto_sticker
+                image:  tag39.png               
+              Tags:
+                credentials: [[prod_y_campanas_tags]]
+                url:    tag
+                image:  tag39.png
+              Rubros:
+                credentials: [[prod_y_campanas_rubros]]
+                url:    marca_rubro
+                image:  tag39.png
+              Importar Productos:
+                credentials: [[prod_y_campanas_importar_productos]]
+                url:    producto_importar
+                image:  upload13.png
+              Edicion de Stock y Precios vía CSV:
+                credentials: [[prod_y_campanas_producto_edicion_stock_precio_csv]]
+                url:    producto_edicionStockPrecioCSV
+                image:  verification5.png
+              WaitList:
+                credentials: [[prod_y_campanas_waitlist]]
+                url:    waiting_list
+                image:  wall17.png           
+              Gestionar Cupones:
+                credentials: [[prod_y_campanas_gestionar_cupones]]
+                url:    cupon
+                image:  commercial17.png
+              Restaurar stock desde Campaña:
+                credentials: [[prod_y_campanas_restaurar_stock_campana]]
+                url:    producto_listRestaurarStockCampana
+                image:  return4.png
+              Publicaciones en Mercado Libre:
+                credentials: [[prod_y_campanas_publicacion_ml]]
+                url:    publicacion_ml
+                image:  social97.png               
+                
+                               
+          Gestión:
+            credentials: [[gestion_pedidos, gestion_exportar_ord_de_compra, gestion_faltantes, gestion_devoluciones, gestion_devueltos_por_oca, gestion_borrar_cache, gestion_verificar_factura_oca, gestion_logistica_campanas, gestion_fallados, gestion_devueltos_marcas]]
+            items:              
+              Pedidos:
+                credentials: [[gestion_pedidos]]
+                url:    pedido
+                image:  shopping165.png               
+              Exportar Ord. de Compra:
+                credentials: [[gestion_exportar_ord_de_compra]]
+                url:    pedido_orden_compra
+                image:  domain.png
+              Faltantes:
+                credentials: [[gestion_faltantes]]
+                url:    faltante
+                image:  delivery34.png
+              Devoluciones:
+                credentials: [[gestion_devoluciones]]
+                url:    devolucion
+                image:  delivery35.png
+              Devueltos por OCA:
+                credentials: [[gestion_devueltos_por_oca]]
+                url:    devuelto_oca
+                image:  delivery26.png
+              Verificar Factura OCA:
+                credentials: [[gestion_verificar_factura_oca]]
+                url:    verificar_factura_oca
+                image:  verification5.png
+              Logística de Campañas:
+                credentials: [[gestion_logistica_campanas]]
+                url:    campanas_logistica
+                image:  delivery18.png
+              Listado de Fallados:
+                credentials: [[gestion_fallados]]
+                url:    fallados
+                image:  delivery31.png
+              Devoluciones Pendientes a Marcas:
+                credentials: [[gestion_devueltos_marcas]]
+                url:    devueltosMarcas
+                image:  three110.png
+              Orden de Banners en Home:
+                credentials: [[gestion_orden_home]]
+                url:    home_ordenar
+                image:  design.png
+              Borrar Cache:
+                credentials: [[gestion_borrar_cache]]
+                url:    borrar_cache
+                image:  delete27.png
+                
+                
+          Facturación:
+            credentials: [[facturacion_generar_nota_de_credito, facturacion_listado_y_control_de_facturas, facturacion_listado_de_notas_de_credito, facturacion_consulta_de_comprobantes_afip, facturacion_libroIvaVenta, facturacion_citiVentas]]
+            items:              
+              Generar Nota de Credito:
+                credentials: [[facturacion_generar_nota_de_credito]]
+                url:    nota_credito_generar
+                image:  add42.png
+              Listado y Control de Facturas:
+                credentials: [[facturacion_listado_y_control_de_facturas]]
+                url:    factura
+                image:  note16.png
+              Listado de Notas de Credito:
+                credentials: [[facturacion_listado_de_notas_de_credito]]
+                url:    ncredito
+                image:  note20.png
+              Consulta de Comprobantes (AFIP):
+                credentials: [[facturacion_consulta_de_comprobantes_afip]]
+                url:    facturacion_consultar
+                image:  preview.png
+              Libro IVA Ventas:
+                credentials: [[facturacion_libroIvaVenta]]
+                url:    facturacion_libroIvaVenta
+                image:  bookmark18.png
+              Citi Ventas:
+                credentials: [[facturacion_citiVentas]]
+                url:    facturacion_citiVentas
+                image:  document127.png
+
+                
+          Banners:
+            credentials: [[banners_principales, banners_secundarios]]
+            items:
+              Principales:
+                credentials: [[banners_principales]]
+                url:    banner_principal
+                image:  social97.png          
+              Secundarios:
+                credentials: [[banners_secundarios]]
+                url:    banner
+                image:  social97.png
+                
+          Config.:
+            credentials: [[config_amazon, config_comerciales, config_valores_predefinidos, config_cuotas, config_set_talles, config_sources, config_faqs]]
+            items:
+              Comerciales:
+                credentials: [[config_comerciales]]
+                url:    comercial
+                image:  partnership.png
+              Valores Predefinidos:
+                credentials: [[config_valores_predefinidos]]
+                url:    configuracion
+                image:  clipboard52.png
+              Cuotas:
+                credentials: [[config_cuotas]]
+                url:    cuota
+                image:  payment.png
+              Sources (Marketing):
+                credentials: [[config_sources]]
+                url:    source
+                image:  tag39.png
+              Categorias de FAQ:
+                credentials: [[config_faqs]]
+                url:    faq_categoria
+                image:  faq3.png
+              Probador de Talles:
+                credentials: [[config_set_talles]]
+                url:    talle_set
+                image:  businessman202.png
+              Promociones de Pago:
+                credentials: [[config_promociones_de_pago]]
+                url:    promo_pago
+                image:  commercial17.png
+                
+          Desc. y Bonif.:
+            credentials: [[desc_y_bonif_descuentos, desc_y_bonif_bonificaciones, desc_y_bonif_premios]]
+            items:
+              Descuentos:
+                credentials: [[desc_y_bonif_descuentos]]
+                url:    descuento
+                image:  banknotes.png
+              Bonificaciones:
+                credentials: [[desc_y_bonif_bonificaciones]]
+                url:    bonificacion
+                image:  money110.png
+              Premios:
+                credentials: [[desc_y_bonif_premios]]
+                url:    premio
+                image:  premium.png
+
+          eShops:
+            credentials: [[eshops_eshops]]
+            items:
+              eShops:
+                credentials: [[eshops_eshops]]
+                url:    eshop
+                image:  ecommerce1.png
+              Categorias para Tiendas:
+                credentials: [[eshops_categorias_para_tiendas]]
+                url:    eshop_tienda_categoria
+                image:  clipboard52.png
+                
+
+          Reportes:
+            credentials: [[reportes_reporte_de_ventas_x_periodo, reportes_reporte_de_promo_suscribite, reportes_reportes_de_campanas, reportes_reportes_de_comerciales, reportes_reportes_de_venta_online, reportes_reporte_cronologico, reportes_reporte_cuponeras, reportes_reporte_general_mensual, reportes_reporte_marketing]]
+            items:
+              Reporte General Mensual:
+                credentials: [[reporte_general_mensual]]
+                url:    reportes_mensual
+                image:  rising9.png
+              Reporte de Marketing:
+                credentials: [[reportes_reporte_marketing]]
+                url:    reportes_marketing
+                image:  rising9.png
+              Reporte de Ventas x Periodo:
+                credentials: [[reportes_reporte_de_ventas_x_periodo]]
+                url:    reportes_ventasXPeriodos
+                image:  rising9.png
+              Reporte de Promo Suscribite!:
+                credentials: [[reportes_reporte_de_promo_suscribite]]
+                url:    reportes_suscriptos
+                image:  rising9.png
+              Reportes de Campañas:
+                credentials: [[reportes_reportes_de_campanas]]
+                url:    reportes_campanas
+                image:  rising9.png
+              Reportes de Comerciales:
+                credentials: [[reportes_reportes_de_comerciales]]
+                url:    reportes_comerciales
+                image:  rising9.png
+              Reportes de Venta Online:
+                credentials: [[reportes_reportes_de_venta_online]]
+                url:    reportes_ventaOnline
+                image:  rising9.png
+              Reporte Cronológico:
+                credentials: [[reportes_reporte_cronologico]]
+                url:    reportes_cronologico
+                image:  rising9.png
+              Reporte de Cuponeras:
+                credentials: [[reportes_reporte_cuponeras]]
+                url:    reportes_cuponeras
+                image:  rising9.png
+              Reporte de AdNetworks:
+                credentials: [[reportes_adnetworks]]
+                url:    reportes_adnetworks
+                image:  rising9.png
+
+  sf_guard_plugin: 
+    success_signin_url: @homepage
+    
+prod:
+<?php include( dirname(__FILE__) .  "/../../../config/common_prod.yml"); ?> 
+
+dev:
+<?php include( dirname(__FILE__) .  "/../../../config/common_dev.yml"); ?>
+    
+stage:
+<?php include( dirname(__FILE__) .  "/../../../config/common_stage.yml"); ?>

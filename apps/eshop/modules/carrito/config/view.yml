@@ -1,0 +1,8 @@
+paso1Success:
+  javascripts:    [../helpers/carritoPaso1Helper.js, carritoPaso1.js]
+  
+paso2Success:
+  javascripts:    [../helpers/carritoPaso2Helper.js, carritoPaso2.js]
+  
+paso3Success:
+  javascripts:    [../helpers/carritoPaso3Helper.js, carritoPaso3.js]

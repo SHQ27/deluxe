@@ -1,0 +1,412 @@
+eshop_medios_pagos_producto:
+  mime_type: image/jpeg
+  path: /eshop/mediosPagos/producto
+  deleteable: true
+  crop: false
+  resize: true
+  width: 400
+  height: 9999
+
+eshop_medios_pagos_carrito:
+  mime_type: image/jpeg
+  path: /eshop/mediosPagos/carrito
+  deleteable: true
+  crop: false
+  resize: true
+  width: 1000
+  height: 9999
+
+eshop_lookbook:
+  mime_type: image/jpeg
+  path: /eshop/lookbook
+  deleteable: true
+  crop: false
+  resize: false
+  width: 1918
+  height: 9999
+
+eshop_lookbook_zoom:
+  mime_type: image/jpeg
+  path: /eshop/lookbook/zoom
+  deleteable: true
+  crop: false
+  resize: true
+  width: 350
+  height: 675
+
+eshop_lookbook_x1:
+  mime_type: image/jpeg
+  path: /eshop/lookbook
+  deleteable: true
+  crop: false
+  resize: true
+  width: 980
+  height: 9999
+eshop_lookbook_x2:
+  mime_type: image/jpeg
+  path: /eshop/lookbook
+  deleteable: true
+  crop: false
+  resize: true
+  width: 480
+  height: 9999
+eshop_lookbook_x3:
+  mime_type: image/jpeg
+  path: /eshop/lookbook
+  deleteable: true
+  crop: false
+  resize: true
+  width: 305
+  height: 9999
+eshop_lookbook_x4:
+  mime_type: image/jpeg
+  path: /eshop/lookbook
+  deleteable: true
+  crop: false
+  resize: true
+  width: 225
+  height: 9999
+
+eshop_imagen_campaign:
+  mime_type: image/jpeg
+  path: /eshop/imagenCampaign
+  deleteable: true
+  crop: false
+  resize: true
+  width: 1918
+  height: 9999
+
+eshop_home_generico:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: false
+  width: null
+  height: null
+
+eshop_home_principal_full:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 1918
+  height: 9999
+
+eshop_home_principal_normal:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 980
+  height: 9999
+  
+eshop_home_secundario_x2_2H1V:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 316
+  height: 272
+
+eshop_home_secundario_x2_3H1V:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 482
+  height: 272
+
+eshop_home_secundario_x2_4H1V:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 650
+  height: 272
+
+eshop_home_secundario_x3:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 316
+  height: 316
+
+eshop_home_cinta:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 980
+  height: 9999
+
+eshop_home_grilla_1H3V:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 316
+  height: 475
+
+eshop_home_grilla_1H2V:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 316
+  height: 316
+
+eshop_home_grilla_1H4V:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 316
+  height: 650
+
+eshop_home_grilla_2H2V:
+  mime_type: image/jpeg
+  path: /eshop/home
+  deleteable: true
+  crop: false
+  resize: true
+  width: 650
+  height: 316
+
+eshop_banner_listado:
+  mime_type: image/jpeg
+  path: /eshop/banner/listado
+  deleteable: true
+  crop: false
+  resize: true
+  width: 1000
+  height: 150
+
+banner_imagen:
+  mime_type: image/jpeg
+  path: /banner
+  deleteable: false
+  crop: false
+  resize: true
+  width: 292
+  height: 580
+  
+banner_principal_grande:
+  mime_type: image/jpeg
+  path: /banner/principal/grande
+  deleteable: true
+  crop: false
+  resize: true
+  width: 1052
+  height: 472
+  
+banner_principal_chico:
+  mime_type: image/jpeg
+  path: /banner/principal/chico
+  deleteable: true
+  crop: false
+  resize: true
+  width: 292
+  height: 280
+    
+campana_header:
+  mime_type: image/jpeg
+  path: /campana/header
+  deleteable: true
+  crop: false
+  resize: true
+  width: 960
+  height: 280
+
+campana_banner_principal:
+  mime_type: image/jpeg
+  path: /campana/banner/principal
+  deleteable: true
+  crop: false
+  resize: true
+  width: 1052
+  height: 472
+    
+campana_banner:
+  mime_type: image/jpeg
+  path: /campana/banner
+  deleteable: true
+  crop: false
+  resize: true
+  width: 292
+  height: 280
+  
+outlet_header:
+  mime_type: image/jpeg
+  path: /outlet/header
+  deleteable: true
+  crop: false
+  resize: true
+  width: 960
+  height: 280
+
+outlet_banner_principal:
+  mime_type: image/jpeg
+  path: /outlet/banner/principal
+  deleteable: true
+  crop: false
+  resize: true
+  width: 1052
+  height: 472
+    
+outlet_banner:
+  mime_type: image/jpeg
+  path: /outlet/banner
+  deleteable: true
+  crop: false
+  resize: true
+  width: 292
+  height: 280
+  
+producto_lista_chica:
+  mime_type: image/jpeg
+  path: /producto/lista/chica
+  deleteable: false
+  crop: false
+  resize: true
+  width: 168
+  height: 252
+  
+producto_lista_grande:
+  mime_type: image/jpeg
+  path: /producto/lista/grande
+  deleteable: false
+  crop: false
+  resize: true
+  width: 293
+  height: 439
+  
+producto_detalle_chica:
+  mime_type: image/jpeg
+  path: /producto/detalle/chica
+  deleteable: false
+  crop: false
+  resize: true
+  width: 96
+  height: 144
+  
+producto_detalle_mediana:
+  mime_type: image/jpeg
+  path: /producto/detalle/mediana
+  deleteable: false
+  crop: false
+  resize: true
+  width: 390
+  height: 585
+  
+producto_detalle_grande:
+  mime_type: image/jpeg
+  path: /producto/detalle/grande
+  deleteable: false
+  crop: false
+  resize: true
+  width: 805
+  height: 1208
+
+producto_thumb:
+  mime_type: image/jpeg
+  path: /producto/thumb
+  deleteable: false
+  crop: true
+  resize: false
+  width: 500
+  height: 500
+  original_width: 805
+  original_height: 1208
+  
+marca_imagen:
+  mime_type: image/jpeg
+  path: /marca
+  deleteable: true
+  crop: false
+  resize: true
+  width: 950
+  height: 560
+  
+producto_sticker_chico:
+  mime_type: image/png
+  path: /sticker/chico
+  deleteable: false
+  crop: false
+  resize: true
+  width: 75
+  height: 75
+  
+producto_sticker_grande:
+  mime_type: image/png
+  path: /sticker/grande
+  deleteable: false
+  crop: false
+  resize: true
+  width: 112
+  height: 112
+  
+post_imagen_chica:
+  mime_type: image/jpeg
+  path: /post/chica
+  deleteable: true
+  crop: false
+  resize: true
+  width: 167
+  height: 98
+  
+post_imagen_grande:
+  mime_type: image/jpeg
+  path: /post/grande
+  deleteable: true
+  crop: false
+  resize: true
+  width: 624
+  height: 366
+  
+faq_imagen:
+  mime_type: image/jpeg
+  path: /faq
+  deleteable: true
+  crop: false
+  resize: true
+  width: 800
+  height: 1200
+
+promo_pago_imagen:
+  mime_type: image/jpeg
+  path: /promoPago
+  deleteable: false
+  crop: false
+  resize: true
+  width: 744
+  height: 50
+
+promo_pago_imagen_mobile:
+  mime_type: image/jpeg
+  path: /promoPago/mobile
+  deleteable: false
+  crop: false
+  resize: true
+  width: 280
+  height: 50
+
+familia_color:
+  mime_type: image/jpeg
+  path: /familiaColor
+  deleteable: false
+  crop: false
+  resize: true
+  width: 20
+  height: 20

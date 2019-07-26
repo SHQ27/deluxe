@@ -1,0 +1,1051 @@
+remarkety:
+  url:   /remarkety
+  param: { module: remarkety, action: index }
+
+eshop_lookbook:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                eshopLookbook
+    module:               eshopLookbook
+    prefix_path:          /eshopLookbook
+    column:               id_eshop_lookbook
+    with_wildcard_routes: true
+
+eshop_imagen_campaign:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                eshopImagenCampaign
+    module:               eshopImagenCampaign
+    prefix_path:          /eshopImagenCampaign
+    column:               id_eshop_imagen_campaign
+    with_wildcard_routes: true
+
+eshop_home:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                eshopHome
+    module:               eshopHome
+    prefix_path:          /eshopHome
+    column:               id_eshop_home
+    with_wildcard_routes: true
+
+home_ordenar:
+  url:   /home/ordenar
+  param: { module: home, action: ordenar }
+
+promo_pago:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                promoPago
+    module:               promosPago
+    prefix_path:          /promosPago
+    column:               id_promo_pago
+    with_wildcard_routes: true
+
+eshop_tienda_categoria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                eshopTiendaCategoria
+    module:               eshopTiendaCategorias
+    prefix_path:          /eshopTiendaCategorias
+    column:               id_eshop_tienda_categoria
+    with_wildcard_routes: true
+
+eshop_tienda:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                eshopTienda
+    module:               eshopTiendas
+    prefix_path:          /eshopTiendas
+    column:               id_eshop_tienda
+    with_wildcard_routes: true
+
+eshop_ordenar_productos:
+  url:   /eshops/:idEshop/ordenarProductos
+  param: { module: eshops, action: ordenarProductos }
+
+eshop_ordenar_categorias:
+  url:   /eshops/:idEshop/ordenarCategorias
+  param: { module: eshops, action: ordenarCategorias }
+
+eshop_modificar_imagen_categoria:
+  url:   /eshops/:idEshop/modificarImagenCategoria/:idProductoCategoria
+  param: { module: eshops, action: modificarImagenCategoria }
+
+eshop_descargarResumenPedidos:
+  url:   /eshops/descargarResumenPedidos
+  param: { module: eshops, action: descargarResumenPedidos }
+
+eshop:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                eshop
+    module:               eshops
+    prefix_path:          /eshops
+    column:               id_eshop
+    with_wildcard_routes: true
+
+notificaciones_backend_check:
+  url:   /notificaciones/check
+  param: { module: notificacionesBackend, action: check }
+  
+notificacion_backend_start:
+  url:   /notificacion/start
+  param: { module: notificacionesBackend, action: start }
+
+notificacion_backend:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                notificacionBackend
+    module:               notificacionesBackend
+    prefix_path:          /notificaciones
+    column:               id_notificacion_backend
+    with_wildcard_routes: true
+
+publicacion_ml_cerrar:
+  url:   /publicacionMl/:idProducto/cerrar
+  param: { module: publicacionMl, action: cerrar }
+  
+publicacion_ml_eliminar:
+  url:   /publicacionMl/:idProducto/eliminar
+  param: { module: publicacionMl, action: eliminar }
+
+publicacion_ml:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                publicacionMl
+    module:               publicacionMl
+    prefix_path:          /publicacionMl
+    column:               id_producto
+    with_wildcard_routes: true
+
+producto_sticker:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                productoSticker
+    module:               productoStickers
+    prefix_path:          /productoStickers
+    column:               id_producto_sticker
+    with_wildcard_routes: true
+
+enviopack_notifications_deluxe:
+  url:   /enviopack/notifications
+  param: { module: envioPack, action: notifications, idEshop: null }
+  
+enviopack_notifications_eshops:
+  url:   /enviopack/:idEshop/notifications
+  param: { module: envioPack, action: notifications }
+  
+mercado_libre_notifications_deluxe:
+  url:   /ml/notifications
+  param: { module: mercadoLibre, action: notifications, idEshop: null }
+  
+mercado_libre_notifications_eshops:
+  url:   /ml/:idEshop/notifications
+  param: { module: mercadoLibre, action: notifications }
+  
+mercado_libre_auth_deluxe:
+  url:   /ml/auth
+  param: { module: mercadoLibre, action: auth, idEshop: null }
+  
+mercado_libre_auth_eshops:
+  url:   /ml/:idEshop/auth
+  param: { module: mercadoLibre, action: auth }
+  
+devueltosMarcas:
+  url:   /devueltosMarcas
+  param: { module: devueltosMarcas, action: index }
+  
+devueltosMarcas_devolver:
+  url:   /devueltosMarcas/devolver
+  param: { module: devueltosMarcas, action: devolver }
+
+devueltosMarcas_new:
+  url:   /devueltosMarcas/new
+  param: { module: devueltosMarcas, action: new }
+  
+devueltosMarcas_descargar_excel:
+  url:   /devueltosMarcas/descargarExcel
+  param: { module: devueltosMarcas, action: descargarExcel }
+
+fallados:
+  url:   /fallados
+  param: { module: fallados, action: index }
+  
+fallados_recuperar:
+  url:   /fallados/recuperar
+  param: { module: fallados, action: recuperar }
+  
+fallados_descargar_excel:
+  url:   /fallados/descargarExcel
+  param: { module: fallados, action: descargarExcel }
+  
+
+premio:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                premio
+    module:               premios
+    prefix_path:          /premios
+    column:               id_premio
+    with_wildcard_routes: true
+
+faq_categoria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                faqCategoria
+    module:               faqCategorias
+    prefix_path:          /faqCategorias
+    column:               id_faq_categoria
+    with_wildcard_routes: true
+
+banner_principal:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                bannerPrincipal
+    module:               bannersPrincipal
+    prefix_path:          /bannersPrincipal
+    column:               id_banner_principal
+    with_wildcard_routes: true
+
+faq:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                faq
+    module:               faqs
+    prefix_path:          /faqs
+    column:               id_faq
+    with_wildcard_routes: true
+  
+familia_color:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                familiaColor
+    module:               familiaColor
+    prefix_path:          /familiaColor
+    column:               id_familia_color
+    with_wildcard_routes: true
+
+familia_talle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                familiaTalle
+    module:               familiaTalles
+    prefix_path:          /familiaTalles
+    column:               id_familia_talle
+    with_wildcard_routes: true
+
+talle_set:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                talleSet
+    module:               talleSets
+    prefix_path:          /talleSets
+    column:               id_talle_set
+    with_wildcard_routes: true
+    
+source:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                source
+    module:               sources
+    prefix_path:          /sources
+    column:               id_source
+    with_wildcard_routes: true
+
+cuota:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                cuota
+    module:               cuotas
+    prefix_path:          /cuotas
+    column:               id_cuota
+    with_wildcard_routes: true
+
+comercial:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                comercial
+    module:               comerciales
+    prefix_path:          /comerciales
+    column:               id_comercial
+    with_wildcard_routes: true
+
+outlet:
+  url:   /outlet
+  param: { module: outlet, action: index }
+
+borrar_cache:
+  url:   /cache
+  param: { module: cache, action: index }
+
+devueltosOca_descargar:
+  url:   /devueltosOca/descargar
+  param: { module: devueltosOca, action: descargar }
+
+devueltosOca_enviar:
+  url:   /devueltosOca/enviar
+  param: { module: devueltosOca, action: enviar }  
+  
+devueltosOca_procesar:
+  url:   /devueltosOca/procesar
+  param: { module: devueltosOca, action: procesar }  
+  
+devuelto_oca:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                devueltoOca
+    module:               devueltosOca
+    prefix_path:          /devueltosOca
+    column:               id_devuelto_oca
+    with_wildcard_routes: true
+
+
+reportes_adnetworks:
+  url:   /reportes/adnetworks
+  param: { module: reportes, action: adNetworks }
+
+reportes_mensual:
+  url:   /reportes/mensual
+  param: { module: reportes, action: mensual }
+
+reportes_marketing:
+  url:   /reportes/marketing
+  param: { module: reportes, action: marketing }
+      
+reportes_ventaOnline:
+  url:   /reportes/ventaOnline
+  param: { module: reportes, action: ventaOnline }
+  
+reportes_cronologico:
+  url:   /reportes/cronologico
+  param: { module: reportes, action: cronologico }
+  
+reportes_cronologico_descargar:
+  url:   /reportes/cronologico/:filename
+  param: { module: reportes, action: descargarCronologico }  
+  
+reportes_cuponeras:
+  url:   /reportes/cuponeras
+  param: { module: reportes, action: cuponeras }
+  
+reportes_ventasXPeriodos:
+  url:   /reportes/ventasXPeriodos
+  param: { module: reportes, action: ventasXPeriodos }  
+  
+reportes_campanas:
+  url:   /reportes/campanas
+  param: { module: reportes, action: campanas }  
+  
+reportes_comerciales:
+  url:   /reportes/comerciales
+  param: { module: reportes, action: comerciales } 
+  
+campanas_agregarProductos:
+  url:   /campanas/agregarProductos
+  param: { module: campanas, action: agregarProductos }
+
+campanas_eliminarProductos:
+  url:   /campanas/eliminarProductos
+  param: { module: campanas, action: eliminarProductos }
+
+campanas_reenviarDatosAcceso:
+  url:   /campanas/reenviarDatosAcceso
+  param: { module: campanas, action: reenviarDatosAcceso }
+
+campanas_enviarAOca:
+  url:   /campanas/:idCampana/enviarAOca
+  param: { module: campanas, action: enviarAOca }
+  
+campanas_asignacionProductos:
+  url:   /campanas/:idCampana/asignacionProductos
+  param: { module: campanas, action: asignacionProductos }
+  
+campanas_asignacionCSV:
+  url:   /campanas/:idCampana/asignacionCSV
+  param: { module: campanas, action: asignacionCSV }
+    
+campanas_usuariosQueCompraron:
+  url:   /campanas/:idCampana/usuariosQueCompraron
+  param: { module: campanas, action: usuariosQueCompraron }
+  
+campanas_descargarOrdenCompra:
+  url:   /descargarOrdenCompra/:hash
+  param: { module: campanas, action: descargarOrdenCompra }
+
+campanas_recepcionMercaderia_no_envios:
+  url:   /campanas/:idCampana/recepcionMercaderia/no-hay-envios-disponibles
+  param: { module: campanas, action: noHayEnviosDisponibles }
+
+campanas_recepcionMercaderia:
+  url:   /campanas/:idCampana/recepcionMercaderia/:idMarca
+  param: { module: campanas, action: recepcionMercaderia }
+  
+campanas_ingresarFechaEntrega:
+  url:   /ingresarFechaEntrega/:hash
+  param: { module: campanas, action: ingresarFechaEntrega }
+  
+campanas_logistica:
+  url:   /campanas/logistica
+  param: { module: campanas, action: logistica }
+  
+campanas_logistica_descargar_excel:
+  url:   /campanas/logistica/descargarExcel
+  param: { module: campanas, action: logisticaDescargarExcel }
+
+campanas_logistica_hoja_de_ruta:
+  url:   /campanas/logistica/prepararHojaDeRuta
+  param: { module: campanas, action: prepararHojaDeRuta }
+  
+campanas_activarRecodatorio:
+  url:   /campanas/logistica
+  param: { module: campanas, action: logistica }
+  
+campanas_activarRecordatorio:
+  url:   /campana/:idCampana/marca/:idMarca/activarRecordatorio
+  param: { module: campanas, action: recordatorio, activar: true }
+  
+campanas_desactivarRecordatorio:
+  url:   /campana/:idCampana/marca/:idMarca/desactivarRecordatorio
+  param: { module: campanas, action: recordatorio, activar: false }
+  
+campanas_marcarPagada:
+  url:   /campana/:idCampana/marca/:idMarca/pagada
+  param: { module: campanas, action: marcarPagada }
+  
+campanas_marcarNoPagada:
+  url:   /campana/:idCampana/marca/:idMarca/no-pagada
+  param: { module: campanas, action: marcarNoPagada }
+  
+campanas_comentarios:
+  url:   /campana/:idCampana/marca/:idMarca/comentarios
+  param: { module: campanas, action: comentarios }
+
+campanas_pedidosNoEnviados:
+  url:   /campana/:idCampana/marca/:idMarca/pedidos-no-enviados
+  param: { module: campanas, action: pedidosNoEnviados }
+
+faltantes_generacionAutomatica:
+  url:   /faltantes/generacionAutomatica
+  param: { module: faltantes, action: generacionAutomatica }
+
+faltantes_generar:
+  url:   /faltantes/generar
+  param: { module: faltantes, action: generar }
+
+faltantes_generar_resultado:
+  url:   /faltantes/generarResultado
+  param: { module: faltantes, action: generarResultado }
+  
+faltantes_descargar_excel:
+  url:   /faltantes/descargarExcel
+  param: { module: faltantes, action: descargarExcel }
+  
+  
+faltantes_listProductos:
+  url:   /faltantes/listProductos
+  param: { module: faltantes, action: listProductos }
+  
+faltantes_listProductoItems:
+  url:   /faltantes/listProductoItems
+  param: { module: faltantes, action: listProductoItems }
+  
+faltantes_envio:
+  url:   /faltantes/envio/:idPedido/:idProductoItem
+  param: { module: faltantes, action: envio }
+  
+faltante:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                faltante
+    module:               faltantes
+    prefix_path:          /faltantes
+    column:               id_faltante
+    with_wildcard_routes: true
+  
+usuarios_descargarCSV:
+  url:   /usuarios/descargarCSV
+  param: { module: usuarios, action: descargarCSV }  
+
+devolucion_procesar:
+  url:   devolucion/:idDevolucion/procesar
+  param: { module: devoluciones, action: procesar }
+  
+devoluciones_descargar_excel:
+  url:   /devoluciones/descargarExcel
+  param: { module: devoluciones, action: descargarExcel }
+  
+devolucion_ver:
+  url:   devolucion/ver
+  param: { module: devoluciones, action: ver }
+
+devolucion_marcaRecibido:
+  url:   devolucion/:idDevolucion/marcaRecibido
+  param: { module: devoluciones, action: marcaRecibido }  
+  
+devolucion_envioCorreo:
+  url:   devolucion/:idDevolucion/envioCorreo
+  param: { module: devoluciones, action: envioCorreo }  
+  
+devolucion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                devolucion
+    module:               devoluciones
+    prefix_path:          /devoluciones
+    column:               id_devolucion
+    with_wildcard_routes: true
+
+ncredito:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ncredito
+    module:               ncredito
+    prefix_path:          /ncredito
+    column:               id_ncredito
+    with_wildcard_routes: true
+
+factura_correlativo:
+  url: /facturas/:comprobante/normalizarCorrelativo
+  param: { module: facturas, action: normalizarCorrelativo }
+
+factura:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Factura
+    module:               facturas
+    prefix_path:          /facturas
+    column:               id_factura
+    with_wildcard_routes: true
+
+facturacion_libroIvaVenta:
+  url:   /facturacion/libroIvaVenta
+  param: { module: facturacion, action: libroIvaVenta }
+
+facturacion_citiVentas:
+  url:   /facturacion/citiVentas
+  param: { module: facturacion, action: citiVentas }
+  
+facturacion_consultar:
+  url:   /facturacion/consultar
+  param: { module: facturacion, action: consultar }
+        
+nota_credito_generar:
+  url:   /facturacion/notaDeCredito/generar
+  param: { module: facturacion, action: generarNotaCredito }
+    
+facturacion_consultarEstadoNCredito:
+  url:   /facturacion/consultarEstadoNCredito
+  param: { module: facturacion, action: consultarEstadoNCredito }
+  
+facturacion_descargar_factura:
+  url:   /facturacion/:idPedido/descargarFactura
+  param: { module: facturacion, action: descargarFactura }
+  
+facturacion_descargar_ncredito:
+  url:   /facturacion/:idNCredito/descargarNCredito
+  param: { module: facturacion, action: descargarNCredito }
+
+tag:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tag
+    module:               tags
+    prefix_path:          /tags
+    column:               id_tag
+    with_wildcard_routes: true
+
+marca_rubro:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                marcaRubro
+    module:               marcaRubros
+    prefix_path:          /marcaRubros
+    column:               id_marca_rubro
+    with_wildcard_routes: true
+
+cupon:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                cupon
+    module:               cupones
+    prefix_path:          /cupones
+    column:               id_cupon
+    with_wildcard_routes: true
+
+producto_cupon:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                productoCupon
+    module:               productoCupon
+    prefix_path:          /productoCupon
+    column:               id_producto_cupon
+    with_wildcard_routes: true
+
+producto_detalle:
+  url:   /producto/:slugProductoGenero/:slugProductoCategoria/:slugProducto
+  param: { module: productos, action: detalle }
+
+waiting_list:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                waitingList
+    module:               waitingList
+    prefix_path:          /waitingList
+    column:               id_waiting_list
+    with_wildcard_routes: true
+    
+pedido_getJsonInfo:
+  url:   pedido/getJsonInfo
+  param: { module: pedidos, action: getJsonInfo }  
+  
+
+pedido_reciboDevolucion:
+  url:   /pedidos/reciboDevolucion
+  param: { module: pedidos, action: reciboDevolucion }
+      
+pedido_quitarIntervencionManual:
+  url:   /pedidos/:idPedido/quitarIntervencionManual
+  param: { module: pedidos, action: quitarIntervencionManual }
+  
+pedido_changeEstado:
+  url:   /pedidos/:idPedido/changeEstado/:estado
+  param: { module: pedidos, action: changeEstado }
+  
+pedido_changeEstadoEnvio:
+  url:   /pedidos/:idPedido/changeEstadoEnvio
+  param: { module: pedidos, action: changeEstadoEnvio }  
+
+pedido_nota_save:
+  url:   /pedidos/:idPedido/saveNota
+  param: { module: pedidos, action: saveNota }
+  
+pedido_descargar_excel:
+  url:   /pedidos/descargarExcel
+  param: { module: pedidos, action: descargarExcel }
+  
+pedido_exportar_comprobantes:
+  url:   /pedidos/exportarComprobantes
+  param: { module: pedidos, action: exportarComprobantes }
+  
+pedido_orden_compra:
+  url:   /pedidos/ordenCompra
+  param: { module: pedidos, action: ordenCompra }
+  
+pedido_armado:
+  url:   /pedidos/armado
+  param: { module: pedidos, action: armado }
+
+pedido_preparar_remitos:
+  url:   /pedidos/prepararRemitos
+  param: { module: pedidos, action: prepararRemitos }
+  
+pedido_preparar_envio:
+  url:   /pedidos/prepararEnvio
+  param: { module: pedidos, action: prepararEnvio }
+
+pedidos_recepcion_mercaderia_eshop:
+  url:   /pedidos/recepcionMercaderiaEshop
+  param: { module: pedidos, action: recepcionMercaderiaEshop }
+
+pedidos_recepcionMercaderia_no_envios:
+  url:   /pedidos/recepcionMercaderia/no-hay-envios-disponibles
+  param: { module: pedidos, action: noHayEnviosDisponibles }
+  
+  
+pedido_importar_guias_envio:
+  url:   /pedidos/importarGuiasEnvio
+  param: { module: pedidos, action: importarGuiasEnvio }
+
+pedido:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pedido
+    module:               pedidos
+    prefix_path:          /pedidos
+    column:               id_pedido
+    with_wildcard_routes: true
+
+usuario:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                usuario
+    module:               usuarios
+    prefix_path:          /usuarios
+    column:               id_usuario
+    with_wildcard_routes: true
+
+descuentos_generar:
+  url:   /descuentos/generar
+  param: { module: descuentos, action: generar }
+  
+descuentos_eliminarNoVendidos:
+  url:   /descuentos/eliminarNoVendidos
+  param: { module: descuentos, action: eliminarNoVendidos }
+  
+descuento:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                descuento
+    module:               descuentos
+    prefix_path:          /descuentos
+    column:               id_descuento
+    with_wildcard_routes: true
+
+bonificacion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                bonificacion
+    module:               bonificaciones
+    prefix_path:          /bonificaciones
+    column:               id_bonificacion
+    with_wildcard_routes: true
+
+
+tipo_descuento:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tipoDescuento
+    module:               tiposDescuento
+    prefix_path:          /tiposDescuento
+    column:               id_tipo_descuento
+    with_wildcard_routes: true
+
+configuracion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                configuracion
+    module:               configuraciones
+    prefix_path:          /configuraciones
+    column:               id_configuracion
+    with_wildcard_routes: true
+
+sucursal_oca:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sucursalOca
+    module:               sucursalesOca
+    prefix_path:          /sucursalesOca
+    column:               id_sucursal_oca
+    with_wildcard_routes: true
+
+localidad:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                localidad
+    module:               localidades
+    prefix_path:          /localidades
+    column:               id_localidad
+    with_wildcard_routes: true
+
+costo_envio:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                costoEnvio
+    module:               costosEnvio
+    prefix_path:          /costosEnvio
+    column:               id_costo_envio
+    with_wildcard_routes: true
+
+zona:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                zona
+    module:               zonas
+    prefix_path:          /zonas
+    column:               id_zona
+    with_wildcard_routes: true
+
+newsletter_download:
+  url:   /newsletter/download
+  param: { module: newsletter, action: download }
+    
+newsletter:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                newsletter
+    module:               newsletter
+    prefix_path:          /newsletter
+    column:               id_newsletter
+    with_wildcard_routes: true
+
+homepage:
+  url:   /
+  param: { module: sfAdminDash, action: dashboard }
+
+
+ajax_getDataProductoItem:
+  url:   /ajax/getDataProductoItem
+  param: { module: ajax, action: getDataProductoItem }
+
+ajax_updateProductoItem:
+  url:   /ajax/updateProductoItem
+  param: { module: ajax, action: updateProductoItem }
+  
+ajax_deleteProductoItem:
+  url:   /ajax/deleteProductoItem
+  param: { module: ajax, action: deleteProductoItem }
+
+ajax_get_eshop_by_id_marca:
+  url:   /ajax/getEshopByIdMarca
+  param: { module: ajax, action: getEshopByIdMarca }  
+
+ajax_list_categorias_by_id_campana:
+  url:   /ajax/listCategoriasByIdCampana
+  param: { module: ajax, action: listCategoriasByIdCampana }
+
+hasProducsAsignedWith:
+  url:   /ajax/hasProducsAsignedWith
+  param: { module: ajax, action: hasProducsAsignedWith }
+
+getCategoriasML:
+  url:   /ajax/getCategoriasML
+  param: { module: ajax, action: getCategoriasML }
+
+deleteImagenBannerPrincipal:
+  url:   /ajax/deleteImagenBannerPrincipal
+  param: { module: ajax, action: deleteImagenBannerPrincipal }
+
+deleteEshopHomeMultimedia:
+  url:   /ajax/deleteEshopHomeMultimedia
+  param: { module: ajax, action: deleteEshopHomeMultimedia }  
+
+getDataOCByIdMarca:
+  url: /ajax/getDataOCByIdMarca
+  param: { module: ajax, action: getDataOCByIdMarca }
+
+listLocalidadesByIdProvincia:
+  url: /ajax/listLocalidadesByIdProvincia
+  param: { module: ajax, action: listLocalidadesByIdProvincia }
+
+listTalleGetByMarca:
+  url: /ajax/listTalleGetByMarca
+  param: { module: ajax, action: listTalleGetByMarca }
+  
+getInfoPedido:
+  url: /ajax/getInfoPedido
+  param: { module: ajax, action: getInfoPedido }
+  
+getAllTags:
+  url:   /ajax/getAllTags
+  param: { module: ajax, action: allTags }
+  
+autocompleteUsuarios:
+  url:   /ajax/autocompleteUsuarios
+  param: { module: ajax, action: autocompleteUsuarios }
+  
+getProductosByFilters:
+  url:   /ajax/getProductosByFilters
+  param: { module: ajax, action: getProductosByFilters }
+  
+getProductoItemsByIdMarca:
+  url:   /ajax/getProductoItemsByIdMarca
+  param: { module: ajax, action: getProductoItemsByIdMarca }
+  
+getCampanasByIdMarca:
+  url:   /ajax/getCampanasByIdMarca
+  param: { module: ajax, action: getCampanasByIdMarca }
+  
+getMarcasByIdCampana:
+  url:   /ajax/getMarcasByIdCampana
+  param: { module: ajax, action: getMarcasByIdCampana }
+      
+producto_listRestaurarStockCampana:
+  url:   /producto/restaurarStockCampana/listar
+  param: { module: productos, action: listRestaurarStockCampana }
+  
+producto_restaurarStockCampanaMarca:
+  url:   /producto/restaurarStockCampana
+  param: { module: productos, action: restaurarStockCampana }
+
+producto_restaurarStockCampanaMarcaResultado:
+  url:   /producto/restaurarStockCampana/resultado
+  param: { module: productos, action: restaurarStockCampanaResultado }
+
+producto_setCategoriaML:
+  url:   /producto/setCategoriaML
+  param: { module: productos, action: setCategoriaML }
+  
+producto_publicarML:
+  url:   /producto/publicarML
+  param: { module: productos, action: publicarML }
+  
+producto_publicarML_confirmar:
+  url:   /producto/publicarML/confirmar
+  param: { module: productos, action: publicarML, confirmar: true }
+
+producto_editPrices:
+  url:   /producto/editPrices
+  param: { module: productos, action: editPrices }
+
+producto_editEshop:
+  url:   /producto/editEshop
+  param: { module: productos, action: editEshop }
+  
+producto_editSetTalle:
+  url:   /producto/editSetTalle
+  param: { module: productos, action: editSetTalle }
+ 
+producto_editSticker:
+  url:   /producto/editSticker
+  param: { module: productos, action: editSticker }
+  
+producto_editStock:
+  url:   /producto/editStock
+  param: { module: productos, action: editStock }
+
+producto_edicionStockPrecioCSV:
+  url:   /productos/edicionStockPrecioCSV
+  param: { module: productos, action: edicionStockPrecioCSV }
+
+producto_importar:
+  url:   /productos/importar
+  param: { module: productos, action: importar }
+  
+producto_importar_removeCSV:
+  url:   /productos/importar/removeCSV
+  param: { module: productos, action: importarRemoveCSV }
+  
+producto_importar_removeZIP:
+  url:   /productos/importar/removeZIP
+  param: { module: productos, action: importarRemoveZIP }
+  
+producto_importar_preview:
+  url:   /productos/importar/preview
+  param: { module: productos, action: importarPreview }
+  
+producto_importar_showImage:
+  url:   /productos/importar/showImage/:index
+  param: { module: productos, action: importarShowImage }
+  
+producto_importar_procesar:
+  url:   /productos/importarProcesar
+  param: { module: productos, action: importarProcesar }
+  
+producto_item_history:
+  url:   /productos/productoItemHistory
+  param: { module: productos, action: productoItemHistory }
+      
+productos_descargar_excel:
+  url:   /productos/descargarExcel
+  param: { module: productos, action: descargarExcel }
+    
+producto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                producto
+    module:               productos
+    prefix_path:          /productos
+    column:               id_producto
+    with_wildcard_routes: true
+
+marca:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                marca
+    module:               marcas
+    prefix_path:          /marcas
+    column:               id_marca
+    with_wildcard_routes: true
+
+producto_talle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                productoTalle
+    module:               productoTalles
+    prefix_path:          /productoTalles
+    column:               id_producto_talle
+    with_wildcard_routes: true
+
+producto_color:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                productoColor
+    module:               productoColores
+    prefix_path:          /productoColores
+    column:               id_producto_color
+    with_wildcard_routes: true
+
+producto_imagen:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                productoImagen
+    module:               productoImagenes
+    prefix_path:          /productoImagenes
+    column:               id_producto_imagen
+    with_wildcard_routes: true
+
+banner:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                banner
+    module:               banners
+    prefix_path:          /banners
+    column:               id_banner
+    with_wildcard_routes: true
+
+
+producto_categoria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                productoCategoria
+    module:               productoCategorias
+    prefix_path:          /productoCategorias
+    column:               id_producto_categoria
+    with_wildcard_routes: true
+    
+campana:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                campana
+    module:               campanas
+    prefix_path:          /campanas
+    column:               id_campana
+    with_wildcard_routes: true
+    
+
+productsForCampaign:
+  url:   /productsForCampaign
+  param: { module: campanas, action: productsForCampaign }
+    
+usuario:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                usuario
+    module:               usuarios
+    prefix_path:          /usuarios
+    column:               id_usuario
+    with_wildcard_routes: true
+    
+aws:
+  url: /aws
+  param: { module: aws, action: index }
+  
+aws_notificacion:
+  url: /aws/notificacion
+  param: { module: aws, action: notificacion }
+  
+verificar_factura_oca:
+  url: /verificarFacturaOca
+  param: { module: verificarFacturaOca, action: index }
+  
+waiting_list:
+  url: /waitList
+  param: { module: waitingList, action: index }
+  
+waiting_list_details:
+  url: /waitList/getDetails
+  param: { module: waitingList, action: getDetails }
+  
+  
+reportes:
+  url: /reportes
+  param: { module: reportes, action: index }
+  
+reportes_suscriptos:
+  url: /reportes/suscriptos
+  param: { module: reportes, action: suscriptos }
+    
+provincias:
+  url:   /provincias
+  param: { module: sfDependentSelectAuto, action: _ajax }

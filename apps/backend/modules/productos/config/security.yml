@@ -1,0 +1,11 @@
+default:
+  is_secure: true
+  credentials: [[prod_y_campanas_productos]]
+  
+listRestaurarStockCampana:
+  is_secure: true
+  credentials: [[prod_y_campanas_restaurar_stock_campana]]
+  
+restaurarStockCampana:
+  is_secure: true
+  credentials: [[prod_y_campanas_restaurar_stock_campana]]

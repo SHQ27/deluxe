@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/var/www/current/symfony --application=backend --env=prod deluxebuys:desactivar

@@ -1,0 +1,2 @@
+indexSuccess:
+  javascripts:    [lib/jquery.jcarousel.min.js, home.js, contador.js]

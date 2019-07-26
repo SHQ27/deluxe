@@ -1,0 +1,1908 @@
+
+/*===================================================================================*/
+/*  FONTS                                                                            */ 
+/*===================================================================================*/
+
+@font-face {
+    font-family: 'OratorStd';
+    src:
+    url('../../../images/eshop/8/fonts/OratorStd.eot?#iefix') format('embedded-opentype'),
+    url('../../../images/eshop/8/fonts/OratorStd.otf')  format('opentype'),
+    url('../../../images/eshop/8/fonts/OratorStd.woff') format('woff'),
+    url('../../../images/eshop/8/fonts/OratorStd.ttf')  format('truetype'),
+    url('../../../images/eshop/8/fonts/OratorStd.svg#OratorStd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src:
+    url('../../../images/eshop/8/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('../../../images/eshop/8/fonts/Gotham-Book.otf')  format('opentype'),
+    url('../../../images/eshop/8/fonts/Gotham-Book.woff') format('woff'),
+    url('../../../images/eshop/8/fonts/Gotham-Book.ttf')  format('truetype'),
+    url('../../../images/eshop/8/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src:
+    url('../../../images/eshop/8/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../../images/eshop/8/fonts/Gotham-Medium.otf')  format('opentype'),
+    url('../../../images/eshop/8/fonts/Gotham-Medium.woff') format('woff'),
+    url('../../../images/eshop/8/fonts/Gotham-Medium.ttf')  format('truetype'),
+    url('../../../images/eshop/8/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTScriptVentus';
+    src:
+    url('../../../images/eshop/8/fonts/PTScriptVentus.eot?#iefix') format('embedded-opentype'),
+    url('../../../images/eshop/8/fonts/PTScriptVentus.otf')  format('opentype'),
+    url('../../../images/eshop/8/fonts/PTScriptVentus.woff') format('woff'),
+    url('../../../images/eshop/8/fonts/PTScriptVentus.ttf')  format('truetype'),
+    url('../../../images/eshop/8/fonts/PTScriptVentus.svg#PTScriptVentus') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*===================================================================================*/
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.OS
+{
+    font-family: 'Gotham-Book', Arial;
+}
+
+.OS-9
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.OS-11, .dd-select, #producto .dd-option
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 11px;
+    font-weight: 400;
+    color: #000;
+}
+
+.OS-12
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.OS-13
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.OS-14
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.OS-18
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.MS
+{
+    font-family: 'Gotham-Book', Arial;
+    font-weight: 400;
+}
+
+.MS-9
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.MS-13
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.MS-15
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.MS-18
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.MS-23
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.MS-24
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.MS-32
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.MS-39
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 39px;
+    font-weight: 400;
+}
+
+.MS-72
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.MS-78
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 78px;
+    font-weight: 400;
+}
+
+.semiBold {
+    font-weight: normal !important;
+}
+
+.bold {
+    font-weight: normal !important;
+}
+
+.color1 { color: #000; }
+.color2 { color: #000; }
+.color3, #producto .dd-select { color: #444; }
+.color4 { color: #000; }
+.color5 { color: #333; }
+.color6 { color: #111; }
+.color7 { color: #fff; }
+.color8 { color: #000; }
+.color9 { color: #000; }
+.color10 { color: #878787; }
+.color11 { color: #858585; }
+.color12 { color: #000; }
+.color13 { color: #ccc; }
+
+.hcolor1:hover { color: #303030; }
+.hcolor2:hover { color: #333; }
+.hcolor3:hover, #producto .dd-select { color: #444; }
+.hcolor4:hover { color: #666666; }
+.hcolor5:hover { color: #797979; }
+.hcolor6:hover { color: #b9b9bd; }
+.hcolor7:hover { color: #fff; }
+.hcolor8:hover { color: #000; }
+.hcolor9:hover { color: #999; }
+.hcolor10:hover { color: #878787; }
+.hcolor11:hover { color: #858585; }
+.hcolor12:hover { color: #ff5b6d; }
+.hcolor13:hover { color: #ccc; }
+
+
+
+
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+body {
+    font-size: 13px;
+    font-family: 'Gotham-Book', Arial;
+}
+
+.linea .triangulos {}
+
+.divisor_v {
+    border-left: 1px solid #e3e3e3;
+    background-color: none;
+}
+
+.flex-control-paging li a {
+	background-image: url(../../../images/eshop/8/nav_button.png);
+}
+
+.flex-direction-nav .flex-prev { 
+    background-image: url(../../../images/eshop/8/slider_left.png);
+}
+.flex-direction-nav .flex-next { 
+    background-image: url(../../../images/eshop/8/slider_right.png);
+}
+.flex-direction-nav .flex-prev:hover { 
+    background-image: url(../../../images/eshop/8/slider_left_h.png);
+}
+.flex-direction-nav .flex-next:hover { 
+    background-image: url(../../../images/eshop/8/slider_right_h.png);
+}
+
+.btOscuro {
+    background-color: #000;
+    font-size: 11px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.btOscuro:hover {
+    background-color: #333;
+}
+
+.customSelect {
+    border: solid #878787 1px;
+}
+
+.customSelect select {
+    font-size: 12px !important;
+    font-family: Arial;
+}
+
+.radio {
+    background: #fff;
+    border: solid #000 1px;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #000;
+}
+
+.titulo
+{
+    color: #000;
+}
+
+.scrollToTop {
+    width: 70px;
+    height: 70px;   
+    background: url(../../../images/eshop/8/gototop.png);
+}
+
+.rojo {
+    color: red;
+}
+
+.color-link {
+    color: #000;
+    font-weight: bold;
+}
+
+.color-link:hover {
+    text-decoration: underline;
+}
+
+#toolbar_up {
+    font-size: 11px;
+}
+
+#home-modal .logo
+{
+	background-image: url(../../../images/eshop/8/logo_modal.png);
+    width: 239px;
+    height: 49px;
+    margin: 35px auto 15px auto;
+}
+
+
+#home-modal .campo {
+    font-family: 'OratorStd';
+    color: #000;
+}
+
+#home-modal .linea {
+    opacity: 0.4;
+}
+
+.suscripcion .ui-dialog-titlebar .ui-dialog-titlebar-close {
+    background: none;
+    left : 15px !important;
+}
+
+.suscripcion .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon {
+    background-image: url(../../../images/eshop/8/close_modal_suscription.png) !important;
+}
+
+
+#home-modal
+{
+    height: 500px;
+	background-image: url(../../../images/eshop/8/home_modal.jpg);
+    background-color: #000;
+}
+
+#devoluciones2 {
+    background-image: url(../../../images/eshop/8/devolucion_2.png);
+}
+
+#cambios2 {
+    background-image: url(../../../images/eshop/8/cambio_2.png);
+}
+
+#envios2 {
+    background-image: url(../../../images/eshop/8/envio_2.png);
+}
+
+div .header {
+    height: auto;
+}
+
+/*===================================================================================*/
+/*  HEADER                                                                           */ 
+/*===================================================================================*/
+
+.header {
+    position: relative;
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+#toolbar_up {
+    background-color: none;
+    color: #000;
+}
+
+#toolbar_up.OS{
+    font-weight: normal;
+}
+
+#toolbar_up .derecha,
+.barraFlotante .derecha {
+    font-size: 10px;
+}
+
+#toolbar_up .items .signin,
+.barraFlotante .items .signin {
+    font-family: 'Gotham-Medium', Arial;
+}
+
+#toolbar_up .items .signin,
+#toolbar_up .items #btMiCuenta,
+.barraFlotante .items .signin,
+.barraFlotante .items #btMiCuenta {
+    padding-right: 6px;
+}
+
+#toolbar_up .item span,
+.barraFlotante .item span {
+    background-color: transparent;
+    color: #000;
+    line-height: 12px;
+    font-weight: bold;
+}
+
+#toolbar_up  .items .lIzq,
+.barraFlotante  .items .lIzq {
+    border-left: 1px solid #000;
+}
+
+#toolbar_up  .items .registrarse,
+.barraFlotante  .items .registrarse {
+    color: #fff;
+}
+
+#toolbar_up .items .item,
+.barraFlotante .items .item {
+    line-height: 12px;
+}
+
+#toolbar_up .items .item:hover,
+.barraFlotante .items .item:hover {
+    color: #000;
+}
+
+#d-micuenta .link a {
+    font-size: 11px;
+}
+
+#logoCont {
+    float: left;
+    padding: 0;
+    margin: 22px 17px 0 17px;
+}
+
+.logo a {
+    background-image: url(../../../images/eshop/8/logo.png);
+    width: 193px;
+    height: 39px;
+}
+
+#nav {
+    width: 770px;
+    float: right;
+    margin: 30px 0 0 0;
+}
+
+#nav .container {
+    width: 770px;
+}
+
+.nav .shadow {
+    display: none;
+}
+
+.desplegable .titulo
+{
+    font-weight: bold;
+	color: #000;
+}
+
+#onlineBag ul li {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+#onlineBag ul li .nombre a
+{
+	color: #666;
+}
+
+#onlineBag ul li .price {
+    color: #000;
+}
+
+#onlineBag .total
+{
+    font-weight: bold;
+	color: #000;
+}
+
+#onlineBag .d_btVerCarro
+{
+    font-weight: bold;
+    background-color: #222;
+	color: #fff;
+}
+
+#onlineBag .d_btVerCarro:hover
+{
+	background-color: #000;
+}
+
+
+/*===================================================================================*/
+/*  MENU                                                                             */ 
+/*===================================================================================*/
+
+#nav .menu {
+    float: right;
+}
+
+#nav .menu li {
+    margin: 10px 26px;
+}
+
+#nav .menu a,
+#nav .menu span,
+.barraFlotante .menu a,
+.barraFlotante .menu span {
+    font-family: 'OratorStd', Arial;
+    font-size: 14px;
+    color: #111;
+    background: none no-repeat center 0;
+    padding-top: 7px;
+    padding-bottom: 0px;
+}
+
+#nav .menu .current a,
+#nav .menu a:hover,
+#nav .menu .current span,
+#nav .menu span:hover
+.barraFlotante .menu .current a,
+.barraFlotante .menu a:hover,
+.barraFlotante .menu .current span,
+.barraFlotante .menu span:hover
+{
+    color: #000;
+}    
+
+#nav .menu li .submenu li a,
+.barraFlotante .menu li .submenu li a {
+    background: none;
+    color: #666;
+    font-size: 13px;    
+}
+
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a:hover {
+    color: #000;
+}
+
+
+#nav .menu li .submenu,
+.barraFlotante li .submenu {
+    padding: 21px 0 0 0;
+}
+
+#nav .menu .prendas:before,
+.barraFlotante .prendas:before {
+    content: "E SHOP";
+}
+
+/*===================================================================================*/
+/*  BARRA FLOTANTE                                                                   */ 
+/*===================================================================================*/
+
+.barraFlotante .logo {
+    float: left;
+    background: url(../../../images/eshop/8/logo_chico.png) no-repeat center center;
+    width: 111px;
+    height: 30px;
+    margin-right: 40px;
+}
+
+.barraFlotante a,
+.barraFlotante span {
+    font-family: 'Gotham-Book', Arial;
+    font-size: 10px;
+}
+
+.barraFlotante .menu a,
+.barraFlotante .menu  span {
+    font-family: 'OratorStd', Arial;
+    font-size: 14px;
+}
+
+.barraFlotante .menu li {
+    margin: 10px 12px;
+}
+
+.barraFlotante .derecha {
+    top: 5px;
+}
+
+.barraFlotante #logged a {
+    font-family: 'Gotham-Book', Arial;
+}
+
+.barraFlotante .desplegable {
+    left: -193px;
+}
+
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */ 
+/*===================================================================================*/
+
+#notes #devoluciones {
+    background-image: url(../../../images/eshop/8/devolucion.png);
+}
+
+#cambio {
+    background-image: url(../../../images/eshop/8/cambio.png);
+}
+
+#envios {
+    background-image: url(../../../images/eshop/8/envio.png);
+}
+
+#notes .item .titulo {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Gotham-Medium', Arial;
+}
+
+#notes .item .texto {
+    font-size: 12px;
+    font-family: 'Gotham-Medium', Arial;
+}
+
+#network {
+    width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+}
+#network .item .titulo {
+    font-family: 'Gotham-Medium', Arial;
+}
+
+#info .social p {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Gotham-Medium', Arial;
+    font-size: 11px;
+}
+
+#info {
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #000;
+}
+
+#info .titulo {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Gotham-Medium', Arial !important;
+    padding-bottom: 10px;
+    border-bottom: solid #fff 2px;
+}
+
+#info .OS-11 {
+    font-family: 'Gotham-Medium', Arial !important;
+}
+
+
+#info .datos {
+    float: right;
+}
+
+#info .divisor_v {
+    border: none;
+    float: right;
+}
+
+#info .datos .lista .items .item a,
+#info .datos .lista .items .item, #info .texto {
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#info .datos .lista .items .item:hover {
+    color: #fff;
+}
+
+#info input {
+    border: 1px solid #fff;
+    color: #000;
+}
+
+#footer {
+    padding: 30px 0 25px 0;
+}
+
+#facebook { background-image: url(../../../images/eshop/8/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/8/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/8/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/8/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/8/snapchat.png); }
+
+#info .boton {
+    width: 14px;
+    height: 11px;
+    background-color: #000;
+    background-image: url(../../../images/eshop/8/bt_arrow.png);
+    border: solid 2px #fff;
+    padding: 11px;
+}
+
+#info .boton:hover {
+    background-color: #333;
+}
+
+#footer .powered {
+    background-image: url(../../../images/eshop/8/powered.png);
+}
+
+/*===================================================================================*/
+/*  HOME                                                                             */ 
+/*===================================================================================*/
+
+
+#texto .titulo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active,
+.seccion.bannerCampaign .flex-control-nav li a.flex-active {
+    background-position: 0px -13px
+}
+
+.seccion.TEXTO .container {
+    background: #000;
+    padding: 15px 0;
+}
+
+.seccion.TEXTO .titulo
+{
+    font-family: "Gotham-Book", Arial;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;    
+}
+
+#destacados .flex-control-paging li a {
+    background-image: url(../../../images/eshop/8/nav_button_destacados.png);
+}
+
+#destacados .titulo {
+    font-family: "Gotham-Book", Arial;
+    margin: 20px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#destacados .items .item span {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#destacados .items .item span b {
+    font-weight: bold;
+}
+
+.flexslider .slides>li .producto {
+    border-bottom: none;
+}
+
+.flexslider .slides>li .producto span {
+    font-family: 'Gotham-Book', Arial;
+    font-weight: normal;
+    padding: 12px 20px;
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.flexslider .slides>li:hover .producto:before {
+    background-image: url(../../../images/eshop/8/hover_product.png);
+    background-position: center;
+    background-color: rgba(255, 255,255, 0.8);
+    bottom: 0;
+}
+
+.flexslider .slides>li:hover .producto:after {
+    content: "";
+    background-image: url(../../../images/eshop/8/red_up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 99;
+}
+
+.flexslider .slides>li .precio {
+    float: left;
+    width: 100%;
+    padding: 6px 10px 6px 0;
+    margin: 0;
+    background: none;
+    font-weight: bold;
+    font-size: 13px;
+    color: #111;
+    text-align: left;
+}
+
+.flexslider .slides>li .precioViejo {
+    color: #666666;
+    font-weight: normal;
+    right: 0;
+    margin-left: 0;
+}
+
+.flexslider .slides>li .nombre {
+    font-family: 'Gotham-Book', Arial;
+    font-size: 12px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/*===================================================================================*/
+/*  MODAL HOME                                                                       */ 
+/*===================================================================================*/
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+	border: solid #ddd 2px;
+}
+
+#home-modal .alert {
+    font-size: 11px;
+}
+
+#home-modal .btOscuro {
+    padding: 12px 25px !important;
+    margin-top: 0px;
+    color: #000;
+    background: #fff;
+}
+
+#home-modal .texto,
+#home-modal .campo {
+    color: #fff;
+}
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#productos .mCSB_scrollTools {
+    opacity: 1;
+}
+
+#productos .mCSB_scrollTools:hover {
+    opacity: 0.75;
+}
+
+#productos .muestra .resultados .resultado:hover .producto:before {
+    background-image: url(../../../images/eshop/8/hover_product.png);
+    background-position: center;
+    border-bottom: solid #000 1px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+#productos .pantalla {
+    margin: 10px 0 60px 0;
+}
+
+
+#productos .titulo br{
+    display: none;
+}
+
+#productos .titulo {
+    font-size: 12px; 
+    color: #000;
+    font-family: Arial;
+}
+
+#productos .barra {
+    border: 0;
+}
+
+#productos .barra .derecha #orden {
+    border-left: solid #000 1px;   
+}
+
+#productos #btLimpiar {
+    font-size: 11px;
+}
+
+#productos .dd-selected {
+    font-weight: normal;
+}
+
+#productos .muestra .resultados .resultado .descuento {
+    background-color: #000;
+}
+
+#productos .acordion .titulo:before {
+    margin-top: 2px;
+    background-image: url(../../../images/eshop/8/accordion_open.png);
+}
+
+#productos .acordion .titulo.closed:before {
+    background-image: url(../../../images/eshop/8/accordion_closed.png);
+}
+
+#productos .acordion h2 {
+    font-weight: bold;
+    color: #111;
+}
+
+#productos .acordion .contenido .elemento.selected {
+    color: #333;
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 1px solid #ccc;
+}
+
+#productos .filtro .actual {
+    padding-bottom: 5px;
+}
+
+#productos .filtro .actual .item
+{
+    line-height: 12px;
+}
+
+#productos .muestra .resultados .resultado .producto {
+    border-bottom: 0;
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 0;
+}
+
+#productos .muestra .resultados .resultado .precio {
+    float: left;
+    width: 100%;
+    padding: 6px 10px 6px 0;
+    margin: 0;
+    background: none;
+    font-weight: bold;
+    font-size: 13px;
+    color: #111;
+    text-align: left;
+}
+
+#productos .muestra .resultados .resultado .precio .precioViejo {
+    color: #666666;
+    font-weight: normal;
+    right: 0;
+    margin-left: 0;
+}
+
+#productos .dd-pointer {
+    background-image: url(../../../images/eshop/8/accordion_closed.png);
+}
+
+#productos #orden .dd-options {
+    top: 26px;
+    padding: 15px 7px 15px 0;
+    border-color: #111 !important;
+}
+
+#productos #orden .dd-options .dd-option-text {
+    color: #000;
+}
+
+#productos .item {
+    font-size: 11px;
+}
+
+#productos .resultados .resultado .nombre {
+    font-family: 'Gotham-Book', Arial;
+    font-size: 12px;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#productos .linea {
+}
+
+#productos .acordion .contenido .elemento {
+    margin-bottom: 9px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #333;
+}
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+    background-color: #000;
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#probadorOnline .campo input
+{
+    background-color: #f4f3f2;
+}
+
+#producto .customSelect {
+    background: #f4f3f2;
+    border: 0;
+}
+
+#producto .nombre {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    width: 235px;
+    margin-bottom: 40px;
+}
+
+#producto .barra {
+    border: 0;
+}
+
+#producto .barra .derecha a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+#producto .btProbar {
+    background-image: url(../../../images/eshop/8/probador.png);
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 30px;
+    color: transparent;
+}
+
+#probadorOnline .campo input
+{
+    border: 2px solid #ddd !important;
+}
+
+#probadorOnline .btOscuro {
+    color: #fff;
+}
+
+#producto .contFotos .thumb:hover,#producto .contFotos .thumb.selected {
+    border-bottom: 1px solid #fff;
+}
+
+#producto .contFotos #foto_grande span {
+    background-color: #000;
+}
+
+#probadorOnline .ui-icon-triangle-1-n {
+    background-image: url(../../../images/eshop/8/accordion_open.png) !important;
+}
+
+#probadorOnline .ui-icon-triangle-1-s {
+    background-image: url(../../../images/eshop/8/accordion_closed.png) !important;
+}
+
+
+#producto .precio {
+    font-family: 'Gotham-Book', Arial;
+    color: 000;
+    font-weight: bold;
+}
+
+#producto .precioViejo {
+     font-weight: bold;
+     border-left: solid #333 1px;
+     color: #BBB;   
+}
+
+#producto  .infoGeneral .item {
+    background: none !important;
+    padding-top: 15px;
+}
+
+#producto  .infoGeneral .color4{
+    color: #111;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#producto  .infoGeneral .descripcion{
+    color: #333;
+}
+
+#producto .subtitulo {
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    border-bottom: solid #111 1px;
+}
+
+#producto .btOscuro {
+    padding: 15px;
+}
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */ 
+/*===================================================================================*/
+
+#tiendas .titulo {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: normal;
+}
+
+#tiendas .barra
+{
+    margin-bottom: 0px;
+    background: none;
+    border-bottom: solid #EEE 3px;
+}
+
+
+#tiendas .menu a
+{
+    font-weight: bold;
+    color: #AAA;
+}
+
+#tiendas .current a,
+#tiendas .menu a:hover
+{
+    color: #000;
+}
+
+#tiendas .item {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 125px;
+}
+
+#tiendas .item .nombre
+{
+    font-family: 'PTScriptVentus', 'Gotham-Book', Arial;
+    font-size: 25px;
+    text-align: center;
+    text-transform: none;
+    color: #111;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+#tiendas .item .direccion,
+#tiendas .item .telefono
+{
+    color: #555;
+    font-size: 11px;
+}
+
+#tiendas .menu a
+{
+    padding-bottom: 4px;
+}
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+#checkout_carrito .titulo {
+    font-size: 21px;
+}
+
+#checkout_carrito .paso span.color7 {
+    color: #000;
+}
+
+#checkout_carrito .paso.color8 span.color7 {
+    color: #fff;
+}
+
+#checkout_carrito .paso.color8 {
+    color: #000 !important;
+}
+
+#checkout_carrito .paso {
+    font-family: 'OratorStd', Arial;
+    color: #222;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#checkout_carrito .paso span {
+    font-family: 'OratorStd', Arial;
+    font-size: 30px;
+    background-image: url(../../../images/eshop/8/poligono_con_hover.png);
+    width: 70px;
+    height: 46px;
+    padding-top: 24px;
+}
+
+#checkout_carrito .renglon .btLink span {
+    background-image: url(../../../images/eshop/8/btArrows.png);
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: red;
+}
+
+
+#checkout_carrito .items .item .nombre {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+#checkout_carrito .datos-adicionales .renglon input {
+    border: 1px solid #888 !important;
+    height: 19px;
+}
+
+#checkout_carrito .opciones {
+    background: #fff;
+}
+
+#checkout_carrito .items .item .columna .unitario {
+    color: #666;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#checkout_carrito.paso3 .MS-18,
+#checkout_carrito .items .item .columna .subtotal {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#checkout_carrito.paso3 .MS-24 {
+    font-size: 18px
+}
+
+#checkout_carrito .items .item .cantidad {
+    margin-top: 0;
+}
+
+#checkout_carrito .btEliminar.eliminar {
+    background-color: #000;
+    font-size: 11px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+#checkout_carrito .btEliminar.eliminar:hover {
+    background-color: #333;
+}
+
+
+#checkout_carrito .barra {
+    border-bottom: solid #000 1px;
+}
+
+#checkout_carrito .barra .header {
+    height: auto;
+    color: #111;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+#checkout_carrito .barra .header.MS-13 {
+    font-size: 12px;
+}
+
+#checkout_carrito .renglones .renglon span {
+    color: #000;
+    font-weight: bolder;
+} 
+
+#checkout_carrito .renglones .renglon .detalle span {
+    color: #666666;
+    font-weight: normal;
+}
+
+#checkout_carrito .renglones .renglon a {
+    color: #000;
+}
+
+#checkout_carrito .renglones .renglon #goToPaso2 {
+    color: #000;
+}
+
+#checkout_carrito .renglones .renglon.alto,
+#checkout_carrito .renglones .checkoutSubTotal {
+    border-bottom: 1px solid #DBDBDB;
+    border-style: dotted;
+}
+
+#checkout_carrito.paso2 .MS-23 {
+    font-size: 18px;
+}
+
+#checkout_carrito.paso2 .MS-13 {
+    color: #444;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#checkout_carrito.paso2 .form .texto {
+    border-top: solid #000 1px;
+    margin: 8px 0 0 0;
+    padding: 18px 0 0 0;
+    color: #666;
+}
+
+#checkout_carrito .form .costo {
+    font-size: 14px;
+}
+
+#checkout_carrito .renglon .btLink.izquierda span {
+    background-position: bottom left;
+}
+
+#checkout_carrito .renglon .btLink.derecha span {
+    background-position: top right;
+}
+
+#goToPaso3 {
+    color: #000 !important;
+}
+
+#checkout_carrito #generalError {
+    font-size: 14px;
+}
+
+#checkout_carrito .items, 
+#checkout_carrito .renglon {
+    border-bottom: 1px solid #000;
+}
+
+#checkout_carrito .renglon .detalle .divisorV {
+    background-color: #000;
+}
+
+#checkout_carrito .renglon.color4 {
+    font-weight: bold;
+    color: #111;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#checkout_carrito .renglon .color2 {
+    color: #555;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/*===================================================================================*/
+/*  INGRESO / REGISTRO                                                               */
+/*===================================================================================*/
+
+#ingresar .titulo {
+    color: #000;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#ingresar .titulo br{
+    display: none;
+}
+
+#ingresar .campo {
+    font-family: 'OratorStd';
+    color: #000;
+    letter-spacing: 1px;
+}
+
+#ingresar input[type=text], #ingresar input[type=password] {
+    background: none !important;
+    border: 2px solid #ddd;
+
+}
+
+#ingresar .radioLabel {
+    margin-top: 11px;
+}
+
+#ingresar label {
+    color: #000 !important;
+    font-family: 'OratorStd';
+}
+
+#ingresar .contRecordar label,
+#ingresar .terminos label {
+    font-family: 'Gotham-Book', Arial;
+    font-style: normal;
+    color: #888 !important;
+}
+
+#ingresar .link span {
+    display: none;
+}
+
+#ingresar .dd-select {
+    border: 1px solid #888 !important;
+}
+
+#ingresar .dd-options {
+    border: 1px solid #888 !important;
+}
+
+#olvidastePass input[type=text]
+{
+    border: 1px solid #888 !important;
+}
+
+#olvidastePass .btOscuro {
+    background-color: #f5856b;
+    color: #fff;
+    font-size: 13.5px !important;
+    padding: 12px !important;
+    letter-spacing: 1px;
+}
+
+#olvidastePass .btOscuro:hover {
+    opacity: 0.8;
+}
+
+
+#soy_nuevo .rincon {
+    display: none;
+}
+
+#ingresar #soy_nuevo .divisorH,
+#ingresar #soy_miembro .divisorH {
+    background-color: #000;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#mi_cuenta .titulo
+{
+    font-size: 23px;
+    color: #000;
+    font-weight: normal;
+}
+
+#mi_cuenta form  input[type=text],
+#mi_cuenta form  textarea,
+#mi_cuenta .customSelect
+{
+    font-family: Arial;
+    border: solid 2px #ddd;
+}
+
+#devoluciones .step
+{
+    background-image: url("../../../images/eshop/8/poligono_con_hover_chico.png");
+    background-position: -5px -9px;
+    
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 58px;
+    height: 45px;
+    line-height: 33px;
+    color: #000;
+}
+
+#devoluciones .step.selected
+{
+    background-position: -5px -79px;
+    color: #fff;
+}
+
+#devoluciones .MS-18 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#mi_cuenta .linea {
+    display: none;
+}
+
+#mi_cuenta #datosPersonales .texto {
+    color: #666;
+}
+
+#mi_cuenta #datosPersonales .campo,
+#mi_cuenta #datosPersonales .campo2 {
+    font-family: 'OratorStd', Arial;
+    color: #000;
+}
+
+#mi_cuenta #datosPersonales .campo input,
+#mi_cuenta #datosPersonales .campo2 input
+{
+    border: 2px solid #ddd !important;
+}
+
+#mi_cuenta #datosPersonales .sinCargar {
+    color: #555;
+    font-style: normal;
+}
+
+#mi_cuenta #datosPersonales .sinCargar a {
+    border-left: 1px solid #000;
+    color: #000;
+}
+
+#devoluciones .campo textarea
+{
+    border: 2px solid #ddd !important;
+}
+
+#mi_cuenta #devoluciones .dd-select {
+    border: 2px solid #ddd !important;
+}
+
+#mi_cuenta #devoluciones .dd-options
+{
+    border: 2px solid #ddd !important;
+}
+
+#mi_cuenta .customSelect {
+    border: 2px solid #ddd;
+    background: none;
+}
+
+
+#devoluciones input[type=text],
+#devoluciones input[type=password]
+{
+    border: 2px solid #ddd;
+}
+
+#consultaEnvio input[type=text]
+{
+    border: 2px solid #ddd;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido {
+    font-size: 11px;
+}
+
+#verPedidos .MS-13,
+#mi_cuenta .MS-13 {
+    font-size: 12px;
+    color: #444;
+    font-weight: bold;
+}
+
+#verPedidos .MS-13.verde,
+#mi_cuenta .MS-13.verde {
+    color: green;
+}
+
+#verPedidos .MS-13.rojo,
+#mi_cuenta .MS-13.rojo {
+    color: red;
+}
+
+#mi_cuenta .panel {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+
+#mi_cuenta .panel .items .item {
+    font-size: 11px;
+    color: #666666;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+}
+
+#mi_cuenta .panel .items .item.selected,
+#mi_cuenta .panel .items .item:hover
+{
+    color: #000;
+}
+
+#mi_cuenta .panel .items {    
+    padding: 10px 30px;
+}
+
+
+#desactivarCuenta .btOscuro {
+    padding-bottom: 12px;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido a {
+    color: #000;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido a:hover {
+    text-decoration: underline;
+}
+
+#verPedidos .titulo
+{
+    font-size: 22px;
+}
+
+#verPedidos .MS-18 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#verPedidos .items .item .datos .color1,
+#verPedidos .items .item .datos .color2 {
+    color: #111;
+}
+
+
+#verPedidos .btOscuro.color7,
+#mi_cuenta .btOscuro.color7 {
+    color: #fff;
+}
+
+#respuesta_consultaEnvio .color4 {
+    color: #444;
+}
+
+/*===================================================================================*/
+/*  CONSULTAS                                                                        */ 
+/*===================================================================================*/
+
+#consultas .titulo
+{
+    font-size: 21px;
+    color: #000;
+    margin-top: 50px;
+}
+
+#consultas .faqCategoria .header {
+    height: auto;
+    color: #222;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#consultas .faqCategoria .header:hover {
+    color: #000;
+}
+
+#consultas .faqCategoria {
+    border-bottom: 1px solid #ccc;
+}
+
+#consultas .pregunta span {
+    color: #666;
+}
+
+#consultas .respuesta {
+    color: #666;
+}
+
+
+#consultas .respuesta a {
+    color: #000;
+    font-weight: bold;
+}
+
+#consultas .faqCategoria .num
+{
+    background-image: url(../../../images/eshop/8/poligono_color.png);
+    color: #fff;
+    font-weight: bold;
+    padding-top: 9px;
+    width: 28px;
+    height: 19px;
+    font-family: 'OratorStd', Arial;
+}
+
+#consultas .titleFaqCategoria:hover 
+{
+    color: #000;
+}
+
+#contacto .texto {
+    font-size: 12px; 
+    color: #666;
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea,
+#contacto .customSelect
+{
+    font-family: Arial;
+    border: solid 2px #ddd;
+}
+
+#contacto form  input[type=file]::before {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: #000;
+}
+
+#contacto form input[type=file]::before {
+    margin-top: 0px;
+}
+
+#contacto form  .dd-select {
+    border: solid 2px #ddd !important;
+}
+
+#contacto form  .dd-options
+{
+    border: solid 2px #ddd !important;
+}
+
+#contacto form .campo {
+    font-family: 'OratorStd', Arial;
+    color: #000 !important;
+}
+
+#contacto .adjuntos {
+    border-top: solid 2px #ddd;
+    border-bottom: solid 2px #ddd;
+}
+
+#contacto .adjuntos .MS-13 {
+    font-weight: bold;
+}
+
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito .items  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .items  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  input[type=text],#checkout_carrito .form  input[type=password] {
+    border: solid #878787 1px;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#estatica .titulo {
+    color: #000;
+    font-size: 21px;
+}
+
+#terminos .color5,
+#terminos .color4 {
+    color: #333;
+}
+
+#terminos .texto {
+    font-size: 11px;
+}
+
+#terminos .titulo {
+    color: #000;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+#terminos .subtitulo {
+    font-family: 'Gotham-Book', Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#terminos .menu a,
+#terminos .menu span
+{
+    font-family: 'Gotham-Book', Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}  
+
+#terminos .menu li {
+    margin: 10px 18px;
+}
+
+#terminos .menu li:hover a
+{
+    color: #000;
+    border-bottom: solid #000 2px; 
+}
+
+#terminos .detalle {
+    font-size: 11px;
+}
+
+#terminos .subtitulo {
+    border-top: 1px solid #000;
+}
+
+#acerca .titulo {
+    font-family: 'Gotham-Bold', Arial;
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#acerca .texto {
+    font-size: 13px;
+}
+
+#acerca .italic {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*===================================================================================*/
+/*  SECCION LOOKBOOK                                                                 */
+/*===================================================================================*/
+
+.lookbookPointer .indicador {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 7px;
+    opacity: 0.9;
+}
+
+.lookbookPointer .indicador:after {
+    content: "+";
+    position: absolute;
+    left: 4px;
+    top: 2px;
+}
+
+
+.lookbookPointer:hover .indicador:after {
+    content: "-";
+    top: 2px;
+    left: 5px;
+}
+
+
+.lookbookPointer .infoProducto .contenedor {
+    background: #fff none repeat scroll 0 0;
+    border: solid #000 1px;
+    border-radius: 0px;
+    opacity: 0.8;
+    padding: 7px 5px 14px 5px;
+}
+
+.lookbookPointer .infoProducto {
+    left: 6px;
+    top: -13px;
+}
+
+.lookbookPointer .infoProducto .titulo,
+.lookbookPointer .infoProducto .precio,
+.lookbookPointer .infoProducto .link {
+    color: #000;
+}
+
+.lookbookPointer .infoProducto .titulo {
+    font-size: 11px;
+}
+
+.lookbookPointer .infoProducto .precio {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.lookbookPointer .infoProducto .link {
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    padding: 5px 7px 3px 7px;
+}
+
+.lookbookPointer:hover .infoProducto .link:hover {
+    background: #333;
+    text-decoration: none;
+}

@@ -1,0 +1,5 @@
+procesarSuccess:
+  javascripts:    [devolucionProcesar.js]
+  
+indexSuccess:
+  javascripts:    [devolucionList.js]

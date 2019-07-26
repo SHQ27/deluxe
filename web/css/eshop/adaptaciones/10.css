@@ -1,0 +1,1934 @@
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+@font-face {
+    font-family: 'brandon_light';
+    src: url('../../../images/eshop/10/fonts/brandon_light-webfont.eot');
+    src: url('../../../images/eshop/10/fonts/brandon_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../images/eshop/10/fonts/brandon_light-webfont.woff2') format('woff2'),
+         url('../../../images/eshop/10/fonts/brandon_light-webfont.woff') format('woff'),
+         url('../../../images/eshop/10/fonts/brandon_light-webfont.ttf') format('truetype'),
+         url('../../../images/eshop/10/fonts/brandon_light-webfont.svg#brandon_grotesquelight') format('svg');
+}
+
+@font-face {
+    font-family: 'brandon_med';
+    src: url('../../../images/eshop/10/fonts/brandon_med-webfont.eot');
+    src: url('../../../images/eshop/10/fonts/brandon_med-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../images/eshop/10/fonts/brandon_med-webfont.woff2') format('woff2'),
+         url('../../../images/eshop/10/fonts/brandon_med-webfont.woff') format('woff'),
+         url('../../../images/eshop/10/fonts/brandon_med-webfont.ttf') format('truetype'),
+         url('../../../images/eshop/10/fonts/brandon_med-webfont.svg#brandon_grotesquemed') format('svg');
+}
+
+@font-face {
+    font-family: "gotham-rounded-book";
+    src: url("../../../images/eshop/10/fonts/gotham-rounded-book.eot") format("eot"),
+         url("../../../images/eshop/10/fonts/gotham-rounded-book.woff") format("woff"),
+         url("../../../images/eshop/10/fonts/gotham-rounded-book.ttf") format("truetype"),
+         url("../../../images/eshop/10/fonts/gotham-rounded-book.svg") format("svg");
+}
+
+
+@font-face {
+    font-family: "gotham-rounded-medium";
+    src: url("../../../images/eshop/10/fonts/gotham-rounded-medium.eot") format("eot"),
+         url("../../../images/eshop/10/fonts/gotham-rounded-medium.woff") format("woff"),
+         url("../../../images/eshop/10/fonts/gotham-rounded-medium.ttf") format("truetype"),
+         url("../../../images/eshop/10/fonts/gotham-rounded-medium.svg") format("svg");
+}
+
+body {
+    font-size: 13px;
+    font-family: "gotham-rounded-book";
+}
+/*
+.linea {
+    background-image: url(../../../images/eshop/10/pattern.png);
+    height: 10px;
+}*/
+
+.linea .triangulos {}
+
+.divisor_v {
+    border-left: 1px solid #e3e3e3;
+    background-color: none;
+}
+
+.flex-control-paging li a {
+	background-image: url(../../../images/eshop/10/nav_button.png);
+}
+
+.flex-direction-nav .flex-prev { 
+	background-image: url(../../../images/eshop/10/slider_left.png);
+}
+.flex-direction-nav .flex-next { 
+	background-image: url(../../../images/eshop/10/slider_right.png);
+}
+.flex-direction-nav .flex-prev:hover { 
+	background-image: url(../../../images/eshop/10/slider_left_h.png);
+}
+.flex-direction-nav .flex-next:hover { 
+	background-image: url(../../../images/eshop/10/slider_right_h.png);
+}
+
+.btOscuro {
+    background-color: #000;
+}
+
+.btOscuro.MS-15{
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.btOscuro:hover {
+    background-color: #000;
+}
+
+.customSelect {
+    border: solid #000 1px;
+}
+
+.customSelect .select {
+    color: #333;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #000;
+}
+
+.titulo
+{
+    color: #000;
+}
+
+.scrollToTop {
+    background: url(../../../images/eshop/10/gototop.png);
+}
+
+.rojo {
+    color: red;
+}
+
+.color-link {
+    color: #000;
+    font-weight: bold;
+}
+
+.color-link:hover {
+    text-decoration: underline;
+}
+
+#toolbar_up {
+    font-size: 12px;
+    height: 32px;
+}
+
+/*
+.ui-dialog.suscripcion {
+    background: #666;
+}*/
+
+.ui-widget-content.suscripcion {
+    border: 0;
+    border-radius: 0;
+}
+
+.ui-widget-overlay{
+    background: #fff;
+    opacity: 0.80;
+}
+
+.customSelect select option {
+    color: #000;
+}
+
+
+#home-modal .logo
+{
+	background-image: url(../../../images/eshop/10/logo.png);
+    width: 180px;
+    height: 50px;
+    margin: 20px auto 25px auto;
+}
+
+
+#home-modal .campo {
+    font-weight: bold;
+    color: #000;
+}
+
+#home-modal .linea {
+    /*opacity: 0.4;*/
+    display: none;
+}
+
+
+#home-modal
+{
+    height: 500px;
+	background-image: url(../../../images/eshop/10/home_modal.jpg);
+    background-color: #fff;
+    width: 360px;
+    padding: 20px 395px 20px 35px
+}
+
+#home-modal .campo{
+    font-family: "gotham-rounded-medium";
+}
+
+#home-modal input[type=text]{
+    width: 330px;
+}
+
+#devoluciones2 {
+    background-image: url(../../../images/eshop/10/devolucion_2.png);
+}
+
+#cambios2 {
+    background-image: url(../../../images/eshop/10/cambio_2.png);
+}
+
+#envios2 {
+    background-image: url(../../../images/eshop/10/envio_2.png);
+}
+
+/*#mCSB_2_dragger_vertical .mCSB_dragger {
+    background-color: #000;
+}
+*/
+.mCSB_scrollTools {
+    opacity: 1;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #000;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+    width: 4px;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+    background-color: #000;
+}
+.mCSB_dragger:hover{
+    opacity: 1 !important;
+}
+.mCSB_draggerContainer:hover{
+    opacity: 1;
+}
+.mCSB_dragger_bar:hover{
+    opacity: 1;
+    background-color: #000;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail{
+    background-color: #000; background-color: rgba(0,0,0,0.4);
+    filter: none; -ms-filter: none; 
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+    background-color: #000; background-color: rgba(0,0,0,1);
+    filter: none; -ms-filter: none; 
+}
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+    background-color: #000; background-color: rgba(0,0,0,1);
+    filter: none; -ms-filter: none; 
+}
+
+/*===================================================================================
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.OS
+{
+	font-family: "gotham-rounded-book";
+}
+
+.OS-9
+{
+	font-family: "gotham-rounded-book";
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.OS-11, .dd-select, #producto .dd-option
+{
+	font-family: "gotham-rounded-book";
+	font-size: 11px;
+	font-weight: normal;
+	color: #000;
+}
+
+.OS-12
+{
+	font-family: "gotham-rounded-book";
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.OS-13
+{
+	font-family: "gotham-rounded-medium";
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.OS-14
+{
+	font-family: "gotham-rounded-medium";
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.OS-18
+{
+	font-family: "gotham-rounded-medium";
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS
+{
+	font-family: "gotham-rounded-medium";
+	font-weight: 400;
+}
+
+.MS-9
+{
+	font-family: "gotham-rounded-medium";
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.MS-13
+{
+	font-family: "brandon_med";
+	font-size: 13px;
+	font-weight: normal !important;
+}
+
+.MS-15
+{
+	font-family: "brandon_med";
+	font-size: 15px;
+	font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.MS-18
+{
+	font-family: "brandon_med";
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS-23
+{
+	font-family: "brandon_med";
+	font-size: 27px;
+	font-weight: bold;
+}
+
+.MS-24
+{
+	font-family: "brandon_med";
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.MS-32
+{
+	font-family: "brandon_med";
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.MS-39
+{
+	font-family: "brandon_med";
+	font-size: 39px;
+	font-weight: 400;
+}
+
+.MS-72
+{
+	font-family: "brandon_med";
+	font-size: 72px;
+	font-weight: 400;
+}
+
+.MS-78
+{
+	font-family: "brandon_med";
+	font-size: 78px;
+	font-weight: 400;
+}
+
+
+.color1 { color: #000; }
+.color2 { color: #111; }
+.color3, #producto .dd-select { color: #444; }
+.color4 { color: #222; }
+.color5 { color: #333; }
+.color6 { color: #111; }
+.color7 { color: #fff; }
+.color8 { color: #000; }
+.color9 { color: #999; }
+.color10 { color: #878787; }
+.color11 { color: #858585; }
+.color12 { color: #000; }
+.color13 { color: #ccc; }
+
+.hcolor1:hover { color: #303030; }
+.hcolor2:hover { color: #333; }
+.hcolor3:hover, #producto .dd-select { color: #444; }
+.hcolor4:hover { color: #666666; }
+.hcolor5:hover { color: #797979; }
+.hcolor6:hover { color: #b9b9bd; }
+.hcolor7:hover { color: #fff; }
+.hcolor8:hover { color: #323232; }
+.hcolor9:hover { color: #999; }
+.hcolor10:hover { color: #878787; }
+.hcolor11:hover { color: #858585; }
+.hcolor12:hover { color: #ff5b6d; }
+.hcolor13:hover { color: #ccc; }
+
+.titulo.MS-23
+{
+    font-size: 21px;
+}
+
+
+/*===================================================================================*/
+/*  HEADER                                                                           */ 
+/*===================================================================================*/
+
+
+#toolbar_up {
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'gotham-rounded-book';
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#toolbar_up .item span {
+    background-color: #fff;
+    color: #000;
+    line-height: 12px;
+
+}
+
+#toolbar_up  .items .lIzq {
+    border: 0
+}
+
+#toolbar_up  .items.derecha .lIzq {
+    border: 0
+}
+
+#toolbar_up  .items .registrarse {
+    color: #fff;
+}
+
+#toolbar_up .items .item {
+    line-height: 12px;
+}
+
+#toolbar_up .items .item.semiBold {
+    font-weight: normal !important;
+}
+
+
+#toolbar_up .items .item:hover {
+    color: #000;
+}
+
+#toolbar_up .tiendas,
+#toolbar_up .comoComprar,
+#toolbar_up .signin {
+    display: none;
+} 
+
+#toolbar_up .carritoRapidoTotalPrendas:before {
+    content: '(';
+}
+
+#toolbar_up .carritoRapidoTotalPrendas:after {
+    content: ')';
+}
+
+.logo a {
+    background-image: url(../../../images/eshop/10/logo.png);
+    width: 178px;
+    height: 52px;
+}
+
+#logoCont {
+    padding: 0px 0 15px 0;
+}
+
+.nav{
+    background-color: #000;
+}
+
+#nav .menu a,
+#nav .menu span
+{
+    font-family: "brandon_med";
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: none;
+    background: none no-repeat center 0;
+    padding-top: 7px;
+    padding-bottom: 0px;
+}
+#nav .menu .current a, #nav .menu a:hover,
+#nav .menu .current span, #nav .menu span:hover
+{
+    /*color: #d0a06d;
+    background: url(../../../images/eshop/10/nav_hover.png) no-repeat center 0;*/
+}    
+
+#nav .menu li .submenu{
+    padding: 13px 0 0 0;
+    text-align: left;
+    color: #000;
+}
+#nav .menu li .submenu li{
+    padding: 5px 10px 5px 20px;
+}
+
+#nav .menu li .submenu li a{
+    font-family: "gotham-rounded-book";
+    color: #000;
+    font-weight: normal;
+    background: none;
+    font-size: 12px;
+} 
+
+#nav .menu li .submenu li a:hover {
+    font-weight: bold;
+}
+
+#nav .menu{
+    width: 100% !important;
+    text-align: center;
+}
+
+#nav .menu li{
+    margin: 13px 40px 7px 40px;
+}
+
+.desplegable .titulo
+{
+    display: none;
+}
+
+#onlineBag ul li .nombre a
+{
+	color: #000;
+}
+
+#onlineBag ul li .price {
+    color: #191919;
+}
+
+#onlineBag ul li{
+    border-bottom: 1px solid #000;
+}
+
+#onlineBag .total
+{
+	color: #000;
+}
+
+#onlineBag .d_btVerCarro
+{
+    font-weight: bold;
+    background-color: #000;
+	color: #fff;
+}
+
+#onlineBag .d_btVerCarro:hover
+{
+	background-color: #333;
+}
+
+#d-micuenta {
+    width: 120px;
+}
+
+#d-micuenta.desplegable {
+    left: 35px;
+}
+
+#d-micuenta .link {
+    margin: 5px 5px 0 5px;
+}
+
+#d-micuenta .link .OS-11{
+    font-size: 10px;
+}
+
+#btConsultas {
+    background: url(../../../images/eshop/10/ico-consultas.png) no-repeat center center;
+    background-position: 94px 4px;
+    padding-right: 39px !important;
+}
+
+#btMiCarro {
+    background: url(../../../images/eshop/10/ico-carrito.png) no-repeat center center;
+    background-position: 13px 1px;
+    padding-left: 35px !important;
+    height: 10px;
+}
+
+#toolbar_up .mensaje-central {
+    display: inline-block;
+    margin: 12px 0 0 271px;
+    font-size: 12px;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+#nav .menu li .submenu li, .barraFlotante li .submenu li {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#toolbar_up .item span, .barraFlotante .item span {
+    margin-left: 0px;
+}
+
+/*===================================================================================*/
+/*  BARRA FLOTANTE                                                                   */ 
+/*===================================================================================*/
+
+.barraFlotante .logo {
+    float: left;
+    background: url(../../../images/eshop/10/logo.png) no-repeat center center;
+    background-size: 90%;
+    width: 120px;
+    height: 30px;
+    margin: 0 40px 0 10px;
+}
+
+.barraFlotante .item .totalPrendas{
+    background-color: initial;
+    color: #000;
+}
+
+.barraFlotante .menu a,
+.barraFlotante .menu span {
+    font-family: 'gotham-rounded-medium';
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+}
+
+.barraFlotante .menu li .submenu, .barraFlotante li .submenu{
+    padding: 23px 0 0 0;
+    text-align: left;
+    /*background-color: #000;*/
+    color: #000;
+}
+.barraFlotante .menu li .submenu li{
+    padding: 5px 10px 5px 20px;
+}
+
+.barraFlotante .menu li .submenu li a{
+    font-family: "gotham-rounded-book";
+    color: #000;
+    font-weight: normal;
+    background: none;
+    font-size: 12px;
+} 
+
+.barraFlotante .menu li .submenu li a:hover {
+    font-weight: bold;
+}
+
+.barraFlotante .menu li {
+    margin: 10px 17px;
+}
+
+.barraFlotante .derecha {
+    top: 8px;
+}
+
+#nav .menu .prendas:before,
+.barraFlotante .prendas:before {
+    content: "E-SHOP";
+}
+
+#nav .menu .home,
+.barraFlotante .menu .home {
+    display: none;
+}
+
+.barraFlotante .buttonsContainer {
+    width: 180px;
+}
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */ 
+/*===================================================================================*/
+
+
+.datos.inline{
+    float: right;
+}
+.divisor_v.inline{float: right; display: none;}
+
+#info .inline > .titulo.MS-13.bold{
+    font-size: 0;
+    background-image: url(../../../images/eshop/10/logo_footer.png);
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 73px;
+    margin: 10px 0 0 0 !important;
+    background-position: -6px 0;
+}
+
+#info .datos.inline .titulo.MS-13.bold{
+    background-image: none;
+    font-size: 12px;
+    width: initial;
+    height: initial;
+}
+
+.inline .texto.OS-11.lh21{
+    color: #000;
+    font-family: "gotham-rounded-book";
+}
+.inline .texto.OS-11.lh21 br{display: none;}
+
+#notes #devoluciones {
+    background-image: url(../../../images/eshop/10/devolucion.png);
+}
+
+#cambio {
+    background-image: url(../../../images/eshop/10/cambio.png);
+}
+
+#envios {
+    background-image: url(../../../images/eshop/10/envio.png);
+}
+
+#notes .item .titulo {
+    color: #000;
+}
+
+#notes .item .texto {
+    font-size: 12px;
+}
+
+#network {
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+#network .item .titulo {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#info {
+    margin: 30px 0 0 0;
+    padding: 20px 0 25px 0;
+    border-top: solid #000 39px;
+}
+
+#info .social p { color: #000; }
+
+#info .titulo {
+    color: #000;
+}
+
+#info .boton{
+    padding: 14px 13px 11px 12px;
+    background-color: #fff;
+    background-image: url(../../../images/eshop/10/bt_arrow.png);
+    border: 0;
+    width: 112px;
+}
+
+#info .social{margin: 20px 0 0 0;}
+
+#info .datos{
+    width: initial;
+    margin-top: 25px;
+}
+
+#info .datos .lista .items .item a,
+#info .datos .lista .items .item, #info .texto {
+    color: #000;
+    font-size: 11px;
+    font-family: "gotham-rounded-book";
+    /*font-family: "gotham-rounded-medium";*/
+    /*font-family: "brandon_light";*/
+}
+
+#info .datos .lista .items .item:hover {
+    color: #222;
+}
+
+#info .datos .lista {
+    margin: 0 55px;
+}
+
+#info .datos .items{
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+#info #newsletterModule input {
+    border: 1px solid #000;
+    height: 14px;
+}
+
+#footer .container{
+    border-top: 1px solid #000;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    color: #333;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "gotham-rounded-book";
+}
+
+.inline #newsletterModule{margin-top: 5px !important;}
+
+#facebook { background-image: url(../../../images/eshop/10/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/10/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/10/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/10/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/10/snapchat.png); }
+#facebook:hover { background-image: url(../../../images/eshop/10/facebook_h.png); }
+#twitter:hover { background-image: url(../../../images/eshop/10/twitter_h.png); }
+#instagram:hover { background-image: url(../../../images/eshop/10/instagram_h.png); }
+#youtube:hover { background-image: url(../../../images/eshop/10/youtube_h.png); }
+#snapchat:hover { background-image: url(../../../images/eshop/10/snapchat_h.png); }
+
+#footer{
+    padding: 15px 0 25px 0;
+}
+
+#footer .fiscal {
+    background-image: url(../../../images/eshop/10/fiscal.jpg);
+    top: 10px;
+}
+
+#footer .powered {
+    background-image: url(../../../images/eshop/10/powered.png);
+}
+
+#footer .container .contenido { 
+    margin-top: 25px; 
+    color: #000;
+    font-family: "gotham-rounded-medium";
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#footer .container .contenido strong {font-weight: normal !important;}
+#footer .container .contenido br{ display: none; }
+
+#footer .container .contenido:after{
+    content: "PROMOCIÓN VÁLIDA DEL 31/07/16 AL 31/01/17. ABONANDO LA TOTALIDAD DE SU COMPRA CON TARJETA DE CRÉDITO VISA EMITIDA EN ARGENTINA. NO ACUMULABLE CON OTRAS PROMOCIONES. CONSULTE CON SU BANCO EMISOR LA EVENTUAL APLICACIÓN DE CARGOS Y/O SEGUROS ASOCIADOS A LA OPERATORIA EN CUOTAS. NAIMA S.R.L., ARMENIA 1535, CABA, CUIT: 30-71195376-7.";
+    float: left;
+    margin: 40px 0 0 0;
+    font-weight: normal;
+    color: #000;
+    font-family: arial;
+    font-size: 9px;
+    line-height: 15px;
+}
+
+
+#info .container {
+    height: 155px;
+    position: relative;
+}
+
+#info .miCuenta {
+    display: none !important;
+}
+
+#info .social {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+}
+
+#info .social .inline {
+    display: none;
+}
+
+
+#info .items .acerca {
+    display: none !important;
+}
+
+#info .items .mediosPago {
+    display: block !important;
+}
+
+#info .logoVisa {
+    display: none;
+}
+
+#info .logoVisa img {
+    margin: 10px 0 0 0; 
+}
+
+#info .newsletter .texto {
+    display: none;
+}
+
+/*===================================================================================*/
+/*  HOME                                                                             */ 
+/*===================================================================================*/
+
+
+#texto .titulo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active,
+.seccion.bannerCampaign .flex-control-nav li a.flex-active {
+    background-position: 0px -13px
+}
+
+.seccion.bannerCampaign {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.seccion.TEXTO .titulo {
+    font-family: Arial;
+    font-size: 24px;
+}
+
+#destacados .items .item span {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#destacados .items .item span b {
+    font-weight: bold;
+}
+
+
+.flexslider .slides>li .producto:hover{
+    cursor: pointer;
+}
+
+.flexslider .slides>li .producto span {
+    font-family: Arial;
+    font-weight: normal;
+    padding: 12px 20px;
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.flexslider .slides>li:hover .producto:before {
+    background: #000;
+    bottom: 0;
+    opacity: 0.15;
+    z-index: 80 !important;
+}
+
+
+
+.flexslider .slides>li:hover:before {
+    content: "";
+    background-image: url(../../../images/eshop/10/hover_product.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 99;
+    opacity: 1;
+    width: 123px;
+    height: 33px;
+    bottom: 138px;
+    left: 45px;
+}
+
+.flex-control-nav.flex-control-paging{
+    display: none;
+}
+
+
+.flexslider .slides>li .nombre {display: none}
+.flexslider .slides>li .precio {display: none}
+.flexslider .slides>li .precioViejo {display: none;}
+.flexslider .slides > li .producto{
+    border-bottom: none;
+}
+
+.flexslider .slides > li:hover .producto img.principal {
+    display: none;
+}
+
+.flexslider .slides > li:hover .producto img.hover {
+    display: block;
+}
+
+#destacados .container .titulo{
+    font-family: "gotham-rounded-medium";
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+#destacados .container{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+
+.seccion.BPRFS .flex-direction-nav .flex-prev,
+.seccion.BPRFS .flex-direction-nav .flex-prev:hover,
+.seccion.bannerCampaign .flex-direction-nav .flex-prev,
+.seccion.bannerCampaign .flex-direction-nav .flex-prev:hover,
+.seccion.BPRNO .flex-direction-nav .flex-prev,
+.seccion.BPRNO .flex-direction-nav .flex-prev:hover { 
+    background-image: url(../../../images/eshop/main_slider_left_gray.png);
+}
+
+
+.seccion.BPRFS .flex-direction-nav .flex-next,
+.seccion.BPRFS .flex-direction-nav .flex-next:hover,
+.seccion.BPRNO .flex-direction-nav .flex-next,
+.seccion.BPRNO .flex-direction-nav .flex-next:hover,
+.seccion.bannerCampaign .flex-direction-nav .flex-next,
+.seccion.bannerCampaign .flex-direction-nav .flex-next:hover { 
+    background-image: url(../../../images/eshop/main_slider_right_gray.png);
+}
+
+
+
+/*===================================================================================*/
+/*  MODAL HOME                                                                       */ 
+/*===================================================================================*/
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+	background: #e5e5e5;
+}
+
+#home-modal .enviarNewsletterBtn{
+    width: 188px;
+    height: 37px;
+    padding: 0;
+    background-image: url(../../../images/eshop/10/boton_modal_home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    margin: 20px 0 0 80px; 
+}
+
+#home-modal .campo {
+    color: #888;
+}
+
+#home-modal .logo {
+    display: none;
+}
+
+#home-modal .texto {
+    display: none;
+}
+
+#home-modal .detalle {
+    margin: 110px 0 0 25px;
+}
+
+.suscripcion .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon {
+    background-image: url(../../../images/eshop/10/close_modal_suscription.png) !important;
+    background: none;
+}
+
+.suscripcion .ui-dialog-titlebar .ui-state-default {
+    background: none;
+}
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#productos .barra{
+    border-bottom: 1px solid #000;
+}
+
+#productos .banner-listado {
+    margin-top: 25px;
+}
+
+#productos .cantidad-modelos{
+    display: none;
+}
+
+#productos .barra .derecha #orden {
+    border-left: 0; 
+}
+
+#productos .titleTag:before {
+    content: "";
+}
+
+#productos .titleTag:after {
+    content: "";
+}
+
+#productos .muestra .resultados .resultado:hover .producto:after {
+    background-image: url(../../../images/eshop/10/hover_product.png);
+    background-position: center;
+    position: absolute;
+    z-index: 99;
+}
+
+#productos .muestra .resultados .resultado .descuento {
+    background-color: #000;
+}
+
+
+
+#productos .acordion .titulo:before {
+    margin-top: 2px;
+    background-image: url(../../../images/eshop/10/accordion_open.png);
+}
+
+#productos .acordion .titulo.closed:before {
+    background-image: url(../../../images/eshop/10/accordion_closed.png);
+}
+
+#productos .muestra .resultados .resultado .producto {
+    border-bottom: none;
+}
+
+#productos .muestra .resultados .resultado:hover .producto img.principal {
+    display: none;
+}
+
+#productos .muestra .resultados .resultado:hover .producto img.hover {
+    display: block;
+}
+
+#productos .muestra .resultados .resultado .OS-14 {
+    font-size: 13px;
+}
+
+#productos .muestra .resultados .resultado .nombre {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #111;
+}
+
+#productos .muestra .resultados .resultado .precio {
+    width: 240px;
+    background-color: inherit;
+    font-weight: bold;
+    margin: 6px auto 0 auto;;
+    padding: 20px 0;
+}
+
+#productos .muestra .resultados .resultado .precioViejo {
+    background-color: inherit;
+    font-weight: normal;
+    color: #ccc;
+    position: absolute;
+    right: 0;
+}
+
+#productos .filtro .actual .item
+{
+    line-height: 12px;
+}
+
+#productos .filtro .actual {
+    padding-bottom: 10px;
+}
+
+#productos .item span{
+    background-color: #000;
+}
+
+#productos #btLimpiar{
+    font-size: 12px;
+    font-family: "gotham-rounded-book";
+    font-weight: normal !important;
+}
+
+#productos .dd-pointer {
+    background-image: url(../../../images/eshop/10/accordion_closed.png);
+}
+
+#productos .filtro .actual br{
+    display: none;
+}
+
+#productos .filtro .categorias,
+#productos .filtro .titulo-categorias,
+#productos .filtro .colores,
+#productos .filtro .titulo-colores,
+#productos .filtro .precio,
+#productos .filtro .titulo-precio
+{
+    display: none;
+}
+
+
+#productos .resultado:hover .producto:before {
+    background: #000;
+    bottom: 0;
+    opacity: 0.15;
+    z-index: 80 !important;
+}
+
+
+#productos .resultado:hover:before {
+    content: "";
+    background-image: url(../../../images/eshop/10/hover_product.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 99;
+    opacity: 1;
+    width: 123px;
+    height: 33px;
+    bottom: 235px;
+    left: 60px;
+}
+
+#productos .resultados .resultado a{
+    z-index: 200;
+}
+
+#productos .producto:hover{
+    cursor: pointer;
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#producto .subtituloInfoGeneral,
+#producto .infoGeneral {
+    display: none;
+}
+
+#probadorOnline .campo input
+{
+	background-color: #f4f3f2;
+}
+
+#producto .customSelect {
+    background: #f4f3f2;
+    border: 0;
+}
+
+#producto .talle .customSelect {
+    width: 110px;
+}
+
+#producto .talle .customSelect select {
+    width: 110px;
+}
+
+#producto .talle .customSelect span {
+    float: left;
+    width: 74px;
+    background-position: right 14px;
+}
+
+#producto .selectGroup .color, #producto .selectGroup .cantidad {
+    margin: 0 0 0 35px;  
+}
+
+#producto .barra {
+    border: 0;
+}
+
+#producto .barra .derecha {
+    text-transform: uppercase;
+}
+
+#producto .btProbar {
+    background-image: url(../../../images/eshop/10/probador.png);
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 30px;
+    color: transparent;
+}
+
+#producto .nombre {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#producto .contFotos .thumb:hover,#producto .contFotos .thumb.selected {
+    border-bottom: 1px solid #fff;
+}
+
+#producto .contFotos #foto_grande span {
+    background-color: #000;
+}
+
+#producto .infoGeneral .MS-13 {
+    font-weight: bold;
+    color: #111;
+}
+
+#probadorOnline .ui-icon-triangle-1-n {
+    background-image: url(../../../images/eshop/10/accordion_open.png) !important;
+}
+
+#probadorOnline .ui-icon-triangle-1-s {
+    background-image: url(../../../images/eshop/10/accordion_closed.png) !important;
+}
+
+#producto .contPrecio {
+    margin: 30px 0 15px 0;
+}
+
+#producto .precio{
+    font-weight: bold;
+}
+
+#producto .precioViejo{
+    color: #ccc; 
+    font-weight: bold;
+    border-left: none;
+}
+
+#producto .subtitulo {
+    border-bottom: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "gotham-rounded-book";
+    font-weight: bold !important;
+    font-size: 12px !important;
+    color: #000;
+}
+
+    /*border-top: 1px solid #000;*/
+#producto .contInfo .texto{
+    border-bottom: 1px solid #000;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+#producto .infoGeneral {
+    text-align: center;
+}
+
+
+#producto .infoGeneral #devoluciones2{  margin-left: 0; }
+#producto .infoGeneral #cambios2{  margin: 0 15px; }
+#producto .infoGeneral #envios2{  margin-right: 0; }
+
+#producto .google-plus {
+    display: none;
+}
+
+#producto .financiacion {
+    display: block;
+    font-size: 11px;
+    color: #333;
+    line-height: 14px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #000;
+    padding: 0 0 20px 0;
+}
+
+#producto .financiacion img {
+    margin: 2px 5px 2px 0;
+}
+
+#producto .financiacion a {
+    font-size: 9px;
+    font-family: "gotham-rounded-medium";
+    color: #111;
+    text-decoration: underline;
+}
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */ 
+/*===================================================================================*/
+
+#tiendas .MS-23{
+    color: #000;
+}
+
+#tiendas .titulo {
+    font-weight: normal !important;
+}
+
+#tiendas .menu a
+{
+    color: #666;
+    border-bottom: 2px solid #f5f4f2;
+    font-family: "gotham-rounded-medium";
+}
+
+#tiendas .current a,
+#tiendas .menu a:hover
+{
+    color: #000;
+
+}
+
+#tiendas .item .nombre
+{
+    color: #000;
+    font-size: 12px;
+    font-family: "gotham-rounded-medium";
+    letter-spacing: 1px;
+}
+
+#tiendas .item .direccion,
+#tiendas .item .telefono
+{
+    color: #444;
+    font-size: 11px;
+}
+
+#tiendas .pantalla{
+    margin: 20px 0 0 0;
+}
+
+#tiendas .item{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+#checkout_carrito .titulo {
+    font-weight: bold;
+    font-size: 27px;
+}
+
+#checkout_carrito .paso .MS-39 {
+    font-size: 32px;
+}
+
+#checkout_carrito .paso span {
+
+    background-image: url(../../../images/eshop/10/poligono_con_hover.png);
+    width: 70px;
+    height: 47px;
+    padding-top: 18px;
+}
+
+#checkout_carrito .header {
+    font-weight: bold;
+}
+
+#checkout_carrito .paso {
+    font-weight: bold;
+}
+
+#checkout_carrito.paso1 .customSelect{
+    background: #f4f3f2;
+    border: 0;
+    font-weight: bold;
+}
+
+
+#checkout_carrito .items .item .nombre,
+#checkout_carrito .items .item .unitario,
+#checkout_carrito .items .item .subtotal,
+#checkout_carrito .total{
+    font-weight: bold;
+}
+
+#checkout_carrito .renglon .btLink span {
+    background-image: url(../../../images/eshop/10/btArrows.png);
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: red;
+}
+
+#checkout_carrito.paso3 .datos-adicionales .customSelect{
+    height: 30px;
+}
+
+#checkout_carrito .btComprar {
+    background-color: #000;
+}
+
+#checkout_carrito .datos-adicionales .renglon input {
+    border: solid #000 1px;
+    height: 19px;
+}
+
+/*===================================================================================*/
+/*  INGRESO / REGISTRO                                                               */
+/*===================================================================================*/
+
+#ingresar input[type=text],#ingresar input[type=password] {
+    border: solid #000 1px;
+}
+
+#ingresar .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#ingresar .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#ingresar .titulo.MS-23 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#ingresar #soy_nuevo{
+    background-color: initial;
+    border: solid 1px #000;
+}
+#ingresar #soy_nuevo .divisorH{
+    display: none;
+}
+
+#ingresar #soy_miembro .divisorH {
+    background-color: #000;
+}
+
+#ingresar .link span{
+    background-color: initial;
+}
+
+#olvidastePass input[type=text]
+{
+    border: solid #000 1px;
+}
+
+#olvidastePass .btOscuro {
+    font-family: "brandon_med";
+}
+
+/*#ingresar input#usuario_terminos{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#ingresar input#usuario_terminos .selected{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}*/
+
+
+/*#soy_nuevo .rincon {
+    border-top: 14px solid #000;
+    border-right: 14px solid #000;
+    border-left: 14px solid #fbfbfb;
+    border-bottom: 14px solid #fbfbfb;
+}*/
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#devoluciones  .step
+{
+	background-image: url(../../../images/eshop/10/poligono_con_hover_chico.png);
+	width: 58px;
+	height: 41px;
+	font-weight: bold;
+    padding-top: 14px;
+}
+
+#devoluciones  .step.MS-32
+{
+    font-size: 28px;
+}
+
+#mi_cuenta .titulo{
+    margin: 0 0 0 350px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+
+#mi_cuenta #datosPersonales .campo input, #mi_cuenta #datosPersonales .campo2 input
+{
+	border: solid #000 1px;
+}
+
+#mi_cuenta #datosPersonales .campo{
+    font-family: "gotham-rounded-medium";
+}
+
+#mi_cuenta #consultaEnvio .campo{
+    font-family: "gotham-rounded-medium";
+}
+
+#mi_cuenta #devoluciones_main .campo .MS-13{
+    font-family: "gotham-rounded-medium";   
+}
+
+#respuesta_consultaEnvio .MS-13{
+    font-weight: bold !important;
+    font-size: 12px;
+}
+
+#mi_cuenta .campo input#modificar_email_email, 
+#mi_cuenta .campo input#modificar_pass_new,
+#mi_cuenta .campo input#modificar_pass_old,
+#mi_cuenta .campo input#usuario_telefono
+{
+    width: 360px;
+}
+
+#devoluciones .subtitulo a{
+    border-left: none;
+}
+
+#devoluciones .campo textarea
+{
+	border: solid #000 1px;
+}
+
+#mi_cuenta #devoluciones .dd-select {
+	border: solid 2px #cdcdcd !important;
+}
+
+#mi_cuenta #devoluciones .dd-options
+{
+	border: solid 2px #cdcdcd !important;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido{
+    border-bottom: 1px solid #000;
+    font-size: 11px;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido .MS-13{
+    font-weight: bold !important;
+    font-size: 12px;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido .c2 {
+    width: 110px;
+}
+
+#mi_cuenta #pedidos .pedidos .pedido .c5 {
+    width: 105px;
+}
+
+#devoluciones input[type=text],
+#devoluciones input[type=password]
+{
+	border: solid #000 1px;
+}
+
+#devoluciones .item{
+    border-bottom: 1px solid #000;
+}
+
+#devoluciones #paso-1 .item:nth-child(2n), #devoluciones #paso-4 .item:nth-child(2n), #devoluciones #devoluciones_historial .item:nth-child(2n){
+    background-color: initial;
+}
+
+#devoluciones .resumen {
+    margin-top: 20px; 
+}
+
+#devoluciones #paso-4 .leyenda li {
+    font-size: 11px;
+}
+
+#consultaEnvio input[type=text]
+{
+	border: solid #000 1px;
+}
+
+#mi_cuenta .panel .items .item{
+    border-bottom: 1px solid #000;
+}
+
+#mi_cuenta .panel .items .item.selected
+{
+    font-weight: bold !important;
+	color: #000;
+}
+
+#mi_cuenta .panel .items {
+    background: none;
+}
+
+
+#mi_cuenta .campo,
+#mi_cuenta .campo div,
+#mi_cuenta #datosPersonales .campo2,
+#mi_cuenta #datosPersonales .provincia {
+    font-weight: bold;
+}
+
+
+#mi_cuenta #datosPersonales .customSelect .select {
+    font-weight: normal;
+}
+
+#mi_cuenta .subtitulo {
+    font-weight: bold;
+}
+
+#mi_cuenta .subtotal {
+    font-weight: bold;
+}
+#mi_cuenta #datosPersonales form {
+    border-bottom: 1px solid #000;
+}    
+
+#mi_cuenta #pedidos .texto{
+    border-bottom: 1px solid #000;
+}
+
+#devoluciones #devoluciones_historial .c {
+    font-weight: bold;
+}
+
+#devoluciones #paso-1 .barra, #devoluciones #paso-4 .barra, #devoluciones #devoluciones_historial .barra{
+    border-bottom: 1px solid #000;
+}
+
+#consultaEnvio form{
+    border-bottom: 1px solid #000;
+}
+
+#desactivarCuenta .botones{
+    border-bottom: 1px solid #000;
+}
+
+/*===================================================================================*/
+/*  CONSULTAS                                                                        */ 
+/*===================================================================================*/
+
+#consultas .titulo
+{
+	color: #000;
+	font-size: 26px;
+}
+
+#consultas .preguntas
+{
+	color: #000;
+}
+
+#consultas .faqCategoria .num
+{
+	background-image: url(../../../images/eshop/10/poligono_color.png);
+	width: 28px;
+	height: 22px;
+}
+
+#consultas .faqCategoria .header {
+    font-weight: normal;
+}
+
+#consultas .faqCategoria{
+    border-bottom: 1px solid #000;
+}
+
+#consultas .faqCategoria .pregunta{
+    margin: 15px 0;
+}
+
+#consultas .faqCategoria .pregunta .bold{
+    font-family: "gotham-rounded-medium";
+}
+
+#consultas .titleFaqCategoria:hover 
+{
+	color: #000;
+}
+
+#contacto .texto {
+    font-size: 12px; 
+}
+
+#consultas .faqCategoria .arrow{
+
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea
+{
+	border: solid #000 1px;
+}
+
+#contacto form  input[type=file]::before {
+	border: solid #000 1px;
+}
+
+#contacto form  .dd-select {
+	border: solid 2px #cdcdcd !important;
+}
+
+#contacto form  .dd-options
+{
+	border: solid 2px #cdcdcd !important;
+}
+
+#contacto form input[type=file]::before{
+    color: #000;
+}
+
+/*===================================================================================*/
+/*  FORMULARIO                                                                       */ 
+/*===================================================================================*/
+
+#formulario .titulo {
+    font-size: 24px;
+    color: #000;
+}
+
+#formulario .texto {
+    font-size: 12px; 
+}
+
+#formulario .error {
+    text-align: center; 
+}
+
+#formulario form  input[type=text],
+#formulario form  textarea
+{
+    border: 1px solid #888;
+}
+
+#formulario form .campo {
+    font-weight: bold !important;
+    color: #000 !important;
+}
+
+#formulario form .campo.grande {
+    width: 933px;
+}
+
+#formulario .botones {
+    margin-top: 40px;
+}
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito .items  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .items  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .barra, #checkout_carrito .items, #checkout_carrito .renglon{
+    border-bottom: 1px solid #000;
+}
+
+#checkout_carrito .form  input[type=text],#checkout_carrito .form  input[type=password] {
+    border: solid #878787 1px;
+}
+
+#checkout_carrito input[type="text"]{
+    padding: 5px 40px 6px 15px;
+    border: 1px solid #000;
+    width: 112px;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#terminos .menu li {
+    margin: 10px 15px;
+    font-weight: bold;
+}
+
+#terminos .texto {
+    font-size: 11px;
+}
+
+#terminos .color4 {
+    color: #666;
+}
+
+#terminos .subtitulo {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#terminos .detalle {
+    font-size: 11px;
+}
+
+#acerca .banner{
+    margin: 0;
+}
+
+#terminos .subtitulo{
+    border-top: none;
+    color: #444;
+}
+
+#acerca .banner .grid {
+    background: url(../../../images/eshop/10/trama_banners.png) repeat;
+    content: "";
+    width: 100%;
+    z-index: 10;
+}
+
+#acerca .texto{
+    font-size: 13px;
+}
+
+
+
+::selection {
+    color: #ffffff;
+    background-color: #808080;
+}
+
+
+#devoluciones #paso-1 .item .checkbox{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#devoluciones #paso-1 .item .checkbox .selected{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}

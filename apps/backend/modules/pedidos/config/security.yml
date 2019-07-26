@@ -1,0 +1,7 @@
+default:
+  is_secure: true
+  credentials: [[gestion_pedidos]]
+
+ordenCompra:
+  is_secure: true
+  credentials: [[gestion_exportar_ord_de_compra]]

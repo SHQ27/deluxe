@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           marcaRubro
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          marca_rubro
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+          title: Rubros
+          display: [id_marca_rubro, denominacion]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Edicion de Rubro "%%denominacion%%"
+      new:
+          title: Nuevo Rubro

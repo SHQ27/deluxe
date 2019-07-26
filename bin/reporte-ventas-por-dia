@@ -1,0 +1,6 @@
+#!/bin/bash
+
+me=$(basename $0)
+/sbin/pidof -x -o '%PPID' $me > /dev/null 2>&1 && exit 1
+
+/var/www/current/symfony --application=frontend --env=prod deluxebuys:reporte-ventas-por-dia

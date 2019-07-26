@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           localidad
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          localidad
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+          title: Localidades
+          display: [id_localidad, provincia, zona, denominacion, activa]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Edicion de Localidad "%%denominacion%%"
+      new:
+          title: Nueva Localidad

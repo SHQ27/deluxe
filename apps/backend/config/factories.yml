@@ -1,0 +1,58 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/05-Factories
+
+prod:
+  logger:
+    class:   sfNoLogger
+    param:
+      level:   err
+      loggers: ~
+
+test:
+  storage:
+    class: sfSessionTestStorage
+    param:
+      session_path: %SF_TEST_CACHE_DIR%/sessions
+
+  response:
+    class: sfWebResponse
+    param:
+      send_http_headers: false
+
+dev:
+  mailer:
+    param:
+      delivery_strategy: none
+
+all:
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+
+  view_cache_manager:
+    class: sfViewCacheManager
+    param:
+      cache_key_use_vary_headers: true
+      cache_key_use_host_name:    true
+
+  storage:
+    class: sfPDOSessionStorage
+    param:
+      database:    doctrine
+      db_table: session_storage_backend
+      db_data_col: session_data
+      db_id_col: id_session
+      db_time_col: session_time
+      session_cookie_lifetime: 21600      
+      
+  mailer:
+    class: sfMailer
+    param:
+      delivery_strategy: realtime
+      
+  user:
+    param:
+      timeout: 3600 // Tambien debe setearse este valor en backendConfiguration para setear el session.gc_maxlifetime
+      

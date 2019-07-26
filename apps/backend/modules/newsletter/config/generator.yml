@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           newsletter
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          newsletter
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_eshop: { label: eShop }
+        eshop: { label: eShop }
+      list:
+        title: Newsletter
+        display: [id_newsletter, nombre, apellido, email, sexo, eshop]
+      filter:
+        display: [nombre, apellido, email, sexo, fecha_alta, source, id_eshop]
+      form:    ~
+      edit:
+          title: Edición de Newsletter
+      new:
+          title: Nuevo Newsletter

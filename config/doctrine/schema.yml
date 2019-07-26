@@ -1,0 +1,4193 @@
+detect_relations: false
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+  type: InnoDB
+
+productoGenero:
+  tableName: producto_genero
+  actAs:
+    Sluggable:
+      unique: true
+      fields: [denominacion]
+      canUpdate: true
+  columns:
+    id_producto_genero:
+      type: string(5)
+      fixed: true
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    meta_titulo:
+      type: string(255)
+    meta_descripcion:
+      type: clob(65535)
+    meta_tags:
+      type: clob(65535)
+  indexes:
+    ix_productoGenero_denominacion:
+      fields: [denominacion]
+    ix_productoGenero_slug:
+      fields: [slug]
+
+producto:
+  columns:
+    id_producto:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    descripcion:
+      type: clob(65535)
+    info_adicional:
+      type: clob(65535)
+    id_marca:
+      type: integer(4)
+      notnull: true
+    id_producto_categoria:
+      type: integer(4)
+      notnull: true
+    fecha_modificacion:
+      type: timestamp
+    precio_lista:
+      type: decimal(12)
+      scale: 2
+    mostrar_precio_lista:
+      type: boolean
+      default: true
+    precio_normal:
+      type: decimal(12)
+      scale: 2
+    precio_outlet:
+      type: decimal(12)
+      scale: 2
+    precio_deluxe:
+      type: decimal(12)
+      scale: 2
+    costo:
+      type: decimal(12)
+      scale: 2
+    peso:
+      type: decimal(12)
+      scale: 2
+    destacar:
+      type: integer(1)
+      default: 0
+    vendidos:
+      type: integer(4)
+      default: 0
+    visitas:
+      type: integer(4)
+      default: 0
+    es_outlet:
+      type: boolean
+      default: false
+    observacion:
+      type: clob(65535)
+    activo:
+      type: boolean
+    id_talle_set:
+      type: integer(4)
+    id_producto_sticker:
+      type: integer(4)
+    id_categoria_ml:
+      type: integer(4)
+    id_eshop:
+      type: integer(4)
+    orden_eshop:
+      type: integer(4)
+  relations:
+    marca:
+      class: marca
+      local: id_marca
+      foreign: id_marca
+      foreignAlias: producto
+      foreignType: many
+      owningSide: true
+    productoCategoria:
+      class: productoCategoria
+      local: id_producto_categoria
+      foreign: id_producto_categoria
+      foreignAlias: producto
+      foreignType: many
+      owningSide: true
+    talleSet:
+      class: talleSet
+      local: id_talle_set
+      foreign: id_talle_set
+      foreignAlias: producto
+      foreignType: many
+      owningSide: true
+    productoSticker:
+      class: productoSticker
+      local: id_producto_sticker
+      foreign: id_producto_sticker
+      foreignAlias: producto
+      foreignType: many
+      owningSide: true
+    categoriaMl:
+      class: categoriaMl
+      local: id_categoria_ml
+      foreign: id_categoria_ml
+      foreignAlias: producto
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: producto
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_marca1:
+      fields: [id_marca]
+    fk_producto_producto_categoria1:
+      fields: [id_producto_categoria]
+    ix_producto_precio_deluxe:
+      fields: [precio_deluxe]
+    ix_producto_visitas:
+      fields: [visitas]
+    ix_producto_vendidos:
+      fields: [vendidos]
+    fk_producto_talle_set1:
+      fields: [id_talle_set]
+    ix_producto_codigo:
+      fields: [codigo]
+
+campana:
+  actAs:
+    Sluggable:
+      unique: false
+      fields: [denominacion]
+      canUpdate: true
+  columns:
+    id_campana:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    descripcion:
+      type: clob(65535)
+    texto_promocion:
+      type: string(255)
+    fecha_inicio:
+      type: timestamp
+    fecha_fin:
+      type: timestamp
+    tiene_envio_gratis:
+      type: boolean
+    activo:
+      type: boolean
+    estimacion_envio_fecha:
+      type: date
+    estimacion_envio_observacion:
+      type: clob(65535)
+    estimacion_envio_horas:
+      type: integer(4)
+    objetivo_facturacion:
+      type: integer(4)
+    mostrar_filtros:
+      type: boolean
+    total_stock:
+      type: integer(4)
+    mostrar_reloj:
+      type: boolean
+      default: true
+    mostrar_banner:
+      type: boolean
+      default: true
+    mostrar_banner_hover:
+      type: boolean
+      default: false
+    mostrar_descripcion:
+      type: boolean
+      default: true
+    permitir_pago_offline:
+      type: boolean
+      default: true
+    resetear_al_finalizar:
+      type: boolean
+      default: true
+    orden:
+      type: integer(4)
+    color:
+      type: char(7)
+      default: '#000000'
+  indexes:
+    campana_fecha_inicio:
+      fields: [fecha_inicio]
+    campana_fecha_fin:
+      fields: [fecha_fin]
+
+campanaMarca:
+  tableName: campana_marca
+  columns:
+    id_campana:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_marca:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_comercial:
+      type: integer(4)
+    comision_comercial:
+      type: float
+    apertura_marca:
+      type: integer(4)
+    email_orden_compra:
+      type: string(255)
+    telefono_orden_compra:
+      type: string(40)
+    enviar_aviso_orden_compra:
+      type: boolean
+    fecha_estimada_entrega:
+      type: date
+    comentario_marca:
+      type: clob(65535)
+    comentario_interno:
+      type: clob(65535)
+    ultimo_envio:
+      type: timestamp
+    hash:
+      type: string(40)
+    costo_total:
+      type: decimal(12)
+      scale: 2
+    pagada:
+      type: boolean
+      default: false
+  relations:
+    campana:
+      class: campana
+      local: id_campana
+      foreign: id_campana
+      foreignAlias: campanaMarca
+      foreignType: many
+      owningSide: true
+    marca:
+      class: marca
+      local: id_marca
+      foreign: id_marca
+      foreignAlias: campanaMarca
+      foreignType: many
+      owningSide: true
+    comercial:
+      class: comercial
+      local: id_comercial
+      foreign: id_comercial
+      foreignAlias: campanaMarca
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_campana_has_marca_marca1:
+      fields: [id_marca]
+    fk_campana_has_marca_campana1:
+      fields: [id_campana]
+    fk_campana_marca_comercial1:
+      fields: [id_comercial]
+
+
+marca:
+  actAs:
+    Sluggable:
+      unique: true
+      fields: [nombre]
+      canUpdate: true
+  columns:
+    id_marca:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    nombre:
+      type: string(255)
+    backstage_url:
+      type: string(255)
+    id_marca_rubro:
+      type: integer(4)
+    condicion_fiscal:
+      type: string(3)
+      fixed: true
+    email_comercial:
+      type: string(255)
+  relations:
+    marcaRubro:
+      class: marcaRubro
+      local: id_marca_rubro
+      foreign: id_marca_rubro
+      foreignAlias: marca
+      foreignType: many
+      owningSide: true
+  indexes:
+    ix_marca_slug:
+      fields: [slug]
+
+productoColor:
+  tableName: producto_color
+  columns:
+    id_producto_color:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+    id_familia_color:
+      type: integer(4)
+  relations:
+    familiaColor:
+      class: familiaColor
+      local: id_familia_color
+      foreign: id_familia_color
+      foreignAlias: productoColor
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_color_familia_color1:
+      fields: [id_familia_color]
+
+productoTalle:
+  tableName: producto_talle
+  columns:
+    id_producto_talle:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+    orden:
+      type: integer(4)
+    id_familia_talle:
+      type: integer(4)
+  relations:
+    familiaTalle:
+      class: familiaTalle
+      local: id_familia_talle
+      foreign: id_familia_talle
+      foreignAlias: productoTalle
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_talle_familia_talle1:
+      fields: [id_familia_talle]
+
+
+productoItem:
+  tableName: producto_item
+  columns:      
+    id_producto_item:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_producto:
+      type: integer(4)
+      notnull: true
+    id_producto_talle:
+      type: integer(4)
+      notnull: true
+    id_producto_color:
+      type: integer(4)
+      notnull: true
+    codigo:
+      type: string(50)
+    stock:
+      type: integer(4)
+    stock_campana:
+      type: integer(4)
+    stock_permanente:
+      type: integer(4)
+    stock_outlet:
+      type: integer(4)
+    stock_refuerzo:
+      type: integer(4)
+    data_mercado_libre:
+      type: clob(65535)
+  relations:
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: productoItem
+      foreignType: many
+      owningSide: true
+    productoTalle:
+      class: productoTalle
+      local: id_producto_talle
+      foreign: id_producto_talle
+      foreignAlias: productoItem
+      foreignType: many
+      owningSide: true
+    productoColor:
+      class: productoColor
+      local: id_producto_color
+      foreign: id_producto_color
+      foreignAlias: productoItem
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_item_producto1:
+      fields: [id_producto]
+    fk_producto_item_producto_tamano1:
+      fields: [id_producto_talle]
+    fk_producto_item_producto_color1:
+      fields: [id_producto_color]
+    FK_producto_item_talle_color:
+      fields: [id_producto_talle, id_producto_color, id_producto]
+
+productoCategoria:
+  actAs:
+    Sluggable:
+      unique: false
+      fields: [denominacion]
+      canUpdate: true
+  tableName: producto_categoria
+  columns:
+    id_producto_categoria:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    id_producto_genero:
+      type: string(5)
+      fixed: true
+      notnull: true
+  relations:
+    productoGenero:
+      class: productoGenero
+      local: id_producto_genero
+      foreign: id_producto_genero
+      foreignAlias: productoCategoria
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_categoria_producto_genero1:
+      fields: [id_producto_genero]
+    ix_productoCategoria_denominacion:
+      fields: [denominacion]
+    ix_productoCategoria_slug:
+      fields: [slug]
+
+
+productoCategoriaEshop:
+  columns:
+    id_producto_categoria:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_eshop:
+      primary: true
+      type: integer(4)
+      notnull: true
+    tipo_prenda:
+      type: char(5)
+      notnull: true
+    orden:
+      type: integer(2)
+      notnull: true
+  relations:
+    productoCategoria:
+      class: productoCategoria
+      local: id_producto_categoria
+      foreign: id_producto_categoria
+      foreignAlias: productoCategoriaEshop
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: productoCategoriaEshop
+      foreignType: many
+      owningSide: true
+
+tag:
+  columns:
+    id_tag:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+      unique: true
+
+productoTag:
+  tableName: producto_tag
+  columns:
+    id_producto:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_tag:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    tag:
+      class: tag
+      local: id_tag
+      foreign: id_tag
+      foreignAlias: productoTag
+      foreignType: many
+      owningSide: true
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: productoTag
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_tag_has_producto_tag1:
+      fields: [id_tag]
+    fk_tag_has_producto_producto1:
+      fields: [id_producto]
+
+productoCampana:
+  tableName: producto_campana
+  columns:
+    id_producto:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_campana:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: productoCampana
+      foreignType: many
+      owningSide: true
+    campana:
+      class: campana
+      local: id_campana
+      foreign: id_campana
+      foreignAlias: productoCampana
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_has_campana_producto1:
+      fields: [id_producto]
+    fk_producto_has_campana_campana1:
+      fields: [id_campana]
+
+banner:
+  columns:
+    id_banner:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    url:
+      type: string(255)
+      notnull: true
+    orden:
+      type: integer(2)
+      notnull: true
+    activo:
+      type: boolean
+      notnull: true
+      default: false
+    ventana_nueva:
+      type: boolean
+      default: false
+
+productoImagen:
+  tableName: producto_imagen
+  columns:
+    id_producto_imagen:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_producto:
+      type: integer(4)
+      notnull: true
+    orden:
+      type: integer(2)
+  relations:
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: productoImagen
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_imagen_producto1:
+      fields: [id_producto]
+
+
+usuario:
+  columns:
+    id_usuario:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    nombre:
+      type: string(30)
+      notnull: true
+    apellido:
+      type: string(30)
+      notnull: true
+    sexo:
+      type: string(1)
+      fixed: true
+    email:
+      type: string(100)
+      unique: true
+    password:
+      type: string(32)
+      fixed: true
+      default: null
+    telefono:
+      type: string(30)
+      notnull: true
+    celular:
+      type: string(30)
+      default: null
+    fecha_nacimiento:
+      type: date
+      default: null
+    tipo_documento:
+      type: string(5)
+      default: null
+    documento:
+      type: string(20)
+      default: null
+    activo:
+      type: boolean
+    fecha_alta:
+      type: string(45)
+      notnull: true
+    fecha_confirmacion:
+      type: string(45)
+      default: null
+    fecha_baja:
+      type: string(45)
+      default: null
+    fid:
+      type: string(50)
+      default: null
+    dias_devolucion:
+      type: integer(4)
+      default: null
+    source:
+      type: string(255)
+    fecha_source:
+      type: date
+    utm_campaign:
+      type: string(255)
+    utm_term:
+      type: string(255)
+    id_eshop:
+      type: integer(4)
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: usuarios
+      foreignType: many
+      owningSide: true
+  indexes:
+    unique_row:
+      fields:
+        email:
+          sorting: ASC
+        sexo:
+          sorting: ASC
+        id_eshop:
+          sorting: ASC
+      type: unique
+  actAs:
+    Timestampable:
+      created:
+        name: fecha_alta
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+newsletter:
+  columns:
+    id_newsletter:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    nombre:
+      type: string(30)
+    apellido:
+      type: string(30)
+    sexo:
+      type: string(1)
+      fixed: true
+      notnull: true
+    email:
+      type: string(100)
+      notnull: true
+    fecha_alta:
+      type: date
+    source:
+      type: string(255)
+    fecha_source:
+      type: date
+    utm_campaign:
+      type: string(255)
+    utm_term:
+      type: string(255)
+    id_eshop:
+      type: integer(4)
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: newsletters
+      foreignType: many
+      owningSide: true
+  indexes:
+    unique_row:
+      fields:
+        email:
+          sorting: ASC
+        sexo:
+          sorting: ASC
+        id_eshop:
+          sorting: ASC
+      type: unique
+  actAs:
+    Timestampable:
+      created:
+        name: fecha_alta
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+direccionEnvio:
+  tableName: direccion_envio
+  columns:
+    id_direccion_envio:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_usuario:
+      type: integer(4)
+      notnull: true
+    id_provincia:
+      type: integer(4)
+      notnull: true
+    localidad:
+      type: string(50)
+      notnull: true
+    calle:
+      type: string(30)
+    numero:
+      type: string(5)
+    piso:
+      type: string(6)
+    depto:
+      type: string(4)
+    codigo_postal:
+      type: string(8)
+    horario:
+      type: string(50)
+  relations:
+    usuario:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: direccionesEnvios
+      foreignType: many
+      owningSide: true
+    provincia:
+      class: provincia
+      local: id_provincia
+      foreign: id_provincia
+      foreignAlias: provincia
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_direccion_envio_usuario1:
+      fields: [id_usuario]
+
+provincia:
+  columns:
+    id_provincia:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    nombre:
+      type: string(255)
+    id_mercado_libre:
+      type: string(100)
+    iso:
+      type: char(1)
+    activa:
+      type: boolean
+
+codigoPostal:
+  tableName: codigo_postal
+  columns:
+    id_codigo_postal:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    valor:
+      type: string(8)
+      notnull: true
+    id_provincia:
+      type: integer(4)
+      notnull: true
+  relations:
+    provincia:
+      class: provincia
+      local: id_provincia
+      foreign: id_provincia
+      foreignAlias: codigoPostal
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_codigo_postal_provincia1:
+      fields: [id_provincia]
+
+invitacion:
+  columns:
+    id_invitacion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_usuario:
+      type: integer(4)
+      notnull: true
+    email_invitado:
+      type: string(100)
+    hash:
+      type: string(32)
+      fixed: true
+    fue_enviada:
+      type: string(45)
+    fecha:
+      type: date
+    id_usuario_invitado:
+      type: integer(4)
+    id_pedido_realizado:
+      type: integer(4)
+    bonificacion:
+      type: boolean
+      default: false
+  relations:
+    usuario_invitados:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: invitados
+      foreignType: many
+      owningSide: true
+    usuario:
+      class: usuario
+      local: id_usuario_invitado
+      foreign: id_usuario
+      foreignAlias: invitacion
+      foreignType: many
+      owningSide: true
+    pedido:
+      class: pedido
+      local: id_pedido_realizado
+      foreign: id_pedido
+      foreignAlias: invitacion
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_invitacion_usuario1:
+      fields: [id_usuario]
+    fk_invitacion_usuario2:
+      fields: [id_usuario_invitado]
+    fk_invitacion_pedido1:
+      fields: [id_pedido_realizado]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d
+      updated:
+        disabled: true
+
+
+carritoProductoItem:
+  tableName: carrito_producto_item
+  columns:
+    id_carrito_producto_item:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    id_session:
+      type: string(100)
+      notnull: true
+    cantidad:
+      type: integer(4)
+      notnull: true
+  relations:
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: carritoProductoItem
+      foreignType: many
+      owningSide: true
+    session:
+      class: session
+      local: id_session
+      foreign: id_session
+      foreignAlias: carritoProductoItem
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_carrito_producto_item2:
+      fields: [id_producto_item]
+    fk_carrito_session1:
+      fields: [id_session]
+
+
+session:
+  columns:
+    id_session:
+      type: string(100)
+      primary: true
+      notnull: true
+    fecha_ultima_accion:
+      type: timestamp
+      notnull: true
+    id_usuario:
+      type: integer(4)
+      notnull: false
+  relations:
+    usuario:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: sessions
+      foreignType: many
+      owningSide: true
+
+tipoBonificacion:
+  tableName: tipo_bonificacion
+  columns:
+    id_tipo_bonificacion:
+      type: string(5)
+      fixed: true
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(100)
+
+bonificacion:
+  columns:
+    id_bonificacion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_usuario:
+      type: integer(4)
+      notnull: true
+    id_tipo_descuento:
+      type: string(5)
+      fixed: true
+      notnull: true
+    id_tipo_bonificacion:
+      type: char(5)
+      fixed: true
+      notnull: true
+    valor:
+      type: decimal(12)
+      scale: 2
+    fue_utilizada:
+      type: boolean
+      default: false
+    vencimiento:
+      type: date
+    es_interna:
+      type: boolean
+      default: false
+    observaciones:
+      type: clob(65535)
+    fecha_alta:
+      type: timestamp
+  relations:
+    tipoDescuento:
+      class: tipoDescuento
+      local: id_tipo_descuento
+      foreign: id_tipo_descuento
+      foreignAlias: bonificacion
+      foreignType: many
+      owningSide: true
+    tipoBonificacion:
+      class: tipoBonificacion
+      local: id_tipo_bonificacion
+      foreign: id_tipo_bonificacion
+      foreignAlias: bonificaciones
+      foreignType: many
+      owningSide: true
+    usuario:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: bonificaciones
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_bonificacion_tipo_descuento1:
+      fields: [id_tipo_descuento]
+    fk_bonificacion_tipo_bonificacion1:
+      fields: [id_tipo_bonificacion]
+    fk_bonificacion_usuario1:
+      fields: [id_usuario]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha_alta
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+descuento:
+  columns:
+    id_descuento:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    codigo:
+      type: string(50)
+    id_tipo_descuento:
+      type: string(5)
+      fixed: true
+      notnull: true
+    valor:
+      type: decimal(12)
+      scale: 2
+    vigencia_desde:
+      type: timestamp
+    vigencia_hasta:
+      type: timestamp
+    total:
+      type: integer(4)
+    utilizados:
+      type: integer(4)
+      default: 0
+    es_interno:
+      type: boolean
+      default: false
+    id_eshop:
+      type: integer(4)
+    recibe_premio:
+      type: boolean
+      default: false
+  relations:
+    tipoDescuento:
+      class: tipoDescuento
+      local: id_tipo_descuento
+      foreign: id_tipo_descuento
+      foreignAlias: descuento
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: descuentos
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_descuento_tipo_descuento1:
+      fields: [id_tipo_descuento]
+    decuento_codigo_index:
+      fields: [codigo]
+
+tipoDescuento:
+  tableName: tipo_descuento
+  columns:
+    id_tipo_descuento:
+      type: string(5)
+      fixed: true
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(100)
+    formato:
+      type: string(100)
+
+carritoBonificacion:
+  tableName: carrito_bonificacion
+  columns:
+    id_carrito_bonificacion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_bonificacion:
+      type: integer(4)
+      notnull: true
+    id_session:
+      type: string(100)
+      notnull: true
+  relations:
+    bonificacion:
+      class: bonificacion
+      local: id_bonificacion
+      foreign: id_bonificacion
+      foreignAlias: carritoBonificacion
+      foreignType: many
+      owningSide: true
+    session:
+      class: session
+      local: id_session
+      foreign: id_session
+      foreignAlias: carritoBonificacion
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_carrito_bonificacion_bonificacion1:
+      fields: [id_bonificacion]
+    fk_carrito_bonificacion_session1:
+      fields: [id_session]
+
+carritoDescuento:
+  tableName: carrito_descuento
+  columns:
+    id_carrito_descuento:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_descuento:
+      type: integer(4)
+      notnull: true
+    id_session:
+      type: string(100)
+      notnull: true
+    info_adicional:
+      type: clob(65535)
+  relations:
+    descuento:
+      class: descuento
+      local: id_descuento
+      foreign: id_descuento
+      foreignAlias: carritoDescuento
+      foreignType: many
+      owningSide: true
+    session:
+      class: session
+      local: id_session
+      foreign: id_session
+      foreignAlias: carritoDescuento
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_carrito_descuento_descuento1:
+      fields: [id_descuento]
+    fk_carrito_descuento_session1:
+      fields: [id_session]
+
+carritoEnvio:
+  tableName: carrito_envio
+  columns:
+    id_carrito_envio:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_session:
+      type: string(100)
+      notnull: true
+    tipo:
+      type: string(3)
+      fixed: true
+    enviopack_data:
+      type: clob(65535)
+  relations:
+    session:
+      class: session
+      local: id_session
+      foreign: id_session
+      foreignAlias: carritoEnvio
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_carrito_envio_session1:
+      fields: [id_session]
+
+
+configuracion:
+  columns:
+    id_configuracion:
+      type: string(5)
+      fixed: true
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(100)
+    valor:
+      type: clob(65535)
+    tipo:
+      type: string(5)
+      fixed: true
+
+pedido:
+  columns:
+    id_pedido:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_usuario:
+      type: integer(4)
+      notnull: true
+    fecha_alta:
+      type: timestamp
+    fecha_baja:
+      type: timestamp
+    fecha_pago:
+      type: timestamp
+    fecha_aviso_pago:
+      type: timestamp
+    fecha_envio:
+      type: timestamp
+    fecha_facturacion:
+      type: timestamp
+    fecha_ultima_comprobacion:
+      type: timestamp
+    fecha_limite_pago:
+      type: timestamp
+    nombre:
+      type: string(30)
+    apellido:
+      type: string(30)
+    tipo_documento:
+      type: string(5)
+      default: null
+    documento:
+      type: string(20)
+      default: null
+    email:
+      type: string(100)
+    telefono:
+      type: string(30)
+    celular:
+      type: string(30)
+    observaciones:
+      type: clob(65535)
+    id_forma_pago:
+      type: string(5)
+      fixed: true
+    envio_tipo:
+      type: string(3)
+      fixed: true
+    envio_destinatario:
+      type: string(60)
+    envio_calle:
+      type: string(30)
+    envio_numero:
+      type: string(5)
+    envio_piso:
+      type: string(6)
+    envio_depto:
+      type: string(4)
+    envio_codigo_postal:
+      type: string(10)
+    envio_id_sucursal:
+      type: integer(4)
+    envio_id_provincia:
+      type: integer(4)
+    envio_localidad:
+      type: string(50)
+    envio_correo:
+      type: string(20)
+    envio_servicio:
+      type: char(1)
+    envio_detalle:
+      type: clob(65535)
+    envio_id_pedido_envio_pack:
+      type: integer(4)
+    monto_envio:
+      type: decimal(12)
+      scale: 2
+    monto_envio_deluxe:
+      type: decimal(12)
+      scale: 2
+    monto_productos:
+      type: decimal(12)
+      scale: 2
+    monto_bonificacion:
+      type: decimal(12)
+      scale: 2
+    monto_descuento:
+      type: decimal(12)
+      scale: 2
+    monto_total:
+      type: decimal(12)
+      scale: 2
+    monto_facturacion:
+      type: decimal(12)
+      scale: 2
+    cuotas:
+      type: integer(4)
+      default: 1
+    interes:
+      type: decimal(12)
+      scale: 2
+    datos_pago:
+      type: clob(65535)
+    codigo_envio:
+      type: string(100)
+    nota:
+      type: clob(65535)
+    requiere_intervencion_manual:
+      type: integer(1)
+      default: 0
+    tipo_producto:
+      type: string(5)
+      fixed: true
+    tiene_problema_oca:
+      type: boolean
+      default: false
+    id_eshop:
+      type: integer(4)
+    source:
+      type: string(255)
+    fecha_source:
+      type: timestamp
+    utm_campaign:
+      type: string(255)
+    utm_term:
+      type: string(255)
+  relations:
+    usuario:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: pedido
+      foreignType: many
+      owningSide: true
+    formaPago:
+      class: formaPago
+      local: id_forma_pago
+      foreign: id_forma_pago
+      foreignAlias: pedido
+      foreignType: many
+      owningSide: true
+    provincia:
+      class: provincia
+      local: envio_id_provincia
+      foreign: id_provincia
+      foreignAlias: provincia
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: pedidos
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_pedido_usuario1:
+      fields: [id_usuario]
+    fk_pedido_forma_pago1:
+      fields: [id_forma_pago]
+    fk_pedido_provincia1:
+      fields: [envio_id_provincia]
+    ix_pedido_codigo_envio:
+      fields: [codigo_envio]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha_alta
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+formaPago:
+  tableName: forma_pago
+  columns:
+    id_forma_pago:
+      type: string(5)
+      fixed: true
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(100)
+
+pedidoBonificacion:
+  tableName: pedido_bonificacion
+  columns:
+    id_pedido_bonificacion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_bonificacion:
+      type: integer(4)
+      notnull: true
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    id_tipo_descuento:
+      type: string(5)
+      fixed: true
+      notnull: true
+    valor:
+      type: decimal(12)
+      scale: 2
+    monto:
+      type: decimal(12)
+      scale: 2
+  relations:
+    bonificacion:
+      class: bonificacion
+      local: id_bonificacion
+      foreign: id_bonificacion
+      foreignAlias: pedidoBonificacion
+      foreignType: many
+      owningSide: true
+    tipoDescuento:
+      class: tipoDescuento
+      local: id_tipo_descuento
+      foreign: id_tipo_descuento
+      foreignAlias: pedidoBonificacion
+      foreignType: many
+      owningSide: true
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: pedidoBonificacion
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_pedido_bonificacion_bonificacion1:
+      fields: [id_bonificacion]
+    fk_pedido_bonificacion_tipo_descuento1:
+      fields: [id_tipo_descuento]
+    fk_pedido_bonificacion_pedido1:
+      fields: [id_pedido]
+
+pedidoDescuento:
+  tableName: pedido_descuento
+  columns:
+    id_pedido_descuento:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_descuento:
+      type: integer(4)
+      notnull: true
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    id_tipo_descuento:
+      type: string(5)
+      fixed: true
+      notnull: true
+    valor:
+      type: decimal(12)
+      scale: 2
+    monto:
+      type: decimal(12)
+      scale: 2
+    info_adicional:
+      type: clob(65535)
+  relations:
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: pedidoDescuento
+      foreignType: many
+      owningSide: true
+    descuento:
+      class: descuento
+      local: id_descuento
+      foreign: id_descuento
+      foreignAlias: pedidoDescuento
+      foreignType: many
+      owningSide: true
+    tipoDescuento:
+      class: tipoDescuento
+      local: id_tipo_descuento
+      foreign: id_tipo_descuento
+      foreignAlias: pedidoDescuento
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_pedido_descuento_pedido1:
+      fields: [id_pedido]
+    fk_pedido_descuento_descuento1:
+      fields: [id_descuento]
+    fk_pedido_descuento_tipo_descuento1:
+      fields: [id_tipo_descuento]
+
+pedidoProductoItem:
+  tableName: pedido_producto_item
+  columns:
+    id_pedido_producto_item:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    id_producto_talle:
+      type: integer(4)
+      notnull: true
+    id_producto_color:
+      type: integer(4)
+      notnull: true
+    cantidad:
+      type: integer(4)
+      default: 0
+    precio_lista:
+      type: decimal(12)
+      scale: 2
+      zerofill: true
+    precio_deluxe:
+      type: decimal(12)
+      scale: 2
+    costo:
+      type: decimal(12)
+      scale: 2
+    origen:
+      type: string(6)
+      fixed: true
+  relations:
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: pedidoProductoItem
+      foreignType: many
+      owningSide: true
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: pedidoProductoItem
+      foreignType: many
+      owningSide: true
+    productoTalle:
+      class: productoTalle
+      local: id_producto_talle
+      foreign: id_producto_talle
+      foreignAlias: pedidoProductoItem
+      foreignType: many
+      owningSide: true
+    productoColor:
+      class: productoColor
+      local: id_producto_color
+      foreign: id_producto_color
+      foreignAlias: pedidoProductoItem
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_pedido_producto_item_producto_item1:
+      fields: [id_producto_item]
+    fk_pedido_producto_item_pedido1:
+      fields: [id_pedido]
+    fk_pedido_producto_item_producto_talle1:
+      fields: [id_producto_talle]
+    fk_pedido_producto_item_producto_color1:
+      fields: [id_producto_color]
+
+
+pedidoProductoItemCampana:
+  tableName: pedido_producto_item_campana
+  columns:
+    id_pedido_producto_item_campana:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_pedido_producto_item:
+      type: integer(4)
+      notnull: true
+    id_campana:
+      type: integer(4)
+      notnull: true
+    id_marca:
+      type: integer(4)
+  relations:
+    pedidoProductoItem:
+      class: pedidoProductoItem
+      local: id_pedido_producto_item
+      foreign: id_pedido_producto_item
+      foreignAlias: pedidoProductoItemCampana
+      foreignType: many
+      owningSide: true
+    campana:
+      class: campana
+      local: id_campana
+      foreign: id_campana
+      foreignAlias: pedidoProductoItemCampana
+      foreignType: many
+      owningSide: true
+    marca:
+      class: marca
+      local: id_marca
+      foreign: id_marca
+      foreignAlias: pedidoProductoItemCampana
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_pedido_producto_item_campana_pedido_producto_item1:
+      fields: [id_pedido_producto_item]
+    fk_pedido_producto_item_campana_campana1:
+      fields: [id_campana]
+    fk_pedido_producto_item_campana_marca1:
+      fields: [id_marca]
+
+pagoNotificacion:
+  tableName: pago_notificacion
+  columns:
+    id_pago_notificacion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    fecha:
+      type: timestamp
+    id_forma_pago:
+      type: string(5)
+      fixed: true
+      notnull: true
+    metodo:
+      type: string(20)
+    id_pedido:
+      type: integer(4)
+    response:
+      type: clob(65535)
+    procesado:
+      type: boolean
+      default: false
+    mensaje:
+      type: clob(65535)
+    id:
+      type: string(50)
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+  relations:
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: pagoNotificacion
+      foreignType: many
+      owningSide: true
+    formaPago:
+      class: formaPago
+      local: id_forma_pago
+      foreign: id_forma_pago
+      foreignAlias: pagoNotificacion
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_pago_notificacion_pedido1:
+      fields: [id_pedido]
+    fk_pago_notificacion_forma_pago1:
+      fields: [id_forma_pago]
+    fk_pago_notificacion_id:
+      fields: [id,id_forma_pago]
+
+
+sessionStorageFrontend:
+  tableName: session_storage_frontend
+  columns:
+    id_session:
+      type: string(255)
+      primary: true
+      notnull: true
+    session_data:
+      type: clob
+      notnull: true
+    session_time:
+      type: integer(8)
+      notnull: true
+
+
+sessionStorageBackend:
+  tableName: session_storage_backend
+  columns:
+    id_session:
+      type: string(255)
+      primary: true
+      notnull: true
+    session_data:
+      type: clob
+      notnull: true
+    session_time:
+      type: integer(8)
+      notnull: true
+
+
+avisoPedido:
+  tableName: aviso_pedido
+  columns:
+    id_aviso_pedido:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_tipo_aviso_pedido:
+      type: string(5)
+      fixed: true
+      notnull: true
+    fecha:
+      type: timestamp
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    hash:
+      type: string(32)
+      fixed: true
+      unique: true
+  relations:
+    tipoAvisoPedido:
+      class: tipoAvisoPedido
+      local: id_tipo_aviso_pedido
+      foreign: id_tipo_aviso_pedido
+      foreignAlias: avisoPedido
+      foreignType: many
+      owningSide: true
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: avisoPedido
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_aviso_pedido_tipo_aviso_pedido1:
+      fields: [id_tipo_aviso_pedido]
+    fk_aviso_pedido_pedido1:
+      fields: [id_pedido]
+
+tipoAvisoPedido:
+  tableName: tipo_aviso_pedido
+  columns:
+    id_tipo_aviso_pedido:
+      type: string(5)
+      fixed: true
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(100)
+
+reporteVentasPeriodo:
+  tableName: reporte_ventas_periodo
+  columns:
+    fecha:
+      type: date
+      primary: true
+      notnull: true
+    total_dinero_ingresado_flash:
+      type: decimal(9)
+      scale: 2
+    total_dinero_ingresado_permanente:
+      type: decimal(9)
+      scale: 2
+    total_dinero_ingresado_mixto:
+      type: decimal(9)
+      scale: 2
+    venta_total_flash:
+      type: decimal(9)
+      scale: 2
+    venta_total_permanente:
+      type: decimal(9)
+      scale: 2
+    costo_mercaderia_flash:
+      type: decimal(9)
+      scale: 2
+    costo_mercaderia_permanente:
+      type: decimal(9)
+      scale: 2
+    costo_envio_flash:
+      type: decimal(9)
+      scale: 2
+    costo_envio_permanente:
+      type: decimal(9)
+      scale: 2
+    costo_envio_mixto:
+      type: decimal(9)
+      scale: 2
+    comisiones_flash:
+      type: decimal(9)
+      scale: 2
+    comisiones_permanente:
+      type: decimal(9)
+      scale: 2
+    comisiones_mixto:
+      type: decimal(9)
+      scale: 2
+    cantidad_pedidos_flash:
+      type: integer(4)
+    cantidad_pedidos_permanente:
+      type: integer(4)
+    cantidad_pedidos_mixto:
+      type: integer(4)
+    unidades_flash:
+      type: integer(4)
+    unidades_permanente:
+      type: integer(4)
+    descuentos_usados_flash:
+      type: decimal(9)
+      scale: 2
+    descuentos_usados_permanente:
+      type: decimal(9)
+      scale: 2
+    descuentos_usados_mixto:
+      type: decimal(9)
+      scale: 2
+    bonificaciones_usados_flash:
+      type: decimal(9)
+      scale: 2
+    bonificaciones_usados_permanente:
+      type: decimal(9)
+      scale: 2
+    bonificaciones_usados_mixto:
+      type: decimal(9)
+      scale: 2
+    cantidad_pedidos_0_50:
+      type: integer(4)
+    cantidad_pedidos_50_100:
+      type: integer(4)
+    cantidad_pedidos_100_200:
+      type: integer(4)
+    cantidad_pedidos_200_mas:
+      type: integer(4)
+    cliente_primera_compra:
+      type: integer(4)
+
+
+stock:
+  columns:
+    id_stock:
+      type: integer(4)
+      primary: true
+      notnull: true
+    fecha:
+      type: timestamp
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    id_stock_tipo:
+      type: integer(4)
+    cantidad:
+      type: integer(4)
+    origen:
+      type: string(6)
+      fixed: true
+    id_pedido_producto_item:
+      type: integer(4)
+    observacion:
+      type: clob(65535)
+  relations:
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: stock
+      foreignType: many
+      owningSide: true
+    stockTipo:
+      class: stockTipo
+      local: id_stock_tipo
+      foreign: id_stock_tipo
+      foreignAlias: stock
+      foreignType: many
+      owningSide: true
+    pedidoProductoItem:
+      class: pedidoProductoItem
+      local: id_pedido_producto_item
+      foreign: id_pedido_producto_item
+      foreignAlias: stock
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_stock_producto_item1:
+      fields: [id_producto_item]
+    ix_stock_origen:
+      fields: [origen]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+        
+
+waitingList:
+  tableName: waiting_list
+  columns:
+    id_waiting_list:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_usuario:
+      type: integer(4)
+      notnull: true
+    fecha:
+      type: timestamp
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    cantidad:
+      type: integer(4)
+  relations:
+    usuario:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: waitingList
+      foreignType: many
+      owningSide: true
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: waitingList
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_wait_list_usuario1:
+      fields: [id_usuario]
+    fk_waiting_list_producto_item1:
+      fields: [id_producto_item]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+
+cupon:
+  columns:
+    id_cupon:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    fecha_desde:
+      type: date
+    fecha_hasta:
+      type: date
+
+cuponProducto:
+  tableName: cupon_producto
+  columns:
+    id_cupon:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_producto:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    cupon:
+      class: cupon
+      local: id_cupon
+      foreign: id_cupon
+      foreignAlias: cuponProducto
+      foreignType: many
+      owningSide: true
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: cuponProducto
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_cupon_has_producto_producto1:
+      fields: [id_producto]
+    fk_cupon_has_producto_cupon1:
+      fields: [id_cupon]
+
+
+marcaRubro:
+  tableName: marca_rubro
+  columns:
+    id_marca_rubro:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+
+     
+factura:
+  columns:
+    id_factura:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    procesada:
+      type: boolean
+    CAE:
+      type: string(50)
+    CAE_vencimiento:
+      type: string(50)
+    comprobante:
+      type: integer(8)
+    resultado:
+      type: string(1)
+      fixed: true
+    entorno:
+      type: string(4)
+      fixed: true
+    mail_enviado:
+      type: boolean
+  relations:
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: factura
+      foreignType: one
+      owningSide: true
+  indexes:
+    fk_Factura_pedido1:
+      fields: [id_pedido]
+    unique_id_pedido_entorno:
+      fields:
+        id_pedido:
+          sorting: ASC
+        entorno:
+          sorting: ASC
+      type: unique
+
+facturaWsRequest:
+  tableName: factura_ws_request
+  columns:
+    id_factura_ws_request:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    request:
+      type: clob(65535)
+    response:
+      type: clob(65535)
+    fecha:
+      type: timestamp
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+facturaWsRequestFactura:
+  tableName: factura_ws_request_factura
+  columns:
+    id_factura_ws_request:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_factura:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    facturaWsRequest:
+      class: facturaWsRequest
+      local: id_factura_ws_request
+      foreign: id_factura_ws_request
+      foreignAlias: facturaWsRequestFactura
+      foreignType: many
+      owningSide: true
+    factura:
+      class: factura
+      local: id_factura
+      foreign: id_factura
+      foreignAlias: facturaWsRequestFactura
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_factura_ws_request_has_factura_factura1:
+      fields: [id_factura]
+    fk_factura_ws_request_has_factura_factura_ws_request1:
+      fields: [id_factura_ws_request]
+
+
+
+ncredito:
+  columns:
+    id_ncredito:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    procesada:
+      type: boolean
+    CAE:
+      type: string(50)
+    CAE_vencimiento:
+      type: string(50)
+    comprobante:
+      type: integer(8)
+    resultado:
+      type: string(1)
+      fixed: true
+    entorno:
+      type: string(4)
+      fixed: true
+    importe:
+      type: decimal(12)
+      scale: 2
+      
+ncreditoFactura:
+  tableName: ncredito_factura
+  columns:
+    id_ncredito:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_factura:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    ncredito:
+      class: ncredito
+      local: id_ncredito
+      foreign: id_ncredito
+      foreignAlias: ncreditoFactura
+      foreignType: many
+      owningSide: true
+    factura:
+      class: factura
+      local: id_factura
+      foreign: id_factura
+      foreignAlias: ncreditoFactura
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_ncredito_has_factura_factura1:
+      fields: [id_factura]
+    fk_ncredito_has_factura_ncredito1:
+      fields: [id_ncredito]
+
+ncreditoWsRequest:
+  tableName: ncredito_ws_request
+  columns:
+    id_ncredito_ws_request:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    request:
+      type: clob(65535)
+    response:
+      type: clob(65535)
+    fecha:
+      type: timestamp
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+ncreditoWsRequestNcredito:
+  tableName: ncredito_ws_request_ncredito
+  columns:
+    id_ncredito:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_ncredito_ws_request:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    ncredito:
+      class: ncredito
+      local: id_ncredito
+      foreign: id_ncredito
+      foreignAlias: ncreditoWsRequestNcredito
+      foreignType: many
+      owningSide: true
+    ncreditoWsRequest:
+      class: ncreditoWsRequest
+      local: id_ncredito_ws_request
+      foreign: id_ncredito_ws_request
+      foreignAlias: ncreditoWsRequestNcredito
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_ncredito_has_ncredito_ws_request_ncredito_ws_r1:
+      fields: [id_ncredito_ws_request]
+    fk_ncredito_has_ncredito_ws_request_ncredito1:
+      fields: [id_ncredito]
+
+valorInterno:
+  tableName: valor_interno
+  columns:
+    id_valor_interno:
+      type: string(20)
+      primary: true
+      notnull: true
+    denominacion:
+      type: clob(65535)
+    valor:
+      type: string(255)
+
+incidenciaFactura:
+  tableName: incidencia_factura
+  columns:
+    id_incidencia:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    descripcion:
+      type: clob(65535)
+    valor:
+      type: string(50)
+    resuelta:
+      type: boolean
+      default: false
+      
+      
+faltante:
+  columns:
+    id_faltante:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    cantidad:
+      type: integer(4)
+    fecha_aviso:
+      type: timestamp
+    id_bonificacion:
+      type: integer(4)
+    procesado:
+      type: boolean
+    fecha_procesado:
+      type: timestamp
+    monto_devuelto:
+      type: decimal(12)
+      scale: 2
+  relations:
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: faltante
+      foreignType: many
+      owningSide: true
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: faltante
+      foreignType: many
+      owningSide: true
+    bonificacion:
+      class: bonificacion
+      local: id_bonificacion
+      foreign: id_bonificacion
+      foreignAlias: faltante
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_faltante_pedido1:
+      fields: [id_pedido]
+    fk_faltante_producto_item1:
+      fields: [id_producto_item]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha_aviso
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+campanaUsuario:
+  tableName: campana_usuario
+  columns:
+    id_campana_usuario:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_campana:
+      type: integer(4)
+      notnull: true
+    id_sf_guard_user:
+      type: integer(4)
+    email:
+      type: string(255)
+    usuario:
+      type: string(255)
+  relations:
+    campana:
+      class: campana
+      local: id_campana
+      foreign: id_campana
+      foreignAlias: campanaUsuario
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_campana_usuario_campana1:
+      fields: [id_campana]
+      
+      
+devueltoOca:
+  tableName: devuelto_oca
+  columns:
+    id_devuelto_oca:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    fecha:
+      type: timestamp
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    fecha_retirado:
+      type: timestamp
+  relations:
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: devueltoOca
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_devuelto_oca_pedido1:
+      fields: [id_pedido]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+remito:
+  columns:
+    id_remito:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_envio:
+      type: integer(4)
+
+remitoPedido:
+  tableName: remito_pedido
+  columns:
+    id_remito:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_pedido:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    remito:
+      class: remito
+      local: id_remito
+      foreign: id_remito
+      foreignAlias: remitoPedido
+      foreignType: many
+      owningSide: true
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: remitoPedido
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_remito_has_pedido_pedido1:
+      fields: [id_pedido]
+    fk_remito_has_pedido_remito1:
+      fields: [id_remito]
+      
+      
+devolucion:
+  columns:
+    id_devolucion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    fecha:
+      type: timestamp
+      notnull: true
+    id_bonificacion:
+      type: integer(4)
+    id_usuario:
+      type: integer(4)
+      notnull: true
+    tipo_envio:
+      type: string(10)
+    tipo_credito:
+      type: string(10)
+    nombre:
+      type: string(45)
+    apellido:
+      type: string(45)
+    calle:
+      type: string(45)
+    numero:
+      type: string(45)
+    piso:
+      type: string(45)
+    dpto:
+      type: string(45)
+    codigo_postal:
+      type: string(45)
+    id_provincia:
+      type: integer(4)
+    localidad:
+      type: string(50)
+    fecha_envio_oca:
+      type: timestamp
+    fecha_recibido:
+      type: timestamp
+    fecha_cierre:
+      type: timestamp
+    id_devolucion_motivo:
+      type: string(5)
+      fixed: true
+    motivo_otro:
+      type: clob(65535)
+    codigo_envio:
+      type: string(100)
+    envio_id_pedido_envio_pack:
+      type: integer(4)
+    monto_total:
+      type: decimal(12)
+      scale: 2
+    id_eshop:
+      type: integer(4)
+  relations:
+    bonificacion:
+      class: bonificacion
+      local: id_bonificacion
+      foreign: id_bonificacion
+      foreignAlias: devolucion
+      foreignType: many
+      owningSide: true
+    provincia:
+      class: provincia
+      local: id_provincia
+      foreign: id_provincia
+      foreignAlias: provincia
+      foreignType: many
+      owningSide: true
+    usuario:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: devolucion
+      foreignType: many
+      owningSide: true
+    devolucionMotivo:
+      class: devolucionMotivo
+      local: id_devolucion_motivo
+      foreign: id_devolucion_motivo
+      foreignAlias: devolucion
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: devolucion
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_devolucion_bonificacion1:
+      fields: [id_bonificacion]
+    fk_devolucion_usuario1:
+      fields: [id_usuario]
+    fk_devolucion_devolucion_motivo1:
+      fields: [id_devolucion_motivo]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+        
+        
+
+devolucionMotivo:
+  tableName: devolucion_motivo
+  columns:
+    id_devolucion_motivo:
+      type: char(5)
+      fixed: true
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(255)
+        
+
+devolucionProductoItem:
+  tableName: devolucion_producto_item
+  columns:
+    id_devolucion_producto_item:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_devolucion:
+      type: integer(4)
+      notnull: true
+    id_pedido_producto_item:
+      type: integer(4)
+      notnull: true
+    id_producto_item:
+      type: integer(4)
+    cantidad:
+      type: integer(4)
+    cantidad_stock:
+      type: integer(4)
+      default: 0 
+    cantidad_fallados:
+      type: integer(4)
+      default: 0
+    cantidad_devueltos_marcas:
+      type: integer(4)
+      default: 0
+  relations:
+    devolucion:
+      class: devolucion
+      local: id_devolucion
+      foreign: id_devolucion
+      foreignAlias: devolucionProductoItem
+      foreignType: many
+      owningSide: true
+    pedidoProductoItem:
+      class: pedidoProductoItem
+      local: id_pedido_producto_item
+      foreign: id_pedido_producto_item
+      foreignAlias: devolucionProductoItem
+      foreignType: many
+      owningSide: true
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: devolucionProductoItem
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_devolucion_producto_item_devolucion1:
+      fields: [id_devolucion]
+    fk_devolucion_producto_item_pedido_producto_item1:
+      fields: [id_pedido_producto_item]
+    fk_devolucion_producto_item_producto_item1:
+      fields: [id_producto_item]
+
+comercial:
+  columns:
+    id_comercial:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    nombre:
+      type: string(255)
+    apellido:
+      type: string(255)
+      
+      
+banco:
+  columns:
+    id_banco:
+      type: string(4)
+      fixed: true
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(255)
+
+tarjeta:
+  columns:
+    id_tarjeta:
+      type: integer(4)
+      primary: true
+      notnull: true
+    denominacion:
+      type: string(255)
+
+cuota:
+  columns:
+    id_cuota:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_banco:
+      type: string(4)
+      fixed: true
+      notnull: true
+    id_tarjeta:
+      type: integer(4)
+      notnull: true
+    cuotas:
+      type: integer(4)
+    multiplicador:
+      type: float
+  relations:
+    banco:
+      class: banco
+      local: id_banco
+      foreign: id_banco
+      foreignAlias: cuota
+      foreignType: many
+      owningSide: true
+    tarjeta:
+      class: tarjeta
+      local: id_tarjeta
+      foreign: id_tarjeta
+      foreignAlias: cuota
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_cuota_banco1:
+      fields: [id_banco]
+    fk_cuota_tarjeta1:
+      fields: [id_tarjeta]
+
+
+source:
+  columns:
+    id_source:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    codigo:
+      type: string(40)
+    denominacion:
+      type: string(255)
+      
+sourceInversion:
+  tableName: source_inversion
+  columns:
+    id_source_inversion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_source:
+      type: integer(4)
+      notnull: true
+    valor:
+      type: float
+    fecha:
+      type: date
+    id_eshop:
+      type: integer(4)
+  relations:
+    source:
+      class: source
+      local: id_source
+      foreign: id_source
+      foreignAlias: sourceInversion
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: sourceInversion
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_source_inversion_source1:
+      fields: [id_source]
+      
+reporteCronologico:
+  tableName: reporte_cronologico
+  columns:
+    id_reporte_cronologico:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    fecha:
+      type: timestamp
+      notnull: true
+    accion:
+      type: string(255)
+      fixed: true
+      notnull: true
+    id_pedido:
+      type: integer(4)
+    fuente:
+      type: string(255)
+    marca:
+      type: string(255)
+    condicion_fiscal:
+      type: string(255)
+    codigo_producto:
+      type: string(255)
+    producto:
+      type: string(255)
+    color:
+      type: string(255)
+    talle:
+      type: string(255)
+    categoria:
+      type: string(255)
+    genero:
+      type: string(255)
+    precio_deluxe:
+      type: decimal(12)
+      scale: 2
+    costo:
+      type: decimal(12)
+      scale: 2
+    cantidad:
+      type: integer(4)
+    bonificacion_devolucion_mp:
+      type: decimal(12)
+      scale: 2
+    bonificacion_devolucion_deluxe:
+      type: decimal(12)
+      scale: 2
+    bonificacion_motivo:
+      type: string(255)
+    bonificacion_submotivo:
+      type: string(255)
+    descuento:
+      type: decimal(12)
+      scale: 2
+    descuento_motivo:
+      type: string(255)
+    descuento_codigo:
+      type: string(255)
+    costo_envio:
+      type: decimal(12)
+      scale: 2
+    costo_envio_deluxe:
+      type: decimal(12)
+      scale: 2
+    tipo_envio:
+      type: string(3)
+      fixed: true
+    venta_db_total:
+      type: decimal(12)
+      scale: 2
+    total_facturado:
+      type: decimal(12)
+      scale: 2
+    cliente:
+      type: string(255)
+    fecha:
+      type: timestamp
+    localidad:
+      type: string(255)
+    provincia:
+      type: string(255)
+    forma_pago:
+      type: string(255)
+    id_eshop:
+      type: integer(4)
+    nombre_eshop:
+      type: string(255)
+      default: 'Deluxe Buys'
+    cliente_tipo_documento:
+      type: string(255)
+    cliente_documento:
+      type: string(255)
+    cliente_email:
+      type: string(255)
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+descuentoRestriccion:
+  tableName: descuento_restriccion
+  columns:
+    id_descuento_restriccion:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_descuento:
+      type: integer(4)
+      notnull: true
+    tipo:
+      type: string(5)
+      fixed: true
+    valor:
+      type: integer(4)
+    excluir:
+      type: boolean
+      default: false
+  relations:
+    descuento:
+      class: descuento
+      local: id_descuento
+      foreign: id_descuento
+      foreignAlias: descuentoRestriccion
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_descuento_restriccion_descuento1:
+      fields: [id_descuento]
+
+productoCampanaFinalizada:
+  tableName: producto_campana_finalizada
+  columns:
+    id_producto:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_campana:
+      type: integer(4)
+      primary: true
+      notnull: true
+    fecha:
+      type: timestamp
+    fue_restaurada:
+      type: boolean
+      default: false
+  relations:
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: productoCampanaFinalizada
+      foreignType: many
+      owningSide: true
+    campana:
+      class: campana
+      local: id_campana
+      foreign: id_campana
+      foreignAlias: productoCampanaFinalizada
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_has_campana_campana1:
+      fields: [id_campana]
+    fk_producto_has_campana_producto1:
+      fields: [id_producto]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+stockTipo:
+  tableName: stock_tipo
+  columns:
+    id_stock_tipo:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(45)
+    es_de_sistema:
+      type: boolean
+
+productoLog:
+  tableName: producto_log
+  columns:
+    id_producto_log:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_producto:
+      type: integer(4)
+      notnull: true
+    observacion:
+      type: string(255)
+    fecha:
+      type: timestamp
+  relations:
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: productoLog
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_producto_log_producto1:
+      fields: [id_producto]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+        
+talleSetZona:
+  tableName: talle_set_zona
+  columns:
+    id_talle_set_zona:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_talle_set:
+      type: integer(4)
+      notnull: true
+    id_talle_zona:
+      type: integer(4)
+      notnull: true
+    id_producto_talle:
+      type: integer(4)
+      notnull: true
+    desde:
+      type: integer(4)
+    hasta:
+      type: integer(4)
+    orden:
+      type: integer(4)      
+  relations:
+    talleSet:
+      class: talleSet
+      local: id_talle_set
+      foreign: id_talle_set
+      foreignAlias: talleSetZona
+      foreignType: many
+      owningSide: true
+    talleZona:
+      class: talleZona
+      local: id_talle_zona
+      foreign: id_talle_zona
+      foreignAlias: talleSetZona
+      foreignType: many
+      owningSide: true
+    productoTalle:
+      class: productoTalle
+      local: id_producto_talle
+      foreign: id_producto_talle
+      foreignAlias: talleSetZona
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_talle_set_has_talle_zona_talle_zona1:
+      fields: [id_talle_zona]
+    fk_talle_set_has_talle_zona_talle_set1:
+      fields: [id_talle_set]
+    fk_talle_set_has_talle_zona_producto_talle1:
+      fields: [id_producto_talle]
+
+talleZona:
+  tableName: talle_zona
+  columns:
+    id_talle_zona:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+    orden:
+      type: integer(4)
+    descripcion:
+      type: string(255)
+
+talleSet:
+  tableName: talle_set
+  columns:
+    id_talle_set:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+    id_marca:
+      type: integer(4)
+      notnull: true
+  relations:
+    marca:
+      class: marca
+      local: id_marca
+      foreign: id_marca
+      foreignAlias: talleSet
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_talle_set_marca1:
+      fields: [id_marca]
+      
+
+usuarioTalleZona:
+  tableName: usuario_talle_zona
+  columns:
+    id_talle_zona:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_usuario:
+      type: integer(4)
+      primary: true
+      notnull: true
+    medida:
+      type: integer(4)
+  relations:
+    talleZona:
+      class: talleZona
+      local: id_talle_zona
+      foreign: id_talle_zona
+      foreignAlias: usuarioTalleZona
+      foreignType: many
+      owningSide: true
+    usuario:
+      class: usuario
+      local: id_usuario
+      foreign: id_usuario
+      foreignAlias: usuarioTalleZona
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_talle_zona_has_usuario_usuario1:
+      fields: [id_usuario]
+    fk_talle_zona_has_usuario_talle_zona1:
+      fields: [id_talle_zona]
+      
+familiaTalle:
+  tableName: familia_talle
+  columns:
+    id_familia_talle:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+
+familiaColor:
+  tableName: familia_color
+  columns:
+    id_familia_color:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(100)
+    
+faq:
+  columns:
+    id_faq:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_faq_categoria:
+      type: integer(4)
+      zerofill: true
+      notnull: true
+    pregunta:
+      type: string(255)
+    texto:
+      type: clob(65535)
+    orden:
+      type: integer(4)
+    es_como_comprar:
+      type: boolean
+      default: false
+  relations:
+    faqCategoria:
+      class: faqCategoria
+      local: id_faq_categoria
+      foreign: id_faq_categoria
+      foreignAlias: faq
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_faq_faq_categoria1:
+      fields: [id_faq_categoria]
+
+faqCategoria:
+  tableName: faq_categoria
+  columns:
+    id_faq_categoria:
+      type: integer(4)
+      primary: true
+      zerofill: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    id_eshop:
+      type: integer(4)
+    orden:
+      type: integer(4)
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: faqCategoria
+      foreignType: many
+      owningSide: true
+      
+bannerPrincipal:
+  tableName: banner_principal
+  columns:
+    id_banner_principal:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    url:
+      type: string(255)
+    activo:
+      type: boolean
+    fecha_desde:
+      type: timestamp
+    fecha_hasta:
+      type: timestamp
+    orden:
+      type: integer(4)
+    mostrar_descripcion:
+      type: boolean
+      default: true
+    color:
+      type: char(7)
+      default: '#000000'
+    off:
+      type: integer(4)
+      
+premio:
+  columns:
+    id_premio:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    monto_minimo:
+      type: integer(4)
+    valor:
+      type: integer(4)
+    dias_vencimiento:
+      type: integer(4)
+    fecha_desde:
+      type: date
+    fecha_hasta:
+      type: date
+    tipo_premio:
+      type: string(5)
+      fixed: true
+
+premioLog:
+  tableName: premio_log
+  columns:
+    id_premio_log:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_premio:
+      type: integer(4)
+      notnull: true
+    id_bonificacion:
+      type: integer(4)
+      notnull: true
+    id_pedido:
+      type: integer(4)
+      notnull: true
+  relations:
+    premio:
+      class: premio
+      local: id_premio
+      foreign: id_premio
+      foreignAlias: premioLog
+      foreignType: many
+      owningSide: true
+    bonificacion:
+      class: bonificacion
+      local: id_bonificacion
+      foreign: id_bonificacion
+      foreignAlias: premioLog
+      foreignType: many
+      owningSide: true
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: premioLog
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_premio_log_premio1:
+      fields: [id_premio]
+    fk_premio_log_bonificacion1:
+      fields: [id_bonificacion]
+    fk_premio_log_pedido1:
+      fields: [id_pedido]
+
+
+reporteCampana:
+  tableName: reporte_campana
+  columns:
+    id_reporte_campana:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_campana:
+      type: integer(4)
+      notnull: true
+    rubro:
+      type: string(255)
+    cantidad_pedidos:
+      type: integer(4)
+    unidades_vendidas:
+      type: integer(4)
+    unidades_promedio_pedido:
+      type: float
+    total_facturado:
+      type: decimal(12)
+      scale: 2
+    pdb:
+      type: decimal(12)
+      scale: 2
+    costo_total:
+      type: decimal(12)
+      scale: 2
+    margen_bruto:
+      type: decimal(12)
+      scale: 2
+    margen_promedio:
+      type: decimal(12)
+      scale: 2
+    total_stock:
+      type: integer(4)
+    ejecucion_de_stock:
+      type: clob(65535)
+    top_productos:
+      type: clob(65535)
+    ticket_promedio:
+      type: decimal(12)
+      scale: 2
+    objetivo_facturacion:
+      type: decimal(12)
+      scale: 2
+    objetivo_resultado:
+      type: string(1)
+      fixed: true
+    condicion_fiscal:
+      type: string(255)
+    cantidad_pedido_hombre:
+      type: integer(4)
+    cantidad_pedido_mujer:
+      type: integer(4)
+  relations:
+    campana:
+      class: campana
+      local: id_campana
+      foreign: id_campana
+      foreignAlias: reporteCampana
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_reporte_campana_campana1:
+      fields: [id_campana]
+      
+imagenBannerPrincipal:
+  tableName: imagen_banner_principal
+  columns:
+    id_imagen_banner_principal:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id:
+      type: integer(4)
+    tipo:
+      type: string(5)
+      fixed: true
+    src:
+      type: string(255)
+  indexes:
+    ibp_id:
+      fields: [id]
+      
+fallado:
+  columns:
+    id_fallado:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_pedido_producto_item:
+      type: integer(4)
+      notnull: true
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    descripcion:
+      type: string(255)
+    recuperado:
+      type: boolean
+    fecha:
+      type: timestamp
+    id_eshop:
+      type: integer(4)
+  relations:
+    pedidoProductoItem:
+      class: pedidoProductoItem
+      local: id_pedido_producto_item
+      foreign: id_pedido_producto_item
+      foreignAlias: fallado
+      foreignType: many
+      owningSide: true
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: fallado
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: fallado
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_fallado_pedido_producto_item1:
+      fields: [id_pedido_producto_item]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+        
+devueltoMarca:
+  tableName: devuelto_marca
+  columns:
+    id_devuelto_marca:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_pedido_producto_item:
+      type: integer(4)
+      notnull: true
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    devuelto:
+      type: boolean
+    fecha:
+      type: timestamp
+  relations:
+    pedidoProductoItem:
+      class: pedidoProductoItem
+      local: id_pedido_producto_item
+      foreign: id_pedido_producto_item
+      foreignAlias: devueltoMarca
+      foreignType: many
+      owningSide: true
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: devueltoMarca
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_devuelto_mmarca_ppi1:
+      fields: [id_pedido_producto_item]
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+productoSticker:
+  tableName: producto_sticker
+  actAs:
+    Sluggable:
+      unique: true
+      fields: [denominacion]
+      canUpdate: true
+  columns:
+    id_producto_sticker:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+      
+categoriaMl:
+  tableName: categoria_ml
+  columns:
+    id_categoria_ml:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_categoria_ml_padre:
+      type: integer(4)
+    denominacion:
+      type: string(255)
+    id_externo:
+      type: string(20)
+    tiene_hijos:
+      type: boolean
+    attribute_types:
+      type: string(40)
+  relations:
+    categoriaMl:
+      class: categoriaMl
+      local: id_categoria_ml
+      foreign: id_categoria_ml_padre
+      foreignAlias: categoriaMlPadre      
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_categoria_ml_id_categoria_ml_padre:
+      fields: [id_categoria_ml_padre]
+      
+      
+publicacionMl:
+  tableName: publicacion_ml
+  columns:
+    id_producto:
+      type: integer(4)
+      primary: true
+      notnull: true
+    fecha_inicio:
+      type: timestamp
+    fecha_fin:
+      type: timestamp
+    item_id:
+      type: string(100)
+    data_mercado_libre:
+      type: clob(65535)
+    status_ml:
+      type: char(6)
+  relations:
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: publicacionMl
+      foreignType: one
+      owningSide: true
+  indexes:
+    fk_publicacion_ml_id_producto:
+      fields: [id_producto] 
+      
+      
+notificacionBackend:
+  tableName: notificacion_backend
+  columns:
+    id_notificacion_backend:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    tipo:
+      type: string(5)
+      fixed: true
+    response:
+      type: clob(65535)
+    visto:
+      type: boolean
+      default: false
+    fecha_alta:
+      type: timestamp
+    id_usuario:
+      type: integer(4)
+  actAs:
+    Timestampable:
+      created:
+        name: fecha_alta
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+        
+eshop:
+  tableName: eshop
+  columns:
+    id_eshop:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    dominio:
+      type: string(255)
+    id_marca:
+      type: integer(4)
+      notnull: true
+    id_producto_genero:
+      type: string(5)
+      fixed: true
+      notnull: true
+    lookbook:
+      type: char(5)
+    lookbook_imagenes_fila:
+      type: integer(4)
+    usa_campaign:
+      type: boolean
+    usa_menu_flotante:
+      type: boolean
+    activo:
+      type: boolean
+    facebook:
+      type: string(255)
+    twitter:
+      type: string(255)
+    instagram:
+      type: string(255)
+    youtube:
+      type: string(255)
+    snapchat:
+      type: string(255)
+    data_fiscal:
+      type: string(255)
+    usa_acerca:
+      type: boolean
+    acerca_titulo:
+      type: string(255)
+    acerca_texto_principal:
+      type: clob(65535)
+    acerca_texto_secundario:
+      type: clob(65535)
+    tiendas_titulo:
+      type: string(255)
+    tiendas_subtitulo:
+      type: string(255)
+    mi_carro_titulo:
+      type: string(255)
+    mercado_pago_client_id:
+      type: string(255)
+    mercado_pago_client_secret:
+      type: string(255)
+    envio_pack_api_key:
+      type: string(255)
+    envio_pack_secret_key:
+      type: string(255)
+    envio_pack_direccion_envio:
+      type: integer(4)
+    razon_social:
+      type: string(255)
+    cuit:
+      type: string(255)
+    email_no_reply:
+      type: string(255)
+    ml_client_id:
+      type: string(255)
+    ml_client_secret:
+      type: string(255)
+    ml_id_usuario_interno:
+      type: integer(4)
+    ml_id_official_store:
+      type: string(255)
+    link_color:
+      type: char(7)
+    lista_sendgrid:
+      type: string(255)
+    tags:
+      type: clob(65535)
+    soporte_email:
+      type: string(255)
+    soporte_pass:
+      type: string(255)
+    freeshipping:
+      type: integer(4)
+    link_cace:
+      type: string(255)
+    devolucion_restringida_categorias:
+      type: string(255)
+    devolucion_restringida_mensaje:
+      type: string(255)
+    devolucion_freeshipping:
+      type: boolean
+    decidir_nro_comercio:
+      type: string(255)
+    formulario_titulo:
+      type: string(255)
+    formulario_texto:
+      type: clob(65535)
+    formulario_campos:
+      type: clob(65535)
+    formulario_to:
+      type: string(255)
+    mail_RRHH:
+      type: string(255)
+    mail_comercial:
+      type: string(255)
+    lookbook_titulo:
+      type: string(255)
+    campaign_titulo:
+      type: string(255)
+    mails_OC:
+      type: string(255)
+    zendesk_config:
+      type: clob(65535)
+    texto_iniciar_sesion:
+      type: string(255)
+    texto_seguinos:
+      type: string(255)
+    texto_agregar_al_carro:
+      type: string(255)
+    texto_carro_de_compras:
+      type: string(255)
+    texto_soy_miembro:
+      type: string(255)
+    texto_soy_nuevo:
+      type: string(255)
+    texto_consultas:
+      type: string(255)
+    domicilio_comercial:
+      type: string(255)
+  relations:
+    productoGenero:
+      class: productoGenero
+      local: id_producto_genero
+      foreign: id_producto_genero
+      foreignAlias: eshop
+      foreignType: many
+      owningSide: true
+    marca:
+      class: marca
+      local: id_marca
+      foreign: id_marca
+      foreignAlias: eshop
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_eshop_dominio:
+      fields: [dominio]
+
+      
+eshopHome:
+  tableName: eshop_home
+  columns:
+    id_eshop_home:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_eshop:
+      type: integer(4)
+      notnull: true
+    denominacion:
+      type: string(255)
+    tipo:
+      type: char(5)
+    vigencia_desde:
+      type: timestamp
+    vigencia_hasta:
+      type: timestamp
+    orden:
+      type: integer(2)
+    activo:
+      type: boolean
+    texto:
+      type: string(255)
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: eshopHome
+      foreignType: many
+      owningSide: true
+
+eshopHomeMultimedia:
+  tableName: eshop_home_multimedia
+  columns:
+    id_eshop_home_multimedia:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_eshop_home:
+      type: integer(4)
+      notnull: true
+    indice:
+      type: string(255)
+    link:
+      type: string(255)
+    es_video:
+      type: boolean
+      default: false
+  relations:
+    eshopHome:
+      class: eshopHome
+      local: id_eshop_home
+      foreign: id_eshop_home
+      foreignAlias: eshopHomeMultimedia
+      foreignType: many
+      owningSide: true
+
+      
+eshopTienda:
+  tableName: eshop_tienda
+  columns:
+    id_eshop_tienda:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_eshop:
+      type: integer(4)
+      notnull: true
+    denominacion:
+      type: string(255)
+    direccion:
+      type: string(255)
+    telefono:
+      type: string(255)
+    latitud:
+      type: string(255)
+    longitud:
+      type: string(255)
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: eshopTiendas
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_eshop_tienda_eshop1:
+      fields: [id_eshop]
+
+eshopTiendaCategoria:
+  tableName: eshop_tienda_categoria
+  columns:
+    id_eshop_tienda_categoria:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+      
+eshopTiendaTiendaCategoria:
+  tableName: eshop_tienda_tienda_categoria
+  columns:
+    id_eshop_tienda:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_eshop_tienda_categoria:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    eshopTienda:
+      class: eshopTienda
+      local: id_eshop_tienda
+      foreign: id_eshop_tienda
+      foreignAlias: eshopTiendaTiendaCategorias
+      foreignType: many
+      owningSide: true
+    eshopTiendaCategoria:
+      class: eshopTiendaCategoria
+      local: id_eshop_tienda_categoria
+      foreign: id_eshop_tienda_categoria
+      foreignAlias: eshopTiendaTiendaCategorias
+      foreignType: many
+      owningSide: true
+      
+eshopImagenCampaign:
+  tableName: eshop_imagen_campaign
+  columns:
+    id_eshop_imagen_campaign:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_eshop:
+      type: integer(4)
+      notnull: true
+    slide:
+      type: boolean
+    activo:
+      type: boolean
+    orden:
+      type: integer(2)
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: eshopHome
+      foreignType: many
+      owningSide: true
+
+eshopLookbook:
+  tableName: eshop_lookbook
+  columns:
+    id_eshop_lookbook:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    texto:
+      type: string(255)
+    id_eshop:
+      type: integer(4)
+      notnull: true
+    activo:
+      type: boolean
+    orden:
+      type: integer(2)
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: eshopHome
+      foreignType: many
+      owningSide: true
+
+eshopLookbookProducto:
+  tableName: eshop_lookbook_producto
+  columns:
+    id_eshop_lookbook_producto:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_eshop_lookbook:
+      type: integer(4)
+      notnull: true
+    id_producto:
+      type: integer(4)
+      notnull: true
+    position_top:
+      type: integer(4)
+    position_left:
+      type: integer(4)
+    background_color:
+      type: string(255)
+  relations:
+    producto:
+      class: producto
+      local: id_producto
+      foreign: id_producto
+      foreignAlias: eshopLookbookProducto
+      foreignType: many
+      owningSide: true
+    eshopLookbook:
+      class: eshopLookbook
+      local: id_eshop_lookbook
+      foreign: id_eshop_lookbook
+      foreignAlias: eshopLookbookProducto
+      foreignType: many
+      owningSide: true
+
+recuperoCarrito:
+  tableName: recupero_carrito
+  columns:
+    id_recupero_carrito:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_pedido:
+      type: integer(4)
+      notnull: true
+    mail_enviado:
+      type: boolean
+    hash:
+      type: string(40)
+      fixed: true
+  relations:
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: recuperoCarrito
+      foreignType: one
+      owningSide: true
+  indexes:
+    fk_recupero_carrito_pedido1:
+      fields: [id_pedido]
+      
+      
+reciboEshop:
+  tableName: recibo_eshop
+  columns:
+    id_recibo_eshop:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    fecha:
+      type: date
+    tipo:
+      type: char(2)
+    importe:
+      type: decimal(12)
+      scale: 2
+    id_eshop:
+      type: integer(4)
+      notnull: true
+  relations:
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: producto
+      foreignType: many
+      owningSide: true
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+      
+reciboEshopPedido:
+  tableName: recibo_eshop_pedido
+  columns:
+    id_recibo_eshop:
+      type: integer(4)
+      primary: true
+      notnull: true
+    id_pedido:
+      type: integer(4)
+      primary: true
+      notnull: true
+  relations:
+    reciboEshop:
+      class: reciboEshop
+      local: id_recibo_eshop
+      foreign: id_recibo_eshop
+      foreignAlias: reciboEshopPedido
+      foreignType: many
+      owningSide: true
+    pedido:
+      class: pedido
+      local: id_pedido
+      foreign: id_pedido
+      foreignAlias: reciboEshopPedido
+      foreignType: many
+      owningSide: true
+  indexes:
+    fk_reciboEshopPedido_id_recibo_eshop:
+      fields: [id_recibo_eshop]
+    fk_reciboEshopPedido_id_pedido:
+      fields: [id_pedido]
+
+
+recepcionMercaderiaCampana:
+  tableName: recepcion_mercaderia_campana
+  columns:
+    id_recepcion_mercaderia_campana:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    id_campana:
+      type: integer(4)
+      notnull: true      
+    id_producto_item:
+      type: integer(4)
+      notnull: true
+    fecha:
+      type: timestamp
+    cantidad:
+      type: integer(4)
+    observacion:
+      type: clob(65535)
+  relations:
+    campana:
+      class: campana
+      local: id_campana
+      foreign: id_campana
+      foreignAlias: recepcionMercaderiaCampana
+      foreignType: many
+      owningSide: true
+    productoItem:
+      class: productoItem
+      local: id_producto_item
+      foreign: id_producto_item
+      foreignAlias: carritoProductoItem
+      foreignType: many
+      owningSide: true
+  actAs:
+    Timestampable:
+      created:
+        name: fecha
+        type: timestamp
+        format: Y-m-d H:i:s
+      updated:
+        disabled: true
+
+
+promoPago:
+  tableName: promo_pago
+  columns:
+    id_promo_pago:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    denominacion:
+      type: string(255)
+    proveedor:
+      type: string(255)
+    id_forma_pago:
+      type: string(5)
+      fixed: true
+      notnull: true
+    vigencia_desde:
+      type: timestamp
+    vigencia_hasta:
+      type: timestamp
+    dias_semana:
+      type: string(255)
+    cuotas:
+      type: string(255)
+    params:
+      type: clob(65535)
+    id_descuento:
+      type: integer(4)
+    orden:
+      type: integer(4)
+    activo:
+      type: boolean
+    id_eshop:
+      type: integer(4)
+  relations:
+    formaPago:
+      class: formaPago
+      local: id_forma_pago
+      foreign: id_forma_pago
+      foreignAlias: promoPago
+      foreignType: many
+      owningSide: true
+    descuento:
+      class: descuento
+      local: id_descuento
+      foreign: id_descuento
+      foreignAlias: promoPago
+      foreignType: many
+      owningSide: true
+    eshop:
+      class: eshop
+      local: id_eshop
+      foreign: id_eshop
+      foreignAlias: promoPago
+      foreignType: many
+      owningSide: true
+

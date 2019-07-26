@@ -1,0 +1,1 @@
+<?php include_partial('productos/administrar_imagenes', array('producto' => $producto)) ?>

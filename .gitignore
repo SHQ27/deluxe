@@ -1,0 +1,14 @@
+cache/*
+tmp/*
+log/*
+lib/vendor/*
+.project
+.buildpath
+.settings/*
+/cache
+/log
+/tmp
+.idea/*
+.idea/
+
+

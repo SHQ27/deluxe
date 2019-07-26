@@ -1,0 +1,12 @@
+all:
+  rpp_productos_categoria: 12
+  rpp_productos_lista_tag: 12
+    
+prod:
+<?php include( dirname(__FILE__) .  "/../../../config/common_prod.yml"); ?> 
+
+dev:
+<?php include( dirname(__FILE__) .  "/../../../config/common_dev.yml"); ?>
+    
+stage:
+<?php include( dirname(__FILE__) .  "/../../../config/common_stage.yml"); ?>

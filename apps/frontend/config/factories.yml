@@ -1,0 +1,56 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/05-Factories
+
+prod:
+  logger:
+    class:   sfNoLogger
+    param:
+      level:   err
+      loggers: ~
+      
+
+all:
+  response:
+    class: pmWebResponse
+
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+
+  view_cache_manager:
+    class: sfViewCacheManager
+    param:
+      cache_key_use_vary_headers: true
+      cache_key_use_host_name:    true
+
+  view_cache:
+    class: pmMemcacheCache 
+    param:
+      automatic_cleaning_factor: 0
+      prefix: <?php echo sfConfig::get('app_cache_templatesFrontendPrefix'); ?> 
+      servers:
+        deluxe-cache:
+          host: <?php echo sfConfig::get('app_memcache_ip'); ?> 
+          port: <?php echo sfConfig::get('app_memcache_port'); ?> 
+          serializer: IGBINARY
+          mode: compiled
+
+  mailer:
+    param:
+      delivery_strategy: none
+                
+  storage:
+    class: sfPDOSessionStorage
+    param:
+      database:    doctrine
+      db_table: session_storage_frontend
+      db_data_col: session_data
+      db_id_col: id_session
+      db_time_col: session_time 
+
+  user:
+      class: currentUser
+      param:
+        timeout: 18000     

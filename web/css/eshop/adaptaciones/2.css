@@ -1,0 +1,1018 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:700,400,300);
+
+/*===================================================================================*/
+/*  FONTS                                                                            */ 
+/*===================================================================================*/
+
+@font-face {
+    font-family: 'Karla-Bold';
+    src:
+    url('../../../images/eshop/2/fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../../images/eshop/2/fonts/Karla-Bold.woff') format('woff'),
+    url('../../../images/eshop/2/fonts/Karla-Bold.ttf')  format('truetype'),
+    url('../../../images/eshop/2/fonts/Karla-Bold.svg#Karla-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutraTextTF-BookAlt';
+    src:
+    url('../../../images/eshop/2/fonts/NeutraTextTF-BookAlt.eot?#iefix') format('embedded-opentype'),
+    url('../../../images/eshop/2/fonts/NeutraTextTF-BookAlt.otf')  format('opentype'),
+    url('../../../images/eshop/2/fonts/NeutraTextTF-BookAlt.woff') format('woff'),
+    url('../../../images/eshop/2/fonts/NeutraTextTF-BookAlt.ttf')  format('truetype'),
+    url('../../../images/eshop/2/fonts/NeutraTextTF-BookAlt.svg#NeutraTextTF-BookAlt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+body {
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.divisor_v {
+    border-left: 1px solid #333;
+    background-color: none;
+}
+
+.flex-control-paging li a {
+	background-image: url(../../../images/eshop/2/nav_button.png);
+}
+
+.flex-direction-nav .flex-prev { 
+	background-image: url(../../../images/eshop/2/slider_left.png);
+}
+.flex-direction-nav .flex-next { 
+	background-image: url(../../../images/eshop/2/slider_right.png);
+}
+.flex-direction-nav .flex-prev:hover { 
+	background-image: url(../../../images/eshop/2/slider_left_h.png);
+}
+.flex-direction-nav .flex-next:hover { 
+	background-image: url(../../../images/eshop/2/slider_right_h.png);
+}
+
+.btOscuro:hover {
+    background-color: #000;
+}
+
+.customSelect {
+    border: solid 2px #cdcdcd;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #000;
+}
+
+.titulo
+{
+    color: #000;
+}
+
+.scrollToTop {
+    background: url(../../../images/eshop/2/gototop.png);
+}
+
+.rojo {
+    color: red;
+}
+
+.color-link {
+    color: #000;
+}
+
+.color-link:hover {
+    text-decoration: underline;
+}
+
+#toolbar_up {
+    font-size: 12px;
+}
+
+#toolbar_up.OS {
+    font-family: 'Karla-Bold';
+    text-transform: uppercase;
+}
+
+#home-modal .logo
+{
+	background-image: url(../../../images/eshop/2/logo.png);
+    width: 90px;
+    height: 70px;
+    margin: 15px auto 21px auto;
+}
+
+#home-modal
+{
+    height: 550px;
+	background-image: url(../../../images/eshop/2/home_modal.jpg);
+}
+
+#devoluciones2 {
+    background-image: url(../../../images/eshop/2/devolucion_2.png);
+}
+
+#cambios2 {
+    background-image: url(../../../images/eshop/2/cambio_2.png);
+}
+
+#envios2 {
+    background-image: url(../../../images/eshop/2/envio_2.png);
+}
+
+/*===================================================================================*/
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.OS
+{
+	font-family: Arial;
+}
+
+.OS-9
+{
+	font-family: Arial;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.OS-11, .dd-select, #producto .dd-option
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.OS-12
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.OS-13
+{
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.OS-14
+{
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.OS-18
+{
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS
+{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+
+.MS-9
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.MS-13
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.MS-15
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.MS-18
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS-23
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.MS-24
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.MS-32
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.MS-39
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 39px;
+	font-weight: 400;
+}
+
+.MS-72
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 72px;
+	font-weight: 400;
+}
+
+.MS-78
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 78px;
+	font-weight: 400;
+}
+
+
+.color1 { color: #303030; }
+.color2 { color: #333; }
+.color3, #producto .dd-select { color: #444; }
+.color4 { color: #666666; }
+.color5 { color: #797979; }
+.color6 { color: #b9b9bd; }
+.color7 { color: #fff; }
+.color8 { color: #000; }
+.color9 { color: #999; }
+.color10 { color: #878787; }
+.color11 { color: #858585; }
+.color12 { color: #000; }
+.color13 { color: #ccc; }
+
+.hcolor1:hover { color: #303030; }
+.hcolor2:hover { color: #333; }
+.hcolor3:hover, #producto .dd-select { color: #444; }
+.hcolor4:hover { color: #666666; }
+.hcolor5:hover { color: #797979; }
+.hcolor6:hover { color: #b9b9bd; }
+.hcolor7:hover { color: #fff; }
+.hcolor8:hover { color: #000; }
+.hcolor9:hover { color: #999; }
+.hcolor10:hover { color: #878787; }
+.hcolor11:hover { color: #858585; }
+.hcolor12:hover { color: #ff5b6d; }
+.hcolor13:hover { color: #ccc; }
+
+/*===================================================================================*/
+/*  HEADER                                                                           */ 
+/*===================================================================================*/
+
+.header {
+    position: relative;
+    height: 145px;
+}
+
+.main-header {
+    width: 1000px;
+    margin: 10px auto 0 auto;
+}
+
+#toolbar_up {
+    background-color: #ffb4c6;
+    color: #000;
+}
+
+
+#toolbar_up  .derecha,
+.barraFlotante .derecha {
+    font-size: 11px;
+}
+
+#toolbar_up .items .signin,
+#toolbar_up .items #btMiCuenta,
+.barraFlotante .items .signin,
+.barraFlotante .items #btMiCuenta {
+    padding-right: 10px;
+}
+
+#toolbar_up .items.derecha,
+.barraFlotante .items.derecha {
+    font-family: Arial;
+}
+
+#toolbar_up .items.derecha .bold,
+#toolbar_up .items.derecha .semiBold {
+    font-weight: 600 !important;
+    font-size: 11px;
+    color: #000;
+}
+
+.barraFlotante .items.derecha .bold,
+.barraFlotante .items.derecha .semiBold {
+    font-weight: 600 !important;
+    font-size: 11px;
+    color: #555;
+}
+
+#toolbar_up .item span {
+    background-color: transparent;
+    color: #000;
+    line-height: 12px;
+}
+
+.barraFlotante .item span {
+    background-color: #fff;
+    color: #202020;
+    line-height: 12px;
+}
+
+#toolbar_up .item:hover span,
+.barraFlotante .item:hover span {
+    background-color: transparent;
+}
+
+#toolbar_up  .items .lIzq,
+.barraFlotante  .items .lIzq {
+    border-left: 1px solid #727272;
+}
+
+#toolbar_up  .items .registrarse,
+.barraFlotante  .items .registrarse {
+    color: #fff;
+}
+
+#toolbar_up .items .item,
+.barraFlotante .items .item {
+    line-height: 12px;
+}
+
+#d-micuenta .link a {
+    font-size: 11px;
+}
+
+#toolbar_up .items .item:hover,
+.barraFlotante .items .item:hover {
+    color: #000;
+}
+
+#toolbar_up .items .item.login,
+#toolbar_up .items .item.signin {
+    color: #000;
+}
+
+#toolbar_up .items .item.signin,
+.barraFlotante .items .item.signin {
+    font-weight: bold !important;
+    color: #000;
+}
+
+#logoCont {
+    float: left;
+    padding: 0;
+    margin: 6px 17px 10px 17px;
+}
+
+.logo a {
+    background-image: url(../../../images/eshop/2/logo.png);
+    width: 190px;
+    height: 73px;
+}
+
+#nav {
+    width: 775px;
+    float: left;
+    margin: 40px 0 0 0;
+}
+
+.nav .container {
+    width: auto;
+}
+
+.nav .shadow {
+    display: none;
+}
+
+#onlineBag.desplegable
+{
+    left: -190px;
+}
+
+
+.desplegable .titulo
+{
+    color: #000;
+}
+
+#onlineBag ul li .nombre a
+{
+    color: #666;
+}
+
+#onlineBag ul li .price {
+    color: #000;
+}
+
+#onlineBag .total
+{
+    color: #000;
+}
+
+#onlineBag .d_btVerCarro
+{
+    background-color: #000;
+    color: #fff;
+}
+
+#onlineBag .d_btVerCarro:hover
+{
+    color: #fff;
+}
+
+
+/*===================================================================================*/
+/*  MENU                                                                             */ 
+/*===================================================================================*/
+
+#nav .menu a,
+#nav .menu span,
+.barraFlotante .menu a,
+.barraFlotante .menu span {
+    font-family: 'Karla-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+    border-bottom: 2px solid transparent;
+}
+
+#nav .menu .current a,
+#nav .menu a:hover,
+#nav .menu .menu .current span,
+#nav .menu span:hover,
+.barraFlotante .current a,
+.barraFlotante .menu a:hover,
+.barraFlotante .menu .current span,
+.barraFlotante .menu span:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+
+#nav .menu li {
+    margin: 10px 10px;
+}
+
+.barraFlotante .menu li {
+    margin: 10px 30px;
+}
+
+#nav .menu .tiendas,
+.barraFlotante .menu .tiendas {
+    display: none;
+}
+
+
+#nav .menu li .submenu li a,
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a,
+.barraFlotante .menu li .submenu li a:hover {
+    border: 0;
+    color: #444;
+    font-size: 12px;
+}
+
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a:hover {
+    color: #000;
+}
+
+#nav .menu li .submenu,
+.barraFlotante li .submenu {
+    padding: 24px 0 0 0;
+}
+
+#nav .menu .prendas:before,
+.barraFlotante .prendas:before {
+    content: "PRODUCTOS";
+}
+
+/*===================================================================================*/
+/*  BARRA FLOTANTE                                                                   */ 
+/*===================================================================================*/
+
+.barraFlotante {
+    height: 37px;
+    padding: 7px 0;
+}
+
+.barraFlotante .buttonsContainer {
+    margin-top: 3px;
+}
+
+.barraFlotante .menuContainer {
+    margin-top: 3px;
+}
+
+.barraFlotante .logo {
+    float: left;
+    background: url(../../../images/eshop/2/logo_chico.png) no-repeat center center;
+    width: 44px;
+    height: 35px;
+    margin-right: 90px;
+}
+
+.barraFlotante a,
+.barraFlotante span {
+    font-family: Arial;
+    font-size: 10.5px;
+}
+
+.barraFlotante .menu a,
+.barraFlotante .menu  span {
+    font-size: 13px;
+}
+
+.barraFlotante #logged a {
+    font-family: Arial;
+}
+
+.barraFlotante .desplegable {
+    left: -193px;
+}
+
+.barraFlotante .derecha {
+    top: 8px;
+}
+
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */ 
+/*===================================================================================*/
+
+#notes #devoluciones {
+    background-image: url(../../../images/eshop/2/devolucion.png);
+}
+
+#cambio {
+    background-image: url(../../../images/eshop/2/cambio.png);
+}
+
+#envios {
+    background-image: url(../../../images/eshop/2/envio.png);
+}
+
+#notes .item .titulo {
+    color: #000;
+}
+
+#notes .item .texto {
+    font-size: 12px;
+}
+
+#network {
+    background: #fff;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+#network .item .titulo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+#info {
+    background: #000;
+}
+
+#info .social p {
+    color: #fff;
+}
+
+#info .titulo {
+    color: #fff;
+}
+
+#info .datos .lista .items .item a,
+#info .datos .lista .items .item, #info .texto {
+    color: #666;
+    font-size: 12px;
+}
+
+#info .datos .lista .items .item:hover {
+    color: #fff;
+}
+
+#footer {
+    background-color: #000;
+    border-top: 1px solid #333;
+}
+
+#facebook { background-image: url(../../../images/eshop/2/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/2/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/2/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/2/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/2/snapchat.png); }
+#facebook:hover { background-image: url(../../../images/eshop/2/facebook_h.png); }
+#twitter:hover { background-image: url(../../../images/eshop/2/twitter_h.png); }
+#instagram:hover { background-image: url(../../../images/eshop/2/instagram_h.png); }
+#youtube:hover { background-image: url(../../../images/eshop/2/youtube_h.png); }
+#snapchat:hover { background-image: url(../../../images/eshop/2/snapchat_h.png); }
+
+#info .boton {
+    background-color: #fff;
+    background-image: url(../../../images/eshop/2/bt_arrow.png);
+    border-left: solid 1px #000;
+}
+
+#info .boton:hover {
+    background-color: #ccc;
+}
+
+#footer .powered {
+    background-image: url(../../../images/eshop/2/powered.png);
+}
+
+/*===================================================================================*/
+/*  HOME                                                                             */ 
+/*===================================================================================*/
+
+
+#texto .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active,
+.seccion.bannerCampaign .flex-control-nav li a.flex-active {
+    background-position: 0px -13px
+}
+
+
+.seccion.TEXTO .titulo {
+    font-family: 'NeutraTextTF-BookAlt';
+    color: #000;
+    font-size: 32px;
+}
+
+#destacados .items .item span {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#destacados .titulo.MS-24 {
+    font-family: 'NeutraTextTF-BookAlt';
+    color: #000;
+    font-size: 32px;
+}
+
+
+.flexslider .slides>li .producto span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    padding: 12px 20px;
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.flexslider .slides>li .precio {
+    background-color: #000;
+    color: #fff;
+}
+
+.flexslider .slides>li .precioViejo {
+    color: #666666;
+}
+
+.flexslider .slides>li .nombre,.flexslider .slides>li .codigo {
+    font-weight: bold;
+}
+
+
+/*===================================================================================*/
+/*  MODAL HOME                                                                       */ 
+/*===================================================================================*/
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+	border: solid 2px #cdcdcd;
+}
+
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#productos .pantalla {
+    margin: 10px 0 60px 0;
+}
+
+#productos .muestra .resultados .resultado .descuento {
+    background-color: #000;
+}
+
+#productos .muestra .resultados .resultado .nombre {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#productos .acordion .titulo:before {
+    margin-top: 2px;
+    background-image: url(../../../images/eshop/2/accordion_open.png);
+}
+
+#productos .acordion .titulo.closed:before {
+    background-image: url(../../../images/eshop/2/accordion_closed.png);
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 1px solid #ccc;
+}
+
+#productos .filtro .actual .item
+{
+    line-height: 12px;
+}
+
+#productos .dd-pointer {
+    background-image: url(../../../images/eshop/2/accordion_closed.png);
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#probadorOnline .campo input
+{
+	border: solid 2px #cdcdcd;
+}
+
+#producto .contFotos .thumb:hover,#producto .contFotos .thumb.selected {
+    border-bottom: 1px solid #fff;
+}
+
+#producto .contFotos #foto_grande span {
+    background-color: #000;
+}
+
+#probadorOnline .ui-icon-triangle-1-n {
+    background-image: url(../../../images/eshop/2/accordion_open.png) !important;
+}
+
+#probadorOnline .ui-icon-triangle-1-s {
+    background-image: url(../../../images/eshop/2/accordion_closed.png) !important;
+}
+
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */ 
+/*===================================================================================*/
+
+#tiendas .titulo
+{
+    color: #666666;
+}
+
+#tiendas .menu a
+{
+    border-bottom: 2px solid #f5f4f2;
+    color: #333;
+}
+
+#tiendas .current a,
+#tiendas .menu a:hover
+{
+    border-bottom: 2px solid #555;
+}
+
+#tiendas .item .nombre
+{
+    color: #000;
+    font-size: 14px;
+}
+
+#tiendas .item .direccion,
+#tiendas .item .telefono
+{7
+    color: #878787;
+    font-size: 12px;
+}
+
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+#checkout_carrito .paso span {
+
+    background-image: url(../../../images/eshop/2/poligono_con_hover.png);
+    width: 70px;
+    height: 55px;
+}
+
+#checkout_carrito .renglon .btLink span {
+    background-image: url(../../../images/eshop/2/btArrows.png);
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: red;
+}
+
+#checkout_carrito .btComprar {
+    background-color: #000;
+}
+
+#checkout_carrito .datos-adicionales .renglon input {
+    border: solid 2px #cdcdcd;
+    height: 19px;
+}
+
+/*===================================================================================*/
+/*  INGRESO / REGISTRO                                                               */
+/*===================================================================================*/
+
+#ingresar input[type=text],#ingresar input[type=password] {
+    border: solid 2px #cdcdcd;
+}
+
+#ingresar .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#ingresar .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#olvidastePass input[type=text]
+{
+    border: solid 2px #cdcdcd;
+}
+
+#soy_nuevo .rincon {
+    border-top: 14px solid #000;
+    border-right: 14px solid #000;
+    border-left: 14px solid #fbfbfb;
+    border-bottom: 14px solid #fbfbfb;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#devoluciones  .step
+{
+	background-image: url(../../../images/eshop/2/poligono_con_hover_chico.png);
+	width: 58px;
+	height: 45px;
+}
+
+#mi_cuenta #datosPersonales .campo input, #mi_cuenta #datosPersonales .campo2 input
+{
+	border: solid 2px #cdcdcd;
+}
+
+#devoluciones .campo textarea
+{
+	border: solid 2px #cdcdcd;
+}
+
+#mi_cuenta #devoluciones .dd-select {
+	border: solid 2px #cdcdcd !important;
+}
+
+#mi_cuenta #devoluciones .dd-options
+{
+	border: solid 2px #cdcdcd !important;
+}
+
+
+#devoluciones input[type=text],
+#devoluciones input[type=password]
+{
+	border: solid 2px #cdcdcd;
+}
+
+#consultaEnvio input[type=text]
+{
+	border: solid 2px #cdcdcd;
+}
+
+#mi_cuenta .panel .items .item.selected
+{
+	color: #000;
+}
+
+/*===================================================================================*/
+/*  CONSULTAS                                                                        */ 
+/*===================================================================================*/
+
+#consultas .titulo
+{
+	color: #000;
+	font-size: 26px;
+}
+
+#consultas .faqCategoria .header {
+    height: auto;
+}
+
+#consultas .preguntas
+{
+	color: #666666;
+}
+
+#consultas .faqCategoria .num
+{
+	background-image: url(../../../images/eshop/2/poligono_color.png);
+	width: 28px;
+	height: 22px;
+}
+
+#consultas .titleFaqCategoria:hover 
+{
+	color: #000;
+}
+
+#contacto .texto {
+    font-size: 12px; 
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea
+{
+	border: solid 2px #cdcdcd;
+}
+
+#contacto form  input[type=file]::before {
+	border: solid 2px #cdcdcd;
+}
+
+#contacto form  .dd-select {
+	border: solid 2px #cdcdcd !important;
+}
+
+#contacto form  .dd-options
+{
+	border: solid 2px #cdcdcd !important;
+}
+
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito .items  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .items  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  input[type=text],#checkout_carrito .form  input[type=password] {
+    border: solid 2px #cdcdcd;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#terminos .texto {
+    font-size: 12px;
+}
+
+#terminos .subtitulo {
+    font-size: 14px;
+}
+
+
+#terminos .detalle {
+    font-size: 12px;
+}

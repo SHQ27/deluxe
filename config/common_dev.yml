@@ -1,0 +1,164 @@
+  host: http://deluxebuys.pm
+  host_static: http://deluxebuys.pm
+
+  upload_dir: <?php echo sfConfig::get('sf_web_dir') ?>/uploads
+  upload_url: http://deluxebuys-uploads.s3-website-us-east-1.amazonaws.com
+
+  afip:
+    ws:
+      # Valores para env: homo | prod
+      env: homo
+      cuit: 30-71163524-2
+      tipo_iva: 5
+      punto_de_venta: 0002
+            
+    comprobante:
+      dir_save_factura: /lib/Afip/factura/%env%/
+      dir_save_nota_de_credito: /lib/Afip/nota_de_credito/%env%/
+      razon_social: DELUXEBUYS S.A.
+      domicilio_comercial: 'Guatemala 4551 (Portería), CABA'
+      condicion_iva: IVA Responsable Inscripto
+      ingresos_brutos: 901-304683-1
+      inicio_actividad: 01/01/2011
+
+  aws:
+    key: AKIAJ57ZERZZ2ZBQSHQA
+    secret_key: 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
+    max_instances: 20
+    other_instances: 2 # servidor data y cache
+    instance_type: t2.medium
+    zone: us-east-1a
+    elb: lb
+    key_name: deluxebuys
+    security_groups: sg-f2ead597
+    data_instance_id: i-3d8a81d6
+    cache_instance_id: i-02ba5e6094749309a
+    current_instances_file: %SF_ROOT_DIR%/cache/current_instances.php
+    sns_prefix: "arn:aws:sns:us-east-1:963756727804:"
+    
+  ml:
+    client_id: "682985624113624"
+    client_secret: "50tGL78n5jkjPyrhAxtq87HaqfxpiDO5"
+    officialStoreId: false
+    eshopsEnabled: []
+    emailSoporte:
+      cuenta: clientes@deluxebuys.com
+      password: deluxe2415
+      carpeta_recepcion: INBOX
+      carpeta_procesadas: consultas_ml_procesadas
+
+  NPS:
+    URL: https://services2.nps.com.ar/ws.php?wsdl
+    Merchant_id: deluxebuys_n
+    Secret_Code: "pkd0gfW6SdWULXROjxOTqNQ9SEvGaSwPCYNqBtvbXP5qxUEePa8DyYLOnGdLgXkq"
+    psp_ReturnURL: /pedido/RetornoNPS
+    psp_Version: "2.2"
+    psp_TxSource: WEB
+    psp_Currency: "032"
+    psp_3DSecureAction: "0"
+    psp_FrmLanguage: es_AR
+    psp_Country: ARG
+    psp_MerchantMail: info@deluxebuys.com
+    psp_QueryCriteria: M
+
+  Decidir:
+    urlPost: https://sps.decidir.com/sps-ar/Validar
+    nroComercio: '00240315'
+    urlIPN: /pedido/respuestaDecidir
+        
+  memcache:
+      ip: 127.0.0.1
+      port: 11211
+
+  gearman:
+      ip: 127.0.0.1
+      port: 4730
+        
+  email:
+    from_noreply: DeluxeBuys.com <noreply@deluxebuys.com>
+    from_logistica: DeluxeBuys <javier.deluxebuys@gmail.com>
+    from_finanzas: DeluxeBuys <administracion@deluxebuys.com>
+    to_notificacionPedido: info@deluxebuys.com,noelia@deluxebuys.com
+    to_avisoPosibleDuplicado: info@deluxebuys.com,flor@deluxebuys.com
+    to_notificationOcaTracking: info@deluxebuys.com
+    to_notificacionEnvioPedidosOca: info@deluxebuys.com,javier.deluxebuys@gmail.com
+    to_avisoErrorNC: info@deluxebuys.com,noelia@deluxebuys.com,daniel@pragmore.com,administracion@deluxebuys.com
+    to_avisoAWS: info@deluxebuys.com,clara@deluxebuys.com,gabriela.deluxebuys@gmail.com
+    to_avisoMercadoLibre: daniel@pragmore.com
+    to_avisoErrorGeneral: daniel@pragmore.com
+    to_administracion: administracion@deluxebuys.com
+    contacto_1: eshopbenito@gmail.com
+
+  pedido:
+    # Cantidad de horas a esperar antes de dar de baja un pedido no inicializado
+    horasInicializado: 4
+        
+    # Cantidad de días antes de la fecha limite para dar de baja el pedido, en el mail para el cliente
+    diasTolerancia: 2
+          
+    # Dias de tolerancia entre que finaliza una campaña y el pedido puede aparecer en el archivo para OCA
+    diasToleranciaOCA: 2 
+        
+    # Cantidad de días (inclusive) antes de que termine la primera campaña del pedido, a partir de la cual se quita la posibilidad de pagos de tipo Offline
+    diasPagoOffline: 3
+    
+    # Cantidad de días desde que se realiza el pedido que el cliente tiene para realizar el pago cuando el pedido tiene solo productos de stock permanente
+    diasPedidoPermanente: 7
+    
+    # Cantidad en minutos que se extiende la fecha limite de pago
+    minutosFechaLimiteExtendida: 30
+    
+  campana:
+    # Dias de diferencia a esperar luego de que finaliza la campaña para el reseteo de stock
+    diasReseteo: 1
+        
+  cache:
+    listadosPrefix: '30_min_'
+    templatesFrontendPrefix: 'cache_template_frontend'
+    templatesEshopPrefix: 'cache_template_eshop'
+    
+  facebook:
+    fb_api_id: '249814911739128'
+    fb_api_secret: '2612d264f0fb7bfbb8c7e6d9057242e0'
+    
+    # access token to shared campaign with facebook application on deluxebuys Page
+    fb_token_shared_camp: CAACEdEose0cBANA1P172ZAdKRtZBmm2TGzoAZBdvCLayXooHoVQiHewQ5n8v4sq8UjMEEZBblNVCWo82RWiriWptSTv3xuRB9hRRg7hYHebXn2KLPT2xHwggMbZCAWA8J7ABNfJrev6wYBFZAhZBPukFnFPG4wJwsZCTGNA1MBzZCH3qAjmz4mzJPgu9dlr3RIgIZD
+    fb_deluxe_page_id: 182338358315
+    
+    permisos_login: 'email, publish_stream, read_stream, offline_access,user_birthday,user_location,read_friendlists,sms'
+    
+  categoriaDevolucionRestringida:
+    ids: '[24,56,11,21]'
+    mensaje: 'Los trajes de baño no tienen cambio ni devolución, excepto por fallas del producto.'
+     
+  devolucion:
+    dias: 30
+    
+  mercadopago:
+    client_id: 3102
+    client_secret: fmG2aA2XwQ2IkZa73SXjIkRZlIRM6UIS
+    accId: 21303689
+    enc: ixhLDgoFWN2BkoZBzUntIMiUGlI%3D
+    token: l1%2Biak7H9cqRwknk7FedhFEzZLM%3D
+    
+  zendesk:
+    url: https://deluxebuys.zendesk.com/api/v2/tickets.json
+    urlAttachments: https://deluxebuys.zendesk.com/api/v2/uploads.json
+    user: info@deluxebuys.com
+    pass: hora18
+    fields:
+      motivo: 20819106
+      submotivo: 21083476
+      marca: 21976433
+      eShop: 22644874
+      
+  sendGrid:
+    api_key: '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'
+    SubscribersListID_h: 366813
+    SubscribersListID_m: 124824
+
+  enviopack:
+    url_api: https://api.enviopack.com
+    api_key: d731a4f9ef89367ab4e73939d1c43ebadfc3f289
+    secret_key: 0f8c13643c16fee0dea42533e87f03c015ab2498
+    direccion_envio: 1

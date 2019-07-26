@@ -1,0 +1,25 @@
+indexSuccess:
+  javascripts:    [productosList.js]
+
+editPricesSuccess:
+  javascripts:    [productoEditPrices.js]
+
+importarSuccess:
+  javascripts:    [productoImportar.js]
+  
+importarPreviewSuccess:
+  javascripts:    [easyTooltip.js, productoImportarPreview.js]
+  
+editStockSuccess:
+  javascripts:    [preventDoubleSubmit.js, formEditStock.js]
+  
+listRestaurarStockCampanaSuccess:
+  javascripts:    [restaurarStockCampana.js]
+  
+restaurarStockCampanaSuccess:
+  javascripts:    [restaurarStockCampanaDetalle.js]
+
+  
+setCategoriaMLSuccess:
+  javascripts:    [jquery.jstree.js, productosSetCategoriaMLForm.js]
+  stylesheets:    [jstree/style.css]

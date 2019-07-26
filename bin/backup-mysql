@@ -1,0 +1,9 @@
+#!/bin/bash
+TOTAL_BACKUPS=4
+NUMBER=$(expr `date "+%j"` % $TOTAL_BACKUPS)
+
+PATH_HOME="/home/ec2-user"
+mysqldump -udeluxebuys_prod -p'QozC$8eP845MNzPT#ideAcJRLwot4G*2' --host=172.30.0.10 deluxebuys_prod > deluxebuys.sql
+tar cfvj deluxebuys.sql.bz2 deluxebuys.sql
+$PATH_HOME/s3-curl/s3curl.pl --id=deluxe --put=deluxebuys.sql.bz2 -- http://deluxebuys-backups.s3.amazonaws.com/deluxebuys_$NUMBER.sql.bz2
+rm /home/ec2-user/deluxebuys.sql

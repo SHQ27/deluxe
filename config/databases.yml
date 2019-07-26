@@ -1,0 +1,10 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/07-Databases
+
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn:      mysql:host=base-01;dbname=deluxebuys_prod
+      username: deluxebuys_prod
+      password: <?php echo getenv('MYSQL_PASS') ? getenv('MYSQL_PASS') : 'QozC$8eP845MNzPT#ideAcJRLwot4G*2' ?>

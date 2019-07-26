@@ -1,0 +1,1 @@
+<a href="http://<?php echo $eshop->getDominio(); ?>" target="_blank" ><?php echo $eshop->getDominio(); ?></a>

@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Factura
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          factura
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+      fields:  ~
+      list:
+        title: Facturas
+        display: [id_pedido, comprobante, CAE, CAE_vencimiento, resultado, mail_enviado, entorno]
+        max_per_page: 30
+        actions: {} 
+        batch_actions: {} 
+        object_actions: {}
+        sort:   [id_pedido, desc]
+      filter:
+        display: [id_pedido, entorno, comprobante, fecha_facturacion]
+      form:    ~

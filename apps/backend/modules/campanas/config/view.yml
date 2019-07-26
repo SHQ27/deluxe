@@ -1,0 +1,14 @@
+editSuccess:
+  javascripts:    [pmWidgetCampanaUsuarios.js]
+  
+newSuccess:
+  javascripts:    [pmWidgetCampanaUsuarios.js]
+  
+logisticaSuccess:
+  javascripts:    [logistica.js]
+
+recepcionMercaderiaSuccess:
+  javascripts:    [recepcionMercaderia.js]
+
+asignacionProductosSuccess:
+  javascripts:    [asignacionProductosCampana.js]

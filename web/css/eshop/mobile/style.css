@@ -1,0 +1,3430 @@
+/*===================================================================================*/
+/*  BASIC                                                                            */
+/*===================================================================================*/
+
+#facebook { background-image: url(../../../images/eshop/mobile/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/mobile/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/mobile/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/mobile/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/mobile/snapchat.png); padding: 1px 0; }
+
+.strong {
+    font-weight: bold;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+.show
+{
+    display:;
+}
+
+.ias_loader {
+    list-style: none;
+    width: 100%;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.radio
+{
+    float: left;
+    position: relative;
+    width: 27px;
+    height: 27px;
+    margin: 5px;
+    cursor: pointer;
+    background: #eee;
+    
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.radio.selected:after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    content: "";
+    top: 6px;
+    left: 6px;
+}
+
+.radio input
+{
+    display: none !important;
+}
+
+.radio.small
+{
+    width: 18px;
+    height: 18px;
+}
+
+.radio.small.selected:after {
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: 4px;
+}
+
+.ui-dialog
+{
+    z-index: 999999 !important;
+}
+
+.ui-dialog .ui-dialog-content
+{
+    float: left;
+    padding: 0 !important;
+}
+
+.ui-dialog .ui-dialog-titlebar
+{
+  background: none;
+  border: 0;
+  height: 0;
+  padding: 0;
+}
+
+.ui-dialog .ui-dialog-title
+{
+    height: 0;
+}
+
+.ui-dialog-titlebar .ui-state-default
+{
+    background: none !important;
+    border: none !important;
+    top: -6px !important;
+    right: 12px !important;    
+}
+
+.ui-dialog-titlebar .ui-state-default, .ui-widget-header .ui-state-default .ui-icon
+{
+    width: 43px !important;
+    height: 43px !important;
+}
+
+.ui-dialog.alert .ui-dialog-titlebar
+{
+    display: none !important;
+}
+
+.ui-widget-overlay
+{
+    background: #000;
+}    
+
+.ui-widget-header .ui-dialog-titlebar-close {
+    top: 16px !important;
+    right: 10px !important;
+    z-index: 99999;
+}
+
+.ui-widget-header .ui-state-default .ui-icon {
+    background-image: url('../../../../images/eshop/mobile/popup-close-icon.png') !important;
+    top: 21px;
+    left: 22px;
+}
+
+.ui-icon-closethick {
+    background-position: 0 0 !important;
+}
+/*===================================================================================*/
+/*  LINKS                                                                            */
+/*===================================================================================*/
+
+a {
+    color: #000;
+    text-decoration: none;
+
+    webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+a:after {
+    webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/*a:hover { color: #444; }*/
+
+p a,p a:visited {
+    line-height: inherit;
+}
+
+a img {
+    border: none;
+    vertical-align: middle;
+}
+
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+    color: inherit;
+}
+
+/*===================================================================================*/
+/*  GRID CONTENT                                                                     */
+/*===================================================================================*/
+
+.row:before, .row:after {
+   content: " ";
+   display: table;
+}
+
+.row:after {
+   clear: both;
+}
+
+.row:before, .row:after {
+   content: " ";
+   display: table;
+}
+
+.row:after {
+   clear: both;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+/* Columnas con tamaños equitativo */
+.row .col31 {
+    width: 33%;
+    float: left;
+}
+
+.row .col32 {
+    width: 34%;
+    float: left;
+}
+
+.row .col33 {
+    width: 33%;
+    float: left;
+}
+
+.row .col21 {
+    width: 50%;
+    float: left;
+}
+
+.row .col22 {
+    width: 50%;
+    float: left;
+}
+
+.row .col41 {
+    width: 25%;
+    float: left;
+}
+
+.row .col42 {
+    width: 25%;
+    float: left;
+}
+
+.row .col43 {
+    width: 25%;
+    float: left;
+}
+
+.row .col44 {
+    width: 25%;
+    float: left;
+}
+
+/* Columnas con tamaños diferentes */
+.row .col35 {
+    width: 35%;
+    float: left;
+}
+
+.row .col65 {
+    width: 65%;
+    float: left;
+}
+
+.row .col60 {
+    width: 60%;
+    float: left;
+}
+
+.row .col30 {
+    width: 30%;
+    float: left;
+}
+
+.row .col10 {
+    width: 10%;
+    float: left;
+}
+
+.row .col15 {
+    width: 15%;
+    float: left;
+}
+
+.row .col70 {
+    width: 70%;
+    float: left;
+}
+
+/*===================================================================================*/
+/*  SLIDER                                                                           */
+/*===================================================================================*/
+
+.flexslider .slides>li {
+    position: relative;
+    margin: 10px;
+    width: 210px !important;
+    text-align: center;
+}
+
+.flexslider .slides>li a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    z-index: 9999;
+}
+
+/*===================================================================================*/
+/*  MENU                                                                             */
+/*===================================================================================*/
+
+.navMenu,
+.navUserLogged,
+.navUserNotLogged,
+.navCarrito {
+    position: absolute;
+    z-index: 10000;
+    display: none;
+    width: 100%;
+    background: #ffffff;
+}
+
+.navMenu ul li.li,
+.navUserLogged ul li.li,
+.navUserNotLogged ul li.li,
+.navCarrito ul li.li {
+    border-top: 1px solid #dddddd;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navMenu li.li .arrow,
+.navUserLogged li.li .arrow,
+.navUserNotLogged li.li .arrow,
+.navCarrito li.li .arrow {
+    background-position: 0px 0px;
+    height: 17px;
+}
+
+.navMenu ul li.li:last-child,
+.navUserLogged ul li.li:last-child,
+.navUserNotLogged ul li.li:last-child,
+.navCarrito ul li.li:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+.navMenu ul .li,.navUserLogged ul .li,.navUserNotLogged ul .li,.navCarrito ul .li {position:relative;height:18px;}
+.navMenu .blockLink,.navUserLogged .blockLink,.navUserNotLogged .blockLink {position:absolute;top:0px;left:0px;width:100%;height:100%;}
+.navMenu .blockLink span,.navUserLogged .blockLink span,.navUserNotLogged .blockLink span {position:absolute;left:25px;top:20px;}
+
+.navMenu ul li.lisubmenu ul li {
+    border-top: 1px solid #dddddd;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navMenu .lisubmenu ul {
+    background-color: #ffffff;
+}
+
+.navMenu .lisubmenu.active ul {
+    background-color: #333333;
+}
+
+.navMenu .lisubmenu .submenu li a {
+    color: #000000;
+}
+
+.navMenu .lisubmenu.active .submenu li a {
+    color: #ffffff;
+}
+
+.navMenu .lisubmenu .titsubmenu {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navMenu .lisubmenu.active .titsubmenu {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.navMenu .lisubmenu .titsubmenu .arrow {
+    background-position: 0px 0px;
+    height: 17px;
+}
+
+.navMenu .lisubmenu.active .titsubmenu .arrow {
+    background-position: 0px -15px;
+    height: 12px;
+}
+
+.navMenu .lisubmenu .submenu li .arrow {
+    background-position: 0px 0px;
+    height: 17px;
+}
+
+.navMenu .lisubmenu.active .submenu li .arrow {
+    background-position: 0px -27px;
+    height: 17px;
+}
+
+.navMenu ul li.lisubmenu .titsubmenu {
+    border-top: 1px solid #dddddd;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navMenu ul li.lisubmenu .titsubmenu.prendas:before {
+    content: "Prendas";
+}
+
+.navMenu ul li.lisubmenu .titsubmenu.accesorios:before {
+    content: "Accesorios";
+}
+
+.navMenu .lisubmenu ul {
+    display: none;
+}
+
+/*===================================================================================*/
+/*  MENU CARRITO                                                                     */
+/*===================================================================================*/
+
+.navCarrito ul li.liBoton {
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    background-color: black;
+    background-clip:padding-box;
+}
+
+.navCarrito ul li.liBoton a {
+    display: block;
+}
+
+.navCarrito ul li.liprod {
+    border-top: 1px solid #dddddd;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navCarrito ul .liprod {
+    position: relative;
+    height: 60px;
+}
+
+.navCarrito .foto {
+    padding-right: 15px;
+}
+
+/*===================================================================================*/
+/*  HEADER                                                                           */
+/*===================================================================================*/
+
+.mobile .header {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.mobile .logo {
+    padding-left: 20px;
+}
+
+.mobile .toolbar {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    margin-top: -8px;
+}
+
+.mobile .toolbar ul {
+    display: table;
+}
+
+.mobile .toolbar ul li {
+    display: table-cell;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.mobile .toolbar ul li+li {
+    border-left: 1px solid #CCCCCC;
+}
+
+.toolbar .iconMenu.cross {
+    background-position: 14px 1px;
+    height: 14px;
+}
+
+/*===================================================================================*/
+/*  HOME CONTENT                                                                     */
+/*===================================================================================*/
+
+.mobile .content {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    padding-bottom: 25px;
+    border-top: 1px solid #dddddd;
+}
+
+.mobile .content .seccion.bannerHome.CINTA:first-child,
+.mobile .content .seccion.bannerHome.BPRFS:first-child,
+.mobile .content .seccion.bannerHome.BPRNO:first-child,
+.mobile .content .seccion.bannerHome.BSX2:first-child,
+.mobile .content .seccion.bannerHome.BSEX3:first-child,
+.mobile .content .seccion.bannerHome.GRLAX:first-child {
+    padding-top: 0;
+}
+
+
+.seccion.bannerHome .container {
+    width: 100%;
+}
+
+.seccion.bannerHome .imagen img {
+    display: block;
+}
+
+.seccion.bannerHome .imagen img.hover {
+    display: none;
+}
+
+.seccion.bannerHome .imagen:hover img {
+    display: none;
+}
+
+.seccion.bannerHome .imagen:hover img.hover {
+    display: block;
+}
+
+.seccion.bannerHome .imagen a {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.seccion.bannerHome video {
+    cursor: pointer;
+}
+
+.seccion.bannerHome .imagen .control,
+.seccion.bannerHome li .control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: -45px;
+    width: 71px;
+    height: 89px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.seccion.bannerHome .imagen .control.play,
+.seccion.bannerHome li .control.play {
+    background-image: url(../../../images/eshop/video_play.png);
+}
+
+.seccion.bannerHome .imagen:hover .control.pause,
+.seccion.bannerHome li:hover .control.pause {
+    background-image: url(../../../images/eshop/video_pause.png);    
+}
+
+/*===================================================================================*/
+/*  BANNER PRINCIPAL FULL SCREEN                                                     */
+/*===================================================================================*/
+
+.seccion.BPRFS {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.seccion.BPRFS .flex-viewport {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.seccion.BPRFS .flex-viewport ul li {
+    position: relative;
+}
+
+.seccion.BPRFS .flex-control-nav {
+    bottom: 40px;
+    z-index: 9999;
+}
+
+.seccion.BPRFS .flex-control-nav li a {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active {
+    background-position: -14px 0px;
+}
+
+.seccion.BPRFS ul li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+/*===================================================================================*/
+/*  BANNER PRINCIPAL NORMAL                                                          */
+/*===================================================================================*/
+
+.seccion.BPRNO {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.seccion.BPRNO .imagenBPRNO {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.seccion.BPRNO .flex-viewport {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.seccion.BPRNO .flex-viewport ul li {
+    position: relative;
+}
+
+.seccion.BPRNO .flex-control-nav {
+    bottom: 40px;
+    z-index: 9999;
+}
+
+.seccion.BPRNO .flex-control-nav li a {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.seccion.BPRNO .flex-control-nav li a.flex-active {
+    background-position: -14px 0px;
+}
+
+.seccion.BPRNO ul li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+/*===================================================================================*/
+/*  GRILLA                                                                          */
+/*===================================================================================*/
+
+.seccion.GRLAX {
+    position: relative;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.seccion.GRLAX .imagen {
+    position: relative;
+}
+
+.seccion.GRLAX .imagen {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.seccion.GRLAX .imagen:last-child {
+    padding-bottom: 0;
+}
+
+.seccion.GRLAX .imagen:first-child {
+    padding-top: 0;
+}
+
+/*===================================================================================*/
+/*  CINTA                                                                            */
+/*===================================================================================*/
+
+.seccion.CINTA {
+    position: relative;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.seccion.CINTA .imagen {
+    position: relative;
+}
+
+.seccion.CINTA .imagen {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*===================================================================================*/
+/*  TEXTO                                                                            */
+/*===================================================================================*/
+
+.seccion.TEXTO {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.seccion.TEXTO .titulo {
+    text-align: center;
+}
+
+.seccion.TEXTOPRODE {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.seccion.TEXTOPRODE .titulo {
+    text-align: center;
+}
+
+.seccion.TEXTOPUEDEINTERESAR {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.seccion.TEXTOPUEDEINTERESAR .titulo {
+    text-align: center;
+}
+
+/*===================================================================================*/
+/*  BANNER SECUNDARIO X 2                                                            */
+/*===================================================================================*/
+
+.seccion.BSX2 {
+    position: relative;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.seccion.BSX2 .imagen {
+    position: relative;
+}
+
+.seccion.BSX2 .imagen {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.seccion.BSX2 .imagen:last-child {
+    padding-bottom: 0;
+}
+
+.seccion.BSX2 .imagen:first-child {
+    padding-top: 0;
+}
+
+/*===================================================================================*/
+/*  BANNER SECUNDARIO X 3                                                            */
+/*===================================================================================*/
+
+.seccion.BSEX3 {
+    position: relative;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.seccion.BSEX3 .imagen {
+    position: relative;
+}
+
+.seccion.BSEX3 .imagen {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.seccion.BSEX3 .imagen:last-child {
+    padding-bottom: 0;
+}
+
+.seccion.BSEX3 .imagen:first-child {
+    padding-top: 0;
+}
+
+/*===================================================================================*/
+/*  LISTADOS DE PRODUCTOS                                                             */
+/*===================================================================================*/
+
+.seccion.productos .producto {
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.seccion.productos .producto:nth-child(odd) .detalle {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.seccion.productos .producto:nth-child(even) .detalle {
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.seccion.productos .producto .precio {
+    padding-top: 10px;
+    width: 100%;
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.seccion.productos .producto .precio .precioActual {
+    text-align: center;
+}
+
+.seccion.productos .producto .precio .precioViejo {
+    text-align: left;
+    text-decoration: line-through;
+}
+
+.seccion.productos .producto .nombre {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.seccion.productos .producto a {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*===================================================================================*/
+/*  PRODUCTOS DESTACADOS                                                             */
+/*===================================================================================*/
+
+.seccion.PRODE .groupPRODE {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.seccion.PRODE .groupPRODE:last-child {
+    padding-bottom: 8px;
+}
+
+.seccion.PRODE .groupPRODE:first-child {
+    padding-top: 8px;
+}
+
+.seccion.PRODE .prodeleft {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.seccion.PRODE .proderight {
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+.seccion.PRODE .prodeleft .detalle {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.seccion.PRODE .proderight .detalle {
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.seccion.PRODE .precio {
+    padding-top: 10px;
+    width: 100%;
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.seccion.PRODE .precio .precioActual {
+    text-align: center;
+}
+
+.seccion.PRODE .precio .precioViejo {
+    text-align: left;
+    text-decoration: line-through;
+}
+
+.seccion.PRODE .nombre {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.seccion.PRODE .prodeleft a {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.seccion.PRODE .proderight a {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */
+/*===================================================================================*/
+
+.footer {
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.footer_content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer .section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.footer .section .devoluciones,
+.footer .section .cambiosGratis,
+.footer .section .suscripcion,
+.footer .section .consultas {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer .section .micuenta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer .section .titulo {
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.footer .section .devoluciones .titulo,
+.footer .section .cambiosGratis .titulo,
+.footer .section .suscripcion .titulo,
+.footer .section .consultas .titulo {
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.footer .section .desc {
+    padding-bottom: 15px;
+}
+
+.footer .section .devoluciones .desc,
+.footer .section .cambiosGratis .desc,
+.footer .section .suscripcion .desc,
+.footer .section .consultas .desc {
+    line-height: 16px;
+}
+
+.footer .section .seguinos {
+    padding-bottom: 20px;
+}
+
+.footer .redesSociales {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.footer .redesSociales .text {
+    padding-left: 25px;
+}
+
+.footer .redesSociales #facebook,
+.footer .redesSociales #twitter,
+.footer .redesSociales #instagram,
+.footer .redesSociales #youtube,
+.footer .redesSociales #snapchat {
+    background-repeat: no-repeat;
+}
+
+.footer .redesSociales #facebook {
+    background-position: 2px 0px !important;
+}
+
+.footer .sectionlastline {
+    margin-top: 25px;
+    position: relative;
+}
+
+.footer .sectionlastline .allrightsreserved {
+    line-height: 15px;
+}
+
+.footer .datafiscal {
+    position: absolute;
+    top: -50%;
+    right: 0px;
+}
+
+.footer .consultas .mediosPago {
+    display: none !important;
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTO                                                              */
+/*===================================================================================*/
+
+.seccion.productoImagenSlider {
+    margin-bottom: 8px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.seccion.productoImagenSlider .flex-viewport {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.seccion.productoImagenSlider .flex-viewport ul li {
+    position: relative;
+}
+
+.seccion.productoImagenSlider .flex-control-nav {
+    bottom: 40px;
+    z-index: 9999;
+}
+
+.seccion.productoImagenSlider .flex-control-nav li a {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.seccion.productoImagenSlider .flex-control-nav li a.flex-active {
+    background-position: -14px 0px;
+}
+
+.seccion.productoImagenSlider ul li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+.productoInfo {
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.productoInfo .rojo {
+    color: #F22C2F;
+}
+
+.productoInfo .data {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.productoInfo .precio {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.productoInfo .precioViejo {
+    text-decoration: line-through;
+}
+
+.productoInfo .talle,
+.productoInfo .color,
+.productoInfo .cantidad {
+    float: left;
+    width: 100%;
+}
+
+.productoInfo .color {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.productoInfo .btAgregarCarrito {
+    margin-top: 35px;
+}
+
+.productoInfo .detalle {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.productoInfo .detalle .desc {
+    margin-top: 15px;
+}
+
+.productoInfo .compartir {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.productoInfo .compartir .titulo {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.productoInfo .redes {
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.productoInfo .btRed {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.productoInfo .customSelect {
+    width: 100%;
+}
+
+.productoInfo .customSelect {
+    float: left;
+    height: 30px;
+    margin: 0 auto auto;
+    position: relative;
+}
+
+.productoInfo .customSelect select {
+    border: medium none;
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.productoInfo .customSelect .select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+}
+
+.productoInfo .customSelect select option {
+    padding: 7px;
+    font-size: 12px;
+    color: #666;
+}
+
+.productoInfo .agotado {
+    color: red;
+    margin: 50px 0 60px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center
+}
+
+.productoInfo #alerta_agregar_producto
+{
+    display: none;
+}
+
+#alerta_agregar_producto {
+    width: 100% !important;
+}
+
+
+#addProductoForm .colorBlock{
+        margin-top: 3px;
+        margin-left: 12px;
+        margin-bottom: 8px;
+    }
+#addProductoForm .opaqueBlockColor{
+    opacity: 0.18;
+    filter: alpha(opacity=40);
+    cursor: pointer !important;
+}
+#addProductoForm .colorBlock{
+    padding: 1px;
+  margin-right: 6px;
+  border: 1px solid white;
+  cursor: hand;
+}
+#addProductoForm .colorBlockSelected{
+  border: 1px solid black !important;
+  /* padding: 1px; */
+}
+#addProductoForm .colorBlock.not(.opaqueBlockColor):hover{
+  border: 1px solid #333;
+}
+#addProductoForm div#colorBlocks.customSelect{
+    background: none;
+}
+/*********************************************************************************/
+/*  modal agregar carro                                                          */
+/*********************************************************************************/
+
+#agregar-carro
+{
+    height: 220px;
+    padding: 10px 35px;
+}
+
+#agregar-carro .titulo
+{
+    margin: 40px 0;
+}
+
+#agregar-carro .detalle
+{
+    margin: 35px 0;
+}
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */
+/*===================================================================================*/
+
+.seccion.listado.categoria {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.seccion.listado.categoria .texto {
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */
+/*===================================================================================*/
+
+.tiendas #map_canvas {
+    position: relative;
+    height: 250px;
+}
+
+.tiendas #map_canvas img {
+    max-width: none;
+}
+
+.tiendas .listado .titulo {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.tiendas .listado {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tiendas .listado .item {
+    border-top: 1px solid #dddddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tiendas .listado .item:last-child {
+    padding-bottom: 10px;
+}
+
+/*===================================================================================*/
+/*  ACERCA DE                                                                        */ 
+/*===================================================================================*/
+
+#acerca {
+    margin-bottom: 30px;
+}
+
+#acerca .banner
+{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#acerca .titulo
+{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0 40px 0;
+}
+
+#acerca .textoprinc span
+{
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 3px;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    background-color: #666666;
+    margin: 25px auto;
+}
+
+#acerca .textoprinc
+{
+    text-align: center;
+    line-height: 20px;
+}
+
+#acerca .textosecund
+{
+    text-align: center;
+    line-height: 25px;
+}
+
+/*===================================================================================*/
+/*  PREGUNTAS FRECUENTES                                                             */
+/*===================================================================================*/
+
+#consultas {
+    margin-bottom: 30px;
+}
+
+#consultas .banner
+{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#consultas .titulo
+{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 20px 40px 20px;
+}
+
+#consultas .preguntas
+{
+    margin-bottom: 60px;
+}
+
+#consultas .pregunta span
+{
+    text-transform: uppercase;
+}
+
+#consultas .faqCategoria
+{
+    position: relative;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+#consultas .faqCategoria .header 
+{
+    text-transform: uppercase;
+    padding: 23px 0px 15px 50px;
+}
+
+#consultas .faqCategoria .num
+{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding-top: 6px;
+}
+
+#consultas .faqCategoria .arrow
+{
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    background-image: url(../../../images/eshop/faq_arrow.png);
+    width: 18px;
+    height: 10px;
+    background-position: bottom;
+}
+
+#consultas .faqCategoria.open .arrow
+{
+    background-position: top;
+}
+
+#consultas .faqCategoria .pregunta
+{
+    margin: 25px 0 10px 0;
+}
+
+#consultas .faqCategoria .pregunta:first-child {
+    margin-top: 5px;
+}
+
+#consultas .faqCategoria .resp
+{
+    padding: 0 0 20px 50px;
+}
+
+#consultas .faqCategoria .resp img
+{
+    margin-bottom: 30px;
+}
+
+#consultas .faqCategoriaContainer
+{
+    display: none;
+}
+
+#consultas .faqCategoria .respuesta
+{
+    display: none;
+    overflow: hidden;
+}
+
+#consultas .respuesta a {
+    font-weight: bold;
+    color: #000;
+}
+
+#consultas .faqCategoria .respuesta p
+{
+    margin: 5px 0;
+}
+
+/*===================================================================================*/
+/*  CONTACTO                                                                         */
+/*===================================================================================*/
+
+#contacto .titulo
+{
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contacto .texto
+{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#contacto form
+{
+    padding: 20px;
+}
+
+#contacto form .campo
+{
+    position: relative;
+    margin-top: 22px;
+    line-height: 16px;
+    width: 100%;
+}
+
+#contacto form .campo.grande
+{
+    width: 100%;
+}
+
+#contacto form input[type=text],
+#contacto form textarea
+{
+    margin-top: 7px;
+    height: 30px;
+    width: 94%;
+    padding: 0px 3%;
+}
+
+#contacto form textarea
+{
+    resize: none;
+    height: 150px;
+    padding-top: 10px;
+}
+
+#contacto .adjuntos
+{
+    padding: 25px 0 30px 0;
+}
+
+#contacto form input[type=file]
+{
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    color: transparent;
+}
+
+#contacto form input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#contacto form input[type=file]::before {
+    content: 'Seleccionar archivo';
+    position: absolute;
+    display: inline-block;
+    height: 17px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -10px;
+    color: #b9b9bd;
+}
+
+#contacto form .botones
+{
+    margin: 5px 0 30px 0;
+    text-align: center;
+}
+
+#contacto form .botones .btEnviarConsulta {
+    margin-top: 35px;
+}
+
+#contacto #motivo .customSelect,
+#contacto #submotivo .customSelect {
+    width: 100%;
+    margin-top: 7px;
+}
+
+#contacto #motivo .customSelect select,
+#contacto #submotivo .customSelect select {
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+#contacto #motivo .customSelect .select,
+#contacto #submotivo .customSelect .select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 10px;
+}
+
+/*===================================================================================*/
+/*  FORMULARIO                                                                       */
+/*===================================================================================*/
+
+#formulario {
+    margin-bottom: 30px;
+}
+
+#formulario .banner
+{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#formulario .titulo
+{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 20px 40px 20px;
+}
+
+#formulario .texto
+{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#formulario form
+{
+    padding: 20px;
+}
+
+#formulario form .campo
+{
+    position: relative;
+    margin-top: 22px;
+    line-height: 16px;
+    width: 100%;
+}
+
+#formulario form .campo.grande
+{
+    width: 100%;
+}
+
+#formulario form input[type=text],
+#formulario form textarea
+{
+    margin-top: 7px;
+    height: 30px;
+    width: 94%;
+    padding: 0px 3%;
+}
+
+#formulario form textarea
+{
+    resize: none;
+    height: 150px;
+    padding-top: 10px;
+}
+
+
+#formulario form .botones
+{
+    margin: 5px 0 30px 0;
+    text-align: center;
+}
+
+/*===================================================================================*/
+/*  REGISTRO                                                                         */
+/*===================================================================================*/
+
+#ingresar .errorTexto
+{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#ingresar .titulo
+{
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#ingresar .texto
+{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#ingresar .rowRadio {
+    display: inline-block;
+    margin: 0 0 0 60px;
+}
+
+#ingresar .radioLabel {
+    float: left;
+    text-transform: uppercase;
+    margin: 6px 12px 6px 4px;
+    color: #666;
+}
+
+#ingresar form
+{
+    padding: 20px;
+}
+
+#ingresar form .campo
+{
+    position: relative;
+    margin-top: 22px;
+    line-height: 16px;
+    width: 100%;
+}
+
+#ingresar form .campo.grande
+{
+    width: 100%;
+}
+
+#ingresar form input[type=text],
+#ingresar form input[type=password],
+#ingresar form textarea
+{
+    margin-top: 7px;
+    height: 30px;
+    width: 94%;
+    padding: 0px 3%;
+}
+
+#ingresar form textarea
+{
+    resize: none;
+    height: 150px;
+    padding-top: 10px;
+}
+
+#ingresar .adjuntos
+{
+    padding: 25px 0 30px 0;
+}
+
+#ingresar form input[type=file]
+{
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    color: transparent;
+}
+
+#ingresar form input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#ingresar form input[type=file]::before {
+    content: 'Seleccionar archivo';
+    position: absolute;
+    display: inline-block;
+    height: 17px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -10px;
+    color: #b9b9bd;
+}
+
+#ingresar form .botones .btRegistrarme {
+    margin-top: 25px;
+}
+
+#ingresar #motivo .customSelect,
+#ingresar #submotivo .customSelect {
+    width: 100%;
+    margin-top: 7px;
+}
+
+#ingresar #motivo .customSelect select,
+#ingresar #submotivo .customSelect select {
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+#ingresar #motivo .customSelect .select,
+#ingresar #submotivo .customSelect .select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 10px;
+}
+
+#soy_nuevo .fechaNacimiento
+{
+    float: left;
+    width: 100%;
+    margin-top: 7px;
+}
+
+#soy_nuevo .fechaNacimiento .customSelect
+{
+    float: left;
+    width: 55px;
+}
+
+#soy_nuevo .fechaNacimiento .customSelect .select
+{
+    float: left;
+    width: 20px;
+    background-position: right 14px;
+}
+
+#soy_nuevo .fechaNacimiento .customSelect select
+{
+    left: 0;
+    width: 55px;
+}
+
+#soy_nuevo .fechaNacimiento .customSelect.month
+{
+    margin-left: 8px;
+}
+
+#soy_nuevo .fechaNacimiento .customSelect.year
+{
+    float: left;
+    width: 75px;
+    margin-left: 8px;
+}
+
+#soy_nuevo .fechaNacimiento .customSelect.year .select
+{
+    float: left;
+    width: 30px;
+    background-position: right 14px;
+}
+
+#soy_nuevo .fechaNacimiento .customSelect.year select
+{
+    left: 0;
+    width: 75px;
+}
+
+#soy_nuevo .terminos {
+    float: left;
+    margin: 20px 0 25px 0;
+    line-height: 21px;
+    width: 100%;
+}
+
+#soy_nuevo .terminos a {
+    color: inherit;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#soy_nuevo .terminos span {
+    color: inherit;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*===================================================================================*/
+/*  LOGIN                                                                            */
+/*===================================================================================*/
+
+#ingresar .contRecordar {
+    position: relative;
+    margin-top: 25px;
+}
+
+#ingresar .olvideCont {
+    position: relative;
+    margin-top: 25px;
+    float: right;
+}
+
+#ingresar form .botones .btIngresar {
+    margin-top: 45px;
+    width: 100%;
+}
+
+#ingresar .optRegistro {
+    margin-top: 40px;
+    width: 100%;
+}
+#ingresar .optRegistro .botones {
+    margin-top: 35px;
+    width: 100%;
+}
+
+#ingresar .optRegistro .botones .btRegistro {
+    width: 100%;
+    float: left;
+}
+
+#ingresar .campo .sexoTitle {
+    position: absolute;
+    top: 5px;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#estatica .pantalla {
+    margin: 50px 20px 30px 20px;
+}
+
+#estatica .titulo {
+    text-align: center;
+}
+
+#estatica .texto {
+    margin-top: 15px;
+}
+
+#estatica .subtitulo {
+    margin: 45px 0 15px 0;
+    padding-top: 10px;
+    border-top: 1px solid #e3e3e3;
+}
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito {
+    padding: 0 20px;
+}
+
+#checkout_carrito .titulo {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#checkout_carrito .tableCarrito {
+    width: 100%;
+}
+#checkout_carrito .tableCarrito td {
+    vertical-align: middle;
+}
+
+#checkout_carrito .headerCarrito {
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+}
+#checkout_carrito .headerCarrito th {
+    padding-bottom: 10px;
+}
+
+.paso1 .carritoCol1 {
+    width: 20%;
+}
+
+.paso1 .carritoCol2 {
+    width: 37%;
+}
+
+.paso1 .carritoCol1y2 {
+    width: 57%;
+}
+
+.paso1 .carritoCol2y3 {
+    width: 52%;
+}
+
+.paso1 .carritoCol3 {
+    width: 15%;
+}
+
+.paso1 .carritoCol4 {
+    width: 22%;
+}
+
+.paso1 .carritoCol5 {
+    width: 6%;
+}
+
+.paso1 .carritoCol3y4y5 {
+    width: 43%;
+}
+
+.paso1 .carritoCol4y5 {
+    width: 28%;
+}
+
+#checkout_carrito .item {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+#checkout_carrito .item td {
+    padding: 20px 0;
+}
+
+#checkout_carrito .item .foto {
+    padding-right: 10px;
+}
+
+#checkout_carrito .item .datos {
+    padding-right: 10px;
+}
+
+#checkout_carrito .item .precio {
+    position: relative;
+}
+
+#checkout_carrito .cantidad .customSelect
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+#checkout_carrito .cantidad .customSelect .select
+{
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10px;
+    z-index: 1;
+}
+#checkout_carrito .cantidad .customSelect select
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+#checkout_carrito .item .eliminar img {
+    float: right;
+}
+
+#checkout_carrito .totales {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+#checkout_carrito .totales td {
+    padding: 30px 0;
+}
+
+#checkout_carrito .botonera {
+    width: 100%;
+}
+#checkout_carrito .botonera td {
+    padding: 30px 0;
+}
+
+#checkout_carrito .botonera #goToPaso2 {
+    float: right;
+}
+
+#checkout_carrito #goToPaso3 {
+    float: right;
+}
+
+#checkout_carrito #generalError {
+    border-bottom: 1px solid #dddddd;
+    padding: 30px 0;
+    width: 100%;
+}
+
+#checkout_carrito .alert {
+    position: absolute;
+    top: 70%;
+    left: 0;
+}
+
+#checkout_carrito.paso2 .headerCarrito {
+    padding-bottom: 10px;
+}
+
+.paso2 .opcion {
+    padding-top: 40px;
+}
+
+.paso2 .opcion .tituloOpcion {
+    padding-left: 5px;
+}
+
+.paso2 .opcion .subtituloOpcion {
+    padding-left: 5px;
+}
+
+.paso2 .textoOpcion {
+    padding-top: 8px;
+    padding-left: 43px;
+    padding-bottom: 35px;
+    float: left;
+}
+
+#checkout_carrito .form .textoOpcion.oca span {
+    position: relative;
+    background-image: url(../../../images/eshop/oca.png);
+    width: 94px;
+    height: 37px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+#checkout_carrito form .campo
+{
+    position: relative;
+    margin-top: 22px;
+    line-height: 16px;
+    width: 100%;
+}
+
+#checkout_carrito form .campo.grande
+{
+    width: 100%;
+}
+
+#checkout_carrito form input[type=text]
+{
+    margin-top: 7px;
+    height: 30px;
+    width: 94%;
+    padding: 0px 3%;
+}
+
+.paso2 .customSelect {
+    width: 100%;
+    margin-top: 7px;
+}
+
+.paso2 .customSelect select {
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+.paso2 .customSelect .select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 10px;
+}
+
+#checkout_carrito .form .costo {
+    margin-top: 40px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+#checkout_carrito .form {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+    float: left;
+}
+
+
+#checkout_carrito .envio .boxPrecios {
+    float: left;
+    width: 100%;
+}
+
+#checkout_carrito .envio .boxPrecios table {
+    display: none;
+}
+
+#checkout_carrito .envio .boxPrecios .cargando {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#checkout_carrito .envio .boxPrecios table {
+    float: left;
+    margin: 55px 0 0 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#checkout_carrito .envio .boxPrecios table tr th {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+#checkout_carrito .envio .boxPrecios table tr .center {
+    text-align: center;
+}
+
+#checkout_carrito .envio .boxPrecios table tr td,
+#checkout_carrito .envio .boxPrecios table tr th {
+    padding: 0 0 20px 0;
+    vertical-align: middle;
+}
+
+#checkout_carrito .envio .boxPrecios table tr td.border,
+#checkout_carrito .envio .boxPrecios table tr th.border {
+    border-right: solid #ccc 1px;
+}
+
+#checkout_carrito .envio .boxPrecios table tr td .opcion {
+    padding: 0;
+}
+
+#checkout_carrito .envio .boxPrecios table tr td .opcion label {
+    float: left;
+    margin: 12px 0 0 5px;
+    width: 85px;
+}
+
+
+.paso2 .botoneraPaso2 {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.paso2 .botoneraPaso2 .btVolver {
+    line-height: 50px;
+}
+
+.paso2 #generalError {
+    float: left;
+}
+
+#checkout_carrito .formSUC {
+    display: none;
+}
+
+#checkout_carrito #infoSucursal {
+    float: left;
+    margin: 20px 5px;
+}
+
+#checkout_carrito #infoSucursal h2{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#checkout_carrito #infoSucursal p strong {
+    font-weight: bold;
+}
+
+.paso3 .carritoCol1 {
+    width: 20%;
+}
+
+.paso3 .carritoCol2 {
+    width: 37%;
+}
+
+.paso3 .carritoCol1y2 {
+    width: 57%;
+}
+
+.paso3 .carritoCol3 {
+    width: 21%;
+}
+
+.paso3 .carritoCol1y2y3 {
+    width: 78%;
+}
+
+.paso3 .carritoCol4 {
+    width: 22%;
+}
+
+.paso3 .carritoCol3y4 {
+    width: 43%;
+}
+
+.paso3 .cantidad {
+    padding-left: 10px;
+}
+
+.paso3 .divisorV {
+    margin: 0 15px;
+    width: 1px;
+    height: 18px;
+    background-color: #e3e3e3;
+}
+
+.paso3 .barra .header {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    line-height: 19px;
+}
+
+.paso3 .pedidosMayores .customSelect
+{
+    float: left;
+    width: 55px;
+    margin-right: 20px;
+}
+
+.paso3 .pedidosMayores .customSelect .select
+{
+    float: left;
+    width: 55px;
+    background-position: right 14px;
+    text-align: center;
+    height: 20px;
+}
+
+.paso3 .pedidosMayores .customSelect select
+{
+    left: 21px;
+    width: 55px;
+    height: 20px;
+    position: absolute;
+}
+
+.paso3 .pedidosMayores #paso3_documento {
+    width: 40%;
+    margin-top: 0;
+    height: 20px;
+}
+
+.paso3 .pedidosMayores .error {
+    padding-top: 5px;
+}
+
+#checkout_carrito.paso3 .rojo {
+    margin: 50px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+#checkout_carrito.paso3 .botonera {
+    border-top: 1px solid #dddddd;
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#checkout_carrito.paso3 .botonera .btComprar {
+    float: right;
+}
+
+#checkout_carrito.paso3 .datos-adicionales {
+    padding-bottom: 50px;
+}
+
+.paso3 .selectorCuotas .customSelect
+{
+    float: left;
+    width: 55px;
+}
+
+.paso3 .selectorCuotas .customSelect .select
+{
+    float: left;
+    width: 55px;
+    background-position: right 14px;
+    text-align: center;
+    height: 20px;
+}
+
+.paso3 .selectorCuotas .customSelect select
+{
+    left: 176px;
+    width: 55px;
+    height: 20px;
+    position: absolute;
+}
+
+#checkout_carrito.paso3 .selectorCuotas
+{
+    float: left;
+    width: 80%;
+    margin: 0 0 10px 45px;
+    padding: 10px 15px 15px 0;
+}
+
+
+#checkout_carrito.paso3 .selectorCuotas .row
+{
+    float: left;
+    padding: 0;
+    border: 0;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row label
+{
+    float: left;
+    text-transform: uppercase;
+    margin: 9px 10px 0 0;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row .input
+{
+    float: left;
+    border: solid #ececec 1px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;    
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row.cuotas
+{
+    width: 210px;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row.cuotas label
+{
+    width: 100px;
+}
+
+
+#checkout_carrito.paso3 .selectorCuotas .row.porCuota
+{
+    width: 280px;
+    padding-top: 10px;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row.porCuota label
+{
+    width: 140px;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row.porCuota .input
+{
+    width: 80px;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row.total
+{
+    width: 140px;
+    padding-top: 10px;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row.total label
+{
+    width: 45px;
+}
+
+#checkout_carrito.paso3 .selectorCuotas .row.total .input
+{
+    width: 80px;
+}
+
+#checkout_carrito.paso3 .opciones {
+    padding-bottom: 20px;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */
+/*===================================================================================*/
+
+#mi_cuenta {
+    padding: 0 20px;
+}
+
+#mi_cuenta .contenido {
+    width: 100%;
+    float: left;
+}
+
+#mi_cuenta .titulo {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#mi_cuenta .miCuentaMenu ul li {
+    border-bottom: 1px solid #dddddd;
+    padding-left: 10px;
+}
+
+#mi_cuenta .miCuentaMenu ul li a {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#mi_cuenta #datosPersonales,
+#mi_cuenta #pedidos,
+#mi_cuenta #devoluciones,
+#mi_cuenta #consultaEnvio,
+#mi_cuenta #desactivarCuenta {
+    margin-top: 30px;
+}
+
+#mi_cuenta .texto {
+    padding-bottom: 30px;
+}
+
+#mi_cuenta form {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dddddd;
+    float: left;
+    width: 100%;
+}
+
+#mi_cuenta form:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+#mi_cuenta #consultaEnvio form {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+#mi_cuenta .campo {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+#mi_cuenta #direccionEntrega .calle,
+#mi_cuenta #direccionEntrega .piso {
+    margin-right: 5%;
+}
+
+#mi_cuenta .campo input[type=text],
+#mi_cuenta .campo input[type=password] {
+    margin-top: 7px;
+    height: 30px;
+    width: 94%;
+    padding: 0 3%;
+}
+
+#mi_cuenta .buttonsContainer {
+    padding-top: 25px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+#mi_cuenta .campo .sinCargar {
+    margin-top: 20px;
+}
+
+#mi_cuenta .campo .sinCargar a
+{
+    font-style: normal;
+    margin-left: 20px;
+    padding-left: 15px;
+    border-left: 1px solid #e3e3e3;
+    font-weight: bold;
+}
+
+#mi_cuenta .customSelect {
+    height: 30px;
+    width: 100%;
+    margin-top: 7px;
+    position: relative;
+}
+
+#mi_cuenta .customSelect select {
+    height: 30px;
+    width: 100%;
+}
+
+#mi_cuenta .customSelect .select {
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+#mi_cuenta .alert {
+    margin: 0 0 20px 0;
+}
+
+#mi_cuenta .alert .texto {
+    padding-bottom: 0 !important;
+}
+
+#mi_cuenta #respuesta_consultaEnvio {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .error {
+    border-top: 1px solid #dddddd;
+    padding-top: 30px;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .estado {
+    border-top: 1px solid #dddddd;
+    padding-top: 30px;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .title {
+    margin-top: 30px;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .detalle {
+    margin-top: 20px;
+}
+
+#mi_cuenta .leyenda {
+    padding-bottom: 10px;
+}
+
+#mi_cuenta #pedidos .subtitulo {
+    padding-bottom: 30px;
+}
+
+#mi_cuenta #pedidos .pedido .acciones {
+    padding-left: 10px;
+    border-left: 1px solid #cccccc;
+}
+
+#mi_cuenta #pedidos .pedido {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#mi_cuenta #pedidos .pedido:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*===================================================================================*/
+/*  DEVOLUCIONES                                                                     */
+/*===================================================================================*/
+
+#devoluciones
+{
+    margin-bottom: 45px;
+}
+
+#devoluciones .tableCarrito {
+    width: 100%;
+}
+#devoluciones .tableCarrito td {
+    vertical-align: middle;
+}
+
+#devoluciones .headerCarrito {
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+}
+#devoluciones .headerCarrito th {
+    padding-bottom: 10px;
+}
+
+#devoluciones .carritoCol1 {
+    width: 20%;
+}
+
+#devoluciones .carritoCol2 {
+    width: 37%;
+}
+
+#devoluciones .carritoCol1y2 {
+    width: 57%;
+}
+
+#devoluciones .carritoCol3 {
+    width: 15%;
+}
+
+#devoluciones .carritoCol4 {
+    width: 22%;
+}
+
+#devoluciones .carritoCol5 {
+    width: 6%;
+}
+
+#devoluciones .item {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+#devoluciones .item td {
+    padding: 20px 0;
+}
+
+#devoluciones .item .foto {
+    padding-right: 10px;
+}
+
+#devoluciones .item .datos {
+    padding-right: 10px;
+}
+
+#devoluciones .item .precio {
+    position: relative;
+}
+
+#devoluciones .cantidad .customSelect
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+#devoluciones .cantidad .customSelect .select
+{
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+#devoluciones .cantidad .customSelect select
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+#devoluciones #motivo .customSelect {
+    width: 100%;
+    margin-top: 7px;
+}
+
+#devoluciones #motivo .customSelect select {
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+#devoluciones #motivo .customSelect .select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 10px;
+}
+
+#devoluciones .motivo_abierto input[type=text],
+#devoluciones .motivo_abierto textarea
+{
+    margin-top: 7px;
+    height: 110px;
+    width: 94%;
+    padding: 10px 3%;
+}
+
+#devoluciones .btContainer {
+    padding-top: 25px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+#devoluciones .motivo_abierto .error
+{
+    color: red;
+    margin: 20px 0;    
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#devoluciones #paso-2 .opcion {
+    padding-top: 30px;
+}
+
+#devoluciones #paso-3 .opcion {
+    padding-top: 30px;
+}
+
+#devoluciones #paso-2 .radioLabel, 
+#devoluciones #paso-3 .radioLabel {
+    float: left;
+    margin: 7px 12px 7px 4px;
+    width: 80%;
+}
+
+#devoluciones .botones
+{
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#devoluciones #paso-3 .opcion {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+    float: left;
+}
+
+#devoluciones .preferencia
+{
+    float: left;
+    width: 100%;
+}
+
+#devoluciones .preferencia img
+{
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+#devoluciones #paso-3 .customSelect {
+    width: 100%;
+    margin-top: 7px;
+}
+
+#devoluciones #paso-3 .customSelect select {
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+#devoluciones #paso-3 .customSelect .select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 10px;
+}
+
+#devoluciones #paso-3 .costoEnvio
+{
+    margin-top: 40px;
+    float: left;
+    width: 100%;
+}
+
+#devoluciones #paso-3 .error
+{
+    color: red;
+    margin: 20px 0;    
+    font-size: 12px;
+    font-weight: 600;
+    float: left;
+    width: 100%;
+}
+
+#devoluciones .resumen .opciones .leyenda
+{
+    font-weight: normal;
+    font-size: 11px;
+}
+
+#devoluciones .resumen .label
+{
+    margin-bottom: 20px;
+}
+
+#devoluciones #paso-4 .listProductItems .show {
+    display: block;
+}
+
+#devoluciones  .steps
+{
+    margin: 38px 9px 30px 10px;
+}
+
+#devoluciones  .step
+{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#devoluciones  .step:last-child
+{
+    margin-right: 0px;
+}
+
+#devoluciones  .step.selected
+{
+    background-position: bottom;
+}
+
+#devoluciones  #paso-1 .items,
+#devoluciones  #paso-4 .items
+{
+    margin-bottom: 40px;
+}
+
+#devoluciones  #paso-1 .item .checkbox
+{
+    position: relative;
+    float: left;
+    width: 14px;
+    height: 14px;
+    background: none repeat scroll 0 0 #f4f3f2;
+    border: 0;  
+    margin: 0 25px;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    text-indent: 99999px;
+}
+
+#devoluciones  #paso-1 .item .checkbox.selected
+{
+    background: url(../../../images/eshop/checkbox.png) #f4f3f2 no-repeat;
+}
+
+#devoluciones  #paso-1 .item:nth-child(2n),
+#devoluciones  #paso-4 .item:nth-child(2n)
+{
+    background-color: #f9f9f8;
+}
+    
+#devoluciones  #paso-1 .nombre,
+#devoluciones  #paso-4 .nombre
+{
+    margin-bottom: 5px;
+}
+
+#devoluciones #paso-1 .foto,
+#devoluciones #paso-4 .foto
+{
+    width: 63px;
+    height: 109px;
+    margin: 0 10px;
+}
+
+#devoluciones #paso-3 .direccionEntrega
+{
+    display: none;
+}
+
+#devoluciones #paso-4 .leyenda
+{
+    padding-left: 12px;
+}
+
+#devoluciones #paso-4 .leyenda li
+{
+    margin-bottom: 15px;
+}
+
+#devoluciones #devoluciones_ok .texto
+{
+    margin-top: 30px;
+}
+
+#devoluciones .form
+{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0 260px 32px 0px;
+}
+
+#devoluciones .form .campo
+{
+    position: relative;
+    margin: 25px 0 0 2px;
+    line-height: 16px;
+    width: 100%;
+}
+
+#devoluciones .form .campo.medio
+{
+    width: 60%;
+    margin-right: 33px;
+}
+
+#devoluciones .form .campo.chico
+{
+    width: 30%;
+}
+
+#devoluciones .resumen
+{
+    margin-left: 10px;
+}
+
+/*===================================================================================*/
+/*  TERMINOS Y CONDICIONES                                                           */
+/*===================================================================================*/
+
+#terminos {
+    padding: 0 20px;
+}
+
+#terminos .titulo {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#terminos .texto {
+    padding-bottom: 40px;
+}
+
+#terminos .bloqueTyc {
+    padding-top: 40px;
+    border-top: 1px solid #dddddd;
+}
+
+#terminos .bloqueTyc .detalle {
+    padding: 20px;
+}
+
+/*===================================================================================*/
+/*  HOME MODAL NEWSLETTER                                                            */
+/*===================================================================================*/
+
+.ui-widget-content.suscripcion {
+    background: #FFFFFF;
+}
+
+.ui-dialog.suscripcion {
+    background-color: #FFFFFF;
+}
+
+#suscripcionModal
+{
+    display: none;
+    float: left;
+    width: 100% !important;
+    height: 580px !important;
+}
+
+#home-modal
+{
+    float: left;
+    padding: 60px 20px 20px 20px;
+}
+
+#home-modal .logopop
+{
+    text-align: center;
+}
+
+#home-modal .texto
+{
+    margin: 30px 0;
+}
+
+
+#home-modal .detalle
+{
+    margin: 35px 0 0 0;
+}
+
+#home-modal .botones
+{
+    text-align: center;
+}
+
+#home-modal  .campo
+{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 2px;
+    line-height: 16px;
+}
+
+#home-modal  input[type=text]
+{
+    margin-top: 7px;
+    padding: 8px 5%;
+    width: 90%;
+    font-style: italic;
+    color: #000000;
+    font-weight: 300;
+}
+
+#home-modal .alert
+{
+    margin: 25px 0;
+    height: 20px;
+    color: red;
+}
+
+#home-modal .alert .ok
+{
+    color: #10A30B; 
+}
+
+/*===================================================================================*/
+/*  MI CUENTA PEDIDOS MODAL VER PEDIDO                                               */
+/*===================================================================================*/
+
+#verPedidos {
+    float: left;
+    width: 100% !important;
+}
+
+#verPedidos .titulo {
+    padding-top: 50px;
+    text-align: center;
+    line-height: 19px;
+}
+
+#verPedidos .numero {
+    padding-top: 10px;
+    color: #aaaaaa;
+    text-align: center;
+}
+
+#verPedidos .numero::after {
+    content: " ";
+    height: 1px;
+    width: 10%;
+    background-color: #dddddd;
+    display: block;
+    margin: 10px auto 40px auto;
+}
+
+#verPedidos .tableCarrito {
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 10px;
+}
+#verPedidos .tableCarrito td {
+    vertical-align: middle;
+}
+
+#verPedidos .headerCarrito {
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+}
+#verPedidos .headerCarrito th {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#verPedidos .carritoCol1 {
+    width: 20%;
+}
+
+#verPedidos .carritoCol2 {
+    width: 37%;
+}
+
+#verPedidos .carritoCol1y2 {
+    width: 57%;
+}
+
+#verPedidos .carritoCol3 {
+    width: 15%;
+}
+
+#verPedidos .carritoCol4 {
+    width: 28%;
+}
+
+#verPedidos .item {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+#verPedidos .item td {
+    padding: 20px 0;
+}
+
+#verPedidos .item .foto {
+    padding-right: 10px;
+}
+
+#verPedidos .item .datos {
+    padding-right: 10px;
+}
+
+#verPedidos .item .precio {
+    position: relative;
+}
+
+#verPedidos .grupo {
+    line-height: 19px;
+    padding: 15px 0;
+    padding-left: 20px;
+}
+
+#verPedidos .grupo .desc {
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+#verPedidos .botones {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 30px 0;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA PEDIDOS MODAL OCA TRACKING                                             */
+/*===================================================================================*/
+
+#ocaTracking {
+    float: left;
+    width: 100% !important;
+}
+
+#ocaTracking .titulo {
+    padding-top: 50px;
+    text-align: center;
+    line-height: 19px;
+}
+
+#ocaTracking .numero {
+    padding-top: 10px;
+    color: #aaaaaa;
+    text-align: center;
+}
+
+#ocaTracking .numero::after {
+    content: " ";
+    height: 1px;
+    width: 10%;
+    background-color: #dddddd;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+#ocaTracking .tableCarrito {
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 10px;
+}
+#ocaTracking .tableCarrito td {
+    vertical-align: middle;
+}
+
+#ocaTracking .headerCarrito {
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+}
+#ocaTracking .headerCarrito th {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#ocaTracking .carritoCol1 {
+    width: 20%;
+}
+
+#ocaTracking .carritoCol2 {
+    width: 37%;
+}
+
+#ocaTracking .carritoCol1y2 {
+    width: 57%;
+}
+
+#ocaTracking .carritoCol3 {
+    width: 15%;
+}
+
+#ocaTracking .carritoCol4 {
+    width: 28%;
+}
+
+#ocaTracking .item {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+#ocaTracking .item td {
+    padding: 20px 0;
+}
+
+#ocaTracking .item .foto {
+    padding-right: 10px;
+}
+
+#ocaTracking .item .datos {
+    padding-right: 10px;
+}
+
+#ocaTracking .item .precio {
+    position: relative;
+}
+
+#ocaTracking .grupo {
+    line-height: 19px;
+    padding: 15px 0;
+    padding-left: 20px;
+}
+
+#ocaTracking .grupo .desc {
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+#ocaTracking .botones {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 30px 0;
+}
+
+#ocaTracking .imagenOCA {
+    position: relative;
+    background-image: url(../../../images/eshop/oca.png);
+    width: 94px;
+    height: 37px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin: 30px auto;
+}
+
+/*===================================================================================*/
+/*  LOOKBOOK                                                                         */
+/*===================================================================================*/
+
+.seccion.lookbook .container {
+    width: 100%;
+    visibility: hidden;
+}
+
+.lookbook .item {
+    float: left;
+    position: relative;
+    width: 94%;
+    margin: 10px 3%;
+}
+
+.lookbookPointer {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    z-index: 800;
+}
+
+.lookbookPointer .indicador {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 12px;
+    background: #000;
+    z-index: 9000;
+}
+
+.lookbookPointer .indicador:after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 21px;
+    line-height: 24px;  
+    color: #fff;
+}
+
+.lookbook .infoProducto {
+    display: none;
+}
+
+.lookbook #infoProducto {
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    top: 30%;
+
+    padding: 50px 0;
+    background: #fff;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 0px;
+    z-index: 1000;
+
+}
+
+.lookbook #infoProducto .titulo,
+.lookbook #infoProducto .precio,
+.lookbook #infoProducto .link {
+    color: #000;
+}
+
+.lookbook #infoProducto .titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lookbook #infoProducto .precio {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 50px 0;
+}
+
+.lookbook #infoProducto .link {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #000;
+    padding: 8px 8px;
+}
+
+.lookbook #infoProducto .link:hover {
+    text-decoration: underline;
+}
+
+.lookbook #infoProductoOverlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 99999px;
+    left: 0;
+    top: 0;
+    z-index: 900;
+}

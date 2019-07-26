@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           eshopHome
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          eshop_home
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_eshop_home:  { label: Id }
+          url:  { label: URL }          
+      list:    
+          title: Home de eshops
+          display: [id_eshop_home, denominacion, _tipo, activo]
+          batch_actions:
+            activar:  { label: Activar Selecionados }
+            desactivar:  { label: Desactivar Selecionados }
+      filter:
+        display: [denominacion, tipo, activo]
+      form:
+          display:
+            "Información general": [denominacion, tipo, vigencia_desde, vigencia_hasta, activo]
+            "Informacion del elemento": [_elemento]
+      edit:
+          title: Edición de Home de eshops
+      new:
+          title: Nuevo Home de eshops

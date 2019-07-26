@@ -1,0 +1,56 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           eshop
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          eshop
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_marca: { label: Marca }
+        id_producto_genero: { label: Genero }
+        producto_genero: { label: Genero }
+        mail_RRHH: { label: Mail de RRHH }
+        mail_comercial: { label: Mail de Contacto Comercial }
+        lookbook: { label: Usa Lookbook }
+        lookbook_imagenes_fila: { label: Imagenes por Fila }
+        tiendas_titulo: { label: Titulo }
+        tiendas_subtitulo: { label: Subtitulo }
+        texto_iniciar_sesion: { label: Iniciar Sesion }
+        texto_seguinos: { label: Seguinos }
+        mi_carro_titulo: { label: Mi Carro }
+        texto_agregar_al_carro: { label: Agregar al Carro }
+        texto_carro_de_compras: { label: Carro de Compras }
+        texto_soy_miembro: { label: Soy Miembro }
+        texto_soy_nuevo: { label: Soy Nuevo }
+        texto_consultas: { label: Consultas }
+        devolucion_freeshipping: { label: La devolucion es gratuita? }
+      list:    
+        title: eShops
+        display: [id_eshop, denominacion, _dominio, marca, producto_genero]
+      filter:
+        class: false
+      form:
+        display:
+          "Datos del eShop": [id_eshop, denominacion, dominio, id_marca, id_producto_genero]
+          "Gestion del FreeShipping": [freeshipping, devolucion_freeshipping]
+          "Campaign": [usa_campaign, campaign_titulo]
+          "Lookbook": [lookbook, lookbook_titulo, lookbook_imagenes_fila]
+          "Links del footer": [twitter, facebook, instagram, youtube, snapchat, data_fiscal, link_cace, mail_RRHH, mail_comercial]
+          "Acerca de": [usa_acerca, acerca_titulo, acerca_texto_principal, acerca_texto_secundario]
+          "Tiendas": [tiendas_titulo, tiendas_subtitulo]
+          "Textos Varios": [texto_iniciar_sesion, texto_seguinos, mi_carro_titulo, texto_agregar_al_carro, texto_carro_de_compras, texto_soy_miembro, texto_soy_nuevo, texto_consultas]
+          "Banner del listado": [_imagen_form]
+          "Banners de Medios de Pago": [_imagen_medios_pago_producto_form, _imagen_medios_pago_carrito_form]
+
+      edit:
+          title: Editando eShop "%%denominacion%%"
+      new:
+          title: Nuevo eShop

@@ -1,0 +1,6 @@
+all:
+  is_secure: true
+  credentials: [[config_amazon]]
+  
+notificacion:
+  is_secure: false

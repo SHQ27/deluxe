@@ -1,0 +1,3393 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic|Muli:400,300");
+
+a { cursor: pointer; }
+
+.no-border-top
+{
+    border-top: 0 !important;
+}
+
+.no-border-bottom
+{
+    border-bottom: 0 !important;
+}
+
+.border-none {
+	border: none;
+}
+
+#sf_admin_container .sf_admin_form label
+{
+    width: 17em;
+}
+
+.campanas #sf_admin_list_th_actions {
+    min-width: 200px !important;
+}
+
+.logistica #sf_admin_list_th_actions {
+    min-width: 180px !important;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.ko, .KO {
+    color: red;
+}
+
+.ok, .OK {
+    color: green;
+}
+
+#sf_admin_menu ul {
+	z-index: 999;
+}
+
+#sf_admin_menu .item a {
+    float: left;
+    width: 245px;
+    margin: 0 0 3px 0;
+}
+
+#sf_admin_menu .item img {
+    float: left;
+    max-width: 16px;
+    max-height: 16px;
+}
+
+#sf_admin_menu .item span {
+    float: right;
+    width: 220px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#sf_admin_container .link
+{
+    color: #C64934;
+}
+
+#sf_admin_container .link:hover
+{
+    color: #C64934;
+}
+
+#sf_admin_container a.color-rojo
+{
+    color: red;
+}
+
+#sf_admin_container a.color-rojo:ḧover
+{
+    color: red;
+}
+
+#sf_admin_container ul li a.reactivar {
+    background: url("../images/publish_g.png") no-repeat scroll 0 0 transparent;
+}
+
+#sf_admin_container ul.error_list
+{
+    background: #f33;
+}
+
+#sf_admin_container ul.error_list li
+{
+    background: url("../images/error.png") no-repeat scroll 9px 4px rgba(0, 0, 0, 0);
+    padding: 4px 4px 4px 30px;
+}
+
+#sf_admin_container h2 a
+{
+	color: #C64934;
+	font-size: 12px;
+	font-style: normal;
+	margin: 0 0 0 114px;
+	cursor: pointer;
+}
+
+#sf_admin_container h2 a:hover
+{
+	color: #C64934;
+}
+
+#sf_admin_container h2
+{
+	margin: 20px 0 20px 0;
+}
+
+#sf_admin_container .sf_admin_form table td a
+{
+    color: #C64934;
+    cursor: pointer;
+}
+
+.sf_admin_row.disabled td
+{
+    background: #FACDCD;
+    border: red;
+}
+
+.header .top-bar
+{
+    background-color: #D31E20;
+    background-image: -moz-linear-gradient(left center , #D31E20 50%, #F38D1D 100%);
+    display: block;
+    height: 5px;
+    letter-spacing: normal;
+    vertical-align: top;
+    word-spacing: normal;
+    z-index: 10;
+}
+
+.header .bar
+{
+    width: 100%;
+    height: 52px;
+    margin-bottom: 0;
+    background-color: #eeeeee;
+}
+
+.header .logo 
+{
+    background-color: #E5E5E5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125) inset;
+    color: #555555;
+    text-decoration: none;
+    float: left;
+    font-size: 20px;
+    margin-left: -20px;
+    padding: 16px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    margin: 0;
+}
+
+.header #notificaciones
+{
+    float: left;
+    width: 150px;
+    height: 52px;
+    text-align: right;
+    line-height: 52px;
+    padding: 0 20px;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    display: none;
+}
+
+.header #notificaciones:hover
+{
+    text-decoration: underline;
+}
+
+.header #notificaciones span
+{
+    float: right;
+    width: 31px;
+    height: 32px;
+    padding: 0 1px 0 0;
+    margin: 9px 0 0 10px;
+    background: url("../images/notify-circle.png") no-repeat scroll 0 0 transparent;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.header .logo:hover 
+{
+    background-color: transparent;
+}
+
+.header .deluxe
+{
+    height: 20px;
+}
+
+.header .pragmore
+{
+    float: right;
+    padding: 11px;
+}    
+
+.header .bottom-bar
+{
+    background-color: #555555;
+    display: block;
+    height: 3px;
+    letter-spacing: normal;
+    vertical-align: top;
+    word-spacing: normal;
+    z-index: 10;
+}
+
+
+.thfloat-table thead a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.thfloat-table thead a:hover
+{
+    text-decoration: underline;
+}
+
+li.node ul
+{
+    width: 255px;
+}
+
+.center
+{
+	text-align: center !important;
+}
+
+.gris
+{
+    color: #555555;
+}
+
+p.aclaraciones
+{
+    color: #333;    
+}
+
+#sf_admin_container .background-none
+{
+    background: none !important;
+    padding: 0 0 0 0;
+}
+
+.ui-dialog .ui-widget-header
+{
+    border: 1px solid #C64934;
+}
+
+.ui-menu .ui-menu-item
+{
+	list-style: none;
+}
+
+.ui-menu .ui-menu-item a
+{
+	font-family: arial,helvetica,clean,sans-serif;
+	font-size: 13px;
+}
+
+#sf_admin_container .sf_admin_form input[type="text"],
+#sf_admin_container .sf_admin_form textarea
+{
+    width: 400px;
+}
+
+#sf_fieldset_grupos_y_permisos select,
+#sf_guard_group_users_list,
+#sf_guard_group_permissions_list
+{
+    width: 500px;
+    height: 300px;
+}
+
+#sf_admin_container input[type="submit"]
+{
+    cursor: pointer;
+    width: auto;
+}
+
+.sf_admin_form_field_modalidad .radio_list
+{
+	display: inline;
+}
+
+.sf_admin_form_field_modalidad li
+{
+	margin: 0 80px 0 0;
+}
+
+#sf_admin_container .notice a,
+#sf_admin_container .notice ul li a
+{
+	background: none;
+	color: #C64934;
+	padding: 0 0 0 0;
+}
+
+#sf_admin_container .sf_admin_form_field_stock input[type="text"]
+{
+    width: 55px;
+}
+
+#sf_admin_container .sf_admin_form_field_stock table tr td
+{
+    border: solid #DDDDDD 1px;
+    background: #F0F0F0;
+}
+
+#sf_admin_container .sf_admin_form_field_stock table tr td.darkGrey
+{
+    background: #CCCCCC;
+}
+
+
+
+#sf_admin_container .sf_admin_form_field_stock a
+{
+	background: url("../images/new.png") no-repeat scroll 0 0 transparent;
+	margin: 0 0 0 27px;
+	padding: 0 0 0 22px;
+	cursor: pointer;
+}
+
+#sf_admin_container.editStock .sf_admin_form_field_stock a
+{
+	margin: 0;
+	padding: 0;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.editCol
+{
+	background: #FFFFFF;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.editCol input
+{
+	width: 35px;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.editCol.codigo input
+{
+	width: 120px;
+}
+
+
+#sf_admin_container .sf_admin_form_field_stock tr td.editCol textarea
+{
+	width: 80px;
+}
+
+#sf_admin_container .sf_admin_form_field_stock .talle select,
+#sf_admin_container .sf_admin_form_field_stock .color select{
+	width: 120px;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.cantidad input{
+	width: 25px;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.remove
+{
+	border: none;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.remove a
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: url("../images/x.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	padding: 0 0 0 0;
+	margin: 0 0 0 5px;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.ver
+{
+	border: none;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.ver a
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: url("../images/list.png") no-repeat scroll 0 -2px transparent;
+	cursor: pointer;
+	padding: 0 0 0 0;
+	margin: 0 0 0 5px;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.edit
+{
+	border: none;
+}
+
+#sf_admin_container .sf_admin_form_field_stock tr td.edit a
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	background: url("../images/edit.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	padding: 0 0 0 0;
+	margin: 0 0 0 5px;
+}
+
+
+#sf_admin_container ul li.sf_admin_action_none a {
+    background: none;
+}
+
+#sf_admin_container ul li.sf_admin_action_none a input {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.sticker {
+    position: absolute;
+    width: 55px;
+    opacity: 0.7;
+    top: 0px;
+    right: -5px;    
+}
+
+
+.history table
+{
+	width: 100%;
+	font-size: 12px;
+	margin: 10px 0 10px 0;
+}
+
+.history table tr th
+{
+	text-align: center;
+}
+
+.history table tr td,
+.history table tr th
+{
+	border: none;
+	padding: 7px 7px 7px 7px;
+}
+
+.history table tr td a
+{
+	text-decoration: none;
+	outline: none;
+	color: #C64934;
+	cursor: pointer;
+}
+
+.history table tr td a:hover
+{
+	text-decoration: underline;
+}
+
+.history table tr td.first
+{
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-ms-border-radius-topleft: 8px;
+	-ms-border-radius-bottomleft: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-khtml-border-radius-topleft: 8px;
+	-khtml-border-radius-bottomleft: 8px;
+}
+
+.history table tr td.last
+{
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-ms-border-radius-topright: 8px;
+	-ms-border-radius-bottomright: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-khtml-border-radius-topright: 8px;
+	-khtml-border-radius-bottomright: 8px;
+}
+
+
+
+.history table tr .movimiento
+{
+	width: 50px;
+	text-align: center;
+}
+
+.history table tr .fecha
+{
+	width: 110px;
+	text-align: center;
+}
+
+.history table tr .cantidad
+{
+	width: 29px;
+	text-align: center;
+}
+
+.history table tr .sumaParcial
+{
+	width: 30px;
+	text-align: center;	
+}
+
+.history table tr .outlet
+{
+	width: 50px;
+	text-align: center;
+}
+
+.history table tr .tipo
+{
+	width: 100px;
+	text-align: center;
+}
+
+.history table tr .observacion
+{
+	width: 450px;
+	text-align: left;
+}
+
+
+.history table tr.blanco td
+{
+	background: #FFFFFF;
+}
+
+.history table tr.gris td
+{
+}
+
+.history table tr.blanco .highlight,
+.history table tr.gris .highlight
+{
+	background: #BBBBBB;
+	color: #FFFFFF;
+}
+
+#sf_admin_container .USJjQueryUIAutocomplete_list ul
+{
+	margin: 10px 0 0 0;
+}
+
+#sf_admin_container .USJjQueryUIAutocomplete_list ul li
+{
+	display: block;
+	margin: 5px 0 0 0;
+}
+
+#sf_admin_container ul li a.linkproducto
+{
+	background: none;
+	padding-left: 0;
+	font-size: 11px;
+}
+
+#sf_admin_container div.USJjQueryUIAutocomplete_list ul li 
+{
+	margin: 5px 0 0 0;
+	background: none;
+	padding-left: 0;
+	font: 13px arial;
+	padding-left: 15px;
+	color: #464646;
+}
+
+#sf_admin_container .sf_admin_list tr.tieneProblemasOCA td
+{
+	background: #5a2381;
+	color: #ffffff;
+}
+
+#sf_admin_container .sf_admin_list tr.tieneProblemasOCA td a
+{
+	color: #ffffff;
+}
+
+
+#sf_admin_container .sf_admin_list tr.requiereIntervencionManual-1 td
+{
+	background: #DB1D1D;
+	color: #ffffff;
+}
+
+#sf_admin_container .sf_admin_list tr.requiereIntervencionManual-1 td a
+{
+	color: #ffffff;
+}
+
+#sf_admin_container .sf_admin_list tr.requiereIntervencionManual-2 td
+{
+	background: #FFE100;
+	color: #000000;
+}
+
+#sf_admin_container .sf_admin_list tr.requiereIntervencionManual-2 td a
+{
+	color: #000000;
+}
+
+#sf_admin_container .sf_admin_list tr.requiereIntervencionManual a,
+#sf_admin_container .sf_admin_list tr.requiereIntervencionManual span
+{
+	color: #ffffff;
+}
+
+.sf_admin_text.sf_admin_list_td_tiene_categoria_ml,
+.sf_admin_text.sf_admin_list_td_publicado_ml
+{
+    text-align: center;
+}
+
+.productosList #sf_admin_bar tr.sf_admin_filter_field_campana
+{
+    height: 150px !important;
+}
+
+.productosList #sf_admin_bar tr.sf_admin_filter_field_campana select
+{
+    height: 150px !important;
+}
+
+.sf_admin_filter_field_intervencionManual
+{
+	width: 375px;
+}
+
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_intervencionManual td
+{
+	width: 35px;
+}
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_intervencionManual td.label
+{
+	width: 340px;
+}
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_intervencionManual td.label label
+{
+	color: #FF0000;
+}
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_unica_marca td
+{
+	width: 35px;
+}
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_unica_marca td.label
+{
+	width: 250px;
+}
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_solo_despachables td.label
+{
+	width: 250px;
+}
+
+.pedidosList #sf_admin_bar tr.sf_admin_filter_field_marca
+{
+    height: 150px !important;
+}
+
+.pedidosList #sf_admin_bar tr.sf_admin_filter_field_marca select
+{
+    height: 150px !important;
+}
+
+
+span.verde
+{
+	color: green;
+}
+
+span.rojo
+{
+	color: red;
+}
+
+span.amarillo
+{
+	color: orange;
+}
+
+span.naranja
+{
+	color: #FF5900;
+}
+
+table.detalleEstados
+{
+	margin: 15px 0 15px 27px;
+}
+
+table.detalleEstados td
+{
+	border: solid #666666 1px;
+}
+
+#sf_admin_container table.detalleEstados td a
+{
+	color: #C64934;
+	font-weight: bold;
+}
+
+table.detalleProductos
+{
+	margin: 15px 0 0 27px;
+}
+
+table.detalleProductos .es-refuerzo td
+{
+	background: #FAEB7D;
+}
+
+table.detalleProductos td
+{
+	border: solid #666666 1px;
+}
+
+table.detalleProductos strong
+{
+	color: #111111;
+}
+
+table.detalleProductos
+{
+	color: #333333;
+}
+
+.sf_admin_form_field_es_outlet .esOutlet {
+    margin: 10px 0 10px 105px;
+    width: 550px;
+    color: #FF0000;
+    display: none;
+}
+
+.detallePedido ul li
+{
+	list-style-type: none;
+}
+
+.detallePedido .leyenda
+{
+	padding: 0 0 0 27px;
+	font-size: 12px;
+	color: #C64934;
+}
+
+.detallePedido p.alert
+{
+	color: red;
+	font-weight: bold;
+	margin: 25px 0 25px 0;
+}
+
+
+.detallePedido .DOM
+{
+	width: 600px;
+	
+}
+
+.detallePedido .DOM
+{
+	float: left;
+	width: 600px;
+	margin: 10px 0 15px 0;
+	
+}
+
+ .detallePedido .OCA
+ {
+ 	float: left;
+ 	width: 600px;
+ 	margin: 10px 0 20px 0;
+ }
+ 
+#sf_admin_container #entrega_edit  .radio_list li
+{
+	margin: 0 50px 0 0;
+}
+
+.tituloResponse
+{
+	font-weight: bold;
+	color: #333333;
+}
+
+.guiaFiltros h3
+{
+	color: #333333;
+}
+
+.guiaFiltros ul li
+{
+	font-size: 11px;
+	color: #555555;
+}
+
+#sf_admin_container.editPrices ul
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#sf_admin_container.editPrices ul li
+{
+	margin: 15px 0 15px 0;
+	list-style: none;
+	padding: 0 0 0 0;
+}
+
+#sf_admin_container.editPrices ul li label
+{
+	font-weight: bold !important;
+	line-height: 25px;
+}
+
+#sf_admin_container.editPrices ul li input
+{
+	width: 50px;
+}
+
+#sf_admin_container.editPrices ul li a
+{
+	   background: url("/backend/images/icons/small/categories.png") no-repeat scroll 0 0 transparent;
+	   cursor: pointer;
+}
+
+.administrar_imagenes
+{
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+
+.administrar_imagenes .imagen
+{
+	float: left;
+	text-align: center;
+	margin: 15px 30px 15px 30px;
+}
+
+.administrar_imagenes .imagen span.spacer
+{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 35px 5px 35px 5px;
+}
+
+
+.administrar_imagenes .imagen a.prev
+{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url("/backend/images/previous.png") no-repeat scroll 0 0 transparent;
+	margin: 35px 5px 35px 5px;
+	cursor: pointer;
+}
+
+.administrar_imagenes .imagen a.next
+{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url("/backend/images/next.png") no-repeat scroll 0 0 transparent;
+	margin: 35px 5px 35px 5px;
+	cursor: pointer;
+}
+
+.administrar_imagenes .imagen img
+{
+	float: left;	
+}
+
+.administrar_imagenes .imagen a.delete
+{
+	float: left;
+	width: 100;
+	background: url("/backend/images/delete.png") no-repeat scroll 0 0 transparent;
+	padding: 0 0 0 16px;
+	margin: 5px 45px 0 45px;
+	cursor: pointer;	
+}
+
+#sf_admin_container .pmWidgetProductAssign .filter
+{
+	margin: 10px 0;
+}
+
+#sf_admin_container .pmWidgetProductAssign .filter.show
+{
+	display: block;
+}
+
+#sf_admin_container .pmWidgetProductAssign .filter.hide
+{
+	display: none;
+}
+
+#sf_admin_container .pmWidgetProductAssign .restablecer
+{
+	margin: 0 0 0  10px;
+}
+
+#sf_admin_container .pmWidgetProductAssign .button
+{
+	cursor: pointer;
+}
+
+#sf_admin_container .pmWidgetProductAssign h4
+{
+	margin: 20px 0 10px 0;	
+}
+
+#sf_admin_container .pmWidgetProductAssign a.allocateAll
+{
+	cursor: pointer;
+	line-height: 30px;
+}
+
+#sf_admin_container .pmWidgetProductAssign a.deallocateAll
+{
+	cursor: pointer;
+	line-height: 30px;
+}
+
+#sf_admin_container .pmWidgetProductAssign table
+{
+	min-width: 900px;
+}
+
+#sf_admin_container .pmWidgetProductAssign table thead tr td
+{
+	background: #fff;
+}
+
+#sf_admin_container .pmWidgetProductAssign table tr td a
+{
+	cursor: pointer;
+}
+
+#sf_admin_container .pmWidgetProductAssign table tr td a.add
+{
+	color: green;
+}
+
+#sf_admin_container .pmWidgetProductAssign table tr td a.remove
+{
+	color: red;
+}
+
+#sf_admin_container .desactivar_productos label
+{
+	width: 220px;
+}
+
+.ui-datepicker-trigger
+{
+	cursor: pointer;
+}
+
+#sf_admin_container ul.sf_admin_td_actions li
+{
+    display: block;
+    margin: 5px 0;
+}
+
+#sf_admin_container ul.sf_admin_td_actions li.sf_admin_action_subir a
+{
+    background: url("/backend/sfDoctrinePlugin/images/desc.png") no-repeat scroll 0 0 transparent;
+    padding-left: 20px;
+}
+
+#sf_admin_container ul.sf_admin_td_actions li.sf_admin_action_bajar a
+{
+    background: url("/backend/sfDoctrinePlugin/images/asc.png") no-repeat scroll 0 0 transparent;
+    padding-left: 20px;
+}
+
+#sf_admin_container ul.sf_admin_td_actions li.sf_admin_action_none
+{
+    background: none;
+    padding-left: 20px;
+}
+
+#sf_admin_bar
+{
+    float: none;
+    margin: 0;
+}
+
+ 
+#sf_admin_bar tr.sf_admin_form_row
+{
+	clear: none;
+	float: left;
+	height: 78px;
+	border: 0px;
+}
+
+#sf_admin_bar tr.sf_admin_form_row td
+{
+	width: 250px;
+	height: 78px;
+	border: 0px;
+}
+
+#sf_admin_bar tr.sf_admin_form_row td.label
+{
+	width: 80px;
+}
+
+#sf_admin_bar tr td, #sf_admin_bar tr
+{
+	border: 0px;
+}
+
+a.addTooltip
+{
+	cursor: pointer;
+}
+
+#divTooltip
+{
+	padding:5px;
+	border:1px solid #ccc;
+	background:#f1f1f1;
+	width: 600px;
+}
+
+.importarProductos #sf_admin_content:nth-child(2)
+{
+    margin-top: 60px;
+}
+
+.importarProductos label {
+	margin-top: 7px;
+}
+
+.importarProductos a.remove
+{
+    background: url("../images/delete.png") no-repeat scroll 0 0 transparent;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.importarProductos div.sf_admin_actions span
+{
+	color: #666666;
+}
+
+ul.notice li
+{
+	list-style: none;
+}
+
+p.infoAmazon
+{
+	font-weight: bold;
+	color: #ff0000;
+}
+
+p.infoAmazon a
+{
+	text-decoration: none;
+}
+
+p.infoAmazon a:hover
+{
+	text-decoration: underline;
+}
+
+
+/* Reportes */
+
+#sf_admin_container.reportes label
+{
+    width: 90px;
+}
+
+#sf_admin_container.reporteCuponeras label
+{
+    width: 170px;
+}
+
+#sf_admin_container.adNetworks label
+{
+    width: 200px;
+}
+
+#sf_admin_container.adNetworks textarea
+{
+    width: 150px;
+    height: 300px;
+}
+
+div.reportes .selectPeriodo
+{
+	text-align: right;
+    width: 320px;
+}
+
+
+div.reportes #reporteCampanas_campanas
+{
+	height: 200px;
+}
+
+#sf_admin_container.reportes div.general {
+    width: 550px;
+    min-height: 650px;
+    position: relative;
+
+}
+
+#sf_admin_container.reportes div.general table {
+    width: 350px;
+    margin: 25px 0 0 0;
+}
+
+#sf_admin_container.reportes div.general .grafico {
+    position: absolute;
+}
+
+#sf_admin_container.reportes div.general  #chart_columns {
+    top:0;
+    left: 450px;
+}
+
+#sf_admin_container.reportes div.general  #chart_pie {
+    top: 350px;
+    left: 450px;
+}
+
+.reportes .totalVentas,
+.reportes .costo,
+.reportes .comision
+{
+    cursor: pointer;    
+}
+
+.reportes .totalVentas td,
+.reportes .costo td,
+.reportes .comision td
+{
+    color: #C64934;
+}
+
+.reportes .desglosePrecioDeluxe,
+.reportes .desgloseCosto,
+.reportes .desgloseComision
+{
+    display: none;
+    background: #EEEEEE;
+}
+
+.reportes .desglosePrecioDeluxe.first,
+.reportes .desgloseCosto.first,
+.reportes .desgloseComision.first
+{
+    border-top: solid #333333 2px;
+}
+
+.reportes .desglosePrecioDeluxe.last,
+.reportes .desgloseCosto.last,
+.reportes .desgloseComision.last
+{
+    border-bottom: solid #333333 2px;
+}
+
+#sf_admin_container.reportes .button {
+    margin: 20px 0 0 0;
+}
+
+/* OrdenCompra */
+
+#sf_admin_container.ordenCompra h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.ordenCompra label
+{
+    width: 180px;
+}
+
+div.ordenCompra .selectPeriodo
+{
+	text-align: right;
+    width: 410px;
+}
+
+#sf_admin_container.ordenCompra .row
+{
+	margin: 10px 0 10px 0;
+}
+
+#sf_admin_container.ordenCompra input
+{
+    margin: 20px 0 0 0;
+}
+
+#sf_admin_container.ordenCompra ul
+{
+	margin: 0;
+    padding: 0;
+}
+
+#sf_admin_container.ordenCompra ul li
+{
+    list-style: none;
+}
+
+#sf_admin_container.ordenCompra table
+{
+	margin: 30px 0 0 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.ordenCompra th, #sf_admin_container.ordenCompra td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.ordenCompra ul li td.total
+{
+	text-align: right;
+	font-weight: bold;
+}
+
+#sf_admin_container .coral
+{
+	color: #C64934;
+	text-decoration: none;
+}
+
+#sf_admin_container a.coral:hover
+{
+	color: #C64934;
+	text-decoration: underline;
+}
+
+
+.stock_rojo
+{
+	background: red;
+	padding: 2px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.stock_amarillo
+{
+	background: yellow;
+	padding: 2px;
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+}
+
+.stock_verde
+{
+	background: green;
+	padding: 2px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_atencion td
+{
+	width: 35px;
+}
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_atencion td.label
+{
+	width: 300px;
+}
+
+
+/* Wait List */
+
+.verDetalle
+{
+	cursor: pointer;
+}
+
+.waitListDetails table
+{
+	width: 100%;
+	font-size: 12px;
+	margin: 10px 0 10px 0;
+}
+
+.waitListDetails table tr th
+{
+	text-align: center;
+}
+
+.waitListDetails table tr td,
+.waitListDetails table tr th
+{
+	border: none;
+	padding: 7px 7px 7px 7px;
+}
+
+.waitListDetails table tr td a
+{
+	text-decoration: none;
+	outline: none;
+	color: #C64934;
+	cursor: pointer;
+}
+
+.waitListDetails table tr td a:hover
+{
+	text-decoration: underline;
+}
+
+.waitListDetails table tr td.first
+{
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-ms-border-radius-topleft: 8px;
+	-ms-border-radius-bottomleft: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-khtml-border-radius-topleft: 8px;
+	-khtml-border-radius-bottomleft: 8px;
+}
+
+.waitListDetails table tr td.last
+{
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-ms-border-radius-topright: 8px;
+	-ms-border-radius-bottomright: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-khtml-border-radius-topright: 8px;
+	-khtml-border-radius-bottomright: 8px;
+}
+
+
+
+.waitListDetails table tr .email
+{
+	width: 150px;
+	text-align: center;
+}
+
+.waitListDetails table tr .fecha
+{
+	width: 80px;
+	text-align: center;
+}
+
+.waitListDetails table tr .talle
+{
+	width: 100px;
+	text-align: center;
+}
+
+
+.waitListDetails table tr .color
+{
+	width: 100px;
+	text-align: center;
+}
+
+.waitListDetails table tr .cantidad
+{
+	width: 30px;
+	text-align: center;
+}
+
+
+.waitListDetails table tr.blanco td
+{
+	background: #FFFFFF;
+}
+
+.waitListDetails table tr.gris td
+{
+}
+
+/* FACTURACION */
+
+.facturacionResultado table
+{
+	margin: 30px 0 30px 0;
+}
+
+.facturacionResultado .ok_homo
+{
+	color: #FC7200;
+}
+
+.facturacionResultado .o_prod
+{
+	color: green;
+}
+
+.facturacionResultado .ko
+{
+	color: red;
+}
+
+
+#sf_admin_container .sf_admin_form #usuario_documento
+{
+	width: 343px;
+}
+
+.sf_admin_form_field_sexo
+{
+	color: #666666;
+}
+
+.sf_admin_form_field_sexo
+{
+	height: 18px;
+}
+
+.sf_admin_form_field_sexo .borderBox
+{
+	float: left;
+	width: 30px;
+}
+
+
+#sf_admin_container .facturacionPending,
+#sf_admin_container .facturacionPending a
+{
+    color: #999999;
+    background: #FFFFFF;
+}
+
+/* Consultar Comprobante Afip */
+
+#sf_admin_container.consultarComprobanteAfip h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.consultarComprobanteAfip label
+{
+    width: 180px;
+}
+
+#sf_admin_container.consultarComprobanteAfip .row
+{
+	margin: 10px 0 10px 0;
+}
+
+#sf_admin_container.consultarComprobanteAfip input
+{
+    margin: 0 0 0 0;
+}
+
+#sf_admin_container.consultarComprobanteAfip table
+{
+	margin: 40px 0 0 0;
+    padding: 0;
+}
+
+#sf_admin_container.consultarComprobanteAfip p
+{
+	margin: 40px 0 0 0;
+}
+
+#sf_admin_container.consultarComprobanteAfip table tr td
+{
+	border: solid #999999 1px;
+}
+
+/* Generar Nota de Credito */
+
+#sf_admin_container.generarNotaCredito h1
+{
+    margin: 0 0 15px 0;
+}
+
+#sf_admin_container.generarNotaCredito label
+{
+    width: 280px;
+}
+
+#sf_admin_container.generarNotaCredito .row
+{
+	margin: 10px 0 10px 0;
+	height: 35px;
+}
+
+#sf_admin_container.generarNotaCredito span.opcional
+{
+	color: #666666;
+	font-size: 11px;
+}
+
+#sf_admin_container.generarNotaCredito input
+{
+    margin: 0 0 0 0;
+}
+
+#sf_admin_container.generarNotaCredito form
+{
+    margin: 0 0 50px 0;
+}
+
+.generarNotaCredito .ok_homo
+{
+	color: #FC7200;
+}
+
+.generarNotaCredito .o_prod
+{
+	color: green;
+}
+
+.generarNotaCredito .ko
+{
+	color: red;
+}
+
+
+#sf_fieldset_datos_de_la_devoluci__n .alerta
+{
+	display: none;
+	color: red;
+}
+
+/* RESUMEN DEVOLUCIONES */
+
+.resumenDevoluciones table
+{
+	margin: 30px 0 0 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+.resumenDevoluciones th, .resumenDevoluciones td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+
+.enlargeImage
+{
+    float: left;
+    position: relative;
+	background: none !important;
+}
+
+#sf_admin_container #usuario_filters_compras_desde, #sf_admin_container #usuario_filters_compras_hasta, #sf_admin_container #usuario_filters_edad_desde, #sf_admin_container #usuario_filters_edad_hasta
+{
+	width: 30px;
+}
+
+#sf_admin_bar tr.sf_admin_filter_field_compras td.label
+{
+	width: 150px;
+}
+
+
+/* Preparar Envio */
+
+#sf_admin_container.prepararEnvio h1
+{
+    margin: 0 0 20px 0;
+}
+
+#sf_admin_container.prepararEnvio .filtrado
+{
+	font-size: 14px;
+}
+
+#sf_admin_container.prepararEnvio .filtrado span
+{
+	font-size: 15px;
+	color: #555;
+}
+
+#sf_admin_container.prepararEnvio .avisoEshop
+{
+    font-size: 14px;
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.prepararEnvio .radio_list li:nth-child(2)
+{
+    margin: 0 0 0 50px;
+}
+
+#sf_admin_container.prepararEnvio input
+{
+    margin: 0 0 0 0;
+}
+
+#sf_admin_container.prepararEnvio table
+{
+	margin: 30px 0 30px 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.prepararEnvio th, #sf_admin_container.prepararEnvio td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.prepararEnvio td.calle input { width: 80px;	 }
+#sf_admin_container.prepararEnvio td.numero input { width: 40px; }
+#sf_admin_container.prepararEnvio td.piso input { width: 35px;	}
+#sf_admin_container.prepararEnvio td.dpto input { width: 35px;	}
+#sf_admin_container.prepararEnvio td.cp input { width: 35px; }
+#sf_admin_container.prepararEnvio td.telefono input { width: 80px; }
+
+#sf_admin_container.prepararEnvio .errores
+{
+	background: #f8d7d7;
+	padding: 10px;
+}
+
+#sf_admin_container.prepararEnvio .errores h3
+{
+	color: #ef3838;
+	font-size: 16px;
+	margin: 0 0 15px 0;
+}
+
+#sf_admin_container.prepararEnvio .errores table
+{
+	border: none;
+	margin: 0 0 0 0;
+}
+
+#sf_admin_container.prepararEnvio .errores table td
+{
+	border: none;
+}
+
+#sf_admin_container a.prepararRemitos,
+#sf_admin_container a.prepararEnvios
+{
+	cursor: pointer;
+	color: #C64934;
+}
+
+/* RECIBO DEVOLUCION */
+
+#sf_admin_container ul#reciboDevolucion label.float-left
+{
+	float: left !important;
+}
+
+#sf_admin_container ul#reciboDevolucion .button
+{
+	margin: 20px 0 0 0;
+}
+
+#sf_admin_container ul#reciboDevolucion .eliminar
+{
+	color: red;
+	background: none;
+	padding: 0;
+}
+
+#sf_admin_container ul#reciboDevolucion .cantidad
+{
+	width: 45px;
+}
+
+/* FALTANTES */
+
+.sf_admin_list_td_estado_faltante .red
+{
+    color: red;
+}
+
+#sf_admin_container .sf_admin_list_td_estado_faltante .green
+{
+    color: green ;
+}
+
+#sf_admin_container.faltantes h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.faltantes label
+{
+    width: 180px;
+}
+
+#sf_admin_container.faltantes select
+{
+    width: 500px;
+}
+
+div.faltantes .selectPeriodo
+{
+	text-align: right;
+    width: 410px;
+}
+
+#sf_admin_container.faltantes .row
+{
+	margin: 10px 0 10px 0;
+}
+
+#sf_admin_container.faltantes .row.mensaje p
+{
+	margin: 10px 0 10px 0;
+	font-style: italic;
+	color: #555555;
+}
+
+#sf_admin_container.faltantes .row p.error
+{
+	color: #FFFFFF;
+}
+
+#sf_admin_container.faltantes .row.mensaje textarea
+{
+	width: 800px;
+	height: 100px;
+}
+
+#sf_admin_container.faltantes input
+{
+    margin: 20px 0 0 0;
+}
+
+#sf_admin_container.faltantes ul
+{
+	margin: 0;
+    padding: 0;
+}
+
+#sf_admin_container.faltantes ul li
+{
+    list-style: none;
+}
+
+#sf_admin_container.faltantes table
+{
+	margin: 30px 0 0 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.faltantes th, #sf_admin_container.faltantes td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.faltantes ul li td.total
+{
+	text-align: right;
+	font-weight: bold;
+}
+
+
+ 
+#sf_admin_container .faltante.sf_admin_td_actions li
+{
+    width: 150px;
+    display: block;
+    margin: 7px 0;
+}
+
+#sf_admin_container.faltantes .procesando {
+	display: inline;
+	padding: 1px 10px;
+	display: none;
+}
+
+#sf_admin_container.faltantes ul li .no-padding 
+{
+	padding: 0;
+}
+
+
+/* EDICION MASIVA DE STOCK */
+
+.sf_admin_form_row .banner_file,
+.sf_admin_form_row .promoPago_file {
+    display:block;
+    margin-top: 10px;   
+}
+
+
+
+/* USUARIOS - CAMPAÑA */
+
+#campana_usuarios_table tr td.remove
+{
+	border-right: none;
+}
+
+#campana_usuarios_table tr td.resend
+{
+	border-left: none;
+}
+
+#campana_usuarios_table tr td.remove a
+{
+	float: left;
+	width: 22px;
+	height: 22px;
+	background: url("../images/x.png") no-repeat scroll 5px 5px transparent;
+	cursor: pointer;
+	padding: 0 0 0 0;
+	margin: 0 0 0 5px;
+}
+
+
+#campana_usuarios_table tr td.resend a
+{
+	float: left;
+	width: 22px;
+	height: 22px;
+	background: url("../images/mail.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	padding: 0 0 0 0;
+	margin: 0 0 0 5px;
+}
+
+
+/* REPORETE - VENTA ONLINE */
+
+.reporteVentaOnline table tr td,
+.reporteVentaOnline table tr th
+{
+	border: solid #999999 1px;	
+}
+
+.reporteVentaOnline table tr.par td
+{
+	background: #FFFFFF;	
+}
+
+.reporteVentaOnline table tr.impar td
+{
+	background: #EEEEEE;	
+}
+
+.reporteVentaOnline p.subtitulo
+{
+	color: #C64934;
+	font-size: 18px;
+}
+
+#sf_admin_container th .helpButton
+{
+	font-size: 11px;
+	cursor: pointer;
+	color: #888888;
+}
+
+#easyTooltip
+{
+	color: #000000;
+	background: #EEEEEE;
+	border: solid #CCCCCC 1px;
+	padding: 2px;
+	font-size: 12px;	
+}
+
+/* DEVUELTOS OCA */
+
+#sf_admin_container.devueltosOca h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.devueltosOca label
+{
+    width: 80px;
+}
+
+#sf_admin_container.devueltosOca .row
+{
+	margin: 10px 0 10px 0;
+}
+
+#sf_admin_container.devueltosOca textarea
+{
+	width: 250px;
+	height: 100px;
+}
+
+#sf_admin_container.devueltosOca .button
+{
+	margin: 25px 0 0 0;
+}
+
+#sf_admin_container.devueltosOca .formProcesar
+{
+	margin: 40px 0 0 0;
+}
+
+#sf_admin_container.devueltosOca table
+{
+	margin: 30px 0 0 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.devueltosOca th, #sf_admin_container.devueltosOca td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.devueltosOca ul li td.total
+{
+	text-align: right;
+	font-weight: bold;
+}
+
+#sf_admin_container.devueltosOca .label
+{
+	color: #666666;
+}
+
+#sf_admin_container ul li.sf_admin_action_new a.descargar
+{
+	background: url("../images/icons/small/backup.png") no-repeat scroll 0 0 transparent;
+	margin: 0 0 0 40px;
+}
+
+
+#sf_admin_container.procesarDevolucion .row
+{
+	margin: 30px 0 0 0;
+}
+
+
+#sf_admin_container.procesarDevolucion .row.mensaje textarea
+{
+	width: 800px;
+	height: 100px;
+}
+
+#sf_admin_container.procesarDevolucion .row.mensaje label.bold
+{
+	float: none;
+	font-weight: bold !important;
+	margin: 0 0 10px 0;
+	color: #000000;
+}
+
+
+#sf_admin_container.procesarDevolucion .row.mensaje ul.radio_list
+{
+	display: block;
+}
+
+#sf_admin_container.procesarDevolucion .row.mensaje ul.radio_list li
+{
+	display: block;
+}
+
+#sf_admin_container.procesarDevolucion .detalleFallados ul
+{
+	margin: 0;
+}
+
+#sf_admin_container.procesarDevolucion .detalleFallados li
+{
+	list-style: none;
+	margin: 5px 0;
+}
+
+#sf_admin_container.procesarDevolucion .detalleFallados li input
+{
+	width: 300px;
+}
+
+
+
+/* Devolucion Detalle */
+
+.detalleDevolucion h2
+{
+    font-size: 14px;
+    margin: 50px 0 0 0;
+    background-color: #FFFFFF;
+    padding: 3px;
+    border: solid #CCCCCC 1px;
+}
+
+.detalleDevolucion h2.first
+{
+    margin: 10px 0 0 0;
+}
+
+.detalleDevolucion ul li
+{
+    font-size: 12px;    
+}
+
+.detalleDevolucion table
+{
+	width: 100%;
+	font-size: 12px;
+	margin: 10px 0 10px 0;
+}
+
+.detalleDevolucion table tr th
+{
+	text-align: center;
+}
+
+.detalleDevolucion table tr td,
+.detalleDevolucion table tr th
+{
+	border: none;
+	padding: 7px 7px 7px 7px;
+}
+
+.detalleDevolucion table tr td a
+{
+	text-decoration: none;
+	outline: none;
+	color: #C64934;
+	cursor: pointer;
+}
+
+.detalleDevolucion table tr td a:hover
+{
+	text-decoration: underline;
+}
+
+.detalleDevolucion table tr td.first
+{
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-ms-border-radius-topleft: 8px;
+	-ms-border-radius-bottomleft: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-khtml-border-radius-topleft: 8px;
+	-khtml-border-radius-bottomleft: 8px;
+}
+
+.detalleDevolucion table tr td.last
+{
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-ms-border-radius-topright: 8px;
+	-ms-border-radius-bottomright: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-khtml-border-radius-topright: 8px;
+	-khtml-border-radius-bottomright: 8px;
+}
+
+
+
+.detalleDevolucion table tr .movimiento
+{
+	width: 50px;
+	text-align: center;
+}
+
+.detalleDevolucion table tr .fecha
+{
+	width: 110px;
+	text-align: center;
+}
+
+.detalleDevolucion table tr .cantidad
+{
+	width: 29px;
+	text-align: center;
+}
+
+.detalleDevolucion table tr .sumaParcial
+{
+	width: 30px;
+	text-align: center;
+	border-left: 2px solid #BBBBBB;
+}
+
+.detalleDevolucion table tr .observacion
+{
+	width: 500px;
+	text-align: left;
+}
+
+
+.detalleDevolucion table tr.blanco td
+{
+	background: #FFFFFF;
+}
+
+.detalleDevolucion table tr.gris td
+{
+}
+
+#sf_admin_container.reportes table
+{
+	margin: 30px 0 0 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.reportes th, #sf_admin_container.reportes td
+{
+	border: solid #CCCCCC 1px;
+}
+
+#sf_admin_container #sf_fieldset_datos_del_descuento ul
+{
+    margin: 0 0 0 25px;    
+}
+
+#sf_admin_container #sf_fieldset_datos_del_descuento ul li
+{
+    display: block;
+}
+
+
+/* Descuento */
+
+#sf_fieldset_datos_del_descuento .compra_minima input
+{
+    width: 50px !important;
+}
+
+#sf_fieldset_datos_del_descuento .compra_minima span
+{
+    color: #666666;
+}
+
+/* DescuentoGenerar */
+
+#sf_admin_container.descuentoGenerar h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.descuentoGenerar label
+{
+    width: 180px;
+}
+
+div.descuentoGenerar .selectPeriodo
+{
+	text-align: right;
+    width: 410px;
+}
+
+#sf_admin_container.descuentoGenerar .row
+{
+	margin: 10px 0 10px 0;
+}
+
+#sf_admin_container.descuentoGenerar .descuentosGenerados
+{
+    -webkit-column-count: 5;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 5;
+    -moz-column-gap: 10px;
+    column-count: 5;
+    column-gap: 10px;
+    width: 800px;
+}
+
+#sf_admin_container.descuentoGenerar .volver
+{
+    margin: 20px 0 0 0;
+}
+
+#sf_admin_container.descuentoGenerar .volver a
+{
+    color: #C64934;
+}
+
+
+/* descuentoEliminarNoVendidos */
+
+#sf_admin_container.descuentoEliminarNoVendidos textarea
+{
+    width: 700px;
+    height: 250px;
+}
+
+#sf_admin_container ul li.sf_admin_action_new a.delete
+{
+    background: url("../images/delete.png") no-repeat scroll 0 0 transparent;
+}
+
+#sf_admin_container ul li.sf_admin_action_new a.refresh
+{
+    background: url("../images/refresh.png") no-repeat scroll 0 0 transparent;
+}
+
+#sf_admin_container.descuentoEliminarNoVendidos ul li a
+{
+    background: none;
+    color: #C64934;
+    padding: 0;
+}
+
+/* Verificar Factura OCA */
+
+.verificarFacturaOca table
+{
+    margin: 30px 0 0 0;
+}
+
+.verificarFacturaOca tr.no-exists
+{
+    background: #f9a0a0;
+}
+
+.verificarFacturaOca tr.exists
+{
+    background: #c6f4bc;
+}
+
+.verificarFacturaOca p
+{
+    margin: 10px 0 20px 0;
+}
+
+.verificarFacturaOca p.error
+{
+    margin: 30px 0 0 0;
+}
+
+/* FORM CAMPAÑA */
+
+#campanaAsignacion_asignacion_results tr.oferta
+{
+    background: #FFB3B3;
+}
+
+.campana_estimacion
+{
+    height: 20px;
+}
+
+.campana_estimacion label,
+.campana_estimacion input
+{
+    float: left;
+}
+
+.campana_estimacion .label
+{
+    cursor: pointer;
+    margin: 0 0 0 10px;
+    width: 75px !important;
+}
+
+
+/* CAMPANA ASIGNACION PRODUCTOS */
+
+
+.asignacionProductos h4 {
+	margin: 20px 0 10px;
+}
+
+.asignacionProductos .filter
+{
+	margin: 10px 0;
+}
+
+.asignacionProductos .restablecer
+{
+	margin: 0 0 0  10px;
+}
+
+.asignacionProductos .filter.show
+{
+	display: block;
+}
+
+.asignacionProductos .filter.hide
+{
+	display: none;
+}
+
+.asignacionProductos .button
+{
+	cursor: pointer;
+}
+
+.asignacionProductos table thead tr td {
+	background: none repeat scroll 0 0 #fff;
+}
+
+.asignacionProductos .loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 400px 0;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 16px;
+	display: none;
+}
+
+.asignacionProductos table tr td.warning {
+	background: yellow;
+}
+
+.asignacionProductos .desactivarProductos label
+{
+    width: 250px !important;
+}
+
+/* RESTAURAR STOCK CAMPANA */
+
+.restaurarStockCampana table
+{
+    margin-top: 50px;
+}
+
+.restaurarStockCampana tr
+{
+    cursor: pointer;
+}
+
+.restaurarStockCampana p
+{
+    margin: 20px 0 20px 0;
+}
+
+#sf_admin_container.restaurarStockCampana label {
+	width: 200px;
+}
+
+.restaurarStockCampana .ok
+{
+    color: green;
+}
+
+.restaurarStockCampana .alert
+{
+    border: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.restaurarStockCampana .warning
+{
+    background: yellow;
+}
+
+.restaurarStockCampana .conFaltante
+{
+	background: red;
+    color: #fff;
+}
+
+
+/* pmWidgetTalleSetAssign */
+
+#sf_admin_container .pmWidgetTalleSetAssign a
+{
+    color: #C64934;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign span
+{
+    margin: 0 20px 0 20px;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign .addZona
+{
+    margin: 20px 0 0 0;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign .addTalle select,
+#sf_admin_container .pmWidgetTalleSetAssign .addZona select
+{
+    width: 300px;
+    margin: 0 15px 0 0;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table
+{
+    margin: 10px 0 0 144px;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table thead tr
+{
+    background: none;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table th
+{
+    background: #EEEEEE;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table td
+{
+    background: #FFFFFF;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table th,
+#sf_admin_container .pmWidgetTalleSetAssign table td
+{
+    border: none;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table tbody tr
+{
+    cursor: pointer;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table tbody tr.sortable-placeholder
+{
+    border: dashed #CCCCCC 3px;
+    height: 30px;
+    margin: 2px 0 2px 0;
+}
+
+
+#sf_admin_container .pmWidgetTalleSetAssign table tbody .ui-sortable-helper
+{
+    display: none;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign table .acciones
+{
+    background: none;
+}
+
+#sf_admin_container .pmWidgetTalleSetAssign p.aclaracion
+{
+    margin: 20px 0 0 144px;
+}
+
+
+
+
+#sf_admin_container .sf_admin_form .pmWidgetTalleSetAssign table input
+{
+    width: 35px;
+    text-align: center;
+}
+
+#sf_admin_container .sf_admin_form .pmWidgetTalleSetAssign table .acciones
+{
+    border: none;
+    color: #C64934;
+}
+
+
+/* Dashboard */
+
+#sf_admin_container.dashboard ul li
+{
+    list-style: none;
+    text-align: left;
+    margin: 25px 0 25px 0;
+    background: url("../images/warning.png") no-repeat scroll 0 0 transparent;
+    padding: 0 0 0 20px;
+}
+
+#sf_admin_container.dashboard ul li a
+{
+    background: none;
+    padding: 0;
+    color: red;
+}
+
+#sf_admin_container.dashboard ul li.ok
+{
+    background: url("../images/tick.png") no-repeat scroll 0 2px transparent;
+    color: green;
+}
+
+#sf_admin_container.dashboard p
+{
+    text-align: left;
+    margin: 25px 0 25px 0;
+}
+
+/* Outlet */
+
+#sf_admin_container.outlet h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.outlet label
+{
+    width: 180px;
+}
+
+
+#sf_admin_container.outlet .row
+{
+	margin: 30px 0 30px 0;
+	clear: both;
+}
+
+#sf_admin_container.outlet .row input
+{
+	width: 293px;
+}
+
+
+
+#configuracion_valor
+{
+    margin-top: 10px;
+    margin-left: 26px;
+}
+
+.sf_admin_form_field_enviar_aviso_orden_compra
+{
+    height: 29px;
+}
+
+#sf_admin_container .sf_admin_form_field_email_orden_compra .content
+{
+    margin-left: 25px;
+}
+
+#sf_admin_container .sf_admin_form_field_email_orden_compra .add
+{
+    font-size: 11px;
+    color: green;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+}
+
+
+.hashInexistente h1
+{
+    margin: 150px 0 50px 0;
+    font-size: 30px;
+    color: #C64934;
+}
+
+.hashInexistente h3
+{
+    font-size: 15px;
+    color: #555;
+}
+
+.ingresarFechaEntrega
+{
+    height: 600px;
+}
+
+.ingresarFechaEntrega h1
+{
+    margin: 50px 0 50px 0;
+    font-size: 30px;
+    color: #C64934;
+}
+
+.ingresarFechaEntrega form
+{
+ 	width: 550px;
+ 	margin: 0 auto;
+}
+
+.ingresarFechaEntrega p
+{
+ 	text-align: center;
+ 	margin-top: 100px;
+}
+
+.ingresarFechaEntrega p.descargar
+{
+    width: 550px;
+ 	text-align: left;
+ 	margin: 40px auto 0 auto;
+ 	line-height: 30px;
+}
+
+
+.ingresarFechaEntrega .error_list
+{
+    color: red;
+}
+
+.ingresarFechaEntrega p.descargar a
+{
+    color: #C64934;
+}
+
+.ingresarFechaEntrega .row
+{
+	float: left;
+ 	width: 350px;
+ 	margin: 15px 0 15px 0; 
+}
+
+.ingresarFechaEntrega .row label
+{
+    float: left;
+    width: 350px;
+	font-weight: bold;
+	line-height: 20px; 
+}
+
+.ingresarFechaEntrega .row textarea
+{
+ 	width: 350px;
+ 	height: 100px;
+}
+
+.ingresarFechaEntrega .button
+{
+ 	float: left;
+ 	margin: 15px 304px 0 0; 
+}
+
+.ingresarFechaEntrega .button input
+{
+    background: none;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logistica .sf_admin_row td
+{
+    border: 0;
+}
+
+.logistica .sf_admin_row.first
+{
+    border-top: solid #999 2px !important;
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li
+{
+    display: block;
+    margin: 5px 0;
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.activar a
+{
+    background: url("../images/publish_g.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.desactivar a
+{
+    background: url("../images/publish_r.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.faltantes a
+{
+    padding-top: 1px;
+    background: url("../images/warning.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.verOC a
+{
+    padding-top: 1px;
+    background: url("../images/icons/small/addedit.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.descargarOC a
+{    
+    background: url("../images/icons/small/backup.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.pagada a
+{    
+    background: url("../sfDoctrinePlugin/images/publish_g.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.noPagada a
+{    
+    background: url("../sfDoctrinePlugin/images/publish_r.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#sf_admin_container.logistica ul.sf_admin_td_actions li.checkBlue a
+{    
+    background: url("../images/publish_b.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+
+
+.logistica .row
+{
+    clear: both;
+ 	width: 100%;
+ 	margin: 30px 0 30px 0; 
+}
+
+.logistica .row p
+{
+    clear: both;
+}
+
+.logistica .row label
+{
+    clear: both;
+    width: 100% !important;
+	font-weight: bold;
+	line-height: 35px; 
+}
+
+.logistica .row textarea
+{
+ 	width: 500px !important;
+ 	height: 100px;
+ 	clear: both;
+ 	padding: 5px;
+}
+
+#sf_admin_container .double_list_select, #sf_admin_container .double_list_select-selected
+{
+    width: 350px;
+}
+
+
+.gray
+{
+    color: #555;
+}
+
+.logistica .rojo td
+{
+	background: #FAC8C8 !important;
+}
+
+.logistica .amarillo td
+{
+	background: #F5E798 !important;
+}
+
+.logistica .verde td
+{
+	background: #CEFAC8 !important;
+}
+
+.logistica .nofinalizada td
+{
+	opacity: 0.5;
+	background: #ccc !important;;
+}
+
+.logistica .nofinalizada td a {
+	opacity: 0.7;
+}
+
+
+#sf_admin_bar tr.sf_admin_form_row.sf_admin_filter_field_despachada td.label
+{
+    width: 120px;
+}
+
+
+
+/* Fallados Recuperar */
+
+#sf_admin_container.falladosRecuperar h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.falladosRecuperar table
+{
+	margin: 10px 0 0 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.falladosRecuperar th, #sf_admin_container.falladosRecuperar td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.falladosRecuperar th, #sf_admin_container.falladosRecuperar td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.falladosRecuperar .submit
+{
+    margin: 30px 0 0 20px;
+}
+
+
+/* Devueltos Marcas Devolver */
+
+#sf_admin_container.devueltosMarcasDevolver h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.devueltosMarcasDevolver table
+{
+	margin: 10px 0 0 0;
+	border-left: solid #CCCCCC 1px;
+	border-right: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.devueltosMarcasDevolver th, #sf_admin_container.devueltosMarcasDevolver td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.devueltosMarcasDevolver th, #sf_admin_container.devueltosMarcasDevolver td
+{
+	border: none;
+	border-top: solid #CCCCCC 1px;
+	border-bottom: solid #CCCCCC 1px;
+}
+
+#sf_admin_container.devueltosMarcasDevolver .submit
+{
+    margin: 30px 0 0 20px;
+}
+
+/* SET CATEGORIA ML */
+
+#sf_admin_container .jstree a {
+    color: #333;    
+}
+
+#sf_admin_container .jstree a.jstree-hovered {
+    color: #000;
+    border: 0;    
+}
+
+#sf_admin_container .jstree a.jstree-clicked {
+    color: #000;
+    font-weight: bold;
+    border: 0;    
+}
+
+.setCategoriaML h4 {
+    margin-bottom: 15px;
+    display: none;
+}
+
+.setCategoriaML table td.OK
+{
+    background: #CBF5CE;
+}
+
+.setCategoriaML table td.KO
+{
+    background: #F5CBCB;
+}
+
+.setCategoriaML .autocomplete {
+    float: left;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.setCategoriaML .autocomplete input {
+    float: left;
+    cursor: pointer;
+}
+
+.setCategoriaML .autocomplete label {
+    float: left;
+    width: 330px !important;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+/* Devueltos Marcas New */
+
+#sf_admin_container.newDevueltosMarcas h1
+{
+    margin: 0 0 40px 0;
+}
+
+#sf_admin_container.newDevueltosMarcas label
+{
+    width: 450px;
+}
+
+/* PUBLICAR ML */
+
+.sf_admin_form_field_texto_promocion li {
+    margin: 0 50px 0 0;
+}
+
+.sf_admin_form_field_texto_promocion li label{
+    margin: 0 0 0 5px;
+}
+
+.verNotificacion p
+{
+    margin: 30px 0;
+}
+
+.verNotificacion p.ok
+{
+    color: green;
+}
+
+.verNotificacion p.ko
+{
+    color: red;
+}
+
+.editSetTalle .alerta {
+    color: red;
+    border: none;    
+}
+
+.editSetTalle .button{
+	display: block;
+	margin-top: 20px; 
+}
+
+.sf_admin_form_field_id_eshop {
+    height: 31px;
+}
+
+.sf_admin_form_field_id_eshop .alerta {
+    color: red;
+    line-height: 31px;
+}
+
+.sf_admin_form_field_id_eshop select {
+    float: left;
+    margin-right: 15px;
+}
+
+#campana_color, #banner_principal_color {
+	width: 80px !important;
+	margin-right: 10px;
+}
+
+
+
+
+/* ORDENAMIENTO DE CATEGORIAS DE ESHOPS */
+
+.ordenarCategoriasEshops .resultados {
+	float: left;
+	width: 100%;
+}
+
+.ordenarCategoriasEshops .resultados .columna {
+    float: left;
+    width: 340px;
+    margin: 0 20px 0 0;
+    padding: 20px;
+    min-height: 400px;
+    background: #fafafa;
+}
+
+.ordenarCategoriasEshops .resultados .columna .resultado {
+    float: left;
+    position: relative;
+    width: 300px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    border: solid #ddd 1px;
+    padding: 15px;
+    background: #fff;
+}
+
+.ordenarCategoriasEshops .resultados .columna .resultado .categoria {
+    position: relative;
+    display: block;
+    width: 300px;
+    background-size: cover;
+}
+
+.ordenarCategoriasEshops .resultados .columna .resultado .categoria .editarImagen {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: url("../images/edit.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	right: 0px;
+	top: 0px;
+}
+
+/* MODIFICAR IMAGE DE CATEGORIA DE ESHOPS */
+
+#sf_admin_container.modificarImagenCategoriaEshop h1{
+	margin-bottom: 40px; 
+}
+
+.modificarImagenCategoriaEshop .buttons{
+	margin-top: 70px; 
+	display: block;
+}
+
+.modificarImagenCategoriaEshop .buttons a{
+	margin-left: 20px;
+}
+
+/* ORDENAMIENTO DE PRODUCTOS DE ESHOPS */
+
+.ordenarProductosEshops .resultados {
+	float: left;
+	width: 100%;
+}
+
+.ordenarProductosEshops .resultados .resultado {
+    float: left;
+    position: relative;
+    margin: 20px 30px 50px 0;
+    text-align: center;
+    cursor: pointer;
+    border: solid #ddd 1px;
+    padding: 15px;
+    background: #fff;
+}
+
+
+.ordenarProductosEshops .resultados .resultado .producto {
+    position: relative;
+    display: block;
+    width: 120px;
+
+    height: 181px;
+    border-bottom: 1px solid #ccc;
+    background-size: cover;
+}
+
+
+
+.ordenarProductosEshops .resultados .resultado .producto img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.ordenarProductosEshops .resultados .resultado .descuento {
+    position: absolute;
+    padding: 12px 22px;
+    top: 0;
+    right: 0;
+}
+
+.ordenarProductosEshops .resultados .resultado .nombre {
+    margin-top: 20px;
+}
+
+.ordenarProductosEshops .resultados .resultado .precio {
+    position: relative;
+    margin: 10px auto 0 auto;
+    display: inline-block;
+    background-color: #f3f1f1;
+    padding: 5px 8px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -O-border-radius: 3px;
+    border-radius: 3px;
+
+    zoom: 1;
+    *display: inline;
+}
+
+.ordenarProductosEshops .resultados .resultado .nombre,.ordenarProductosEshops .resultados .resultado .codigo
+{	
+    position: relative;
+    display: block;
+}
+
+
+
+#sf_admin_bar tr.sf_admin_filter_field_fecha_pago td
+{
+	width: 340px;
+}
+
+.recepcionMercaderia hr {
+	border: 0;
+	border-top: solid #999 1px;
+}
+
+.recepcionMercaderia .rojo {
+	color: red;
+}
+
+.recepcionMercaderia h3 {
+	margin: 40px 0;
+	font-size: 20px;
+}
+
+.recepcionMercaderia table {
+	margin-top: 10px;
+}
+
+.recepcionMercaderia textarea {
+	padding: 5px;
+}
+
+.recepcionMercaderia .alert {
+	background: #ff8989;
+}
+
+.recepcionMercaderia .flotante {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	display: none;
+	z-index: 9999;
+}
+
+/* ORDENAMIENTO DE HOME */
+
+.ordenarHome form {
+	position: relative;
+	top: -50px;
+}
+
+.ordenarHome .resultado
+{
+    position: relative;
+    float: left;
+    margin: 12px;
+    cursor: pointer;
+    width: 292px;
+    height: 280px;
+}
+
+.ordenarHome .resultado .image
+{
+    position: relative;
+    width: 292px;
+    height: 280px;
+    background: url("../images/no-image.png") no-repeat scroll 0 0 transparent;
+}
+
+.ordenarHome .resultado .image .denominacion
+{
+    position: absolute;
+    top: 220px;
+    width: 292px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 500;
+}
+
+.ordenarHome .resultado .image img
+{
+	position: absolute;
+    z-index: 800;
+}
+
+
+.ordenarHome .resultado .description
+{
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #000;
+  font-family: 'Muli', sans-serif;
+  background-image: none;
+  background: rgb(236, 233, 230);
+  z-index: 900;
+}
+
+.ordenarHome .resultado .description h2
+{
+	font-weight:bold;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-size: 17px;
+	float: left;
+	width: 272px;
+	margin: 9px 10px 0 7px;
+	font-size: 15px;
+}
+
+.ordenarHome .resultado .description .timeRemain{
+  float: left;
+  font-size: 12px;
+  font-weight: 900;
+  width: 153px;
+  height: 22px;
+  margin: 11px 0 5px 7px;
+  text-transform: uppercase;
+}
+
+.ordenarHome .resultado .description .timeRemain span{
+  float: left;
+  margin: 0 3px 0 0;
+  font-size: 12.5px;
+}
+
+.ordenarHome .resultado .description .timeRemain .first{
+	float: left;
+	margin: 0;
+}
+
+.procesando {
+	color: #555555;
+	background: url("../images/processing.gif") no-repeat scroll 0 0;
+ 	margin: 0 0 0 20px;
+    padding: 0 0 0 30px;
+}
+
+/* ESHOP HOME */
+
+.eshopHomeElemento .imagen
+{
+	position: relative;
+	margin: 10px 0;
+}
+
+.eshopHomeElemento .imagen video
+{
+	display: inline;
+	cursor: pointer;
+}
+
+.eshopHomeElemento a.delete
+{
+	position: absolute;
+	top: 33px;
+	width: 400px;
+	background: url("/backend/images/delete.png") no-repeat scroll 0 0 transparent;
+	padding: 0 0 0 16px;
+	margin: 50px 0 0 20px;
+	cursor: pointer;
+}
+
+.eshopHomeElemento .link
+{
+	position: absolute;
+	top: 33px;
+	width: 400px;
+	padding: 0 0 0 4px;
+	margin: 0 0 0 20px;
+	cursor: pointer;
+	color: #333 !important;
+}
+
+.eshopHomeElemento .link a
+{
+	color: #c64934 !important;
+}
+
+.eshopHomeElemento .alerta
+{
+	color: #c64934;
+	font-size: 11px;
+}
+
+.eshopHomeElemento .h3
+{
+    background: #ccc none repeat scroll 0 0;
+    color: #000;
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.eshopHomeElemento .ejemploGrilla {
+	margin: 15px;
+}
+
+/* ESHOP LOOKBOOK */
+
+.lookbook .deallocateAll,
+.lookbook .allocateAll {
+	display: none;
+}
+
+.lookbookImage .image {
+	position: relative;
+}
+
+.lookbookImage .pointer {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	border-radius: 10px;
+	border: solid #fff 2px;
+}
+
+.selectedItems {
+	margin-left: 30px;
+}
+
+.selectedItems td{
+	position: relative;
+}
+
+.selectedItems .referencia {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	border-radius: 10px;
+	border: solid #fff 2px;
+	top: 68px;
+	left: -32px;
+}
+
+#sf_admin_container .sf_admin_form .sf_admin_form_field_freeshipping label {
+	width: 320px !important;
+}
+
+#sf_admin_container .sf_admin_form .sf_admin_form_field_freeshipping input {
+	width: 100px !important;
+}
+
+.notificacionMENSA {
+	margin: 40px 0;
+	font-size: 14px;
+}

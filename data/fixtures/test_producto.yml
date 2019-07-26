@@ -1,0 +1,61 @@
+tag:
+  tag_2:
+    denominacion: hombre
+  tag_3:
+    denominacion: musculosa
+  tag_1:
+    denominacion: remera
+productoTag:
+  productoTag_1_1:
+    producto: producto_1
+    tag: tag_1
+  productoTag_1_2:
+    producto: producto_1
+    tag: tag_2
+  productoTag_1_3:
+    producto: producto_1
+    tag: tag_3
+producto:
+  producto_1:
+    codigo: '123456'
+    denominacion: Musculosa
+    descripcion: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis'
+    info_adicional: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.'
+    marca: marca_1
+    productoCategoria: productoCategoria_1
+    fecha_modificacion: '2011-08-17 10:20:17'
+    precio_lista: '100.00'
+    precio_deluxe: '80.00'
+    costo: '30.00'
+    peso: '0.50'
+    activo: true
+productoImagen:
+  productoImagen_1:
+    producto: producto_1
+    orden: '1'
+productoItem:
+  productoItem_1:
+    producto: producto_1
+    productoTalle: productoTalle_3
+    productoColor: productoColor_1
+    stock: '5'
+  productoItem_2:
+    producto: producto_1
+    productoTalle: productoTalle_3
+    productoColor: productoColor_3
+    stock: '4'
+  productoItem_3:
+    producto: producto_1
+    productoTalle: productoTalle_3
+    productoColor: productoColor_6
+    stock: '5'
+  productoItem_4:
+    producto: producto_1
+    productoTalle: productoTalle_4
+    productoColor: productoColor_1
+    stock: '4'
+  productoItem_5:
+    producto: producto_1
+    productoTalle: productoTalle_4
+    productoColor: productoColor_6
+    stock: '5'

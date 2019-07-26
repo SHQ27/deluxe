@@ -1,0 +1,32 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    Content-Type: text/html; charset=utf-8
+    Content-Language: es
+    Cache-Control:  no-cache, no-store
+    Pragma: no-cache
+    Content-Style-Type: text/css
+    imagetoolbar: no
+    Expires: 0
+    Last-Modified: 0
+
+  metas:
+    title: ""
+    description: ""
+    keywords: ""
+
+    SKYPE_TOOLBAR: SKYPE_TOOLBAR_PARSER_COMPATIBLE
+    Author: ""
+    Distribution: Global
+    Robots: index,follow
+    revisit-after: 1 month
+    language: es
+
+  stylesheets:    [malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css, smoothness/jquery-ui-1.10.3.custom.min.css, font.css, icon.css, style.css, column.css, animate.css, flexslider.css]
+
+  javascripts:    [lib/jquery-2.0.3.min.js, lib/jquery-ui.js, lib/jquery.flexslider-min.js, lib/jquery.formatCurrency-1.4.0.min.js, lib/jquery.zoom.min.js, lib/jquery.ddslick.min.js, lib/jquery.cookie.js, lib/jquery.mCustomScrollbar.concat.min.js, carritoRapido.js, ../helpers/generalHelper.js, general.js]
+  
+  has_layout:     true
+  layout:         layout

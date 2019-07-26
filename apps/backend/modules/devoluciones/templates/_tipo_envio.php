@@ -1,0 +1,1 @@
+<?php echo $devolucion->getTipoEnvio() == 'DELUXE' ? 'Propio' : 'Via Correo'; ?>

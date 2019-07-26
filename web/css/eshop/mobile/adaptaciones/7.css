@@ -1,0 +1,1685 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800italic,800);
+
+
+/*===================================================================================*/
+/*  FONTS                                                                            */ 
+/*===================================================================================*/
+
+@font-face {
+  font-family: 'FuturaStd-Book';
+  src:
+  url('../../../../images/eshop/7/fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+  url('../../../../images/eshop/7/fonts/FuturaStd-Book.otf') format('opentype'),
+  url('../../../../images/eshop/7/fonts/FuturaStd-Book.woff') format('woff'),
+  url('../../../../images/eshop/7/fonts/FuturaStd-Book.ttf')  format('truetype'),
+  url('../../../../images/eshop/7/fonts/FuturaStd-Book.svg#FuturaStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BodoniStd-Book';
+  src:
+  url('../../../../images/eshop/7/fonts/BodoniStd-Book.eot?#iefix') format('embedded-opentype'),
+  url('../../../../images/eshop/7/fonts/BodoniStd-Book.otf') format('opentype'),
+  url('../../../../images/eshop/7/fonts/BodoniStd-Book.woff') format('woff'),
+  url('../../../../images/eshop/7/fonts/BodoniStd-Book.ttf')  format('truetype'),
+  url('../../../../images/eshop/7/fonts/BodoniStd-Book.svg#BodoniStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+body {
+    font-size: 13px;
+    font-family: 'Open Sans', Arial;
+}
+
+.seccion.BPRFS .flex-control-nav li a,
+.seccion.BPRNO .flex-control-nav li a,
+.seccion.productoImagenSlider .flex-control-nav li {
+    background-image: url("../../../../images/eshop/7/nav_button_white.png");
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    color: #dddddd;
+    background-color: #dddddd;
+    height: 1px;  
+}
+
+.radio {
+    background: #f1f1f1;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #000;
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.mobile .logo {
+    padding-bottom: 2px;
+}
+
+/*===================================================================================*/
+/*  MENU                                                                             */
+/*===================================================================================*/
+
+.navMenu,
+.navUserLogged,
+.navUserNotLogged,
+.navCarrito {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    top: 58px;
+}
+
+.navMenu .arrow,
+.navUserLogged .arrow,
+.navUserNotLogged .arrow,
+.navCarrito .arrow {
+    background-image: url(../../../../images/eshop/mobile/7/menu-arrows.png);
+    background-repeat: no-repeat;
+    float: right;
+    width: 12px;
+    margin-right: 20px;
+}
+
+.navMenu {
+    text-transform: uppercase;
+}
+
+.navMenu ul li.lisubmenu .titsubmenu.prendas:before {
+    content: "E SHOP";
+}
+
+/*===================================================================================*/
+/*  MENU CARRITO                                                                     */
+/*===================================================================================*/
+
+.navCarrito .totalPrice {
+    font-family: 'Open Sans', Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navCarrito .btIniciarCompra {
+    padding: 22px 0 20px 0;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.navCarrito .nombre {
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.navCarrito .price {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.navCarrito .item .delete {
+    background-image: url("../../../../images/eshop/mobile/7/icon-carrito-eliminar.png");
+    background-repeat: no-repeat;
+    background-position: 20px 25px;
+    height: 60px;
+}
+
+/*===================================================================================*/
+/*  HEADER                                                                           */
+/*===================================================================================*/
+
+.toolbar .iconMenu {
+    background-image: url(../../../../images/eshop/mobile/7/menu-icons.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    background-position: 14px -22px;
+    height: 12px;
+    margin-left: 20px;
+}
+
+/*===================================================================================*/
+/*  TEXTO                                                                            */
+/*===================================================================================*/
+
+.seccion.TEXTO .titulo {
+    font-family: 'BodoniStd-Book', sans-serif;
+    font-size: 30px;
+}
+
+.seccion.TEXTOPRODE .titulo {
+    font-family: 'BodoniStd-Book', sans-serif;
+    font-size: 30px;
+}
+
+.seccion.TEXTOPUEDEINTERESAR .titulo {
+    font-family: 'BodoniStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*===================================================================================*/
+/*  PRODUCTOS                                                                        */
+/*===================================================================================*/
+
+.seccion.PRODE {
+    font-family: 'Open Sans', Arial;
+}
+
+.seccion.PRODE .nombre,
+.seccion.productos .producto .nombre {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.seccion.PRODE .precio,
+.seccion.productos .producto .precio {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.seccion.PRODE .precioViejo,
+.seccion.productos .producto .precioViejo {
+    font-size: 15px;
+    font-weight: 400;
+    color: #CCC;
+}
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */
+/*===================================================================================*/
+
+.footer .section {
+    font-size: 11px;
+}
+
+.footer .section .titulo {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer .section .desc {
+    font-family: 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+.footer .allrightsreserved {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTO                                                              */
+/*===================================================================================*/
+
+.productoInfo .nombre {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.productoInfo .precio {
+    font-family: 'Open Sans', Arial;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.productoInfo .precioActual {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.productoInfo .precioViejo {
+    font-size: 18px;
+    font-weight: 400;
+    color: #CCC;
+}
+
+.productoInfo .customSelect {
+    background: #f4f3f2;
+    font-family: 'Open Sans', Arial;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.productoInfo .btAgregarCarrito {
+    padding: 16px 20px 16px 20px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.productoInfo .detalle {
+    font-family: 'Open Sans', Arial;
+    text-align: center;
+}
+
+.productoInfo .detalle .titulo {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.productoInfo .detalle .desc {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.productoInfo .compartir .titulo {
+    font-family: 'Open Sans', Arial;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.productoInfo .agotado {
+    font-family: 'Open Sans', Arial;
+}
+
+/*********************************************************************************/
+/*  modal agregar carro                                                          */
+/*********************************************************************************/
+
+#agregar-carro
+{
+    font-family: 'Open Sans', Arial;
+}
+
+#agregar-carro .titulo
+{
+    font-size: 24px;
+    text-align: center;
+    line-height: 19px;
+}
+
+#agregar-carro .detalle
+{
+    font-size: 12px;
+    text-align: center;
+    line-height: 19px;
+}
+
+#agregar-carro .botonera {
+    text-align: center;
+}
+
+#agregar-carro .btCerrar {
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', Arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */
+/*===================================================================================*/
+
+.seccion.listado.categoria {
+    background: #eeeeee;
+}
+
+.seccion.listado.categoria .texto {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #eeeeee;
+    margin-bottom: 12px;
+    margin-left: 22px;
+}
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */
+/*===================================================================================*/
+
+.tiendas .listado .titulo {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+.tiendas .listado .titulo .strong {
+    font-weight: 700;
+}
+
+.tiendas .listado .item .nombre {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.tiendas .listado .item .direccion {
+    font-family: 'Open Sans', Arial;
+    font-size: 10px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.tiendas .listado .item .telefono {
+    font-family: 'Open Sans', Arial;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+/*===================================================================================*/
+/*  ACERCA DE                                                                        */ 
+/*===================================================================================*/
+
+#acerca .titulo
+{
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#acerca a {
+   color: #000;
+   font-weight: bold;
+}
+
+#acerca .textoprinc
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#acerca .textosecund
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/*===================================================================================*/
+/*  PREGUNTAS FRECUENTES                                                             */
+/*===================================================================================*/
+
+#consultas .titulo
+{
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#consultas .preguntas
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+}
+
+#consultas .faqCategoria .titleFaqCategoria
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#consultas .faqCategoria .num
+{
+    background-image: url(../../../../images/eshop/7/poligono_color.png);
+    color: #fff;
+    font-weight: bold;
+    width: 27px;
+    height: 22px;
+}
+
+#consultas .faqCategoria .orden
+{
+    color: #ffffff;
+    font-family: 'Open Sans', Arial;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#consultas .faqCategoria .pregunta
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#consultas .faqCategoria .respuesta
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+/*===================================================================================*/
+/*  CONTACTO                                                                         */
+/*===================================================================================*/
+
+#contacto
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#contacto .error
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
+}
+
+#contacto .titulo
+{
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#contacto .texto {
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#contacto form .botones .btEnviarConsulta {
+    padding: 16px 20px 16px 20px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    border: 1px solid #C8C8C8;
+    color: #666666;
+}
+
+#contacto form  input[type=file]::before {
+    border: 1px solid #C8C8C8;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: #000;
+}
+
+#contacto form input[type=file]::before {
+    margin-top: 0px;
+}
+
+#contacto form .campo {
+    font-weight: bold !important;
+}
+
+#contacto .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+#contacto .customSelect .select {
+    font-weight: normal !important;
+    font-family: 'Open Sans', Arial;
+    font-size: 20px;
+}
+
+/*===================================================================================*/
+/*  FORMULARIO                                                                        */
+/*===================================================================================*/
+
+#formulario .error
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
+}
+
+#formulario .titulo
+{
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#formulario .texto {
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#formulario form label {
+    text-transform: uppercase;
+}
+
+#formulario form .botones .btEnviarConsulta {
+    margin-top: 40px;
+    padding: 16px 20px 16px 20px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#formulario form  input[type=text],
+#formulario form  textarea
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    border: 1px solid #C8C8C8;
+    color: #666666;
+}
+
+#formulario form .campo {
+    font-weight: bold !important;
+}
+
+
+/*===================================================================================*/
+/*  REGISTRO                                                                         */
+/*===================================================================================*/
+
+#ingresar
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#ingresar .errorTexto
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
+}
+
+#ingresar .titulo
+{
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#ingresar .texto {
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#ingresar form .botones .btRegistrarme {
+    padding: 16px 20px 16px 20px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#ingresar form  input[type=text],
+#ingresar form  input[type=password],
+#ingresar form  textarea
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    border: 1px solid #C8C8C8;
+    color: #666666;
+}
+
+#ingresar form  input[type=file]::before {
+    border: 1px solid #C8C8C8;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: #000;
+}
+
+#ingresar form input[type=file]::before {
+    margin-top: 0px;
+}
+
+#ingresar form .campo {
+    font-weight: bold !important;
+}
+
+#ingresar .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+#ingresar .customSelect .select {
+    font-weight: normal !important;
+    font-family: 'Open Sans', Arial;
+    font-size: 20px;
+}
+
+#soy_nuevo .terminos {
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#soy_nuevo .terminos a {
+    font-weight: bold;
+}
+
+#soy_nuevo form .btRegistrarme {
+    padding: 16px 20px 16px 20px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+/*===================================================================================*/
+/*  LOGIN                                                                            */
+/*===================================================================================*/
+
+#ingresar .contRecordar {
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    line-height: 21px;
+    font-style: italic;
+}
+
+#ingresar .olvideCont {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+#ingresar form .botones .btIngresar {
+    padding: 16px 20px 16px 20px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#ingresar .optRegistro .btRegistro {
+    padding: 16px 0px 16px 0px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+#ingresar .optRegistro {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#estatica .titulo {
+    font-family: 'FuturaStd-Book',sans-serif;
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+#estatica .texto {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#estatica .color-link {
+    color: #000;
+    font-weight: bold;
+}
+
+#estatica a.rojo {
+    color: red;
+}
+
+#estatica a.verde {
+    color: green;
+}
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+#checkout_carrito {
+    text-align: left;
+}
+
+#checkout_carrito .titulo {
+    font-family: 'FuturaStd-Book',sans-serif;
+    font-size: 29px;
+    text-align: center;
+}
+
+#checkout_carrito .headerCarrito {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#checkout_carrito .item .eliminar {
+    background-image: url("../../../../images/eshop/mobile/7/icon-carrito-eliminar.png");
+    background-repeat: no-repeat;
+    background-position: 4px 60px;
+}
+
+#checkout_carrito .item .datos .nombre {
+    font-family: 'FuturaStd-Book',sans-serif;
+    font-size: 15px;
+}
+
+#checkout_carrito .item .datos .talle {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#checkout_carrito .item .datos .color {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#checkout_carrito .item .precio {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#checkout_carrito .cantidad .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+#checkout_carrito .cantidad .customSelect .select {
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+}
+
+#checkout_carrito .totales {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+}
+
+#checkout_carrito .totales {
+    line-height: 16px;
+}
+
+#checkout_carrito .totales .bold {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#checkout_carrito .totales .precio {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#checkout_carrito .botonera .btSeguirComprando {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#checkout_carrito .botonera .btContinuar {
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#checkout_carrito #generalError {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    text-align: center;
+    color: red;
+    font-weight: 600;
+}
+
+#checkout_carrito .alert {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    color: red;
+    font-weight: 600;
+}
+
+
+.paso2 .opcion .tituloOpcion {
+    font-family: 'Open Sans', Arial;
+    font-size: 23px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.paso2 .opcion .subtituloOpcion {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.paso2 .textoOpcion {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+#checkout_carrito form  input[type=text]
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    border: 1px solid #C8C8C8;
+    color: #666666;
+}
+
+.paso2 form .campo {
+    font-family: 'Open Sans', Arial;
+    font-weight: bold !important;
+    font-size: 13px;
+}
+
+.paso2 .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+.paso2 .customSelect .select {
+    font-weight: normal !important;
+    font-family: 'Open Sans', Arial;
+    font-size: 14px;
+}
+
+#checkout_carrito .form .costo {
+    font-family: 'Open Sans', Arial;
+    font-weight: bold !important;
+    font-size: 15px;
+}
+
+#checkout_carrito .formSUC .direccion {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.paso2 .btContinuar {
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.paso2 .btVolver {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.paso3 .cantidad {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;   
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: red;
+}
+
+#checkout_carrito.paso3 input[type=text]
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    border: 1px solid #C8C8C8;
+    color: #666666;
+}
+
+.paso3 .barra .header {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.paso3 .pedidosMayores .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+.paso3 .pedidosMayores .customSelect .select {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    color: #666666;
+    line-height: 19px;
+}
+
+.paso3 .pedidosMayores .error {
+    color: red;
+}
+
+#checkout_carrito.paso3 .botonera .btComprar {
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#checkout_carrito.paso3 .botonera .btSeguirComprando {
+    line-height: 45px;
+}
+
+#checkout_carrito.paso3 .selectorCuotas
+{
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    color: #666666;
+}
+
+.paso3 .selectorCuotas .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+.paso3 .selectorCuotas .customSelect .select {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    color: #666666;
+    line-height: 19px;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#mi_cuenta {
+    text-align: left;
+}
+
+#mi_cuenta .titulo {
+    font-family: 'FuturaStd-Book',sans-serif;
+    font-size: 29px;
+    text-align: center;
+}
+
+#mi_cuenta .miCuentaMenu {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#mi_cuenta .miCuentaMenu .arrow {
+    background-image: url(../../../../images/eshop/mobile/7/menu-arrows.png);
+    background-repeat: no-repeat;
+    float: right;
+    width: 12px;
+    margin-right: 10px;
+    background-position: 0px -2px;
+    height: 17px;
+}
+
+#mi_cuenta .miCuentaMenu span {
+    color: #555555;
+}
+
+#mi_cuenta .texto {
+    font-family: 'Open Sans', Arial;
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#mi_cuenta .texto.bold {
+    font-weight: bold;
+}
+
+#mi_cuenta .campo {
+    font-family: 'Open Sans', Arial;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#mi_cuenta .campo input[type=text],
+#mi_cuenta .campo input[type=password] {
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    border: 1px solid #C8C8C8;
+    color: #666666;
+}
+
+#mi_cuenta .buttonsContainer input[type=submit] {
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#mi_cuenta .buttonsContainer .desactivarCuenta {
+    text-align: center;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 20px;
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#mi_cuenta .buttonsContainer .button.si {
+    text-align: center;
+    margin-left: 55px;
+    margin-right: 55px;
+    padding: 4px 25px 6px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#mi_cuenta .buttonsContainer .button.no {
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    padding: 4px 25px 6px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#mi_cuenta .campo .sinCargar {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#mi_cuenta .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+#mi_cuenta .customSelect .select {
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+}
+
+#mi_cuenta .alert {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    color: green;
+    font-weight: bold;
+}
+
+#mi_cuenta .alert .texto {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    line-height: 16px;
+    color: black;
+    font-weight: normal;
+    text-align: left !important;
+}
+
+#mi_cuenta .error {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#mi_cuenta #respuesta_consultaEnvio {
+    font-family: 'Open Sans', Arial;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .estado {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .estado .tituloestado {
+    font-size: 13px;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .title {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .detalle {
+    font-size: 11px;
+    line-height: 21px;
+}
+
+#mi_cuenta #respuesta_consultaEnvio .detalle .bold.separada {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#mi_cuenta .leyenda {
+    font-family: 'Open Sans', Arial;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#mi_cuenta #pedidos .subtitulo {
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+
+#mi_cuenta #pedidos .pedido .dato {
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #666666;
+}
+
+#mi_cuenta #pedidos .pedido .dato .label {
+    font-weight: bold;
+    padding-right: 5px;
+    color: #000000;
+}
+
+#mi_cuenta #pedidos .pedido .acciones {
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#devoluciones .step
+{
+    background-image: url("../../../../images/eshop/6/poligono_con_hover.png");
+    background-position: -4px -8px;
+    font-family: "FuturaStd-Book",sans-serif;
+    font-size: 23px;
+    width: 58px;
+    height: 49px;
+    line-height: 33px;
+    color: #000;
+}
+
+#devoluciones .step.selected
+{
+    background-position: -5px -78px;
+    color: #fff;
+}
+
+#devoluciones .texto {
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    text-align: center;
+    line-height: 19px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#devoluciones .headerCarrito {
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#devoluciones .item .datos .nombre {
+    font-family: "FuturaStd-Book",sans-serif;
+    font-size: 15px;
+}
+
+#devoluciones .item .datos .talle {
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#devoluciones .item .datos .color {
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#devoluciones .item .precio {
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#devoluciones .cantidad .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+#devoluciones .cantidad .customSelect .select {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+#devoluciones #motivo .customSelect {
+    border: 1px solid #c8c8c8;
+    background: none;
+}
+
+#devoluciones #motivo .customSelect .select {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+#devoluciones input[type=text],
+#devoluciones textarea
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    border: 1px solid #C8C8C8;
+    color: #666666;
+}
+
+#devoluciones .buttonDevolver {
+    padding: 22px 0 20px 0;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 40%;
+    font-weight: bold;
+}
+
+#devoluciones #paso-2 .opcion .tituloOpcion,
+#devoluciones #paso-3 .opcion .tituloOpcion {
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+#devoluciones #paso-2 .textoOpcion,
+#devoluciones #paso-3 .textoOpcion {
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+#devoluciones #paso-2 .buttonSiguiente,
+#devoluciones #paso-3 .buttonSiguiente,
+#devoluciones #paso-4 .buttonConfirmar {
+    padding: 0 25px 0 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 50px;
+    float: right;
+}
+
+#devoluciones #paso-2 .buttonAnterior,
+#devoluciones #paso-3 .buttonAnterior,
+#devoluciones #paso-4 .buttonAnterior {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+#devoluciones #paso-3 .costoEnvio {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
+    font-size: 15px;
+}
+
+#devoluciones #paso-4 .resumen {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+#devoluciones #paso-4 .resumen .label {
+    font-weight: bold !important;
+}
+
+/*===================================================================================*/
+/*  TERMINOS Y CONDICIONES                                                           */
+/*===================================================================================*/
+
+#terminos {
+    text-align: left;
+}
+
+#terminos .titulo {
+    font-family: 'FuturaStd-Book',sans-serif;
+    font-size: 29px;
+    text-align: center;
+}
+
+#terminos .texto {
+    font-family: 'Open Sans', Arial;
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+#terminos .bloqueTyc {
+    font-family: 'Open Sans', Arial;
+    font-size: 10px;
+    text-align: center;
+}
+
+#terminos .bloqueTyc .subtitulo {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#terminos .bloqueTyc .detalle {
+    line-height: 18px;
+}
+
+/*===================================================================================*/
+/*  HOME MODAL NEWSLETTER                                                            */
+/*===================================================================================*/
+
+#home-modal .texto {
+    font-family: 'Open Sans', Arial;
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px;
+}
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+    font-family: 'Open Sans', Arial;
+    border: 0;
+}
+
+#home-modal .campo {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+#home-modal .enviarNewsletterBtn {
+    padding: 22px 0 20px 0;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 100%;
+    font-weight: bold;
+}
+
+#home-modal .alert
+{
+    font-family: 'Open Sans', Arial;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA PEDIDOS MODAL VER PEDIDO                                               */
+/*===================================================================================*/
+
+#verPedidos .titulo {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 25px;
+}
+
+#verPedidos .numero {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+}
+
+#verPedidos .headerCarrito {
+    font-family: "Open Sans",Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#verPedidos .item .datos .nombre {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+}
+
+#verPedidos .item .datos .talle {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#verPedidos .item .datos .color {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#verPedidos .item .cantidad {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+}
+
+#verPedidos .item .precio {
+    font-family: "Open Sans",Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#verPedidos .grupo {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+}
+
+#verPedidos .grupo .desc {
+    font-size: 13px;
+}
+
+#verPedidos .botones .cerrar {
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 30%;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA PEDIDOS MODAL OCA TRACKING                                             */
+/*===================================================================================*/
+
+#ocaTracking .titulo {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 25px;
+}
+
+#ocaTracking .numero {
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+}
+
+#ocaTracking .headerCarrito {
+    font-family: "Open Sans",Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#ocaTracking .item .datos .nombre {
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+}
+
+#ocaTracking .item .datos .talle {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#ocaTracking .item .datos .color {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+#ocaTracking .item .cantidad {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+}
+
+#ocaTracking .item .precio {
+    font-family: "Open Sans",Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#ocaTracking .grupo {
+    font-family: "Open Sans",Arial;
+    font-size: 11px;
+}
+
+#ocaTracking .grupo .desc {
+    font-size: 13px;
+}
+
+#ocaTracking .botones .cerrar {
+    padding: 16px 25px 16px 25px;
+    background-color: #000000;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'FuturaStd-Book', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 30%;
+}
+
+/*===================================================================================*/
+/*  LOOKBOOK                                                                         */
+/*===================================================================================*/
+
+.lookbook #infoProducto .titulo {
+    text-transform: uppercase;
+    font-family: 'FuturaStd-Book', sans-serif;
+}
+
+.lookbook #infoProducto .link {
+    font-family: 'FuturaStd-Book', sans-serif;
+}

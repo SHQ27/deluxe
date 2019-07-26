@@ -1,0 +1,2 @@
+<?php echo $helper->linkToNew(array(  'params' =>   array(  ),  'class_suffix' => 'new',  'label' => 'New',)) ?>
+<li class="sf_admin_action_ver"><a href="/productos/xml/dealandia" target="_blank">Ver XML</a></li>

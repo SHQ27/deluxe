@@ -1,0 +1,5 @@
+editSuccess:
+  javascripts:    [formEshopHome.js]
+
+newSuccess:
+  javascripts:    [formEshopHome.js]

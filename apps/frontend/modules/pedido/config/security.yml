@@ -1,0 +1,17 @@
+preProcesar:
+  is_secure: false
+  
+respuestaDecidir:
+  is_secure: false
+
+respuestaMercadoPago:
+  is_secure: false
+  
+bajaRecordatorioOffline:
+  is_secure: false
+  
+bajaRecordatorioOfflineOk:
+  is_secure: false
+
+all:
+  is_secure: true

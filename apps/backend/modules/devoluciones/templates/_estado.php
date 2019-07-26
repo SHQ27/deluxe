@@ -1,0 +1,1 @@
+<?php echo $devolucion->getEstadoHTML(ESC_RAW); ?>

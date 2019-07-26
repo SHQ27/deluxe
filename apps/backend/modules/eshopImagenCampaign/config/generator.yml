@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           eshopImagenCampaign
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          eshop_imagen_campaign
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_eshop_imagen_campaign:  { label: Id }
+          url:  { label: URL }          
+          slide:  { label: Participa del slide }          
+      list:    
+          title: Imágenes de la seccion Campaign del eShop
+          display: [id_eshop_imagen_campaign, _imagen, slide, activo]
+          batch_actions:
+            activar:  { label: Activar Selecionados }
+            desactivar:  { label: Desactivar Selecionados }
+      filter:
+        display: [activo]
+      form:
+          display: [_imagen_form, slide, activo]
+      edit:
+          title: Edición de imagen de la seccion Campaign del eShop
+      new:
+          title: Nuevo imagen de la seccion Campaign del eShop

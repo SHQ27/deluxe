@@ -1,0 +1,11 @@
+listado:
+  enabled:     true
+
+listaTag:
+  enabled:     true
+
+sticker:
+  enabled:     true
+
+outlet:
+  enabled:     true

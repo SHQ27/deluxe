@@ -1,0 +1,1 @@
+<?php echo ($cuota->getMultiplicador() - 1) * 100; ?>%

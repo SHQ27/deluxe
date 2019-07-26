@@ -1,0 +1,7 @@
+default:
+  is_secure: true
+  credentials: [[usuarios_newsletter_listado]]
+  
+download:
+  is_secure: true
+  credentials: [[usuarios_newsletter_descargar]]

@@ -1,0 +1,39 @@
+campanas:
+  is_secure: true
+  credentials: [[reportes_reportes_de_campanas]]
+
+mensual:
+  is_secure: true
+  credentials: [[reportes_reporte_general_mensual]]
+
+marketing:
+  is_secure: true
+  credentials: [[reportes_reporte_marketing]]
+  
+comerciales:
+  is_secure: true
+  credentials: [[reportes_reportes_de_comerciales]]
+  
+suscriptos:
+  is_secure: true
+  credentials: [[reportes_reporte_de_promo_suscribite]]
+  
+ventaOnline:
+  is_secure: true
+  credentials: [[reportes_reportes_de_venta_online]]
+  
+ventasXPeriodos:
+  is_secure: true
+  credentials: [[reportes_reporte_de_ventas_x_periodo]]
+  
+cronologico:
+  is_secure: true
+  credentials: [[reportes_reporte_cronologico]]
+  
+cuponeras:
+  is_secure: true
+  credentials: [[reportes_reporte_cuponeras]]
+  
+adNetworks:
+  is_secure: true
+  credentials: [[reportes_adnetworks]]

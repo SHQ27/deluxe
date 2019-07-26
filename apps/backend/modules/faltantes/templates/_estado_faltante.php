@@ -1,0 +1,1 @@
+<?php echo $faltante->getEstadoHTML(ESC_RAW); ?>

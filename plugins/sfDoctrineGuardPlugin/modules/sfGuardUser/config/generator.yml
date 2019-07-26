@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+
+    config:
+      fields:
+        password_again: { label: "Password (again)" }
+        first_name: { label: "Nombre" }
+        last_name: { label: "Apellido" }
+        username: { label: "Username" }
+        email_address: { label: "Email" }
+        is_active: { label: "Activo?" }
+        is_super_admin: { label: "Super Usuario?" }
+        groups_list: { label: "Grupos" }
+        permissions_list: { label: "Permisos" }
+
+      list:
+        title:   Listado de Usuarios de Back-end
+        display: [=username, created_at, updated_at, last_login]
+
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "Usuario": [first_name, last_name, email_address, username, password, password_again]
+          "Grupos y Permisos": [is_active, is_super_admin, groups_list, permissions_list]
+          
+      filter:
+        display: [first_name, last_name, username, is_active, is_super_admin, groups_list, permissions_list]
+
+      edit:
+        title: Edición de Usuario de Back-end "%%username%%"
+
+      new:
+        title: Nuevo Usuario de Back-end

@@ -1,0 +1,5 @@
+indexSuccess:
+  javascripts:    [fallados.js]
+  
+recuperarSuccess:
+  javascripts:    [recuperarFallados.js]

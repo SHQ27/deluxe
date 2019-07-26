@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           familiaTalle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          familia_talle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+          title: Familia de Talles
+          display: [id_familia_talle, denominacion]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Edicion de Familia de Talles "%%denominacion%%"
+      new:
+          title: Nueva Familia de Talles

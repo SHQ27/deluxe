@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           marca
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          marca
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_marca_rubro: { label: Rubro }
+      list:
+          title: Marcas
+          display: [id_marca, nombre]
+      filter:  ~
+      form:
+          display:
+            "Datos de la Marca": [id_marca, nombre, id_marca_rubro, condicion_fiscal, email_comercial]
+            "Imagen de la Marca": [_imagen]
+      edit:
+          title: Edición de Marca "%%nombre%%"
+      new:
+          title: Nueva Marca

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           cupon
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          cupon
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          fecha_desde: { date_format: dd/MM/yy }
+          fecha_hasta: { date_format: dd/MM/yy }
+      list:
+          title: Cupones
+          display: [id_cupon, _productos, fecha_desde, fecha_hasta]
+      filter:  ~
+      form:
+          display: [id_cupon, fecha_desde, fecha_hasta, _asignacion]
+      edit:
+          title: Edicion de Cupón
+      new:
+          title: Nuevo Cupón

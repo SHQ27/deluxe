@@ -1,0 +1,338 @@
+homepage:
+  url:   /
+  param: { module: home, action: index }     
+     
+recuperar_carrito:
+  url:   /recuperarCarrito/:hash
+  param: { module: carrito, action: recuperar }
+     
+productos_xml_dealandia:
+  url:   /productos/xml/dealandia
+  param: { module: productos, action: dealandia }
+           
+productos_listado_tag:
+  url:   /tag/:queryTag
+  param: { module: productos, action: listaTag }
+  
+producto_outlet:
+  url:   /outlet
+  param: { module: productos, action: outlet }
+
+
+productos_listado_sticker:
+  url:   /productos/destacado/:slugProductoGenero/:slugProductoSticker
+  param: { module: productos, action: sticker }
+  
+productos_listado_genero:
+  url:   /productos/:slugProductoGenero
+  param: { module: productos, action: listado, esOutlet: false }
+  
+productos_listado_categoria:
+  url:   /productos/:slugProductoGenero/:slugProductoCategoria
+  param: { module: productos, action: listado, esOutlet: false }
+    
+producto_detalle:
+  url:   /producto/:slugProductoGenero/:slugProductoCategoria/:slugProducto
+  param: { module: productos, action: detalle }
+  
+producto_detalle_shorten:
+  url:   /p/:idProducto
+  param: { module: productos, action: detalleShorten }
+  
+producto_saveMedidas:
+  url:   /producto/saveMedidas
+  param: { module: productos, action: saveMedidas }
+  
+producto_recomendar:
+  url: /producto/recomendar
+  param: { module: productos, action: recomendar }
+  
+producto_addWaitList:
+  url: /producto/addWaitList
+  param: { module: productos, action: addWaitList }
+  
+producto_getDataProductoItem:
+  url: /producto/getDataProductoItem
+  param: { module: productos, action: getDataProductoItem }
+  
+subscribe_newsletter:
+  url:   /suscribir
+  param: { module: home, action: suscribir }  
+  requirements:
+    sf_method: [get, post]
+    
+subscribe_newsletter_ok:
+  url:   /suscribir/ok
+  param: { module: home, action: nuevaSuscripcion }
+  
+ofertas_listado:
+  url:   /ofertas
+  param: { module: ofertas, action: listado }
+  
+ofertas_detalles:
+  url:   /ofertas/:slugCampana
+  param: { module: ofertas, action: details }
+  
+ofertas_detalles_categoria:
+  url:   /ofertas/:slugProductoCategoria/:slugCampana
+  param: { module: ofertas, action: details }
+      
+ajax_list_provincias:
+  url:   /ajax/listProvincias
+  param: { module: common, action: listProvincias }
+
+ajax_cotizarRET:
+  url:   /ajax/cotizarRET
+  param: { module: common, action: cotizarRET }
+
+ajax_cotizarDOM:
+  url:   /ajax/cotizarDOM
+  param: { module: common, action: cotizarDOM }
+
+ajax_cotizarSUC:
+  url:   /ajax/cotizarSUC
+  param: { module: common, action: cotizarSUC }
+
+ajax_localidades:
+  url:   /ajax/localidades
+  param: { module: common, action: localidades }
+
+ajax_sucursales:
+  url:   /ajax/sucursales
+  param: { module: common, action: sucursales }
+
+ajax_sucursal:
+  url:   /ajax/sucursal
+  param: { module: common, action: sucursal }
+  
+carrito:
+  url:   /carrito/paso-1
+  param: { module: carrito, action: paso1 }
+  
+carrito_paso_2:
+  url:   /carrito/paso-2
+  param: { module: carrito, action: paso2 }
+    
+carrito_savePaso2:
+  url:   /carrito/savePaso2
+  param: { module: carrito, action: savePaso2 }
+
+carrito_paso_3:
+  url:   /carrito/paso-3
+  param: { module: carrito, action: paso3 }
+  
+carrito_generar_pedido:
+  url:   /carrito/generarPedido/:cuotas/:tipoPago
+  param: { module: carrito, action: generarPedido }
+
+carrito_update:
+  url:   /carrito/update
+  param: { module: carrito, action: update }
+  
+carrito_addDescuento:
+  url:   /carrito/addDescuento
+  param: { module: carrito, action: addDescuento }
+  
+carrito_addBonificacion:
+  url:   /carrito/addBonificacion
+  param: { module: carrito, action: addBonificacion }
+  
+pedido_iniciar:
+  url: /pedido/:idPedido/iniciar/:checkoutURL
+  param: { module: pedido, action: iniciar }
+  
+pedido_RespuestaDecidir:
+  url: /pedido/respuestaDecidir
+  param: { module: pedido, action: respuestaDecidir }
+  
+pedido_RespuestaMercadoPago:
+  url: /pedido/respuestaMercadoPago
+  param: { module: pedido, action: respuestaMercadoPago }
+
+pedido_RetornoMercadoPago_correcto:
+  url: /pedido/RetornoMercadoPago/correcto
+  param: { module: pedido, action: RetornoMercadoPago, resultado: correcto }
+  
+pedido_RetornoMercadoPago_pendiente:
+  url: /pedido/RetornoMercadoPago/pendiente
+  param: { module: pedido, action: RetornoMercadoPago, resultado: pendiente }
+
+pedido_RetornoMercadoPago_fallo:
+  url: /pedido/RetornoMercadoPago/fallo
+  param: { module: pedido, action: RetornoMercadoPago, resultado: fallo }
+  
+pedido_RetornoNPS:
+  url: /pedido/RetornoNPS
+  param: { module: pedido, action: RetornoNPS }
+  
+pedido_ResultadoOperacion_correcto:
+  url: /pedido/:idPedido/correcto
+  param: { module: pedido, action: resultadoOperacion, resultado: correcto }
+  
+pedido_ResultadoOperacion_pendiente:
+  url: /pedido/:idPedido/pendiente
+  param: { module: pedido, action: resultadoOperacion, resultado: pendiente }
+  
+pedido_ResultadoOperacion_fallo:
+  url: /pedido/:idPedido/fallo
+  param: { module: pedido, action: resultadoOperacion, resultado: fallo }
+    
+pedido_BajaRecordatorioOffline:
+  url: /pedido/aviso/:hash/bajaRecordatorioOffline
+  param: { module: pedido, action: bajaRecordatorioOffline }
+  
+pedido_BajaRecordatorioOfflineOk:
+  url: /pedido/aviso/:hash/bajaRecordatorioOffline/ok
+  param: { module: pedido, action: bajaRecordatorioOfflineOk }
+    
+    
+    
+usuario:
+  url: /usuario
+  param: { module: usuario, action: index }
+  
+usuario_alta_captia:
+  url: /usuario/alta/captia
+  param: { module: usuario, action: altaCaptia }
+  
+login:
+  url: /login
+  param: { module: usuario, action: login }
+  
+login_facebook:
+  url: /loginFacebook/:referrer
+  param: { module: usuario, action: loginFacebook }
+
+logout:
+  url: /logout
+  param: { module: usuario, action: logout }
+  
+    
+olvide_contrasena:
+  url: /usuario/olvide-mi-contrasena
+  param: { module: usuario, action: index, olvide_clave: true }
+  
+olvide_contrasena_execute:
+  url: /olvide-mi-contrasena/
+  param: { module: usuario, action: olvideContrasena }
+  
+activar_cuenta:
+  url: /usuario/activar/:id_usuario/:hash_activacion
+  class: sfDoctrineRoute
+  options: { model: usuario, type: object }
+  param: { module: usuario, action: activar }
+  requirements:
+    id_usuario: \d+
+
+mi_cuenta:
+  url: /mi-cuenta
+  param: { module: miCuenta, action: index }
+  
+mi_cuenta_pedidos:
+  url: /mi-cuenta/pedidos
+  param: { module: miCuenta, action: index, seccion: pedidos }
+
+mi_cuenta_consultaEnvio:
+  url: /mi-cuenta/consulta-tu-envio
+  param: { module: miCuenta, action: index, seccion: consultaEnvio }
+  
+mi_cuenta_devoluciones:
+  url: /mi-cuenta/devoluciones
+  param: { module: miCuenta, action: index, seccion: devoluciones }
+  
+mi_cuenta_devoluciones_ok:
+  url: /mi-cuenta/devoluciones/ok
+  param: { module: miCuenta, action: index, seccion: devoluciones, procesado: ok }
+  
+mi_cuenta_devoluciones_error:
+  url: /mi-cuenta/devoluciones/error
+  param: { module: miCuenta, action: index, seccion: devoluciones, procesado: error }
+  
+mi_cuenta_invitados:
+  url: /mi-cuenta/invitados
+  param: { module: miCuenta, action: index, seccion: invitados }
+  
+mi_cuenta_invitar_amigos:
+  url: /mi-cuenta/invitar-a-un-amigo
+  param: { module: miCuenta, action: index, seccion: invitarAmigo }
+  
+mi_cuenta_baja_pedido:
+  url: /mi-cuenta/:idPedido/bajaPedido
+  param: { module: miCuenta, action: bajaPedido }
+  
+mi_cuenta_detalle_pedido:
+  url: /mi-cuenta/pedido/:id_pedido
+  class: sfDoctrineRoute
+  options: { model: pedido, type: object }
+  param: { module: miCuenta, action: detallePedido }
+  requirements:
+    id_pedido: \d+
+
+mi_cuenta_detalle_envio:
+  url: /mi-cuenta/envio/:id_pedido
+  class: sfDoctrineRoute
+  options: { model: pedido, type: object }
+  param: { module: miCuenta, action: detalleEnvio }
+  requirements:
+    id_pedido: \d+
+    
+mi_cuenta_descargar_factura:
+  url: /mi-cuenta/descargarFactura/:idPedido
+  param: { module: miCuenta, action: descargarFactura }
+  
+mi_cuenta_verificar_envio:
+  url:   /mi-cuenta/verificarEnvio
+  param: { module: miCuenta, action: verificarEnvio }
+
+desactivar_cuenta:
+  url: /mi-cuenta/desactivar
+  param: { module: miCuenta, action: desactivar }
+
+
+
+consultas:
+  url:   /consultas
+  param: { module: contacto, action: index }
+  
+consultas_como_comprar:
+  url:   /consultas/como-comprar
+  param: { module: contacto, action: index, comoComprar: true }  
+  
+faltante:
+  url:   /faltante/:idFaltante
+  param: { module: faltantes, action: index }
+
+devoluciones_imprimirEtiqueta:
+  url:   /devoluciones/:idDevolucion/imprimir-etiqueta
+  param: { module: devoluciones, action: imprimirEtiqueta }
+  
+invitar:
+  url: /invitar
+  param: { module: miCuenta, action: invitar }
+  
+sitemapXml:
+  url:   /sitemap.xml
+  param: { module: common, action: SitemapXml }
+  
+xmlVorcu:
+  url:   /xml/vorcu
+  param: { module: common, action: xmlVorcu }
+
+xmlFacebook:
+  url:   /facebook.xml
+  param: { module: common, action: xmlFacebook }
+
+csvAdwords:
+  url:   /adwords.csv
+  param: { module: common, action: csvAdwords }
+  
+tyc:
+  url:   /terminos-y-condiciones
+  param: { module: common, action: tyc }
+  
+legales:
+  url:   /legales/:promo
+  param: { module: common, action: legales }
+  
+default:
+  url: /:module/:action

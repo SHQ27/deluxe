@@ -1,0 +1,1 @@
+<?php echo $devuelto_oca->getPedido()->getMontoTotal(); ?>

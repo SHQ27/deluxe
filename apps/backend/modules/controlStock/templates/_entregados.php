@@ -1,0 +1,1 @@
+<?php echo pedidoProductoItemTable::getInstance()->getCantidadEntregadosByIdProductoItem( $producto_item->getIdProductoItem() ); ?>

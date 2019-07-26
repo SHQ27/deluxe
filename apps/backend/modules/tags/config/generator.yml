@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           tag
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          tag
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+          title: Tags
+          display: [id_tag, denominacion]
+      filter:  ~
+      form:
+          display:
+            "Datos del tag": [denominacion]
+            "Asignación de Productos al Tag": [_asignacion]
+      edit:
+          title: Edicion del Tag "%%denominacion%%"
+      new:
+          title: Nuevo Tag

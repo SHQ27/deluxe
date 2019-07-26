@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           premio
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          premio
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        fecha_desde: { label: Fecha Desde, date_format: dd/MM/yyyy }
+        fecha_hasta: { label: Fecha Hasta, date_format: dd/MM/yyyy }
+        tipo_premio: { label: Tipo }
+      list:    
+          title: Premios
+          display: [id_premio, fecha_desde, fecha_hasta, monto_minimo, _tipo_premio, valor, dias_vencimiento]
+          max_per_page: 20
+      filter:
+        class: false
+      form:
+          display: [id_premio, fecha_desde, fecha_hasta, monto_minimo, tipo_premio, valor, dias_vencimiento]
+      edit:
+          title: Editando Premio
+      new:
+          title: Nuevo Premio

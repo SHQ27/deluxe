@@ -1,0 +1,1 @@
+<?php echo $faltante->getProductoItem()->getProductoTalle()->getDenominacion(); ?>

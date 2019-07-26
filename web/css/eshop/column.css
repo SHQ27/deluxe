@@ -1,0 +1,82 @@
+
+
+
+/*  ==========================================================================
+    Container  
+    ========================================================================== */
+
+    .container { margin: 0 auto; }
+    .container:before, .container:after { display: table; content: ""; line-height: 0;}
+    .container:after { clear: both; }
+	.tabContent { margin: 0 auto; max-width: 1000px; }
+
+    @media only screen and (min-width: 1500px) { .container, .tabContent { max-width: 1000px; } #parallax1 .container { max-width: 1140px; } }
+    @media only screen and (min-width : 690px) and (max-width : 1000px) { .container, .tabContent { max-width: 600px; } }
+    @media only screen and (max-width : 690px) { .container, .tabContent { max-width: 300px; } }
+
+
+
+/*  ==========================================================================
+    Column  
+    ========================================================================== */
+
+    [class*="span"] { float: left;  margin-right: 4%;  position: relative;  }
+    [class*="span"]:last-child, [class*="span"].last { margin-right: 0; } 
+
+    .span1  { width: 4.666%;  }
+    .span2  { width: 13.333%; }
+    .span3  { width: 22%; }
+    .span4  { width: 30.666%; }
+    .span5  { width: 39.5%; }
+    .span6  { width: 48.0%; }
+    .span7  { width: 56.5%; }
+    .span8  { width: 65.0%; }
+    .span9  { width: 73.5%; }
+    .span10 { width: 82.0%; }
+    .span11 { width: 90.5%; }
+    .span12 { width: 100%;  margin-right: 0; }
+
+    @media only screen and (max-width : 1000px) {
+        [class*="span"] { float: none;  margin-right: 0;  width: 100%; margin-bottom: 2em; }
+    }
+	
+	
+	#servicios .span3  { 
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		height: 240px;
+		overflow: hidden;
+		margin-bottom: 40px;
+		-webkit-transition: height 500ms ease-in-out;
+		-moz-transition: height 500ms ease-in-out;
+		-ms-transition: height 500ms ease-in-out;
+		-o-transition: height 500ms ease-in-out;
+		transition: height 500ms ease-in-out;
+	}
+	
+		
+	
+	#servicios .span3.lineas4:hover  { 
+		height: 259px;
+	}
+	
+	#servicios .span3.lineas5:hover  { 
+		height: 278px;
+	}
+	
+	#servicios .span3.lineas6:hover  { 
+		height: 297px;
+	}
+	
+	#servicios .span3.lineas7:hover  { 
+		height: 316px;
+	}
+	
+	#servicios .span3.lineas8:hover  { 
+		height: 335px;
+	}
+	
+	#servicios .span3.lineas9:hover  { 
+		height: 354px;
+	}

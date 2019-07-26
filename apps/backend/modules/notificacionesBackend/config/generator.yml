@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           notificacionBackend
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          notificacion_backend
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~
+
+    config:
+      actions:
+      fields:
+          fecha_alta: { label: Fecha Alta, date_format: dd/MM/yyyy HH:mm }
+          denominacion: { label: Tipo }
+      list:
+          title: Notificaciones
+          table_method: retrieveBackendList
+          display: [fecha_alta, _denominacion]
+          max_per_page: 50
+          object_actions:
+            view:  { label: Ver, action: ver }
+          batch_actions:
+      filter:
+          class: false
+      form: ~
+      edit: ~
+      new: ~

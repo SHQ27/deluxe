@@ -1,0 +1,1 @@
+<a href="/backend/productos/<?php echo $producto_item->getIdProducto(); ?>/edit"><?php echo $producto_item->getProducto()->getDenominacion(); ?></a>

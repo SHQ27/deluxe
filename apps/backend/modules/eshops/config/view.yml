@@ -1,0 +1,5 @@
+ordenarProductosSuccess:
+  javascripts:    [ordenarProductosEshops.js]
+
+ordenarCategoriasSuccess:
+  javascripts:    [ordenarCategoriasEshops.js]

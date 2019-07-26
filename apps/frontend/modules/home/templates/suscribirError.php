@@ -1,0 +1,1 @@
+<span class="message error <?php echo $tipoError ?>"><?php echo $mensaje ?></span>

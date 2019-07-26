@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           comercial
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          comercial
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+          title: Comerciales
+          display: [id_comercial, nombre, apellido]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Edicion de Comercial "%%nombre%% %%apellido%%"
+      new:
+          title: Nuevo Comercial

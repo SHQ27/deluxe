@@ -1,0 +1,48 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           source
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          source
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_banco: { label: Banco }
+        id_tarjeta: { label: Tarjeta }
+        multiplicador: { label: Interés }               
+      list:
+        title: Definición de Cuotas
+        display: [id_cuota, banco, tarjeta, cuotas, _interes]
+      filter:
+        display: [id_banco, id_tarjeta, cuotas]
+      form:    ~
+      edit:
+        title: Edicion de cuota
+      new:
+        title: Nueva definición de Cuota
+          
+    config:
+      actions: ~
+      fields:
+        id_source: { label: Id }
+      list:
+        title: Sources (Marketing)
+        display: [id_source, denominacion, codigo]
+        object_actions:
+          _edit:  { label: Editar }          
+      form:
+        display:
+          "Datos del source": [id_source, denominacion, codigo]
+          "Agregar nuevo dato de inversión": [id_eshop, periodo, valor]
+          "Resumen de la inversión": [_inversion]
+      edit:
+        title: Edicion de Source
+      new:
+        title: Nuevo Source

@@ -1,0 +1,1075 @@
+ @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800");
+ @import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/*===================================================================================*/
+/*  GENERAL                                                                          */ 
+/*===================================================================================*/
+
+body {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.divisor_v {
+    border-left: 1px solid #e3e3e3;
+    background-color: #fff;
+}
+
+.flex-control-paging li a {
+	background-image: url(../../../images/eshop/1/nav_button.png);
+}
+
+.flex-direction-nav .flex-prev { 
+	background-image: url(../../../images/eshop/1/slider_left.png);
+}
+.flex-direction-nav .flex-next { 
+	background-image: url(../../../images/eshop/1/slider_right.png);
+}
+.flex-direction-nav .flex-prev:hover { 
+	background-image: url(../../../images/eshop/1/slider_left_h.png);
+}
+.flex-direction-nav .flex-next:hover { 
+	background-image: url(../../../images/eshop/1/slider_right_h.png);
+}
+
+.btOscuro:hover {
+    background-color: #ff2840;
+}
+
+.customSelect {
+    background: #f4f3f2;
+}
+
+.radio.selected:after {
+    background: none repeat scroll 0 0 #ff2840;
+}
+
+.titulo
+{
+    color: #666;
+}
+
+.scrollToTop {
+    background: url(../../../images/eshop/1/gototop.png);
+}
+
+.rojo {
+    color: #ff2840;
+}
+
+.color-link {
+    color: #ff2840;
+}
+
+#toolbar_up {
+    font-size: 11px;
+}
+
+#home-modal .logo
+{
+	background-image: url(../../../images/eshop/1/logo.png);
+    width: 225px;
+    height: 49px;
+    margin: 40px auto 20px auto;
+}
+
+#home-modal
+{
+    height: 550px;
+	background-image: url(../../../images/eshop/1/home_modal.jpg);
+}
+
+#devoluciones2 {
+    background-image: url(../../../images/eshop/1/devolucion_2.png);
+}
+
+#cambios2 {
+    background-image: url(../../../images/eshop/1/cambio_2.png);
+}
+
+#envios2 {
+    background-image: url(../../../images/eshop/1/envio_2.png);
+}
+
+/*===================================================================================*/
+/*  TYPOGRAFIA                                                                       */ 
+/*===================================================================================*/
+
+.OS
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.OS-9
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.OS-11, .dd-select, #producto .dd-option
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.OS-12
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.OS-13
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.OS-14
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.OS-18
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS-9
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 9px;
+	font-weight: 400;
+}
+
+.MS
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.MS-13
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.MS-15
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.MS-18
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.MS-23
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.MS-24
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.MS-32
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.MS-39
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 39px;
+	font-weight: 400;
+}
+
+.MS-72
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 72px;
+	font-weight: 400;
+}
+
+.MS-78
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 78px;
+	font-weight: 400;
+}
+
+
+.color1 { color: #303030; }
+.color2 { color: #333; }
+.color3, #producto .dd-select { color: #444; }
+.color4 { color: #666666; }
+.color5 { color: #797979; }
+.color6 { color: #b9b9bd; }
+.color7 { color: #fff; }
+.color8 { color: #ff273f; }
+.color9 { color: #999; }
+.color10 { color: #878787; }
+.color11 { color: #858585; }
+.color12 { color: #ff5b6d; }
+.color13 { color: #ccc; }
+
+.hcolor1:hover { color: #303030; }
+.hcolor2:hover { color: #333; }
+.hcolor3:hover, #producto .dd-select { color: #444; }
+.hcolor4:hover { color: #666666; }
+.hcolor5:hover { color: #797979; }
+.hcolor6:hover { color: #b9b9bd; }
+.hcolor7:hover { color: #fff; }
+.hcolor8:hover { color: #ff273f; }
+.hcolor9:hover { color: #999; }
+.hcolor10:hover { color: #878787; }
+.hcolor11:hover { color: #858585; }
+.hcolor12:hover { color: #ff5b6d; }
+.hcolor13:hover { color: #ccc; }
+
+
+/*===================================================================================*/
+/*  HEADER                                                                           */ 
+/*===================================================================================*/
+
+.header {
+    position: relative;
+    height: 155px;
+}
+
+.main-header {
+    width: 1000px;
+    margin: 25px auto 0 auto;
+}
+
+#toolbar_up {
+    background-color: #f4f3f2;
+    color: #000;
+}
+
+
+#toolbar_up  .derecha,
+.barraFlotante .derecha {
+    font-size: 11px;
+}
+
+#toolbar_up .items .signin,
+#toolbar_up .items #btMiCuenta,
+.barraFlotante .items .signin,
+.barraFlotante .items #btMiCuenta {
+    padding-right: 10px;
+}
+
+#toolbar_up .items.derecha,
+.barraFlotante .items.derecha {
+    font-family: 'Open Sans', Arial;
+}
+
+#toolbar_up .items.derecha .bold,
+#toolbar_up .items.derecha .semiBold,
+.barraFlotante .items.derecha .bold,
+.barraFlotante .items.derecha .semiBold {
+    font-weight: 600 !important;
+    font-size: 11px;
+    color: #555;
+}
+
+#toolbar_up .item span,
+.barraFlotante .item span {
+    background-color: transparent;
+    color: #777;
+    line-height: 12px;
+    font-weight: bold;
+}
+
+#toolbar_up .item:hover span,
+.barraFlotante .item:hover span {
+    background-color: transparent;
+}
+
+#toolbar_up  .items .lIzq,
+.barraFlotante  .items .lIzq {
+    border-left: 1px solid #000;
+}
+
+#toolbar_up  .items .registrarse,
+.barraFlotante  .items .registrarse {
+    color: #fff;
+}
+
+#toolbar_up .items .item,
+.barraFlotante .items .item {
+    line-height: 12px;
+}
+
+#d-micuenta .link a {
+    font-size: 11px;
+}
+
+#toolbar_up .items .item:hover,
+.barraFlotante .items .item:hover {
+    color: #000;
+}
+
+#toolbar_up .items .item.login,
+#toolbar_up .items .item.signin,
+.barraFlotante .items .item.login,
+.barraFlotante .items .item.signin {
+    color: #555;
+}
+
+#toolbar_up .items .item.signin,
+.barraFlotante .items .item.signin {
+    font-weight: bold !important;
+    color: #222;
+}
+
+#logoCont {
+    float: left;
+    padding: 0;
+    margin: 10px 17px 0 17px;
+}
+
+.logo a {
+    background-image: url(../../../images/eshop/1/logo.png);
+    width: 225px;
+    height: 49px;
+}
+
+#nav {
+    width: 740px;
+    float: right;
+    margin: 18px 0 0 0;
+}
+
+#nav .container {
+    width: 740px;
+}
+
+.nav .shadow {
+    display: none;
+}
+
+.desplegable {
+    left: -192px;
+}
+
+.desplegable .titulo
+{
+    font-weight: bold;
+    color: #000;
+    font-size: 15px;
+}
+
+#onlineBag ul li .nombre a
+{
+    color: #333;
+}
+
+#onlineBag ul li .price {
+    color: #ff273f;
+}
+
+#onlineBag .total
+{
+    color: #ff273f;
+}
+
+#onlineBag .d_btVerCarro
+{
+    background-color: #f9f9f8;
+    color: #444;
+}
+
+#onlineBag .d_btVerCarro:hover
+{
+    color: #000;
+}
+
+
+/*===================================================================================*/
+/*  MENU                                                                             */ 
+/*===================================================================================*/
+
+#nav .menu,
+.barraFlotante .menu {
+    float: right;
+}
+
+
+#nav .menu a,
+#nav .menu span,
+.barraFlotante .menu a,
+.barraFlotante .menu span {
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+    border-bottom: 2px solid transparent;
+}
+
+#nav .menu .current a,
+#nav .menu a:hover,
+#nav .menu .menu .current span,
+#nav .menu span:hover,
+.barraFlotante .current a,
+.barraFlotante .menu a:hover,
+.barraFlotante .menu .current span,
+.barraFlotante .menu span:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+
+#nav .menu li {
+    margin: 10px 18px;
+}
+
+.barraFlotante .menu li {
+    margin: 10px 8px;
+}
+
+
+#nav .menu li .submenu li a,
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a,
+.barraFlotante .menu li .submenu li a:hover {
+    border: 0;
+    color: #444;
+    font-size: 12px;
+}
+
+#nav .menu li .submenu li a:hover,
+.barraFlotante .menu li .submenu li a:hover {
+    color: #000;
+}
+
+#nav .menu li .submenu,
+.barraFlotante li .submenu {
+    padding: 24px 0 0 0;
+}
+
+#nav .menu .prendas:before,
+.barraFlotante .prendas:before {
+    content: "E SHOP";
+}
+
+/*===================================================================================*/
+/*  BARRA FLOTANTE                                                                   */ 
+/*===================================================================================*/
+
+.barraFlotante .logo {
+    float: left;
+    background: url(../../../images/eshop/1/logo_chico.png) no-repeat center center;
+    width: 120px;
+    height: 29px;
+    margin-right: 63px;
+}
+
+.barraFlotante a,
+.barraFlotante span {
+    font-family: 'Open Sans', Arial;
+    font-size: 10.5px;
+}
+
+.barraFlotante .menu a,
+.barraFlotante .menu  span {
+    font-size: 13px;
+}
+
+.barraFlotante #logged a {
+    font-family: 'Open Sans', Arial;
+}
+
+.barraFlotante .desplegable {
+    left: -193px;
+}
+
+.barraFlotante .derecha {
+    top: 8px;
+}
+
+
+/*===================================================================================*/
+/*  FOOTER                                                                           */ 
+/*===================================================================================*/
+
+#notes #devoluciones {
+    background-image: url(../../../images/eshop/1/devolucion.png);
+}
+
+#cambio {
+    background-image: url(../../../images/eshop/1/cambio.png);
+}
+
+#envios {
+    background-image: url(../../../images/eshop/1/envio.png);
+}
+
+#notes .item .titulo {
+    color: #666666;
+}
+
+#notes .item .texto {
+    font-size: 11px;
+}
+
+#network {
+    background-image: url(../../../images/eshop/1/pattern2.png);
+}
+
+#network {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+#info {
+    background-color: #f4f3f2;
+    border-top: 1px solid #fff;
+    margin-top: 60px;
+}
+
+#info .social p {
+    color: #666666;
+}
+
+#info .titulo {
+    
+    color: #666666;
+}
+
+#info .datos .lista .items .item a,
+#info .datos .lista .items .item, #info .texto {
+    color: #666666;
+}
+
+#info .datos .lista .items .item:hover {
+    color: #333;
+}
+
+#footer {
+    background-color: #f4f3f2;
+    border-top: 1px solid #e3e3e3;
+}
+
+#facebook { background-image: url(../../../images/eshop/1/facebook.png); }
+#twitter { background-image: url(../../../images/eshop/1/twitter.png); }
+#instagram { background-image: url(../../../images/eshop/1/instagram.png); }
+#youtube { background-image: url(../../../images/eshop/1/youtube.png); }
+#snapchat { background-image: url(../../../images/eshop/1/snapchat.png); }
+#facebook:hover { background-image: url(../../../images/eshop/1/facebook_h.png); }
+#twitter:hover { background-image: url(../../../images/eshop/1/twitter_h.png); }
+#instagram:hover { background-image: url(../../../images/eshop/1/instagram_h.png); }
+#youtube:hover { background-image: url(../../../images/eshop/1/youtube_h.png); }
+#snapchat:hover { background-image: url(../../../images/eshop/1/snapchat_h.png); }
+
+#info .boton {
+    background-color: #bababa;
+    background-image: url(../../../images/eshop/1/bt_arrow.png);
+}
+
+#info .boton:hover {
+    background-color: #666666;
+}
+
+#footer .powered {
+    background-image: url(../../../images/eshop/1/powered.png)
+
+}
+
+/*===================================================================================*/
+/*  HOME                                                                             */ 
+/*===================================================================================*/
+
+#texto .titulo {
+    font-size: 24px;
+}
+
+
+.seccion.BPRFS {
+    margin-bottom: 60px;
+}
+
+.seccion.BPRFS .flex-control-nav li a.flex-active,
+.seccion.bannerCampaign .flex-control-nav li a.flex-active {
+    background-position: 0px -13px
+}
+
+.seccion.TEXTO .titulo {
+    font-family: "Montserrat",sans-serif;
+    font-size: 24px;
+}
+
+#destacados .items .item span {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: rgba(255, 40, 64, 0.9);
+    background: -moz-linear-gradient(top, rgba(255, 40, 64, 0.9) 0%,
+        rgba(255, 40, 64, 0.9) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,
+        40, 64, 0.9)), color-stop(100%, rgba(255, 40, 64, 0.9)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 40, 64, 0.9) 0%,
+        rgba(255, 40, 64, 0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 40, 64, 0.9) 0%,
+        rgba(255, 40, 64, 0.9) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 40, 64, 0.9) 0%,
+        rgba(255, 40, 64, 0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 40, 64, 0.9) 0%,
+        rgba(255, 40, 64, 0.9) 100%); /* W3C */
+}
+
+#destacados .items .item span b:before,#destacados .items .item span b:after
+{
+    background-image: url(../../../images/eshop/1/diagonal.png);
+}
+
+.flexslider .slides>li .producto span {
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px 22px;
+    background-color: #ff2840;
+}
+
+.flexslider .slides>li:hover .producto {
+    border-bottom: 1px solid #ff2840;
+}
+
+.flexslider .slides>li:hover .producto:before {
+    background-image: url(../../../images/eshop/1/hover_product.png);
+    bottom: 0;
+}
+
+.flexslider .slides>li:hover .producto:after {
+    content: "";
+    background-image: url(../../../images/eshop/1/red_up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 99;
+}
+
+.flexslider .slides>li .precio {
+    background-color: #f3f1f1;
+    color: #666666;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -O-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.flexslider .slides>li .precioViejo {
+    color: #666666;
+}
+
+.flexslider .slides>li .nombre,.flexslider .slides>li .codigo {
+    font-weight: 400;
+}
+
+
+/*===================================================================================*/
+/*  MODAL HOME                                                                       */ 
+/*===================================================================================*/
+
+#home-modal  input[type=text],
+#home-modal  input[type=password]
+{
+	background-color: #f4f3f2;
+}
+
+
+/*===================================================================================*/
+/*  LISTADO DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#productos .muestra .resultados .resultado .precio.con-precio-lista {
+    left: 28px;
+}
+
+#productos .muestra .resultados .resultado .precio.sin-precio-lista {
+    left: 0px;
+}
+
+#productos .resultados .resultado .aviso {
+    display: none;
+    margin: 10px 0 0 0;
+}
+
+#productos .resultados .resultado a {
+    bottom: 15px;
+}
+
+#productos .resultado .aviso p {
+    margin: 0;
+    line-height: 14px;
+}
+
+#productos .resultado .aviso .precio-contado {
+    color: #ff3333;
+    font-size: 10px;
+}
+
+#productos .resultado .aviso .tarjetas {
+    color: #111;
+    font-size: 8px;
+}
+
+#productos .resultado .aviso a {
+    position: relative;
+    z-index: 1;
+    color: #111;
+    font-size: 9px;
+    text-decoration: underline;
+    background-image: url(../../../images/eshop/1/icon-tarjeta.png);
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding: 0 0 0 20px;
+}
+
+#productos .pantalla {
+    margin: 10px 0 60px 0;
+}
+
+#productos .muestra .resultados .resultado:hover .producto:after {
+    content: "";
+    background-image: url(../../../images/eshop/1/red_up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 99;
+}
+
+#productos .muestra .resultados .resultado:hover .producto:before {
+    background-image: url(../../../images/eshop/1/hover_product.png);
+    background-position: center;
+}
+
+#productos .muestra .resultados .resultado .nombre {
+    text-transform: uppercase;
+}
+
+#productos .muestra .resultados .resultado .descuento {
+    background-color: #ff2840;
+}
+
+#productos .acordion .titulo:before {
+    background-image: url(../../../images/eshop/1/accordion_open.png);
+}
+
+#productos .acordion .titulo.closed:before {
+    background-image: url(../../../images/eshop/1/accordion_closed.png);
+}
+
+#productos .muestra .resultados .resultado:hover .producto {
+    border-bottom: 1px solid #ff2840;
+}
+
+#productos .dd-pointer {
+    background-image: url(../../../images/eshop/1/accordion_closed.png);
+}
+
+
+/*===================================================================================*/
+/*  DETALLE DE PRODUCTOS                                                             */ 
+/*===================================================================================*/
+
+#probadorOnline .campo input
+{
+	background-color: #f4f3f2;
+}
+
+#producto .contFotos .thumb:hover,#producto .contFotos .thumb.selected {
+    border-bottom: 1px solid #ff2840;
+}
+
+#producto .contFotos .thumb:hover:after,#producto .contFotos .thumb.selected:after
+{
+    background-image: url(../../../images/eshop/1/red_up.png);
+}
+
+#producto .contFotos #foto_grande span {
+    background-color: #ff2840;
+}
+
+#probadorOnline .ui-icon-triangle-1-n {
+    background-image: url(../../../images/eshop/1/accordion_open.png) !important;
+}
+
+#probadorOnline .ui-icon-triangle-1-s {
+    background-image: url(../../../images/eshop/1/accordion_closed.png) !important;
+}
+
+
+
+/*===================================================================================*/
+/*  TIENDAS                                                                          */ 
+/*===================================================================================*/
+
+#tiendas .titulo
+{
+    color: #666666;
+}
+
+#tiendas .menu a
+{
+    color: #666666;
+}
+
+#tiendas .current a,
+#tiendas .menu a:hover
+{
+    color: #ff2840;
+    border-bottom: 1px solid #ff2840;
+}
+
+#tiendas .item .nombre
+{
+    color: #333;
+    font-size: 13px;
+}
+
+#tiendas .item .direccion,
+#tiendas .item .telefono
+{
+    color: #878787;
+    font-size: 11px;
+}
+
+
+/*===================================================================================*/
+/*  CARRITO                                                                          */ 
+/*===================================================================================*/
+
+#checkout_carrito .paso span {
+
+    background-image: url(../../../images/eshop/1/poligono_con_hover.png);
+    width: 70px;
+    height: 55px;
+}
+
+#checkout_carrito .renglon .btLink span {
+    background-image: url(../../../images/eshop/1/btArrows.png);
+}
+
+#checkout_carrito.paso3 .descuento .response .KO {
+    color: #ff2840;
+}
+
+#checkout_carrito .btComprar {
+    background-color: #ff2840;
+}
+
+#checkout_carrito .datos-adicionales .renglon input {
+    border: 1px solid #e3e3e3;
+    height: 17px;
+}
+
+/*===================================================================================*/
+/*  INGRESO / REGISTRO                                                               */
+/*===================================================================================*/
+
+#ingresar input[type=text],#ingresar input[type=password] {
+    background-color: #f4f3f2;
+}
+
+#ingresar .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#ingresar .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#olvidastePass input[type=text]
+{
+    background-color: #f4f3f2;
+}
+
+#soy_nuevo .rincon {
+    border-top: 14px solid #ff2840;
+    border-right: 14px solid #ff2840;
+    border-left: 14px solid #fbfbfb;
+    border-bottom: 14px solid #fbfbfb;
+}
+
+/*===================================================================================*/
+/*  MI CUENTA                                                                        */ 
+/*===================================================================================*/
+
+#devoluciones  .step
+{
+	background-image: url(../../../images/eshop/1/poligono_con_hover_chico.png);
+	width: 58px;
+	height: 45px;
+}
+
+#mi_cuenta #datosPersonales .campo input, #mi_cuenta #datosPersonales .campo2 input
+{
+	background-color: #f4f3f2;
+}
+
+#devoluciones .campo textarea
+{
+	background-color: #f4f3f2;
+}
+
+#mi_cuenta #devoluciones .dd-select {
+	background: #f4f3f2!important;
+}
+
+#mi_cuenta #devoluciones .dd-options
+{
+	background: #f4f3f2!important;
+}
+
+
+#devoluciones input[type=text],
+#devoluciones input[type=password]
+{
+	background-color: #f4f3f2;
+}
+
+#consultaEnvio input[type=text]
+{
+	background-color: #f4f3f2;
+}
+
+#mi_cuenta .panel .items .item.selected
+{
+	color: #ff273f;
+}
+
+/*===================================================================================*/
+/*  CONSULTAS                                                                        */ 
+/*===================================================================================*/
+
+#consultas .titulo
+{
+	color: #666666;
+	font-size: 23px;
+}
+
+#consultas .faqCategoria .header {
+    height: auto;
+}
+
+#consultas .preguntas
+{
+	color: #666666;
+}
+
+#consultas .faqCategoria .num
+{
+	background-image: url(../../../images/eshop/1/poligono_color.png);
+	width: 28px;
+	height: 22px;
+}
+
+#consultas .titleFaqCategoria:hover 
+{
+	color: #ff273f;
+}
+
+
+#contacto .texto {
+    font-size: 11px; 
+}
+
+#contacto form  input[type=text],
+#contacto form  textarea
+{
+	background-color: #f4f3f2;
+}
+
+#contacto form  input[type=file]::before {
+	background-color: #f4f3f2;
+}
+
+#contacto form  .dd-select {
+	background: #f4f3f2!important;
+}
+
+#contacto form  .dd-options
+{
+	background: #f4f3f2!important;
+}
+
+
+/*===================================================================================*/
+/*  CARRO                                                                            */
+/*===================================================================================*/
+
+#checkout_carrito .items  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .items  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-select {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  .dd-options {
+    background: #f4f3f2 !important;
+}
+
+#checkout_carrito .form  input[type=text],#checkout_carrito .form  input[type=password] {
+    background-color: #f4f3f2;
+}
+
+
+/*===================================================================================*/
+/*  ESTATICAS                                                                        */
+/*===================================================================================*/
+
+#terminos .menu li {
+    margin: 10px 15px;
+}
+
+#terminos .texto {
+    font-size: 11px;
+}
+
+#terminos .subtitulo {
+    font-size: 13px;
+}
+
+#terminos .detalle {
+    font-size: 11px;
+}

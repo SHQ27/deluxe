@@ -1,0 +1,44 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           pedido
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pedido
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+      fields:
+          id_usuario: { label: Usuario }
+          fecha_alta: { label: Fecha Alta, date_format: dd/MM/yyyy HH:mm }
+          fecha_pago: { label: Fecha Pago, date_format: dd/MM/yyyy HH:mm }
+          monto_productos: { label: $ Prod. }
+          monto_envio: { label: $ Env. }
+          monto_descuento: { label: $ Desc. }
+          monto_bonificacion: { label: $ Bonif. }
+          interes: { label: $ Int. }
+          id_forma_pago: { label: Forma de Pago }
+          id_eshop: { label: eShop }
+          envio_tipo: { label: Forma de Envío }
+          refuerzo: { label: Stock de Refuerzo }
+      list:
+          title: Pedidos
+          display: [_id_pedido, eshop, fecha_alta, _datos_cliente, _envio, _forma_pago, _estado, diversidad, _campana, _outlet, cuotas, monto_productos, monto_descuento, monto_bonificacion, monto_total]
+          max_per_page: 15
+          object_actions:
+            view:  { label: Ver }
+          batch_actions:
+            facturar:  { label: Marcar como facturado }
+            prepararEnvio:  { label: Preparar envio }
+            reimprimirRemitosHTML:  { label: Reimprimir remitos (HTML) }
+            reimprimirRemitosXLS:  { label: Reimprimir remitos (Excel) }
+      filter:
+          display: [buscador, fecha_pago, estado, id_forma_pago, envio_tipo, diversidad, campana, marca, remito, tiene_outlet, id_eshop, unica_marca, solo_despachables, refuerzo, intervencionManual]
+      form: ~
+      edit: ~
+      new: ~

@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           eshopTiendaCategoria
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          eshop_tienda_categoria
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_eshop_tienda_categoria:  { label: Id }
+      list:    
+          title: Categorias para Tiendas
+          display: [id_eshop_tienda_categoria, denominacion]
+      filter:
+        display: [denominacion]
+      form:
+      edit:
+          title: Edición de categoria para Tiendas
+      new:
+          title: Nueva categoria para Tiendas

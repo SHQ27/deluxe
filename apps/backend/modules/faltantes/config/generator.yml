@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           faltante
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          faltante
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+      fields:
+        fecha_aviso: { label: Fecha Aviso, date_format: dd/MM/yyyy<br />HH:mm }
+        fecha_procesado: { label: Fecha Proc., date_format: dd/MM/yyyy<br />HH:mm }
+        marca_campana: { label: "Marca / Campaña" }
+        monto: { label: Monto }
+        monto_a_devolver: { label: "Monto a Devolver" }
+        monto_devuelto: { label: Monto<br />Devuelto }
+        estado_faltante: { label: Estado }
+        cantidad: { label: Cnt. }
+        id_faltante: { label: Id }
+        costo: { label: Costo. Uni. }
+        id_eshop: { label: eShop }
+        eshop: { label: eShop }
+      list:
+        title: Faltantes
+        display: [id_faltante, _imagen, _eshop, _marca_campana, _id_pedido, _datos_cliente, _denominacion, _talle, _color, cantidad, _monto_a_devolver, _monto_devuelto, fecha_aviso, _estado_faltante, fecha_procesado]
+        max_per_page: 5
+        object_actions:
+          devueltoMP:  { label: Devuelto x MP }
+          generarBonificacion:  { label: Generar Bonif. }
+          _delete:
+        
+      filter:
+        display: [buscador, id_faltante, id_pedido, fecha_aviso, marca, campana, id_eshop]
+      form:    ~

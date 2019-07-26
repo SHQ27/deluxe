@@ -10,5 +10,5 @@ lib/vendor/*
 /tmp
 .idea/*
 .idea/
-
-
+*.swp
+*.swo
